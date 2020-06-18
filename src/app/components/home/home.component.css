@@ -188,6 +188,9 @@
 }
 
 
+@media only screen and (max-width: 1480px) {
+    .bannertext h3 br{display: none;}
+}
 @media only screen and (max-width: 1460px) {
     .bannertext {
         width: 50%;
