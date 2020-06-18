@@ -95,7 +95,7 @@
 
 
   @media only screen and (max-width: 1600px) {
-    .footermainwrapper mat-list mat-list-item.footeritem2 {padding: 0 37px !important; padding-right: 0 !important;}
+    .footermainwrapper mat-list mat-list-item.footeritem2 {padding: 0 0px !important; padding-right: 0 !important;}
     .footermainwrapper mat-list mat-list-item.footeritem1 {
       width: 430px !important;
   }
@@ -107,11 +107,11 @@
       .footermainwrapper mat-list mat-list-item.footeritem2 {width: 959px!important;padding: 0 28px !important;margin: 0 26px;}
     }
     @media only screen and (max-width: 1420px) {
-      .footermainwrapper mat-list mat-list-item.footeritem2 {width: 782px!important;padding: 0 30px !important;margin: 0 30px;padding-right: 0 !important;}
+      .footermainwrapper mat-list mat-list-item.footeritem2 {width: 782px!important;padding: 0 0px !important;margin: 0 20px;padding-right: 0 !important;}
+      .footermainwrapper a{    font-size: 12px;}
+      .mat-card-subtitle{font-size: 12px;}
     }
     @media only screen and (max-width: 1280px) {
-      .footermainwrapper a {font-size: 16px}
-  .mat-card-subtitle span {font-size: 16px}
     }
     @media only screen and (max-width: 1240px) {
       .footermainwrapper mat-list mat-list-item.footeritem1 {

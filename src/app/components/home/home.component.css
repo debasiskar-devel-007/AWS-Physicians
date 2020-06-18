@@ -161,6 +161,9 @@
     }
 }
 
+@media only screen and (max-width: 1640px) {
+    .homeblock5 .col-6 {width: 48%;}
+}
 @media only screen and (max-width: 1600px) {
     .bannerblock {
         background-position: right -133px top;
@@ -212,7 +215,7 @@
         min-height: inherit;
         padding-top: 70%;
         background-color: #0e657b;
-        padding-bottom: 2%;
+        padding-bottom: 4%;
     }
     .bannertext {
         width: 100%;
@@ -228,6 +231,7 @@
         position: inherit;
         left: inherit;
         right: inherit;
+        margin-bottom: 20px;
     }
     .block.homeblock2{padding-top: 0;}
     
@@ -278,6 +282,9 @@
 @media only screen and (max-width: 991px) {
     .videowrapper {
         min-height: 477px;
+    }
+    .bannertext h3 {
+        font-size: 36px;
     }
 }
 
