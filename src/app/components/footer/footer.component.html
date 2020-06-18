@@ -1,0 +1,58 @@
+<span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+    <a (click)="scrollToTop()">
+        <i class="material-icons">arrow_drop_up</i>
+      <!-- <img src="http://all-frontend-assets.s3.amazonaws.com/monetize365/images/scroll-to-top-icon.png" alt="scroll-to-top-icon"> -->
+     </a>
+  </span>  
+
+
+<mat-card class="footermainwrapper">
+ <span class="newcontainer">
+    <mat-list>
+        <mat-list-item class="footeritem1"> 
+            <span class="footerlogowrapper">
+                <img src="../../../assets/images/footerlogo.png">
+            </span>           
+
+        </mat-list-item>
+        <mat-list-item class="footeritem2"> 
+            <mat-card-title>Quick Links </mat-card-title>
+            <span class="footermenu" >
+                <span>
+            <a (click)="gotoTop()" [routerLink]="['/home']" routerLinkActive="activemenu"  class="ABC">Home</a>
+            <a (click)="gotoTop()"  routerLinkActive="activemenu" [routerLink]="['/the-science']">The Science</a>
+        </span>
+        <span>
+            <a (click)="gotoTop()" routerLinkActive="activemenu" [routerLink]="['/diagnostic-imaging-center']">RM-3A AWS PROGRAM </a>
+            <a (click)="gotoTop()" routerLinkActive="activemenu" [routerLink]="['/pece-virtual-platform']">PECE Virtual Platform</a>
+        </span>
+            <span>
+            <a (click)="gotoTop()" routerLinkActive="activemenu" [routerLink]="['/software-walk-through ']">Software Walk-through </a>
+            <a (click)="gotoTop()" routerLinkActive="activemenu" [routerLink]="['/doctor-recommend']">Doctor Recommend</a>
+        </span>
+        <span>
+            <a (click)="gotoTop()" routerLinkActive="activemenu" [routerLink]="['/team']">The Team</a>            
+            <a (click)="gotoTop()" routerLinkActive="activemenu" [routerLink]="['/contact']">Contact Us</a>
+        </span>
+        </span>
+        </mat-list-item>
+        <mat-list-item>
+            <mat-card-title>Our Address </mat-card-title>
+            <mat-card-content>
+                <mat-card-subtitle>
+                    <span>1175 American Pacific  Dr Henderson, NV 89074</span>
+                </mat-card-subtitle>
+                <mat-card-subtitle>
+                    <span>Fax : (855) 480-9539</span>
+                </mat-card-subtitle>
+                <mat-card-subtitle>
+                    <span>Email : support@awsdiagnostics.com</span>
+                </mat-card-subtitle>
+            </mat-card-content>
+        </mat-list-item>
+       </mat-list>
+ </span>
+</mat-card>
+<mat-card class="footerblock2">
+    <p>Terms & Conditions      Privacy Policy      Copyright © 2019 WAS. All Rights Reserved.</p>
+</mat-card>

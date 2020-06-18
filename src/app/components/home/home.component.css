@@ -1,0 +1,293 @@
+
+.peceShadow{box-shadow:0 2px 3px 2px #329464}
+.bannerblock{background-image:url(../../../assets/images/homebanner1.jpg)!important;
+    min-height:580px;display:flex;align-items:center;background-size: cover;
+    background-position: right top;    background-repeat: no-repeat;
+}
+
+.bannertextwrapper h1 span strong {
+    font-size: 150px;
+    line-height: 137px;
+}
+.bannertext{
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    width: 870px;
+}
+
+.bannertext img{display: block; margin: 0 auto;}
+
+.newcontainer {
+    width: 1730px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.bannertext h3{
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Raleway-Bold';
+    text-align: center;
+    padding-bottom: 20px;
+}
+.bannertext p{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    text-align: center;
+}
+.bannertext p span{color: #fecb00;}
+.colcontainer {display: flex; justify-content: space-between;}
+.col-3{width: 29%;}
+.col-7{width: 69%;}
+.col-4{width: 39%;}
+.col-6{width: 59%;}
+.homeblock2 .abimage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52%;
+}
+
+.block {
+    padding: 30px 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.block.homeblock3{padding-top: 0;}
+
+.videowrapper{
+    height: 100%;
+    border: 2px solid #1c1c1c;
+
+}
+
+.homeblock4 .abimage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 44%;
+}
+.homeblock4 .titlewrapper p{color: #1da9ee;}
+.homeblock4 .textwrapper p{
+    width: 900px;
+}
+.homeblock4 .textwrapper p span{color: #fa6a00;}
+.homeblock4 .textwrapper h3{
+    width: 900px;
+    border: 1px solid #cfd1d2;
+    border-radius: 10px;
+    color: #1f1f1f;
+    padding: 20px;
+    line-height: 32px;
+    background-color: #fffffff0;
+
+}
+
+.homeblock4 .textwrapper h3 span{color: #0bc324;}
+
+.homeblock5 .abimage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.block.homeblock5{padding-top: 0;}
+.imgwrapper img{max-width: 100%;}
+
+.homeblock5 .col-6 {
+    width: 53%;
+}
+.homeblock5 .col-4 {
+    width: 46%;
+}
+
+.homeblock5 .bluegradient, .homeblock5 .yellowgradient{
+    border-radius: 8px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.homeblock5 .textwrapper{
+    border-radius: 8px;
+    border: 1px solid #cfd1d2;
+    background-color: #fffffff0;
+}
+.homeblock5 .textwrapper p{padding: 20px;}
+
+.homeblock5 .bluegradient::before{
+    content: '';
+    background-image: url(../../../assets/images/leftarrow.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 200px;
+    left: -43px;
+    top: 20px;
+    position: absolute;
+}
+.homeblock5 .yellowgradient::after{
+    content: '';
+    background-image: url(../../../assets/images/rightarrow.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 48px;
+    right: -47px;
+    top: 20px;
+    position: absolute;
+}
+.homeblock2 .colcontainer {
+    margin: 0;
+}
+.mat-card{border-radius: 0;}
+@media only screen and (max-width: 1820px) {
+    .newcontainer{width: 98%;}
+}
+@media only screen and (max-width: 1800px) {
+    .homeblock2 .abimage {
+        left: -70px;
+    }
+}
+@media only screen and (max-width: 1780px) {
+    .greenbutton, .blackbutton, .redbutton{min-width: 270px;}
+}
+@media only screen and (max-width: 1680px) {
+    .homeblock2 .abimage {
+        width: 62%;
+    }
+    .bannerblock {
+        background-position: right -53px top;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .bannerblock {
+        background-position: right -133px top;
+    }
+}
+
+
+@media only screen and (max-width: 1560px) {
+    .greenbutton, .blackbutton, .redbutton {
+        min-width: 230px;
+        font-size: 24px;
+        padding: 15px 22px;
+    }
+}
+@media only screen and (max-width: 1540px) {
+    .bannerblock {
+        background-position: right -192px top;
+    }
+    .bannertext {
+        width: 61%;
+    }
+}
+
+
+@media only screen and (max-width: 1460px) {
+    .bannertext {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .homeblock4 .textwrapper p {
+        width: 85%;
+    }
+    .block.homeblock4{padding-top: 0;}
+    .homeblock4 .abimage {
+        width: 51%;
+    }
+    .homeblock4 .textwrapper h3 {
+        width: 90%;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .bannerblock {
+        background-position: right top;
+        background-size: 193%;
+        min-height: inherit;
+        padding-top: 70%;
+        background-color: #0e657b;
+        padding-bottom: 2%;
+    }
+    .bannertext {
+        width: 100%;
+    }
+    .colcontainer{flex-wrap: wrap;}
+    .col-4{width: 100%;}
+    .col-6{width: 100%;}
+    .col-7{width: 100%;}
+    .col-3{width: 100%;}
+    .homeblock2 .abimage {
+        width: 100%;
+        display: block;
+        position: inherit;
+        left: inherit;
+        right: inherit;
+    }
+    .block.homeblock2{padding-top: 0;}
+    
+
+    .homeblock3 mat-card-action{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .homeblock4 .abimage {
+        width: 100%;
+        position: inherit;
+        left: inherit;
+        right: inherit;
+        top: inherit;
+        bottom: inherit;
+        display: block;
+    }
+    .homeblock4 .textwrapper p {
+        width: 100%;
+    }
+    .homeblock4 .textwrapper h3 {
+        width: 96%;
+        padding: 2%;
+    }
+    .homeblock5 .col-4{width: 100%;}
+    .homeblock5 .col-6{width: 100%;}
+
+    .homeblock5 .bluegradient::before, .homeblock5 .yellowgradient::after{display: none;}
+    .homeblock5 .colcontainer:nth-last-child(1){flex-flow: column-reverse;}
+    .imgwrapper img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .videowrapper {
+        height: 100%;
+        border: 2px solid #1c1c1c;
+        min-height: 600px;
+      }
+
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .videowrapper {
+        min-height: 477px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .videowrapper {
+        min-height: 347px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .videowrapper {
+        min-height: 217px;
+    }
+}

@@ -14,6 +14,15 @@ import { DemoMaterialModule } from './material-module';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@ngx-meta/core';
+import { SoftwareWalkThroughComponent } from './components/software-walk-through/software-walk-through.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PeceVirtualPlatformComponent } from './components/pece-virtual-platform/pece-virtual-platform.component';
+import { TheScienceComponent } from './components/the-science/the-science.component';
+import { TeamComponent } from './components/team/team.component';
+import { DoctorRecommendComponent } from './components/doctor-recommend/doctor-recommend.component';
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -36,7 +45,16 @@ export function metaFactory(): MetaLoader {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SoftwareWalkThroughComponent,
+    HomeComponent,
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent,
+    PeceVirtualPlatformComponent,
+    TheScienceComponent,
+    TeamComponent,
+    DoctorRecommendComponent
   ],
   imports: [
     DemoMaterialModule,

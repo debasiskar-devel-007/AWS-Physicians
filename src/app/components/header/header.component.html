@@ -1,0 +1,59 @@
+<ng-container>
+    <mat-card class="headerbottom vpheaderwrapper">
+      <span class="mainwrappercontent">
+        <span class="homemain">
+  
+  
+          <mat-toolbar color="primary">
+            <mat-toolbar-row>
+              <span class="topmenuiconlogo">
+                <span class="logowrappersml" fxFlex><a [routerLink]="['/']"><img src="../../../assets/images/logo.png"
+                      class="landinglogoblock1"></a></span>
+                <button mat-icon-button (click)="toggleNavbar()" fxShow="true" fxHide.gt-sm>
+                  <mat-icon>menu</mat-icon>
+                </button>
+                <span class="menu-spacer"></span>
+              </span>
+  
+              
+  
+              <span fxShow="true" class="smlmenudiv" [ngClass]="{ 'show': navbarOpen }">
+
+                <!-- <span class="pagelogowrapper" fxFlex><a [routerLink]="['/']"><img src="../../../assets/images/logo.png"
+                  class="landinglogoblock1"></a>
+              </span> -->
+                <mat-nav-list fxLayout>
+                  <span class="menuwrapper">                    
+                    <mat-list-item fxFlex routerLinkActive="activemenu"> <a [routerLink]="['/home']">Home</a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/the-science']"> The Science </a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/the-science']"> RM-3A AWS PROGRAM  </a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/pece-virtual-platform']">PECE Virtual Platform</a></mat-list-item>
+
+                  </span>
+                </mat-nav-list>
+
+                <span class="pagelogowrapper" fxFlex><a [routerLink]="['/']"><img src="../../../assets/images/logo.png"
+                  class="landinglogoblock1"></a>
+              </span>
+              
+                <mat-nav-list fxLayout>
+                  <span class="menuwrapper"> 
+
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/software-walk-through']" >Software Walk-through</a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/doctor-recommend']">doctor recommend</a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/team']">The Team</a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/contact']">Contact Us</a></mat-list-item>
+                  </span>
+                </mat-nav-list>
+              </span>
+  
+            </mat-toolbar-row>
+          </mat-toolbar>
+        </span>
+      </span>
+    </mat-card>
+  
+    <!-- <span class="scrolltotop" *ngIf="isShow" (click)="gotoTop()"><i class="material-icons">arrow_drop_up</i></span> -->
+  
+  </ng-container>
+  
