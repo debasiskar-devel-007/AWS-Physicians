@@ -708,7 +708,10 @@ margin-bottom: 30px;
     width: 95%;
     margin: 0 auto;
 }
-
+.ts_block3 {
+    padding-bottom: 0 !important; padding-top: 0 !important;
+}
+.listmainwrapper{padding-bottom: 0;}
 
 
 .tsblock1 .ab_image {
