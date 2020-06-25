@@ -99,6 +99,10 @@
     .listwarppercls h4{font-size:18px;line-height:24px;width:100%;padding-left:0;text-align:center}
     .nmsfunneldoctor_block8 ol li:first-child:last-child:before,.nmsfunneldoctor_block8 ol li:nth-child(n+2):nth-last-child(-n+2):before,.nmsfunneldoctor_block8 ol li:nth-child(n+3):nth-last-child(-n+3):before,.nmsfunneldoctor_block8 ol li:nth-child(n+4):nth-last-child(-n+4):before,.nmsfunneldoctor_block8 ol li:nth-child(n+5):nth-last-child(-n+5):before,.nmsfunneldoctor_block8 ol li:nth-child(n+6):nth-last-child(-n+6):before,.nmsfunneldoctor_block8 ol li:nth-child(n+7):nth-last-child(-n+7):before,.nmsfunneldoctor_block8 ol li:nth-child(n+8):nth-last-child(-n+8):before,.nmsfunneldoctor_block8 ol li:nth-child(n+9):nth-last-child(-n+9):before,.nmsfunneldoctor_block8 ol li:nth-child(n+10):nth-last-child(-n+10):before{font-size:40px;position:absolute;right:inherit!important;top:0;z-index:9;left:0}
     .pagehomewraooer{width:100%;    padding: 0;}
+    .bannertextwrapper h1 {
+        font-size: 48px;
+        line-height: 50px;
+    }
 }
 @media screen and (max-width: 860px){
 }

@@ -244,6 +244,7 @@ body{ padding:0; margin: 0;}
     padding: 20px;
     margin-bottom: 20px;
     display: block;
+    text-transform: uppercase;
 }
 .yellowgradient{
     background: rgba(239,163,0,1);
@@ -481,8 +482,8 @@ body{ padding:0; margin: 0;}
 }
 .titlewrapper h2{
     font-family:'Raleway-Bold';
-    font-size:36px; 
-    line-height: 36px;
+    font-size: 48px;
+    line-height: 50px;
     text-align:center;
     text-transform:uppercase;
     background: rgba(29,189,233,1);
@@ -530,3 +531,13 @@ body{ padding:0; margin: 0;}
     position: relative;
     text-shadow: 0 2px 2px rgba(0,0,0,0.5);
 }
+
+.ot_block1 mat-list mat-list-item .mat-list-item-content{padding: 0 !important;}
+
+
+
+
+
+
+
+
