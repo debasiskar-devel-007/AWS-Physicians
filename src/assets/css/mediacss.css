@@ -30,6 +30,11 @@
 @media screen and (max-width: 1540px) {
    .yellowgradient, .bluegradient {
         font-size: 36px;
+        line-height: 38px
+    }
+    .titlewrapper h2 {
+        font-size: 36px;
+        line-height: 38px
     }
 }
 @media screen and (max-width: 1440px) {
