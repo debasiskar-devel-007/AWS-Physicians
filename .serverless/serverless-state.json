@@ -1,12 +1,12 @@
 {
   "service": {
-    "service": "AWS_Physicians",
+    "service": "AWS-Physicians",
     "serviceObject": {
-      "name": "AWS_Physicians"
+      "name": "AWS-Physicians"
     },
     "provider": {
-      "stage": "dev",
-      "variableSyntax": "\\${([ ~:a-zA-Z0-9._@'\",\\-\\/\\(\\)*?]+?)}",
+      "stage": "production",
+      "variableSyntax": "\\${([^{}]+?)}",
       "name": "aws",
       "runtime": "nodejs10.x",
       "memorySize": 192,
@@ -75,7 +75,7 @@
           "ApiLogGroup": {
             "Type": "AWS::Logs::LogGroup",
             "Properties": {
-              "LogGroupName": "/aws/lambda/AWS_Physicians-dev-api"
+              "LogGroupName": "/aws/lambda/AWS-Physicians-production-api"
             }
           },
           "IamRoleLambdaExecution": {
@@ -103,8 +103,8 @@
                     "Fn::Join": [
                       "-",
                       [
-                        "dev",
-                        "AWS_Physicians",
+                        "AWS-Physicians",
+                        "production",
                         "lambda"
                       ]
                     ]
@@ -115,11 +115,12 @@
                       {
                         "Effect": "Allow",
                         "Action": [
-                          "logs:CreateLogStream"
+                          "logs:CreateLogStream",
+                          "logs:CreateLogGroup"
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/AWS_Physicians-dev*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/AWS-Physicians-production*:*"
                           }
                         ]
                       },
@@ -130,7 +131,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/AWS_Physicians-dev*:*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/AWS-Physicians-production*:*:*"
                           }
                         ]
                       }
@@ -143,8 +144,8 @@
                 "Fn::Join": [
                   "-",
                   [
-                    "AWS_Physicians",
-                    "dev",
+                    "AWS-Physicians",
+                    "production",
                     {
                       "Ref": "AWS::Region"
                     },
@@ -161,9 +162,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/AWS_Physicians/dev/1587451630914-2020-04-21T06:47:10.914Z/AWS_Physicians.zip"
+                "S3Key": "serverless/AWS-Physicians/production/1593176332734-2020-06-26T12:58:52.734Z/AWS-Physicians.zip"
               },
-              "FunctionName": "AWS_Physicians-dev-api",
+              "FunctionName": "AWS-Physicians-production-api",
               "Handler": "lambda.universal",
               "MemorySize": 192,
               "Role": {
@@ -176,29 +177,29 @@
               "Timeout": 10
             },
             "DependsOn": [
-              "ApiLogGroup",
-              "IamRoleLambdaExecution"
+              "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionvZnQUNBKv8mFfFomOmDtSprdpN4LaqAWlTgta8qOo": {
+          "ApiLambdaVersionxW3MweRqRPhlwQM5Nr9jowUfi2gyvPPEy9tHdYzOg8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "HgLr6/LEl9yiZWf1rpTPClPsySZoxU18qK8VVODfLnI="
+              "CodeSha256": "BE3PM6UY1WdSzNB7EOJ6/S77TdadzPxLWcP6J4sSVts="
             }
           },
           "ApiGatewayRestApi": {
             "Type": "AWS::ApiGateway::RestApi",
             "Properties": {
-              "Name": "dev-AWS_Physicians",
+              "Name": "production-AWS-Physicians",
               "EndpointConfiguration": {
                 "Types": [
                   "EDGE"
                 ]
-              }
+              },
+              "Policy": ""
             }
           },
           "ApiGatewayResourceProxyVar": {
@@ -305,13 +306,13 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1587451576926": {
+          "ApiGatewayDeployment1593176302819": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
                 "Ref": "ApiGatewayRestApi"
               },
-              "StageName": "dev"
+              "StageName": "production"
             },
             "DependsOn": [
               "ApiGatewayMethodProxyVarAny",
@@ -365,7 +366,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionvZnQUNBKv8mFfFomOmDtSprdpN4LaqAWlTgta8qOo"
+              "Ref": "ApiLambdaVersionxW3MweRqRPhlwQM5Nr9jowUfi2gyvPPEy9tHdYzOg8"
             }
           },
           "ServiceEndpoint": {
@@ -386,7 +387,7 @@
                   {
                     "Ref": "AWS::URLSuffix"
                   },
-                  "/dev"
+                  "/production"
                 ]
               ]
             }
@@ -484,20 +485,22 @@
             "http": "ANY /"
           }
         ],
-        "name": "AWS_Physicians-dev-api",
+        "name": "AWS-Physicians-production-api",
         "package": {},
         "memory": 192,
         "timeout": 10,
         "runtime": "nodejs10.x",
-        "vpc": {}
+        "vpc": {},
+        "versionLogicalId": "ApiLambdaVersionxW3MweRqRPhlwQM5Nr9jowUfi2gyvPPEy9tHdYzOg8"
       }
     },
     "serviceFilename": "serverless.yml",
     "layers": {},
-    "artifact": "/home/influx/Documents/all_project/DNA/angular-bash/.serverless/AWS_Physicians.zip"
+    "isDashboardMonitoringPreconfigured": false,
+    "artifact": "/home/debargha-influxiq/Documents/Debargha/Angular/AWS-Physicians/.serverless/AWS-Physicians.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/AWS_Physicians/dev/1587451630914-2020-04-21T06:47:10.914Z",
-    "artifact": "AWS_Physicians.zip"
+    "artifactDirectoryName": "serverless/AWS-Physicians/production/1593176332734-2020-06-26T12:58:52.734Z",
+    "artifact": "AWS-Physicians.zip"
   }
 }
