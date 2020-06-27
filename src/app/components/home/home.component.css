@@ -213,12 +213,16 @@
 
 @media only screen and (max-width: 1199px) {
     .bannerblock {
-        background-position: right top;
+        background-position: right top !important;
         background-size: 193%;
         min-height: inherit;
-        padding-top: 70%;
+        padding-top: 70% !important;
         background-color: #0e657b;
-        padding-bottom: 4%;
+        padding-bottom: 4% !important;
+    }
+    .bannertext p {
+        width: auto;
+        padding-bottom: 0;
     }
     .bannertext {
         width: 100%;
