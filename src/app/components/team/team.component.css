@@ -89,6 +89,7 @@ text-align: left;
     font-family: 'Montserrat-Regular';
     font-size: 18px;
     line-height: 24px;
+    color: #00c309;
 }
 .ot_block1 .teamlistingwrapper .textwrapper p{
     font-family: 'Montserrat-Regular';
@@ -343,6 +344,12 @@ text-align: left;
     .imgwrapper{    height: 207px;}
     .ot_block1 .textwrapper p br{display:none;}
 }
+@media only screen and (max-width: 1640px) {
+    .ot_block1 .textwrapper p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
 @media only screen and (max-width: 1620px) {
    
 .block .yellowbtn{bottom:17px}
@@ -389,6 +396,14 @@ text-align: left;
 @media only screen and (max-width: 1480px) {
 }
 @media only screen and (max-width: 1440px) {
+    .ot_block1 .textwrapper h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .ot_block1 .textwrapper p {
+        font-size: 12px;
+        line-height: 14px;
+    }
     .imgwrapper {
         height: 178px;
     }

@@ -23,8 +23,16 @@
   
 }
 @media screen and (max-width: 1560px) {
+    .bannertextwrapper h1 {
+        font-size: 46px;
+        line-height: 46px;
+    }
     .listwarppercls {
         width: 380px;
+    }
+    .yellowgradient, .bluegradient{
+        font-size: 36px;
+        line-height: 38px;
     }
 }
 @media screen and (max-width: 1540px) {
