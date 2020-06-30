@@ -1,428 +1,116 @@
-.bannerblock{background-image:url(../../../assets/images/tt_banner1.jpg)!important;
-    width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;
-    position:relative;background-position:right top!important;
-    background-repeat:no-repeat!important;background-size:cover}
+.bannerblock{background-image:url(../../../assets/images/tt_banner1.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover}
 .bannertextwrapper::before{right:145px;top:130px}
 .bannertextwrapper{width:940px;display:block}
-
 .block .yellowbtn{position:absolute;bottom:30px;left:50%;transform:translateX(-50%)}
-.ot_block1 mat-list{
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 24px;
-    border-radius: 8px;
-    position: relative;
-    margin: 0 0 0 auto;
-    box-shadow: 0 0px 5px rgba(0,0,0,0.3);
-}
-.ot_block1 mat-list mat-list-item{
-    height: auto!important;
-    width: 23.3%;
-    margin: 7px !important;
-    position: relative;
-    margin-top: 0;
-    background: #fff;
-    padding: 10px 0;
-    display: block;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    padding-top: 0;
-}
-.ot_block1 mat-list mat-list-item::before{
-content: '';
-}
-.teammainwrapper {position: relative; z-index: 9;}
-.imgwrapper img{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    -webkit-transform: translate(-50%,0%);
-    transform: translate(-50%,0%);
-    width: 100%;
-    min-height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-width: 100%;
-}
-.imgwrapper{
-    height: 250px;
-    width: 100%;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.6);
-}
+.ot_block1 mat-list{display:flex;-webkit-box-pack:center;justify-content:center;flex-wrap:wrap;background:rgba(255,255,255,0.6);padding:24px;border-radius:8px;position:relative;margin:0 0 0 auto;box-shadow:0 0 5px rgba(0,0,0,0.3)}
+.ot_block1 mat-list mat-list-item{height:auto!important;width:23.3%;margin:7px!important;position:relative;margin-top:0;background:#fff;padding:10px 0;display:block;box-shadow:0 2px 5px rgba(0,0,0,0.3);padding-top:0}
+.teammainwrapper{position:relative;z-index:9}
+.imgwrapper img{position:absolute;left:50%;top:0;-webkit-transform:translate(-50%,0%);transform:translate(-50%,0%);width:100%;min-height:100%;-o-object-fit:cover;object-fit:cover;max-width:100%}
+.imgwrapper{height:250px;width:100%;display:block;position:relative;overflow:hidden;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.6)}
 .imgwrapper.cover img{height:100%;object-fit:cover}
-.imgmainwrapper{
-    padding: 16px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background: #dee1e2;
-}
-.ot_block1 .textwrapper{text-align: center;}
-.ot_block1.ot_newblock3 .textwrapper p{
-text-align: left;
-}
-.ot_block1.ot_newblock3 .textwrapper{
-    display: block;
-    margin: 0 auto;
-    margin-right: 0;
-    padding-top: 20px;
-}
-.ot_block1 .textwrapper h3{
-    text-transform: uppercase;
-    font-family: 'Montserrat-Regular';
-    font-size: 16px;
-    padding-bottom: 0;
-    margin-bottom: 5px;
-}
-.ot_block1 .textwrapper p{
-    font-family: 'Montserrat-Regular';
-    font-size: 18px;
-    line-height: 24px;
-    color: #00c309;
-}
-.ot_block1 .teamlistingwrapper .textwrapper p{
-    font-family: 'Montserrat-Regular';
-    font-size: 24px;
-    line-height: 30px;
-    padding-bottom: 0;
-    margin: 0;
-}
+.imgmainwrapper{padding:16px;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;margin:0 auto;margin-bottom:20px;background:#dee1e2}
+.ot_block1 .textwrapper{text-align:center}
+.ot_block1.ot_newblock3 .textwrapper p{text-align:left}
+.ot_block1.ot_newblock3 .textwrapper{display:block;margin:0 auto;margin-right:0;padding-top:20px}
+.ot_block1 .textwrapper h3{text-transform:uppercase;font-family:'Montserrat-Regular';font-size:16px;padding-bottom:0;margin-bottom:5px}
+.ot_block1 .textwrapper p{font-family:'Montserrat-Regular';font-size:18px;line-height:24px;color:#00c309}
+.ot_block1 .teamlistingwrapper .textwrapper p{font-family:'Montserrat-Regular';font-size:24px;line-height:30px;padding-bottom:0;margin:0}
 .gradientitle{background:rgba(29,187,231,1);background:-webkit-gradient(left top,right top,color-stop(0%,rgba(29,187,231,1)),color-stop(100%,rgba(13,195,4,1)))!important;background:-webkit-gradient(linear,left top,right top,from(rgba(29,187,231,1)),to(rgba(13,195,4,1)))!important;background:linear-gradient(to right,rgba(29,187,231,1) 0%,#10c170 100%)!important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1dbbe7',endColorstr='#0dc304',GradientType=1)!important;color:#fff;padding:15px 110px;font-family:'Lato-Bold';font-size:48px;width:490px;clip-path:polygon(0% 0%,85% 0,92% 68%,95% 100%,0% 100%);margin:0!important;margin-bottom:1px!important}
-.subblock1{background-image:url(../../../assets/images/team_banner2.png);background-repeat:no-repeat;background-size:cover;background-position:right bottom;min-height:650px;display:flex;align-items:center;margin:0}
 .block2{background-color:#eaf0f3;padding-top:30px!important}
-.subblock1 .textwrapper{width:891px;display:block}
-.subblock1 .textwrapper p{color:#fff;font-size:24px;line-height:31px;text-shadow:0 2px 5px rgba(0,0,0,0.2)}
-.subblock1 .textwrapper p span{color:#fdff33;font-size:30px}
 .subimagewrapper{width:100%;border-bottom:4px solid #41e9ff;display:block;margin-bottom:25px;padding-bottom:20px}
-.subblock1 a.gradientbtn,.subblock2 a.gradientbtn{display:block;float:right;font-size:30px!important;margin-right:-110px;clear:both;border-radius:5px}
-.subblock2 a.gradientbtn{margin-top:30px}
-.subblock2{background-image:url(../../../assets/images/team_banner3.png);background-repeat:no-repeat;background-size:cover;background-position:left bottom;min-height:745px;display:flex;align-items:center;margin:0}
-.subblock2 .textwrapper{width:622px;display:block;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,0.3);float:right;margin-right:110px}
-.subblock2 .textwrapper .subimagewrapper{padding:10px 30px;width:auto;margin:0;border:0}
-.subblock2 .textwrapper h3 span{font-size:72px;font-family:'Helvetica-Bold';text-transform:uppercase;background:-webkit-linear-gradient(#fff,#cfcfcf);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(-4px 3px 5px rgba(0,0,0,0.4));line-height:64px;padding-top:10px!important;display:block}
-.subblock2 .textwrapper h3{padding:10px 30px!important;box-shadow:none}
-.subblock2 .textwrapper p{background-color:#050607;padding:30px!important;font-size:30px;color:#b1afaf;font-family:'Helvetica';line-height:34px}
-
-.teamnewblock3{
-    background-image: url(../../../assets/images/tt_banner2.png) !important;
-    background-repeat: no-repeat !important;
-    background-position: right 60px top 90px !important;
-    padding: 30px 0 !important;
-    position: relative;
-    overflow: hidden;
-    box-shadow: none;
-    background-color: transparent!important;
-    padding-top: 0 !important;
-}
-.ab_image{
-    position: absolute;
-    right: -100px;
-    bottom: 0;
-}
-.teamnewblock3 .titlewrapper h2{text-align: left; color: #fff;margin: 0;margin-bottom: 30px;width: auto;}
-.teamnewblock3 .titlewrapper p{
-    text-align: left;
-    color: #000000;
-    width: 1220px;
-    padding: 10px;
-    padding-top: 0;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-.colcontainer {
-    display: flex;    
-}
-.padding-tb.ot_block1{box-shadow: none;background: none;}
-.temimgwrapper {
-    display: block;
-    width: 1030px;
-    border: 1px solid #ddd;
-}
-.listwrapper .mat-card-content{
-    margin: 0 10px;
-}
-.listwrapper .mat-card-content .textwrapper{
-    display: block;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0px 5px rgba(0,0,0,0.3);    
-    border-radius: 8px;
-    margin-top: 30px;
-}
-.listwrapper .mat-card-content .textwrapper p{
-    background-image: url(../../../assets/images/ttbold.png);
-    background-repeat: no-repeat;
-    background-position: left top 9px;
-    padding-left: 35px;
-    padding-bottom: 11px;
-
-}
-.pwrapper{
-    display: block;
-    column-count: 2;
-}
-.listwrapper .mat-card-content .textwrapper h3{
-    padding: 16px;
-    color: #282928;
-    text-transform: uppercase;
-    font-family: 'Montserrat-Regular';
-    margin-bottom: 10px;
-    font-size: 22px;
-    padding-left: 0;
-}
-.contentblock .textwrapper p{
-    color: #020107; padding: 0; text-transform: none;    border-left: 5px solid #f0a600; padding-left: 10px;
-
-}
-.ot_newblock3{
-    background-image: url(../../../assets/images/tt_banner3.png) !important;
-    background-repeat: no-repeat !important;
-    background-position: left -39px bottom !important;
-    padding: 30px 0 !important;
-    position: relative;
-    overflow: hidden;
-    background-size: 47%;
-    box-shadow: none;
-    background-color: transparent!important;
-}
-.ot_newblock3 .titlewrapper p{
-    width: 727px;
-    display: block;
-    margin: 0 auto;
-    margin-right: 0;
-    text-align: left;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000;
-}
-.ot_newblock3 .titlewrapper h2{
-    text-align: left;
-    margin-right: 0;
-    width: 701px;
-}
-.temimgwrapper img{max-width: 100%; width: 100%;}
-
-.teamlistingwrapper{
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-right: 0;    
-    background: #e1e9eb;
-    padding: 35px;
-    border-radius: 8px;
-}
-.teamlisting{
-    width: 31.7%;
-    margin: 0 20px;
-    background: #fff;
-    padding: 20px 0;
-    padding-top: 0;
-    margin-top: 100px !important;
-}
-
-.teammainwrapper {
-    display: block;
-    margin-bottom: 0;
-    width: 100%;
-
-}
-
-.teamlistingwrapper .teamlisting img{
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    height: 140px;
-    margin-top: -90px;
-} 
-.teamlistingwrapper .teamlisting  .textwrapper{
-    display: block;
-    width: 100%;
-    position: relative;
-    padding: 8px 0;
-    color: #fff;
-    padding: 10px 8px;
-    background-color: #08b704;
-    position: relative;
-    margin: 0 -8px;
-    margin-top: 10px;
- }
- .teamlistingwrapper .teamlisting  .textwrapper::after{
-    content:'';
-     height: 20px;
-     width: 7px;
-     background-image: url(../../../assets/images/ttshadow2.png);
-     background-repeat: no-repeat;
-     position: absolute;
-     right: 0;
-     bottom: -20px;
-    }
- .teamlistingwrapper .teamlisting  .textwrapper::before{
-     content:'';
-     height: 20px;
-     width: 20px;
-     background-image: url(../../../assets/images/ttshadow1.png);
-     background-repeat: no-repeat;
-     position: absolute;
-     left: 0;
-     bottom: -20px;
-    }
- .teamlistingwrapper .teammainwrapper{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.teamlistingwrapper .teamlisting  .textwrapper p{
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.main-bg{
-    background-image: url(../../../assets/images/home_banner2.png);
-    background-size: cover;
-    background-position: center;
-    display: block;
-}
-.ot_block1{position:relative;}
-.ot_block1 .abimage2{display:none;}
-.ot_block1 .abimage{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 57%;
-}
-.titlewrapper h2{position: relative; z-index: 1;}
+.teamnewblock3{background-image:url(../../../assets/images/tt_banner2.png)!important;background-repeat:no-repeat!important;background-position:right 60px top 90px!important;padding:30px 0!important;position:relative;overflow:hidden;box-shadow:none;background-color:transparent!important;padding-top:0!important}
+.ab_image{position:absolute;right:-100px;bottom:0}
+.teamnewblock3 .titlewrapper h2{text-align:left;color:#fff;margin:0;margin-bottom:30px;width:auto}
+.teamnewblock3 .titlewrapper p{text-align:left;color:#000;width:1220px;padding:10px;padding-top:0;font-size:24px;line-height:28px;text-transform:uppercase}
+.colcontainer{display:flex}
+.padding-tb.ot_block1{box-shadow:none;background:none}
+.temimgwrapper{display:block;width:1030px;border:1px solid #ddd}
+.listwrapper .mat-card-content{margin:0 10px}
+.listwrapper .mat-card-content .textwrapper{display:block;padding:20px;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,0.3);border-radius:8px;margin-top:30px}
+.listwrapper .mat-card-content .textwrapper p{background-image:url(../../../assets/images/ttbold.png);background-repeat:no-repeat;background-position:left top 9px;padding-left:35px;padding-bottom:11px}
+.pwrapper{display:block;column-count:2}
+.listwrapper .mat-card-content .textwrapper h3{padding:16px;margin-bottom:10px;font-size:22px;padding-left:0}
+.contentblock .textwrapper p{color:#020107;padding:0;text-transform:none;border-left:5px solid #f0a600;padding-left:10px}
+.ot_newblock3{background-image:url(../../../assets/images/tt_banner3.png)!important;background-repeat:no-repeat!important;background-position:left -39px bottom!important;padding:30px 0!important;position:relative;overflow:hidden;background-size:47%;box-shadow:none;background-color:transparent!important}
+.ot_newblock3 .titlewrapper p{width:727px;display:block;margin:0 auto;margin-right:0;text-align:left;font-size:24px;line-height:29px;color:#000}
+.ot_newblock3 .titlewrapper h2{text-align:left;margin-right:0;width:701px}
+.temimgwrapper img{max-width:100%;width:100%}
+.teamlistingwrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;flex-wrap:wrap;margin:0 auto;margin-right:0;background:#e1e9eb;padding:35px;border-radius:8px}
+.teamlisting{width:31.7%;margin:0 20px;background:#fff;padding:20px 0;padding-top:0;margin-top:100px!important}
+.teammainwrapper{display:block;margin-bottom:0;width:100%}
+.teamlistingwrapper .teamlisting img{max-width:100%;display:block;margin:0 auto;height:140px;margin-top:-90px}
+.teamlistingwrapper .teamlisting .textwrapper{display:block;width:100%;position:relative;padding:8px 0;color:#fff;padding:10px 8px;background-color:#08b704;position:relative;margin:0 -8px;margin-top:10px}
+.teamlistingwrapper .teamlisting .textwrapper::after{content:'';height:20px;width:7px;background-image:url(../../../assets/images/ttshadow2.png);background-repeat:no-repeat;position:absolute;right:0;bottom:-20px}
+.teamlistingwrapper .teamlisting .textwrapper::before{content:'';height:20px;width:20px;background-image:url(../../../assets/images/ttshadow1.png);background-repeat:no-repeat;position:absolute;left:0;bottom:-20px}
+.teamlistingwrapper .teammainwrapper{display:flex;justify-content:center;align-items:center}
+.teamlistingwrapper .teamlisting .textwrapper p{color:#fff;padding:0;text-align:center;font-size:18px;line-height:22px}
+.main-bg{background-image:url(../../../assets/images/home_banner2.png);background-size:cover;background-position:center;display:block}
+.ot_block1{position:relative}
+.ot_block1 .abimage2{display:none}
+.ot_block1 .abimage{position:absolute;left:0;bottom:0;width:57%}
+.titlewrapper h2{position:relative;z-index:1}
 @media only screen and (max-width: 1880px) {
-   
 .subblock1 .textwrapper{width:801px}
 }
 @media only screen and (max-width: 1780px) {
-   
-    .teamnewblock3 {
-        background-position: right top 90px !important;
-    }
-    
-
+.teamnewblock3{background-position:right top 90px!important}
 }
 @media only screen and (max-width: 1760px) {
 .subblock1 a.gradientbtn,.subblock2 a.gradientbtn{margin-right:-50px}
 .subblock2 .textwrapper{margin-right:0}
 }
 @media only screen and (max-width: 1740px) {
-    
-    .ot_block1 .abimage {
-        left: -100px;
-        width: 63%;
-    }
+.ot_block1 .abimage{left:-100px;width:63%}
 }
 @media only screen and (max-width: 1720px) {
 .subblock1{background-position:right -100px bottom}
 }
 @media only screen and (max-width: 1700px) {
-    .bannerblock {
-        background-position: right -140px top!important;
-    }
+.bannerblock{background-position:right -140px top!important}
 }
 @media only screen and (max-width: 1680px) {
-    .imgwrapper{    height: 207px;}
-    .ot_block1 .textwrapper p br{display:none;}
+.imgwrapper{height:207px}
+.ot_block1 .textwrapper p br{display:none}
 }
 @media only screen and (max-width: 1640px) {
-    .ot_block1 .textwrapper p {
-        font-size: 14px;
-        line-height: 18px;
-    }
+.ot_block1 .textwrapper p{font-size:14px;line-height:18px}
 }
 @media only screen and (max-width: 1620px) {
-   
 .block .yellowbtn{bottom:17px}
 .subblock1 a.gradientbtn,.subblock2 a.gradientbtn{margin-right:0}
 }
 @media only screen and (max-width: 1666px) {
-
-    .teamnewblock3{
-        background-position: right 0px top 220px !important;
-    background-size: 50%;
-    }
+.teamnewblock3{background-position:right 0 top 220px!important;background-size:50%}
 }
 @media only screen and (max-width: 1600px) {
 .subblock2{background-position:left -120px bottom}
 }
 @media only screen and (max-width: 1580px) {
-    .ot_newblock3{ 
-        background-size: 52%;
-    background-position: left -165px bottom !important;
-    }
-    .teamnewblock3 {
-        background-position: right 0px top 260px !important;
-    }
-.temimgwrapper {
-    width: 900px;
-}
-    
-    .listwrapper .mat-card-content:nth-child(1){width: 42%;}
-    
+.ot_newblock3{background-size:52%;background-position:left -165px bottom!important}
+.teamnewblock3{background-position:right 0 top 260px!important}
+.temimgwrapper{width:900px}
+.listwrapper .mat-card-content:nth-child(1){width:42%}
 }
 @media only screen and (max-width: 1560px) {
 .bannertextwrapper h1{font-size:46px;line-height:46px}
 }
 @media only screen and (max-width: 1540px) {
-    .bannertextwrapper {
-        width: 710px;
-        display: block;
-    }
+.bannertextwrapper{width:710px;display:block}
 .subblock1{background-position:right -220px bottom}
 }
 @media only screen and (max-width: 1500px) {
 .ot_block1 mat-list mat-list-item{width:23%}
 }
-@media only screen and (max-width: 1480px) {
-}
 @media only screen and (max-width: 1440px) {
-    .ot_block1 .textwrapper h3 {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-    .ot_block1 .textwrapper p {
-        font-size: 12px;
-        line-height: 14px;
-    }
-    .imgwrapper {
-        height: 178px;
-    }
-    .bannertextwrapper p{width: auto;}
-    .bannertextwrapper {
-        width: 560px;
-        display: block;
-    }
+.ot_block1 .textwrapper h3{font-size:14px;margin-bottom:10px}
+.ot_block1 .textwrapper p{font-size:12px;line-height:14px}
+.imgwrapper{height:178px}
+.bannertextwrapper p{width:auto}
+.bannertextwrapper{width:560px;display:block}
 .imgmainwrapper{margin-bottom:20px}
-.teamnewblock3 {
-    background-position: right 0px top 200px !important;
-}
-.temimgwrapper {
-    width: 840px;
-}
-.ot_newblock3 {
-    background-size: 67%;
-    background-position: left -295px bottom !important;
-}
+.teamnewblock3{background-position:right 0 top 200px!important}
+.temimgwrapper{width:840px}
+.ot_newblock3{background-size:67%;background-position:left -295px bottom!important}
 }
 @media only screen and (max-width: 1420px) {
 .subblock2 .textwrapper{width:502px}
@@ -431,113 +119,45 @@ text-align: left;
 .subblock1 .textwrapper{width:621px}
 }
 @media only screen and (max-width: 1360px) {
-    .ot_newblock3 {
-        background-size: 66%;
-        background-position: left -260px bottom !important;
-    }
-    .ab_image {
-        right: -150px;
-    }
+.ot_newblock3{background-size:66%;background-position:left -260px bottom!important}
+.ab_image{right:-150px}
 }
 @media only screen and (max-width: 1340px) {
-    .imgwrapper {
-        height: 162px;
-    }
-    .imgmainwrapper {
-        padding: 10px;
-    }
+.imgwrapper{height:162px}
+.imgmainwrapper{padding:10px}
 }
 @media only screen and (max-width: 1300px) {
-    .temimgwrapper {
-        width: 770px;
-    }
-    .teamnewblock3 .titlewrapper p{    width: auto;}
-
+.temimgwrapper{width:770px}
+.teamnewblock3 .titlewrapper p{width:auto}
 }
 @media only screen and (max-width: 1280px) {
-    .bannerblock {
-        background-position: right -346px top!important;
-    }
-    .bannertextwrapper {
-        width: 640px;
-    }
+.bannerblock{background-position:right -346px top!important}
+.bannertextwrapper{width:640px}
 .bannertextwrapper p{background-position:center bottom 10px}
 }
 @media only screen and (max-width: 1240px) {
 .subblock1{background-position:right -273px bottom}
 }
 @media only screen and (max-width: 1199px) {
-    .padding-tb.ot_block1{padding:0;}
-    .contentblock .textwrapper p {
-        border-left: 0px solid #f0a600;
-    }
-    .ot_block1 .abimage{display:none;}
-    .ot_block1 .abimage2{display:block;    width: 100%;}
-    .imgwrapper {
-        height: 232px;
-    }
-    .teamnewblock3 .titlewrapper h2{text-align: center ;}
-    .teamnewblock3 .titlewrapper p{text-align: center ;}
-    .listwrapper{flex-wrap: wrap;}
-    .listwrapper .mat-card-content:nth-child(1) {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
-    .listwrapper .mat-card-content {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        margin: 0;
-    }
-   
-    .ab_image {
-        right: inherit;
-        bottom: inherit;
-        position: inherit;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 100%
-    }
-    .listwrapper .mat-card-content .textwrapper p{
-        padding-left: 0;
-        background-position: center top;
-        padding-top: 20px;
-    }
-    .temimgwrapper {
-        display: block;
-        padding-bottom: 0;
-        margin: 0 auto;
-    }
-    
-    .teamnewblock3 .titlewrapper p {
-        padding-right: 0;
-        width: 96%;
-        padding: 2%;
-        padding-top: 0;
-    }
-    .teamnewblock3{
-        background-size: 137%;
-        padding-top: 112% !important;
-        background-position: right top !important;
-    }
-    .temimgwrapper {
-        width: 100%;
-    }
-    .pwrapper{
-        display: block;
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
-    .teamnewblock3 .titlewrapper h2 br{display: none;}
-    .teamnewblock3 .titlewrapper h2 {
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        width: auto;
-    }
+.padding-tb.ot_block1{padding:0}
+.contentblock .textwrapper p{border-left:0 solid #f0a600}
+.ot_block1 .abimage{display:none}
+.ot_block1 .abimage2{display:block;width:100%}
+.imgwrapper{height:232px}
+.teamnewblock3 .titlewrapper h2{text-align:center}
+.teamnewblock3 .titlewrapper p{text-align:center}
+.listwrapper{flex-wrap:wrap}
+.listwrapper .mat-card-content:nth-child(1){width:100%;display:inline-block;text-align:center}
+.listwrapper .mat-card-content{width:100%;display:inline-block;text-align:center;margin:0}
+.ab_image{right:inherit;bottom:inherit;position:inherit;display:block;margin:0 auto;margin-bottom:20px;width:100%}
+.listwrapper .mat-card-content .textwrapper p{padding-left:0;background-position:center top;padding-top:20px}
+.temimgwrapper{display:block;padding-bottom:0;margin:0 auto}
+.teamnewblock3 .titlewrapper p{width:96%;padding:2%;padding-top:0}
+.teamnewblock3{background-size:137%;padding-top:112%!important;background-position:right top!important}
+.temimgwrapper{width:100%}
+.pwrapper{display:block;-webkit-column-count:1;-moz-column-count:1;column-count:1}
+.teamnewblock3 .titlewrapper h2 br{display:none}
+.teamnewblock3 .titlewrapper h2{text-align:center;margin:0 auto;margin-bottom:30px;width:auto}
 .subblock1{background-position:right top;background-size:180%;padding-top:61%;background-color:#12639d;min-height:inherit;padding-bottom:2%}
 .subblock1 .textwrapper{width:100%;text-align:center}
 .subimagewrapper img{margin:0 auto}
@@ -545,108 +165,39 @@ text-align: left;
 .subblock2{background-position:left top;background-size:170%;padding-top:68%;min-height:inherit;padding-bottom:2%}
 .subblock2 .textwrapper{width:100%;text-align:center;margin-bottom:20px}
 .subblock2 .textwrapper h3 span{font-size:53px;line-height:50px}
-.bannerblock{
-    background-position: right top!important;
-    background-size: 186%;
-    padding-top: 41%!important;
-    background-color: #3897b9;
-    height: auto;
-    min-height: inherit;
-    padding-bottom: 2%!important;
-}
-.bannertextwrapper p {
-    width: 100%;
-    padding: 0;
-    margin-top: 0;
-}
+.bannerblock{background-position:right top!important;background-size:186%;padding-top:41%!important;background-color:#3897b9;height:auto;min-height:inherit;padding-bottom:2%!important}
+.bannertextwrapper p{width:100%;padding:0;margin-top:0}
 .bannertextwrapper{width:98%;display:block;margin:0 auto;text-align:center}
-.bannertextwrapper h1 span{padding-left:0;padding-bottom:0 !important;padding-top:0}
+.bannertextwrapper h1 span{padding-left:0;padding-bottom:0!important;padding-top:0}
 .bannertextwrapper h1{background:no-repeat}
-
-.bannertextwrapper h2 {
-    width: 96%;
-    font-size: 26px;
-    padding: 2%;
-}
-.pwrapper{
-    margin: 0 auto;    
-    width: 96%;
-    padding: 2%;
-}
-.ot_newblock3 {
-    background-size: 104%;
-    background-position: left top!important;
-    padding-top: 66% !important;
-}
-.titlewrapper h2 {
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-.ot_newblock3 .titlewrapper h2 br{display: none;}
-.ot_newblock3 .titlewrapper p{
-    width: 100%;
-    padding-bottom: 30px;
-    text-align: center;
-}
-.teamlistingwrapper{
-    width: 98%;
-    padding: 1%;
-}
-.ot_block1.ot_newblock3 .textwrapper{width: 100%;}
-.ot_newblock3 .titlewrapper h2 {
-    margin-right: 0;
-    width: auto;
-    text-align: center;
-}
-.ot_block1.ot_newblock3 .textwrapper p {
-    text-align: center;
-}
+.bannertextwrapper h2{width:96%;font-size:26px;padding:2%}
+.pwrapper{margin:0 auto;width:96%;padding:2%}
+.ot_newblock3{background-size:104%;background-position:left top!important;padding-top:66%!important}
+.titlewrapper h2{margin:0 auto;margin-bottom:20px}
+.ot_newblock3 .titlewrapper h2 br{display:none}
+.ot_newblock3 .titlewrapper p{width:100%;padding-bottom:30px;text-align:center}
+.teamlistingwrapper{width:98%;padding:1%}
+.ot_block1.ot_newblock3 .textwrapper{width:100%}
+.ot_newblock3 .titlewrapper h2{margin-right:0;width:auto;text-align:center}
+.ot_block1.ot_newblock3 .textwrapper p{text-align:center}
 }
 @media only screen and (max-width: 1024px) {
-    .teamlisting {
-        width: 32%;}
+.teamlisting{width:32%}
 }
 @media only screen and (max-width: 991px) {
-    .imgwrapper {
-        height: 382px;
-    }
-    .teamlistingwrapper .teammainwrapper {
-        flex-wrap:wrap;
-    }
-    .teamlisting {
-        width: 40%;}
+.imgwrapper{height:382px}
+.teamlistingwrapper .teammainwrapper{flex-wrap:wrap}
+.teamlisting{width:40%}
 .ot_block1 mat-list mat-list-item{width:46%}
 .subblock1 a.gradientbtn,.subblock2 a.gradientbtn{font-size:24px!important}
 }
 @media only screen and (max-width: 768px) {
-    .imgwrapper img {
-        position: inherit;
-        left: inherit;
-        top: inherit;
-        -webkit-transform: inherit;
-        transform: inherit;
-        width: 100%;
-        min-height: inherit;
-        -o-object-fit: inherit;
-        object-fit: inherit;
-        max-width: 100%;
-        display: block;
-    }
-    .imgwrapper {
-        height: auto;
-    }
-    .ot_block1 mat-list{
-        padding: 5px;
-    }
-    .listwrapper .mat-card-content:nth-child(1) {
-        margin: 0;
-    }
-    .temimgwrapper {
-        width: 100%;
-    }
-    .teamlisting {
-        width: 98%;
-    }
+.imgwrapper img{position:inherit;left:inherit;top:inherit;-webkit-transform:inherit;transform:inherit;width:100%;min-height:inherit;-o-object-fit:inherit;object-fit:inherit;max-width:100%;display:block}
+.imgwrapper{height:auto}
+.ot_block1 mat-list{padding:5px}
+.listwrapper .mat-card-content:nth-child(1){margin:0}
+.temimgwrapper{width:100%}
+.teamlisting{width:98%}
 .ot_block1 mat-list mat-list-item{width:100%}
 .gradientitle{width:100%;clip-path:inherit;text-align:center;padding:20px 0}
 }
@@ -659,4 +210,3 @@ text-align: left;
 @media only screen and (max-width: 360px) {
 .subblock2 .textwrapper h3 span{font-size:34px;line-height:35px}
 }
-
