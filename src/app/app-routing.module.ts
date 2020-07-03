@@ -9,6 +9,7 @@ import { TeamComponent } from './components/team/team.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DoctorRecommendComponent } from './components/doctor-recommend/doctor-recommend.component';
 import { SoftwareWalkThroughComponent } from './components/software-walk-through/software-walk-through.component';
+import { Rm3aAwsProgramComponent } from './components/rm3a-aws-program/rm3a-aws-program.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent }, 
   { path: 'doctor-recommend', component: DoctorRecommendComponent },
   { path: 'software-walk-through', component: SoftwareWalkThroughComponent },
+  { path: 'rm3a-aws-program', component: Rm3aAwsProgramComponent },
 ];
 
 @NgModule({
