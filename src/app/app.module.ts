@@ -23,6 +23,7 @@ import { PeceVirtualPlatformComponent } from './components/pece-virtual-platform
 import { TheScienceComponent } from './components/the-science/the-science.component';
 import { TeamComponent } from './components/team/team.component';
 import { DoctorRecommendComponent } from './components/doctor-recommend/doctor-recommend.component';
+import { Rm3aAwsProgramComponent } from './components/rm3a-aws-program/rm3a-aws-program.component';
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -54,7 +55,8 @@ export function metaFactory(): MetaLoader {
     PeceVirtualPlatformComponent,
     TheScienceComponent,
     TeamComponent,
-    DoctorRecommendComponent
+    DoctorRecommendComponent,
+    Rm3aAwsProgramComponent
   ],
   imports: [
     DemoMaterialModule,

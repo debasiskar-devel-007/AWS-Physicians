@@ -37,6 +37,7 @@
     color: #fff;
     font-family: 'Montserrat-Regular';
     text-align: center;
+    width: auto;
 }
 .bannertext p span{color: #fecb00;}
 .colcontainer {display: flex; justify-content: space-between;}
@@ -164,6 +165,11 @@
 @media only screen and (max-width: 1640px) {
     .homeblock5 .col-6 {width: 48%;}
 }
+@media only screen and (max-width: 1620px) {
+    .bannerblock {
+        background-position: right -22px top !important;
+    }
+}
 @media only screen and (max-width: 1600px) {
     .bannerblock {
         background-position: right -133px top;
@@ -172,6 +178,9 @@
 
 
 @media only screen and (max-width: 1560px) {
+    .bannerblock {
+        background-position: right -81px top !important;
+    }
     .greenbutton, .blackbutton, .redbutton {
         min-width: 230px;
         font-size: 24px;
@@ -188,6 +197,15 @@
 }
 
 
+@media only screen and (max-width: 1520px) {
+    .bannertext {
+        width: 51%;
+    }
+    .bannertext h3 br{display: none;}
+    .bannerblock {
+        background-position: right -121px top !important;
+    }
+}
 @media only screen and (max-width: 1480px) {
     .bannertext h3 br{display: none;}
 }
