@@ -14,7 +14,7 @@ import { DemoMaterialModule } from './material-module';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@ngx-meta/core';
-import { SoftwareWalkThroughComponent } from './components/software-walk-through/software-walk-through.component';
+import { SoftwareWalkThroughComponent, ImageModalComponent } from './components/software-walk-through/software-walk-through.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -24,6 +24,7 @@ import { TheScienceComponent } from './components/the-science/the-science.compon
 import { TeamComponent } from './components/team/team.component';
 import { DoctorRecommendComponent } from './components/doctor-recommend/doctor-recommend.component';
 import { Rm3aAwsProgramComponent } from './components/rm3a-aws-program/rm3a-aws-program.component';
+import { ScrollToModule } from 'ng2-scroll-to-el';
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -56,9 +57,11 @@ export function metaFactory(): MetaLoader {
     TheScienceComponent,
     TeamComponent,
     DoctorRecommendComponent,
-    Rm3aAwsProgramComponent
+    Rm3aAwsProgramComponent,
+    ImageModalComponent
   ],
   imports: [
+    ScrollToModule.forRoot(),
     DemoMaterialModule,
     BrowserAnimationsModule,
     MetaModule.forRoot(
@@ -81,7 +84,11 @@ export function metaFactory(): MetaLoader {
     CookieService,TestresolveService,ApiService
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+  entryComponents:[
+    ImageModalComponent
+  ]
 })
 export class AppModule {
   constructor(public http: HttpClient, public router: Router) {
