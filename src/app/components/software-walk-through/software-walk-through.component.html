@@ -1,1 +1,715 @@
-<p>software-walk-through works!</p>
+    <app-header></app-header>
+
+<mat-card class="bannerblock">
+    <span class="newcontainer">
+        <span class="bannertextwrapper">
+            <h1>
+                        What is PECE <img src="../../../assets/images/swt_pece.png">
+            </h1>
+            <p>
+                A Powerful RM-3A System and ANS Test Reporting Platform offering better
+                Actionable Data for your Patient Population.
+            </p>
+            <h2>TAKE YOUR ANS TESTING SOLUTIONS TO THE NEXT LEVEL WITH A SOFTWARE PLATFORM THAT CAN
+                BE FOUND NOWHERE ELSE!</h2>
+        </span>
+
+    </span>
+</mat-card>
+<span class="swtmainbg">
+<mat-card class="swtblock2">
+    <span class="newcontainer">
+        <span class="swtbuttonwrapper">
+            <button [scrollTo]="'#calendarmanagement'" [scrollDuration]="1000" [scrollOffset]="0">CALENDAR MANAGEMENT</button>
+            <button [scrollTo]="'#creatingpatientrecords'" [scrollDuration]="1000" [scrollOffset]="0">CREATING PATIENT RECORDS</button>
+            <button [scrollTo]="'#uploadingpatientreport'" [scrollDuration]="1000" [scrollOffset]="0">UPLOADING PATIENT REPORT(S)</button>
+            <button [scrollTo]="'#physicianresources'" [scrollDuration]="1000" [scrollOffset]="0">PHYSICIAN RESOURCES</button>
+            <button [scrollTo]="'#viewingphysicianfaqs'" [scrollDuration]="1000" [scrollOffset]="0">VIEWING PHYSICIAN FAQs</button>
+            <button [scrollTo]="'#viewingpatientreports'" [scrollDuration]="1000" [scrollOffset]="0">VIEWING PATIENT REPORTS</button>
+        </span>
+    </span>
+</mat-card>
+
+<mat-card class="swtblock swtblock3" id="calendarmanagement">
+    <img class="abimage" src="../../../assets/images/swt_banner2.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-4">
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Clicking on the <span class="gradientbg">Add or Update Google Calendar</span> Google Sign-in
+                        Page, where they must
+                        enter their Email Address, followed by their Password and then, Allow access to Google Calendar.
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <span class="titlewrapper">
+                    <span class="yellowgradient leftshadow">Calendar Management</span>
+                    <p>
+                        Calendar Management functions are exclusive to Technicians. Technicians can Add or Update Google
+                        Calendar to their PECE Virtual Platform Back-office through Dashboard-->Manage Schedule-->Add or
+                        Update Google Calendar.
+                    </p>
+                </span>
+                <mat-card-content class="imgwrapper">
+                    <img  src="../../../assets/images/swt_image1.jpg">
+                    <a (click)="viewImage('../../../assets/images/swt_image1.jpg')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+
+
+<mat-card id="test1" class="swtblock swtblock4">
+    <img class="abimage" src="../../../assets/images/swt_banner3.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-4">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image2.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image2.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Technicians can Manage their Availability by clicking on the
+                        <span class="gradientbg">Create Availability</span>
+                        redirect them to the Create Availability / Event Form.
+                    </p>
+                    <h3>
+                        The Technician must fill all areas on the form and
+                        click “Save” to create an event and manage their availability.
+                    </h3>
+                </mat-card-content>
+            </span>
+
+        </span>
+    </span>
+</mat-card>
+
+
+
+
+
+<mat-card class="swtblock swtblock5">
+    <img class="abimage" src="../../../assets/images/swt_banner4.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-4">
+                <mat-card-content class="textwrapper">
+                    <p>
+                        The Technician can then view their Event Listing by clicking on the
+                        <span class="gradientbg">Event Listing</span>
+                        button, which will redirect them to the Event Listing Page, where they can search for,
+                        view, and manage the availability events.
+
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image3.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image3.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+
+<mat-card class="swtblock swtblock6">
+    <img class="abimage" src="../../../assets/images/swt_banner5.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-4">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image4.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image4.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image5.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image5.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Technicians can Manage their Availability by clicking on the
+                        <span class="gradientbg">Create Availability</span>
+                        redirect them to the Create Availability / Event Form.
+                    </p>
+                    <h3>
+                        The Technician must fill all areas on the form and
+                        click “Save” to create an event and manage their availability.
+                    </h3>
+                </mat-card-content>
+            </span>
+
+        </span>
+        <mat-card-content class="subwrapper">
+            <h2>Technicians can view their Booked Events or their scheduled appointments by clicking on the </h2>
+            <span class="textwrapper">
+                <p>
+                    <span class="gradientbg">Booked Events </span>
+                    button, which will redirect them to the Upcoming Events section of the
+                    Booked Appointment page. This section displays a list of all appointments scheduled for them.
+                </p>
+            </span>
+        </mat-card-content>
+    </span>
+</mat-card>
+
+
+
+<mat-card class="swtblock swtblock7" id="creatingpatientrecords">
+    <img class="abimage" src="../../../assets/images/swt_banner6.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-4">
+                <span class="titlewrapper">
+                    <h2>Creating Patient Records</h2>
+                    <h3>
+                        Patient Records can only be created on the PECE
+                        Virtual Back-office by a Doctors Office, and can be done using one of two methods:
+                    </h3>
+                </span>
+                <span class="listwrapper">
+                    <p>
+                        <strong><i>1</i></strong>
+                        <span>Creating an Appointment</span>
+                    </p>
+                    <p>
+                        <strong><i>2</i></strong>
+                        <span>Manually</span>
+                    </p>
+                </span>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image6.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image6.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+
+                <mat-card-content class="subwrapper">
+                    <h2>
+                        Creating Patient Record Through
+                        Appointment Booking
+                    </h2>
+                    <h3>
+                        Doctor’s Office can Create a Patient Record and Book an Appointment for the Patient on their
+                        PECE Virtual Platform Back-office at
+                        Dashboard-->Create Patient-->Book Appointment.
+                    </h3>
+                    <p>
+                        Upon clicking on Book Appointment, Doctor’s Office must select the associated Doctor and click
+                        on OK to view available booking slots.
+                    </p>
+                    <span class="textwrapper">
+                        <p>Clicking on the <span class="bluebackground">OK</span> on will redirect the Doctor’s Office
+                            to the available Slot View Page.</p>
+                    </span>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+
+<mat-card class="swtblock swtblock8">
+    <img class="abimage" src="../../../assets/images/swt_banner7.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-6-5">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image7.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image7.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        The Doctor’s Office must choose the stipulated appointment slot and click on the
+                        <span class="bluebackground">Book Now</span>
+                        button to book the
+                        appointment, which will redirect them to the Patient Information and Symptom Checklist Form.
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-3-5"></span>
+        </span>
+
+        <span class="col-container">
+            <span class="col-4">
+                <mat-card-content class="imgwrapper">
+                    <img (click)="viewImage('../../../assets/images/swt_image8.png')" src="../../../assets/images/swt_image8.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image8.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        The Doctor’s Office has the option to enter the necessary Patient General
+                        Information, Insurance Information, and the Patient’s Diabetic and PVD
+                        (Peripheral Vascular Disease) status.
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image9.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image9.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        The Doctor’s Office must check all symptoms that are visible
+                        with the patient, and click on the <span class="gradientbg">Next</span> button,
+                        which will redirect them to the Patient Creation Form.
+                    </p>
+                </mat-card-content>
+            </span>
+        </span>
+
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock9">
+    <img class="abimage" src="../../../assets/images/swt_banner8.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-6">
+                <mat-card-content class="textwrapper">
+                    <p>
+                        The Doctor’s Office then enters any Additional Notes and click on the
+                        <span class="gradientbg">SUBMIT</span> button to
+                        Successfully Book Event (confirm appointment).
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-4">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image10.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image10.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+
+<mat-card class="swtblock swtblock10">
+    <img class="abimage" src="../../../assets/images/swt_banner9.png">
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <span class="yellowgradient">Creating Patient Record Manually</span>
+        </span>
+        <span class="col-container">
+
+            <span class="col-4">
+                <mat-card-content class="subwrapper">
+                    <h3>
+                        Doctor’s Office can Create a Patient Record Manually for the Patient on their PECE Virtual
+                        Platform Back-office at
+                        Dashboard-->Create Patient-->Add Patient.
+                    </h3>
+                    <p>
+                        Upon clicking on Add Manually, the Doctor’s Office will be redirected to the Patient Information
+                        and Symptom Checklist Form.
+                    </p>
+                </mat-card-content>
+                <span class="textwrapper">
+                    <p>
+                        The Doctor’s Office must enter the necessary Patient General Information,
+                        Insurance Information, the Patient’s Diabetic, and PVD (Peripheral Vascular
+                        Disease) status, the Appointment Schedule, and select the Doctor and Tech.
+                    </p>
+                </span>
+
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image11.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image11.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+
+            </span>
+            <span class="col-6">
+
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image12.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image12.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+
+                <span class="textwrapper">
+                    <p>The Doctor’s Office must check all symptoms that are visible with the patient,
+                        and click on the <span class="gradientbg">SUBMIT</span> button to create Patient
+                        Record Manually.
+                    </p>
+                </span>
+
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock11" id="uploadingpatientreport">
+    <!-- <img class="abimage" src="../../../assets/images/swt_banner9.png"> -->
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <h2>UPLOADING PATIENT REPORT(S)</h2>
+            <h3>
+                Patient Reports can only be uploaded to the PECE Virtual Platform Back-office by a Technician.
+                Technicians can Upload Patient
+                Reports in Bulk by clicking on the “UPLOAD BULK REPORT” button in the Patient Report Record section on
+                their PECE
+                Virtual Platform Back-office Dashboard.
+            </h3>
+        </span>
+        <span class="col-container">
+
+            <span class="col-6">
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Clicking on the <span class="bluebackground">Upload bulk report</span> button will redirect
+                        Med-Tech to the Report Upload Page.
+                    </p>
+                </mat-card-content>
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image13.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image13.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+            <span class="col-4">
+
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image14.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image14.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        The Technician must enter a Batch Name and select the Type of Report,
+                        followed by adding the Patient Reports in the “DRAG AND DROP FILES”
+                        section. Med-Tech must then add necessary Notes and click the
+                        <span class="yellowbackground">SUBMIT</span> button, which will redirect
+                        Technician to the Patient Mapping Confirmation Page.
+
+                    </p>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock12">
+    <img class="abimage" src="../../../assets/images/swt_banner10.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-4"></span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image15.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image15.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Upon Bulk Upload, all Patient Reports should automatically Map with respective
+                        Patients. However, if proper Automatic Mapping of Patients does not happen for
+                        any particular Patient Report, Technician must click on the <span class="gradientbg">Select
+                            Patient</span>
+                        button to manually Map Patient Reports with respective Patients.
+                    </p>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Once Mapping is completed, Technician must select the two
+                        Check-boxes ( ) and click on the <span class="gradientbg">SUBMIT</span> button to
+                        successfully Upload Patient Reports in Bulk.
+                    </p>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock13" id="physicianresources">
+    <!-- <img class="abimage" src="../../../assets/images/swt_banner9.png"> -->
+    <span class="newcontainer">
+
+        <span class="col-container">
+
+            <span class="col-4">
+                <span class="titlewrapper">
+                    <h2>PHYSICIAN RESOURCES</h2>
+                    <h3>MEDIA DECK OF TESTING SERVICES</h3>
+                    <p>
+                        This section can be accessed only on the Doctor Dashboard and comprises of:
+                    </p>
+                </span>
+
+                <span class="listwrapper">
+                    <p>
+                        <strong><i>1</i></strong>
+                        <span>An overview of Diagnostic Center Services on offer with the RM-3A Device and associated
+                            ANS Testing Services,</span>
+                    </p>
+                    <p>
+                        <strong><i>2</i></strong>
+                        <span>Sample Report for the RM-3A ANS Tests, and</span>
+                    </p>
+                    <p>
+                        <strong><i>3</i></strong>
+                        <span>System Analysis of ANS Testing Solutions with reference to the RM-3A Device.</span>
+                    </p>
+                </span>
+
+            </span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image16.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image16.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock14">
+    <img class="abimage" src="../../../assets/images/swt_banner11.png">
+    <span class="newcontainer">
+        <span class="col-container">
+            <span class="col-7">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image17.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image17.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+            <span class="col-3"></span>
+        </span>
+        <mat-card-content class="textwrapper">
+            <h3>CLINICAL QUICK REFERENCE GUIDE </h3>
+            <p>
+                This section on the Doctor Dashboard contains a list of Study Materials
+                for Doctors and Physicians to review. These documents discuss a number of
+                different subjects and areas, as well as medical cases and circumstances in
+                the ANS Testing Industry.
+            </p>
+        </mat-card-content>
+    </span>
+</mat-card>
+
+
+
+<mat-card class="swtblock swtblock15" id="viewingphysicianfaqs">
+    <img class="abimage" src="../../../assets/images/swt_banner12.png">
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <h2>VIEWING PHYSICIAN FAQs</h2>
+            <p>
+                A Doctor can View FAQs on their PECE Virtual Platform Back-office at Dashboard-->FAQ and
+                click on the questions from the FAQ list, which will open a slide with the answer
+                to the question accompanied by a video.
+            </p>
+        </span>
+        <span class="col-container">
+            <span class="col-4">
+                <mat-card-content class="textwrapper">
+                    <p>The FAQ section comprises of a number of questions on how the Doctor can access and perform
+                        different areas and functions respectively on their PECETM Virtual Platform Back-office.</p>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image18.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image18.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+
+<mat-card class="swtblock swtblock16" id="viewingpatientreports">
+    <img class="abimage" src="../../../assets/images/swt_banner13.png">
+    <span class="newcontainer">
+
+        <span class="col-container">
+            <span class="col-4">
+                <span class="titlewrapper">
+                    <h2>VIEWING PATIENT REPORTS</h2>
+                    <p>
+                        Physicians and Doctors can View Patient Reports on the Doctor Dashboard using the Summary Tiles
+                        that show the statistics (and can also be used to view complete lists) for:
+                    </p>
+                </span>
+
+                <span class="listwrapper">
+                    <p>
+                        <strong><i>1</i></strong>
+                        <span>Total Number of Patient Reports Processed,</span>
+                    </p>
+                    <p>
+                        <strong><i>2</i></strong>
+                        <span>Total Number of Patient Reports Pending Signature,</span>
+                    </p>
+                    <p>
+                        <strong><i>3</i></strong>
+                        <span>Total Number of Patient Reports Asked for Review,</span>
+                    </p>
+                    <p>
+                        <strong><i>4</i></strong>
+                        <span>Total Number of Patient Reports Sent to Biller, and</span>
+                    </p>
+                    <p>
+                        <strong><i>5</i></strong>
+                        <span>Total Number of Patient Reports Downloaded by Biller.</span>
+                    </p>
+                </span>
+
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Physicians and Doctors can also Modify and Manage their Digital Signature on the PECE
+                        Virtual Platform Back-office here.
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-6">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image19.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image19.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock17">
+    <img class="abimage" src="../../../assets/images/swt_banner14.png">
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <h3>Viewing Patient Details</h3>
+            <p>
+                The Doctor can View Patient Details by clicking on the [VIEW] button against a particular Patient Report in the PHYSICIAN REPORT LIST section on the Doctor Dashboard in the PECE    
+                Virtual Platform Back-office, and then clicking on the PATIENT DETAILS button.
+            </p>
+            <p>
+                Clicking the PATIENT DETAILS button will open the Patient Details Form for the Doctor to Review.
+            </p>
+        </span>
+        <span class="col-container">
+            <span class="col-2"></span>
+            <span class="col-8">
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image20.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image20.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+            
+        </span>
+    </span>
+</mat-card>
+
+<mat-card class="swtblock swtblock18">
+    <img class="abimage" src="../../../assets/images/swt_banner15.png">
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <h3>Viewing Encounter Form</h3>
+            <p>
+                The Doctor can View and Sign a Patient Encounter Form (which is Auto-Populated based on the PECE    Software Algorithm) by clicking on the [VIEW] button against a particular Patient Report in the PHYSICIAN REPORT LIST section on the Doctor Dashboard in the PECE    
+                Virtual Platform Back-office, and then clicking on the ENCOUNTER FORM button.
+            </p>
+        </span>
+        <span class="col-container">
+            
+            <span class="col-8">
+                <mat-card-content class="textwrapper">
+                    <p>Clicking the ENCOUNTER FORM button will open the Patient Encounter Form for the Doctor to Review and Sign. After the Patient 
+                        Report has been digitally signed by the Doctor, the Diagnostic Admin can Send the Patient Report to the Billing.</p>
+                </mat-card-content>
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image21.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image21.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+            </span>
+            <span class="col-2"></span>
+            
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock19">
+    <img class="abimage" src="../../../assets/images/swt_banner16.png">
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <h3>Viewing Intensive Behavioral Therapy (Superbill for Obesity)</h3>
+            <p>
+                The Doctor can View and Sign Intensive Behavioral Therapy (Superbill for Obesity) (which is generated only when the BMI on Patient Clinical Report is above 29.1) by clicking on the [VIEW] button against a particular Patient Report in the PHYSICIAN REPORT LIST section on the Doctor Dashboard in the PECE    Virtual Platform Back-office, and then 
+                clicking on the SUPERBILL FOR OBESITY.
+            </p>
+        </span>
+        <span class="col-container">
+            <span class="col-2"></span>
+            <span class="col-8">
+                
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image22.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image22.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Clicking the SUPERBILL FOR OBESITY button against a particular Patient Report will open the Intensive Behavioral Therapy (Superbill for 
+Obesity) for the Doctor to Review and Sign. After the Patient Report has been digitally signed by the Doctor, the Diagnostic Admin can 
+Send the Patient Report to the Billing.
+                    </p>
+                </mat-card-content>
+            </span>
+        </span>
+    </span>
+</mat-card>
+
+
+<mat-card class="swtblock swtblock20">
+    <img class="abimage" src="../../../assets/images/swt_banner17.png">
+    <span class="newcontainer">
+        <span class="titlewrapper">
+            <h3>Viewing Additional Recommended Diagnostic Tests</h3>
+            <p>
+                The Doctor can View Additional Recommended Diagnostic Tests (which is Auto-Populated based on the Data-Validated Markers on the Patient Encounter Form) by clicking on the [VIEW] button against a particular Patient Report in the PHYSICIAN REPORT LIST section on the Doctor Dashboard in the PECE     Virtual Platform Back-office, and then 
+clicking on the ADDITIONAL RECOMMENDED DIAGNOSTIC TESTS button.
+            </p>
+        </span>
+        <span class="col-container">
+            
+            <span class="col-8">
+                
+                <mat-card-content class="imgwrapper">
+                    <img src="../../../assets/images/swt_image23.png">
+                    <a (click)="viewImage('../../../assets/images/swt_image23.png')"><img src="../../../assets/images/swticon.png"></a>
+                </mat-card-content>
+                <mat-card-content class="textwrapper">
+                    <p>
+                        Clicking the ADDITIONAL RECOMMENDED DIAGNOSTIC TESTS button against a particular Patient Report will open the Additional 
+                        Recommended Diagnostic Tests for the Doctor to Review.
+                    </p>
+                </mat-card-content>
+            </span>
+            <span class="col-2"></span>
+        </span>
+    </span>
+</mat-card>
+
+</span>
+
+
+
+
+
+<app-footer></app-footer>

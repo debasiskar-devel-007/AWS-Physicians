@@ -550,3 +550,33 @@ button:focus, input:focus, textarea:focus{outline:none;}
     line-height: 18px;
 
 }
+
+.vpheaderwrapper .mat-list-item .mat-list-item-content{padding: 0 !important;}
+
+.image_modal .mat-raised-button.mat-accent {
+    background-color: #dda804;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 40px;
+    width: 40px;
+    padding: 0 !important;
+    border-radius: 50%;
+    min-width: inherit;
+ }
+ .image_modal{
+    position: relative !important;
+     height: 500px !important;
+     border: 5px solid #dda804;
+     border-radius: 5px;
+ }
+ .image_modal img{width: 100%;}
+
+
+
+
+
+
+
+
+
