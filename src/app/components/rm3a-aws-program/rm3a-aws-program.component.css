@@ -87,7 +87,7 @@
 .wwp .bluegradient{width:fit-content}
 .wwp .title{width:60%}
 .items .item .parag{-webkit-box-align:start;align-items:flex-start;-webkit-box-flex:1;flex:1 1 100%}
-.items .item .parag span{color:#ff6c00;text-transform:uppercase}
+.items .item .parag span{color:#2d2d2d;    font-family: 'Montserrat-bold';}
 .items.one .item{-webkit-box-flex:1;flex:0 1 100%}
 .items.double .item{-webkit-box-flex:1;flex:0 1 100%}
 .items.triple .item{-webkit-box-flex:1;flex:0 1 32.333%}
@@ -127,7 +127,6 @@
 .addtest table{border-spacing:0!important;border-collapse:inherit;width:100%}
 .addtest .textwrapper p{font-family:'Helvetica-Bold';font-size:22px;text-align:center;padding-bottom:0}
 .addtest .textwrapper p span{color:#ff6c00}
-.addtest p.parag{width:52%}
 .listbg{display:block;background:#fff;padding:20px;border-radius:5px;box-shadow:0 0 5px rgba(0,0,0,0.2)}
 .wpo .bluegradient{width:fit-content}
 @media only screen and (max-width: 1860px) {
