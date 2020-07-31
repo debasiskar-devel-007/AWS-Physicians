@@ -74,7 +74,11 @@
 .vpheaderwrapper .mat-nav-list .mat-list-item.activemenu{border-bottom:2px solid #fff;border-radius:0}
 .vpheaderwrapper .mat-nav-list .mat-list-item.activemenu a{color:#090909}
 .logowrapper img{max-width:100%}
-.pagelogowrapper a{display:block;height:124px;width:260px;background:#fff;position:absolute;bottom:15px;left:50%;transform:translatex(-50%);border-radius:5px 5px 0 0}
+.pagelogowrapper a{display:block;height:124px;width:260px;background:#fff;position:absolute;bottom:15px;left:50%;transform:translatex(-50%);border-radius:5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .pagelogowrapper a img{display:block;max-width:100%;margin:0 auto}
 .scrolltotop{background-color:#dda804;height:40px;width:40px;display:block;position:fixed;right:30px;bottom:40px;z-index:99;display:flex;justify-content:center;align-items:center;cursor:pointer}
 .scrolltotop i{color:#fff;font-size:40px}
