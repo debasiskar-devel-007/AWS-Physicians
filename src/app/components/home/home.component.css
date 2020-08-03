@@ -179,15 +179,18 @@
 }
 
 
+@media only screen and (max-width: 1570px) {
+    .greenbutton, .blackbutton, .redbutton {
+        font-size: 20px;
+        padding: 20px;
+        min-width: inherit;
+    }
+}
 @media only screen and (max-width: 1560px) {
     .bannerblock {
         background-position: right -81px top !important;
     }
-    .greenbutton, .blackbutton, .redbutton {
-        min-width: 230px;
-        font-size: 24px;
-        padding: 15px 22px;
-    }
+   
 }
 @media only screen and (max-width: 1540px) {
     .bannerblock {
