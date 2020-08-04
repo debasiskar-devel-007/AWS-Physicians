@@ -83,16 +83,16 @@ mat-card{box-shadow: none !important;}
 
 .swtblock4 .abimage{    
     position: absolute;
-    right: 144px;
+    right: 184px;
     bottom: 178px;
-    width: 46%;
+    width: 40%;
 }
 .swtblock5 .abimage{position: absolute;left: 0;top: 0; width: 40%;}
 
 .swtblock5 .col-6{width: 62%;}
 .swtblock5 .col-4{width: 37%;}
 
-.swtblock6 .abimage{position: absolute;right: 57px;bottom: 0px; width: 50%;}
+.swtblock6 .abimage{position: absolute;right: -33px;bottom: 0px; width: 58%;}
 
 .swtblock6 .imgwrapper{margin-bottom: 15px;}
 .swtblock6 .subwrapper{
@@ -330,10 +330,7 @@ color: #05bb01;
 }
 
 @media only screen and (max-width: 1780px) {
-    .swtblock4 .abimage{
-        right: 53px;
-        width: 50%;
-    }
+    
     .swtblock17 .abimage{left: -82px;}
     .swtblock18 .abimage {right: -120px;}
     .swtblock19 .abimage{left: -120px;}
@@ -371,6 +368,11 @@ color: #05bb01;
 .swtblock14 .abimage {right: -55px;width: 45%;}
 }
 
+@media only screen and (max-width: 1640px) {
+    .swtblock6 .abimage {
+        width: 58%;
+    }
+}
 @media only screen and (max-width: 1600px) {
     .swtblock8 .abimage {
         right: -1px;
@@ -415,7 +417,7 @@ color: #05bb01;
         width: 680px;
         display: block;
     }
-    .swtblock6 .abimage {width: 46%;}
+    .swtblock6 .abimage {width: 56%;}
     .swtblock11 {background-position: right -110px top -40px!important;}
 }
 @media only screen and (max-width: 1460px) {
@@ -426,15 +428,15 @@ color: #05bb01;
 @media only screen and (max-width: 1440px) {
     .swtblock3 .abimage {left: -152px; width: 57%;}
     .swtblock4 .abimage {
-        right: 46px;
-        width: 50%;
+        right: 196px;
+    width: 34%;
     }
     .swtblock5 .abimage {
             left: 30px;
             top: 0;
             width: 33%;
 }
-    .swtblock6 .abimage {width: 49%;}
+    .swtblock6 .abimage {width: 59%;}
     .subwrapper h2 {width: 630px;}
     .swtblock9 .abimage {width: 58%;}
     .swtblock17 .abimage {width: 39%;}
