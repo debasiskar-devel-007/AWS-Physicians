@@ -1,44 +1,44 @@
 .bannerblock{
-    background-image:url(../../../assets/images/swt_banner1.jpg)!important;
+    background-image:url(../../../assets/images/swt_demoimahe1.jpg)!important;
     width:100%;
     box-shadow:none!important;
     padding:0!important;
     border-radius:0!important;
     position:relative;
-    background-position:right top!important;
     background-repeat:no-repeat!important;
     background-size:cover;
+    padding-top: 80px !important;
+    min-height: 660px;
+    background-position: center top !important;
 }
+.newimgwrapper img{display: block; width: 100%;}
 /* .bannertextwrapper p{padding-bottom:0;padding-right:189px} */
 .bannertextwrapper{width:870px;display:block}
 .bannertextwrapper p{width: auto;}
 .bannertextwrapper h2{width: auto;}
 
-.swtbuttonwrapper {display: flex; justify-content: space-between;background-color:#e2ebed; box-shadow:0 0 5px rgba(0,0,0,0.3);border-radius: 10px;}
+.swtbuttonwrapper {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .swtbuttonwrapper button{
     text-transform: uppercase;
     color: #080808;
     border: 0;
-    font-size: 14px;
-    padding: 20px 10px;
-    width: 260px;
+    font-size: 18px;
+    padding: 14px 20px;
     margin: 2px;
     cursor: pointer;
     position: relative;
-     z-index: 1;
-     background: none;
+    z-index: 1;
+    background: none;
+    background: rgb(225,229,232);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(225,229,232,1)), color-stop(50%, rgba(225,229,232,1)), color-stop(50%, rgba(255,255,255,1)), to(rgba(255,255,255,1)));
+    background: linear-gradient(0deg, rgba(225,229,232,1) 0%, rgba(225,229,232,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    font-family: 'Montserrat-SemiBold';
+    border-radius: 8px;
     }
-    .swtbuttonwrapper button:after{
-        content: '';
-        height: 50%;
-        width: 1px;
-        background: #556366;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .swtbuttonwrapper button:nth-last-child(1):after{display: none;}
 .swtbuttonwrapper button:focus{outline: none;}
 
 .col-container {display: flex; justify-content: space-between;}
@@ -54,9 +54,17 @@
 
 .titlewrapper h2 {margin: 0;margin-bottom: 30px;width: auto;text-align: left;padding: 12px 20px;}
 .titlewrapper p {text-align: left; color: #1e1e1e;}
-.imgwrapper {display: block;position: relative;background: #e1e9eb;padding: 20px;border: 2px solid #bac0c2;margin: 0;border-radius: 5px;}
+.imgwrapper {
+    display: block;
+    position: relative;
+    background: #e1e9eb;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    margin: 0;
+    border-radius: 5px;
+}
 .imgwrapper img{width: 100%;display: block;}
-.imgwrapper a{position: absolute;top: 21px;right: 21px;background: rgba(0,0,0,0.6);height: 40px;width: 40px;
+.imgwrapper a{position: absolute;bottom: 10px;right: 10px;height: 40px;width: 40px;
     display: flex;align-items: center;justify-content: center; cursor: pointer;}
 .imgwrapper a img{max-width: 100%; width: auto;}
 .gradientbg {
@@ -309,7 +317,6 @@ color: #05bb01;
     background: none;
     overflow: hidden;
     padding: 0;
-    margin: 30px 0;
     display: block;
     clear: both;
 }
@@ -323,6 +330,83 @@ color: #05bb01;
     margin-bottom: -14px;
     position: relative;
 }
+
+
+.swtblock2 {
+    background: #0d1719 !important;
+}
+
+.swtblock3, .swtblock4, .swtblock5, .swtblock6, .swtblock7, .swtblock8 {position: relative;}
+
+.swtblock3 .imgwrapper1{
+    position: absolute;
+    right: 9.2%;
+    bottom: 3%;
+    width: 55%;
+}
+.swtblock4 .imgwrapper1{
+    position: absolute;
+    left: 9.2%;
+    top: 18%;
+    width: 39%;
+}
+.swtblock4 .imgwrapper2{
+    position: absolute;
+    right: 9.2%;
+    top: 55%;
+    width: 39%;
+}
+.swtblock4 .imgwrapper3{
+    position: absolute;
+    left: 9.2%;
+    bottom: 3%;
+    width: 38%;
+}
+
+.swtblock5 .imgwrapper1{
+    position: absolute;
+    left: 9.2%;
+    top: 26%;
+    width: 64%;
+}
+
+.swtblock5 .imgwrapper2{
+    position: absolute;
+    right: 9.2%;
+    bottom: 2%;
+    width: 38.5%;
+}
+
+
+.swtblock6 .imgwrapper1{
+    position: absolute;
+    right: 9.2%;
+    top: 22%;
+    width: 54%;
+}
+
+.swtblock7 .imgwrapper1{
+    position: absolute;
+    left: 9.2%;
+    top: 20.5%;
+    width: 46%;
+}
+
+.swtblock7 .imgwrapper2{
+    position: absolute;
+    right: 9.2%;
+    bottom: 16%;
+    width: 47%;
+}
+
+.swtblock8 .imgwrapper1{
+    position: absolute;
+    left: 9.2%;
+    top: 16%;
+    width: 61%;
+    
+}
+
 @media only screen and (max-width: 1880px) {
     .swtblock4 .abimage{
         right: 120px;
@@ -391,6 +475,13 @@ color: #05bb01;
     .swtblock3 .abimage {
         left: -52px;
         width: 52%;
+    }
+}
+@media only screen and (max-width: 1580px) {
+    .bannerblock{
+        background-size: cover !important;
+        min-height: 650px;
+        background-position: left -140px top !important;
     }
 }
 @media only screen and (max-width: 1520px) {

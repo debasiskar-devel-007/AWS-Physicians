@@ -2,7 +2,7 @@
     <app-header></app-header>
 
 <mat-card class="bannerblock">
-    <span class="newcontainer">
+    <!-- <span class="newcontainer">
 
 
         <span class="bannertextwrapper">
@@ -17,125 +17,35 @@
             </p>
             <h2></h2>
         </span>
-    </span>
+    </span> -->
 </mat-card>
+
+
 <span class="mainbg">
-<mat-card class="drblock2">
-    <span class="newcontainer">
-        <span class="yellowgradient">
-            DISCUSSION ON THE ANS TEST WITH DR. SAMAH MOHIUDDIN
-        </span>
-        <div class="videoblock">
-            <span (click)="fetchvideo()" *ngIf="hideSpan==true">
-                <img src="../../../assets/images/dr_image2.png">
-                <img class="playicon" src="../../../assets/images/youtubevideoicon.png">
+    <mat-card class="drblock2">
+        <span class="newcontainer">
+            <span class="yellowgradient">
+                DISCUSSION ON THE ANS TEST WITH DR. SAMAH MOHIUDDIN
             </span>
-            <ng-container *ngIf="youtubeFlage==true">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqu-UQTAasw" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            </ng-container>
-        </div>
+            <div class="videoblock">
+                <span (click)="fetchvideo()" *ngIf="hideSpan==true">
+                    <img src="../../../assets/images/dr_image2.png">
+                    <img class="playicon" src="../../../assets/images/youtubevideoicon.png">
+                </span>
+                <ng-container *ngIf="youtubeFlage==true">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqu-UQTAasw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                </ng-container>
+            </div>
+        </span>
+    </mat-card>
     </span>
-</mat-card>
-<mat-card class="dr_block2">
+<div class="imgwrapper"><img src="../../../assets/images/dr_newimage3.jpg"></div>
+<div class="imgwrapper"><img src="../../../assets/images/dr_newimage4.jpg"></div>
 
-    <mat-card-content class="dr_block2subwrapper dr_block2subwrapper1">
-        <img src="../../../assets/images/dr_bg1.png" class="abimage">
-        <span class="newcontainer">
-            <mat-card-content class="colcontainer">
-                <mat-card-content class="col-8">
-                    <span class="titlewrapper">
-                        <h2>MOHAMMAD RANA IS DR. MOHIUDDIN’S
-                            FINANCIAL AND FUNDING PARTER TO
-                            HIS PRACTICES.
-                        </h2>
-                    </span>
-                    <span class="textwrapper">
-                        <h3>From Mohammad Rana</h3>
-                        <p><span class="colorred">Dr.</span> Mohiuddin and I have been in touch with Dr. Mahmood about expanding
-                            our business in South Florida. Our goal is to improve patient care through preventative medical
-                            tools and provide early
-                            detection of diseases. We have already successfully implemented our services in two of our neurology
-                            practices in both Syracuse and Watertown New York.
-                        </p>
-                        <p><span class="colorred">Dr.</span> Mahmood has a clear understanding of our testing model and how it
-                            can help detect early
-                            neurological, peripheral vascular, cardiovascular disease. This will improve patient care for his
-                            practice and other referring physicians.
-                        </p>
-                        <p>Patients with symptoms and or diagnosis of diabetes, dizziness, neuropathy, brachial plexus
-                            disorders, limb pain, transient ischemic attacks, Parkinson’s disease, syncope, tachycardia,
-                            Reynaud’s syndrome, peripheral vascular disease, atherosclerotic disease of the lower limbs can be
-                            best helped by our services.
-        
-                        </p>
-                        <p>Detailed reporting and recommendations from our testing will be sent directly to the ordering
-                            physicians. Some patients with abnormal test results may need further testing or work up. Commonly
-                            this has led to patients being referred to a vascular surgeon, cardiologist, and or a neurologist
-                            sooner to address the
-                            diagnosis. Referring physicians can set up further testing including ultrasound, CT and MR
-                            Angiography, cardiac monitoring, lab work all recognized and reported in the PECE software that
-                            accompanies the medical device program.
-                        </p>
-                        <p>In both of our Syracuse and Watertown practices we have been able to effect change in patient care
-                            and clinical outcomes. Patients have been very appreciative of early detection of diabetes, along
-                            with higher
-                            cardio-metabolic risks for heart disease and cerebrovascular disease. Having objective data to share
-                            with
-                            each patient has helped motivate patients to act and improve the quality of their own health.
-                        </p>
-                        <h4>
-                            <span>Sincerely,</span>
-                            <span class="colorred"> Mohammad Rana</span>
-                        </h4>
-                    </span>
-                </mat-card-content>
-                <mat-card-content class="col-2"></mat-card-content>
-            </mat-card-content>
-           
-        </span>
-    </mat-card-content>
 
-    <mat-card-content class="dr_block2subwrapper dr_block2subwrapper2">
-        <img src="../../../assets/images/dr_bg2.png" class="abimage">
-        <span class="newcontainer">
-            <mat-card-content class="colcontainer">
-                <mat-card-content class="col-4"></mat-card-content>
-                <mat-card-content class="col-6">
-                    <span class="yellowgradient">
-                        LETTER OF RECOMMENDATION FROM
-                        DR. SAMAH MOHIUDDIN
-                </span>
-                <span class="textwrapper">
-                    <h3>The medical device program and PECE platform offered
-                        by HPS is an incredible investment for a diagnostic center.
-                    </h3>
-                    <p>
-                        Cardio-autonomic neuropathy, and small fiber neuropathy diagnosis cannot be made with routine
-                        laboratory tests, and clinical examination alone. Both conditions can lead to a change in management
-                        depending on what symptoms the patient has and what diagnosis is concluded. For example, patients
-                        with cardiovagal impairment can be advised to use compression stockings, or for more severe cases
-                        fludrocortione, and or midodrine can be used. A skin biopsy can be avoided for patients with a small
-                        fiber
-                        neuropathy diagnosis with this test.
-                    </p>
-                    <p>In reference to " Autonomic system testing is considered investigational in all other situations when
-                        criteria are not met including but not limited to the evaluation of the following conditions:</p>
-                    <p>Chronic fatigue syndrome, fibromyalgia, sleep apnea, hypertension, etc..."</p>
-                    <p>I order this test for symptomatic patients and there are over fifty symptoms that indicate further evaluation of medical necessity. This has led to over 40% of my patients taking this ANS test. I document the symptoms in my office note before I order the test. For all Medicare insurances, I would recommend ordering this test once a year when indicated based on signs and symptoms.</p>
-                    <p>I do believe this combination test provides patients useful information and guidance to the overall improvement of their health, in addition, to provide your diagnostic center with additional revenue.</p>
-                    <h4>
-                        <span>Regards,</span>
-                        <span class="colorred">Dr. Samah Mohiuddin</span>
-                    </h4>
-                </span>
-                </mat-card-content>   
-    </mat-card-content>         
-        </span>
-    </mat-card-content>
-</mat-card>
-</span>
+
 
 <app-footer></app-footer>

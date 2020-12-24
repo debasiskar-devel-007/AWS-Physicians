@@ -2,17 +2,15 @@
     
 }
 @media screen and (max-width: 1820px) {
- .headerbottom .mat-list-base .mat-list-item .mat-list-item-content{padding: 0 6px !important;}
- .newcontainer {
-    width: 94%;
-}
+ /* .headerbottom .mat-list-base .mat-list-item .mat-list-item-content{padding: 0 6px !important;} */
+ /* .newcontainer {width: 94%;} */
 }
 @media screen and (max-width: 1750px){
    
 }
 
 @media screen and (max-width: 1660px){
-    
+    .newcontainer {width: 96%;}
 }
 @media screen and (max-width: 1630px) {
     

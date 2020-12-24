@@ -1,4 +1,16 @@
 <ng-container>
+  <div class="topbar">
+    <div class="newcontainer">
+      <div class="colcontainer">
+        <!-- <p><strong>Lorem Ipsum : </strong> is simply dummy text of the printing and typesetting industry.</p> -->
+        <p>
+          <span><i>Address :</i> 1175 American Pacific Dr Henderson, NV 89074 </span>
+          <span><i>Call us : </i> (855) 480-9539</span>
+          <span><i>Email : </i> support@healthprofitsolutions.com</span>
+        </p>
+      </div>
+    </div>
+  </div>
     <mat-card class="headerbottom vpheaderwrapper">
       <span class="mainwrappercontent">
         <span class="homemain">
@@ -22,26 +34,29 @@
                 <!-- <span class="pagelogowrapper" fxFlex><a [routerLink]="['/']"><img src="../../../assets/images/logo.png"
                   class="landinglogoblock1"></a>
               </span> -->
-              
-                <mat-nav-list fxLayout>
-                  <span class="menuwrapper">                    
-                    <mat-list-item fxFlex routerLinkActive="activemenu"> <a [routerLink]="['/home']">Home</a></mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/the-science']"> The Science </a></mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/rm3a-aws-program']"> ANS HPS PROGRAM  </a></mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/pece-virtual-platform']">PECE Virtual Platform</a></mat-list-item>
-                  </span>
-                </mat-nav-list>
 
                 <span class="pagelogowrapper" fxFlex><a [routerLink]="['/']"><img src="../../../assets/images/logo.png"
                   class="landinglogoblock1"></a>
               </span>
               
                 <mat-nav-list fxLayout>
-                  <span class="menuwrapper"> 
+                  <span class="menuwrapper">                    
+                    <mat-list-item fxFlex routerLinkActive="activemenu"> <a [routerLink]="['/home']">Home</a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/the-science']"> The Science </a></mat-list-item>
+                    <mat-list-item fxFlex routerLinkActive="activemenu" [matMenuTriggerFor]="menu"> <a>THE TM-FLOW DEVICE</a>  </mat-list-item>
+                    <mat-menu #menu="matMenu">
+                      <a mat-menu-item [routerLink]="['/pece-tm-flow-systen-marker']">  pece tm-flow systen marker </a>
+                      <a mat-menu-item [routerLink]="['/tm-flow-hardware']">tm-flow hardware </a>
+                    </mat-menu> 
+                    <!-- <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/rm3a-aws-program']"> ANS HPS PROGRAM  </a></mat-list-item> -->
+                    <mat-list-item fxFlex routerLinkActive="activemenu"> 
+                      <a [routerLink]="['/pece-virtual-platform']">PECE Virtual Platform</a>
+                    </mat-list-item>
+                                   
 
                     <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/software-walk-through']" >Software Walk-through</a></mat-list-item>
                     <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/doctor-recommend']">doctor recommend</a></mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/team']">The Team</a></mat-list-item>
+                    <!-- <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/team']">The Team</a></mat-list-item> -->
                     <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/contact']">Contact Us</a></mat-list-item>
                   </span>
                 </mat-nav-list>

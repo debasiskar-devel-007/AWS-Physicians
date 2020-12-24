@@ -25,6 +25,9 @@ import { TeamComponent } from './components/team/team.component';
 import { DoctorRecommendComponent } from './components/doctor-recommend/doctor-recommend.component';
 import { Rm3aAwsProgramComponent } from './components/rm3a-aws-program/rm3a-aws-program.component';
 import { ScrollToModule } from 'ng2-scroll-to-el';
+import { TheTmFlowDeviceComponent } from './components/the-tm-flow-device/the-tm-flow-device.component';
+import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-systen-marker/pece-tm-flow-systen-marker.component';
+import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -58,7 +61,10 @@ export function metaFactory(): MetaLoader {
     TeamComponent,
     DoctorRecommendComponent,
     Rm3aAwsProgramComponent,
-    ImageModalComponent
+    ImageModalComponent,
+    TheTmFlowDeviceComponent,
+    PeceTmFlowSystenMarkerComponent,
+    TmFlowHardwareComponent
   ],
   imports: [
     ScrollToModule.forRoot(),

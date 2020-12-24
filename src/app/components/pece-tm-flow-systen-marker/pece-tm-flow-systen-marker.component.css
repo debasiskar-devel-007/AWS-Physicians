@@ -1,0 +1,19 @@
+.bannerwrapper{
+    width:1063px;
+    margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
+.bannerblock{
+    background-image:url(../../../assets/images/psmdemoimage1.jpg)!important;
+    width:100%;box-shadow:none!important;
+    padding:0!important;border-radius:0!important;
+    position:relative;
+    background-position:right top!important;
+    background-repeat:no-repeat!important;
+    background-size:cover;
+    padding-top: 80px !important;
+    min-height: 630px;
+}
+
+.imgwrapper img{
+    display: block;
+    width: 100%;
+}
