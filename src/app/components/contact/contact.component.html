@@ -1,5 +1,5 @@
-
-    <app-header></app-header>
+<app-header>
+</app-header>
 
 <mat-card class="bannerblock">
     <span class="newcontainer">
@@ -29,56 +29,56 @@
                             <span class="formgroup">
                                 <span class="formcol-5">
 
-                                    <input type="text" placeholder="First Name">
+                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.firstname" [ngModelOptions]="{standalone: true}">
 
                                 </span>
+    <span class="formcol-5">
+
+                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.lastname" [ngModelOptions]="{standalone: true}">
+
+                                </span>
+    </span>
+    <span class="formgroup">
                                 <span class="formcol-5">
 
-                                    <input type="text" placeholder="Last Name">
+                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email" [ngModelOptions]="{standalone: true}">
 
                                 </span>
-                            </span>
-                            <span class="formgroup">
-                                <span class="formcol-5">
+    <span class="formcol-5">
 
-                                    <input type="email" placeholder="Email Address">
+                                    <input type="text" placeholder="Phone Number"  [(ngModel)]="contactusdata.phone" [ngModelOptions]="{standalone: true}">
 
                                 </span>
-                                <span class="formcol-5">
-
-                                    <input type="text" placeholder="Phone Number">
-
-                                </span>
-                            </span>
-                            <span class="formgroup">
+    </span>
+    <span class="formgroup">
                                 <span class="formcol-10">
 
-                                    <textarea placeholder="Message"></textarea>
+                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.description" [ngModelOptions]="{standalone: true}"></textarea>
 
                                 </span>
-                            </span>
+    </span>
 
-                            <span class="formgroup capchawrapper">
+    <span class="formgroup capchawrapper">
                                 <span class="formcol-3">
                                     <div class="cap_wrapper">
                                         <span class="capchatext">
                                             <img src="../../../assets/images/capchatext.png">
                                         </span>
-                                        <button><img src="../../../assets/images/recapcha.png"></button>
-                                    </div>
+    <button><img src="../../../assets/images/recapcha.png"></button>
+    </div>
+    </span>
+    <span class="formcol-3">
+                                    <input type="text" placeholder="Enter Captcha" [(ngModel)]="contactusdata.capture" [ngModelOptions]="{standalone: true}">
                                 </span>
-                                <span class="formcol-3">
-                                    <input type="text" placeholder="Enter Captcha">
+    <span class="formcol-4">
+                                    <button matbutton class="greenbtn" (click)="doSubmit()">Submit</button>
                                 </span>
-                                <span class="formcol-4">
-                                    <button matbutton class="greenbtn">Submit</button>
-                                </span>
-                            </span>
-                        </form>
-                    </span>
-                </mat-list-item>
-                <mat-list-item class="contactitem2">
-                    <span class="leftblockwrapper">
+    </span>
+    </form>
+    </span>
+    </mat-list-item>
+    <mat-list-item class="contactitem2">
+        <span class="leftblockwrapper">
                         <mat-card-content class="lefttopbar">
                             <mat-card-subtitle>
                                 <h2>
@@ -94,11 +94,11 @@
                                             href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe>
                                 </div><br />
                             </span>
-                        </span>
-                    </span>
-                </mat-list-item>
-            </mat-list>
         </span>
+        </span>
+    </mat-list-item>
+    </mat-list>
+    </span>
     </span>
 </mat-card>
 <app-footer></app-footer>
