@@ -6,9 +6,13 @@
     padding:0!important;
     border-radius:0!important;
     position:relative;
-    background-position:right top!important;
+    background-position:center top!important;
     background-repeat:no-repeat!important;
     background-size:cover; 
     padding-top: 80px !important; 
 }
 .imagewrapper img{width: 100%; display: block;}
+
+@media screen and (max-width: 1600px) {
+    .bannerblock{background-position: left -149px top!important;}
+}

@@ -6,7 +6,7 @@
     width:100%;box-shadow:none!important;
     padding:0!important;border-radius:0!important;
     position:relative;
-    background-position:right top!important;
+    background-position:center top!important;
     background-repeat:no-repeat!important;
     background-size:cover;
     padding-top: 80px;
@@ -17,4 +17,7 @@
 .imgwrapper img{
     display: block;
     width: 100%;
+}
+@media screen and (max-width: 1600px) {
+    .bannerblock{background-position: left -149px top!important;}
 }

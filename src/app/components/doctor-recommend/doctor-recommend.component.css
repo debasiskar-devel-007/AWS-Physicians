@@ -8,6 +8,7 @@
     background-size: cover;
     padding-top: 80px !important;
     min-height: 660px;
+    background-position: center top !important;
 }
 
 .imgwrapper img{display: block; width: 100%;}
@@ -45,5 +46,17 @@
 
 .drblock2 {padding: 0 !important;}
  
- 
- 
+ .drblock2 {position: relative;}
+ .drblock2 .videoblock{
+    padding: 10px;
+    width: 53%;
+    height: 60%;
+    position: absolute;
+    top: 27%;
+    right: 8%;
+ }
+
+
+ @media screen and (max-width: 1600px) {
+    .bannerblock{background-position: left -149px top!important;}
+}

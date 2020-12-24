@@ -534,7 +534,7 @@ color: #05bb01;
     .swtblock18 .abimage {width: 40%;}
     .swtblock19 .abimage {width: 37%;}
     .swtblock20 .abimage {bottom: 0;width: 39%;}
-    .bannerblock {background-position: right -180px top!important;}
+    /* .bannerblock {background-position: right -180px top!important;} */
     .swtblock7 .listwrapper p span {width: 60%;}
     .swtblock16 .abimage {
         right: -90px;

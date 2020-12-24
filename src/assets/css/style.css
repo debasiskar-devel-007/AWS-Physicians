@@ -311,12 +311,12 @@
 
     @font-face {
         font-family: 'Montserrat-SemiBold';
-        src: url('../../assets/fonts/Montserrat-SemiBold.eot');
-        src: url('../../assets/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-            url('../../assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-            url('../../assets/fonts/Montserrat-SemiBold.woff') format('woff'),
-            url('../../assets/fonts/Montserrat-SemiBold.ttf') format('truetype'),
-            url('../../assets/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+        src: url('https://all-frontend-assets.s3.amazonaws.com/summum.us/assets/fonts/Montserrat-SemiBold.eot');
+        src: url('https://all-frontend-assets.s3.amazonaws.com/summum.us/assets/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+            url('https://all-frontend-assets.s3.amazonaws.com/summum.us/assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+            url('https://all-frontend-assets.s3.amazonaws.com/summum.us/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
+            url('https://all-frontend-assets.s3.amazonaws.com/summum.us/assets/fonts/Montserrat-SemiBold.ttf') format('truetype'),
+            url('https://all-frontend-assets.s3.amazonaws.com/summum.us/assets/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
         font-weight: 600;
         font-style: normal;
     }

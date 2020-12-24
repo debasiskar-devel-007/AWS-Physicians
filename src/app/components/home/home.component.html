@@ -1,82 +1,77 @@
 <app-header></app-header>
 
-<mat-card class="bannerblock">
+<div class="bannerblock">
     <img src="../../../assets/images/bannernewimage1.png" class="abimage">
     <span class="newcontainer">
         <span class="bannertextwrapper">
             <span class="bannertext">
                 <div class="bannertitlewrapper">
                     <h5>
-                        <strong>The <span class="pece">PECE</span> Medical Device </strong>  
+                        <strong>The <span class="pece">PECE</span> Medical Device </strong>
                         <strong>Platform and Managed Services</strong>
-                      </h5>
+                    </h5>
                 </div>
-                
+
                 <h3>
-                   <span>ATTENTION </span>
-                   <span>PHYSICIANS!!!</span>
+                    <span>ATTENTION </span>
+                    <span>PHYSICIANS!!!</span>
                 </h3>
                 <h4>Get the Complete Ans Testing Medical Device Platform for Your Practice</h4>
                 <h2>
-                    <span>THIS CUTTING-EDGE TECHNOLOGY</span> IMPROVES PATIENT OUTCOMES AND SIGNIFICANTLY 
-                    AFFECTS YOUR BOTTOM LINE!                    
+                    <span>THIS CUTTING-EDGE TECHNOLOGY</span> IMPROVES PATIENT OUTCOMES AND SIGNIFICANTLY
+                    AFFECTS YOUR BOTTOM LINE!
                 </h2>
             </span>
         </span>
 
     </span>
 
-</mat-card>
+</div>
 
 <div class="newimgwrapper"><img src="../../../assets/images/homedemoimage1.jpg"></div>
 <div class="buttonwrapper">
-    <button class="btnblue" [routerLink]="['/the-science']">Learn Incredible Science About Our Platform Today!</button>
+    <button class="btnblue" [routerLink]="['/the-science']" (click)="gotoTop()">Learn Incredible Science About Our Platform Today!</button>
 </div>
 <div class="newimgwrapper"><img src="../../../assets/images/homedemoimage2.jpg"></div>
 <div class="newimgwrapper"><img src="../../../assets/images/homedemoimage3.jpg"></div>
 <div class="newimgwrapper"><img src="../../../assets/images/homedemoimage4.jpg"></div>
-<div class="newimgwrapper"><img src="../../../assets/images/homedemoimage5.jpg"></div>
+<!-- <div class="newimgwrapper"><img src="../../../assets/images/homedemoimage5.jpg"></div> -->
 
-<mat-card class="homelstblock">
+<div class="homelstblock">
     <div class="newcontainer">
         <div class="col-container">
-             <mat-card-content class="col-3"> 
+            <div class="col-3">
                 <div class="lstclogwrapper">
-                    <div class="logowrapper">
-                        <img src="../../../assets/images/homeicon1.png">
-                    </div>
+                    <div class="logowrapper"><img src="../../../assets/images/homeicon1.png"></div>
                     <h2><span class="pece">PECE</span> Science</h2>
-                    <p>Information about the important SCIENCE that governs our ANS 
-                        Testing technology.</p>
-                    <button class="btnblue">Learn More</button>
+                    <p>Information about the important SCIENCE that governs our ANS Testing technology.</p>
+                    <button class="btnblue" [routerLink]="['/the-science']" (click)="gotoTop()">Learn More</button>
                 </div>
-                </mat-card-content>
-            
-            <mat-card-content class="col-3">
+            </div>
+            <div class="col-3">
                 <div class="lstclogwrapper">
-                    <div class="logowrapper">
-                        <img src="../../../assets/images/homeicon2.png">
-                    </div>
+                    <div class="logowrapper"><img src="../../../assets/images/homeicon2.png"></div>
                     <h2><span class="pece">PECE</span> Platform</h2>
-                    <p>Discover the significant aspects of our Fully-managed ANS testing 
-                        services portal.</p>
-                    <button class="btnblue">Learn More</button>
+                    <p>Discover the significant aspects of our Fully-managed ANS testing services portal.</p>
+                    <button class="btnblue" [routerLink]="['/pece-virtual-platform']"  (click)="gotoTop()">Learn More</button>
                 </div>
-            </mat-card-content>
-            <!-- <mat-card-content class="col-3">
+            </div>
+            <div class="col-3">
                 <div class="lstclogwrapper">
-                    <div class="logowrapper">
-                        <img src="../../../assets/images/homeicon3.png">
-                    </div>
-                    <h2><span class="pece">Hardware</h2>
+                    <div class="logowrapper"><img src="../../../assets/images/homeicon3.png"></div>
+                    <h2>Hardware</h2>
                     <p>View the technical details of our FDA CLEARED ANS testing medical device platform.</p>
-                    <button class="btnblue">Learn More</button>
+                    <button class="btnblue" [routerLink]="['/tm-flow-hardware']" (click)="gotoTop()">Learn More</button>
                 </div>
-            </mat-card-content>   -->
+            </div>
         </div>
     </div>
-</mat-card>
+</div>
 
 
 
 <app-footer></app-footer>
+
+
+
+
