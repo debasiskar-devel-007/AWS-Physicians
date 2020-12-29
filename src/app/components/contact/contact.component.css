@@ -73,6 +73,7 @@
     border: 0;
     border-bottom: 1px solid #383838;
     width: 100%;
+    font-family: 'Montserrat-Regular';
 }
 .formwrapper textarea{
     min-height: 165px;

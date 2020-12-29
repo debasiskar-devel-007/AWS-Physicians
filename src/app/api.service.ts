@@ -64,6 +64,18 @@ export class ApiService {
     }
    
   }
+
+  postdata(requestdata: any, endpoint: any) {
+    // const httpOptions = {
+    //   headers: new HttpHeaders({
+    //     'Content-Type': 'application/json',
+    //     'Authorization': this.cookie.get('jwttoken')
+    //   })
+    // };
+      var result = this._http.post( endpoint, requestdata).pipe(map(res => res));
+    return result;
+   
+  }
   
 
 

@@ -383,6 +383,7 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .bannertext h4{    width: 680px;font-size: 24px;}
     .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
         font-size: 36px;
         line-height: 40px;
