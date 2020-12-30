@@ -200,7 +200,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.colcontainer{justify-content: center;}
 @media only screen and (max-width: 1560px) {
 .vpheaderwrapper .mat-nav-list .mat-list-item a{font-size:14px}
 .homemain .mat-nav-list{margin:0}

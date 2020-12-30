@@ -223,7 +223,7 @@ color: #05bb01; font-size: 30px;margin: 20px 0;width: 570px;
 .swtblock11 .titlewrapper h2{width: fit-content;}
 .swtblock11 .titlewrapper p{color: #05bb01; font-size: 24px;line-height: 33px;}
 .swtblock11 { 
-    background-image:url(../../../assets/images/swt_banner02.png)!important;
+    /* background-image:url(../../../assets/images/swt_banner02.png)!important; */
     background-position: right 200px top -40px!important;
     background-repeat:no-repeat!important;
     margin-top: 0 !important;
