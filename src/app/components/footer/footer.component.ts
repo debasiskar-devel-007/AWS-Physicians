@@ -38,7 +38,7 @@ export class FooterComponent implements OnInit {
     console.warn('test');
   }
   
-
+  @HostListener("window:scroll", []) 
   onWindowScroll() {
     if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
         this.windowScrolled = true;
