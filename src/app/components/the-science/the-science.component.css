@@ -370,7 +370,7 @@
 }
 
 
-.tablewrapper img{max-width: 100%;}
+.tablewrapper img{width: 100%;}
 
 .tsblock5 .titlewrapper h2{
     margin-bottom: 30px;
@@ -629,6 +629,11 @@
         }
         .tablewrapper img {
             max-width: 1351px;
+            display: block;
+            width: auto;
+        }
+        .tsblock7 .titlewrapper p {
+            width: auto;
         }
         
 }

@@ -146,11 +146,43 @@
     .col-5{width: 100%;}
     .colcontainer{flex-wrap: wrap; justify-content: center;}
     .listtext p{display: block; width: auto;}
+    .listwarppercls h4{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .imgwrapperblock8 {
+        width: 140px;
+        height: 140px;
+    }
+    .listwarppercls{
+        min-height: 60px;
+    }
+    .nmsfunneldoctor_block8 ol li {
+        padding: 26px 0;
+        min-height: 105px;
+    }
+    .nmsfunneldoctor_block8 ol li:before {
+        left: -20px;
+        top: -11px;}
+        .nmsfunneldoctor_block8 ol li:first-child:last-child:before, .nmsfunneldoctor_block8 ol li:nth-child(n+2):nth-last-child(-n+2):before, .nmsfunneldoctor_block8 ol li:nth-child(n+3):nth-last-child(-n+3):before, .nmsfunneldoctor_block8 ol li:nth-child(n+4):nth-last-child(-n+4):before, .nmsfunneldoctor_block8 ol li:nth-child(n+5):nth-last-child(-n+5):before, .nmsfunneldoctor_block8 ol li:nth-child(n+6):nth-last-child(-n+6):before, .nmsfunneldoctor_block8 ol li:nth-child(n+7):nth-last-child(-n+7):before, .nmsfunneldoctor_block8 ol li:nth-child(n+8):nth-last-child(-n+8):before, .nmsfunneldoctor_block8 ol li:nth-child(n+9):nth-last-child(-n+9):before, .nmsfunneldoctor_block8 ol li:nth-child(n+10):nth-last-child(-n+10):before {
+            right: -30px !important;
+            top: 0px;
+        }
+        .li6:after{
+            top: -2%;
+            transform: rotate(-10deg);
+        }
+        .li3:after{
+            top: -24%;    transform: rotate(4deg);
+        }
+        .li8:after{
+            top: 5%;    transform: rotate(-8deg);
+        }
 }
 
 
 @media screen and (max-width: 991px) {
-    .listwarppercls{width:auto;flex-wrap:wrap;flex-flow:column-reverse;justify-content:center;border-radius:0!important;margin:0;box-shadow:0 0 10px rgba(0,0,0,0.1);height:85%;padding:3%}
+    .listwarppercls{width:auto;flex-wrap:wrap;flex-flow:column-reverse;justify-content:center;border-radius:0!important;margin:0;box-shadow:0 0 10px rgba(0,0,0,0.1);height:85%;padding:3%; padding-bottom: 8%;}
     .nmsfunneldoctor_block8 ol li:after{display:none}
     .nmsfunneldoctor_block8 ol li{display:block;width:47%;margin:6px}
     .nmsfunneldoctor_block8 ol{-webkit-column-count:1;-moz-column-count:1;column-count:1;-webkit-column-gap:inherit;-moz-column-gap:inherit;column-gap:inherit;list-style:decimal!important;display:flex;justify-content:center;flex-wrap:wrap;background:none;align-items:stretch}
@@ -161,6 +193,41 @@
         font-size: 48px;
         line-height: 50px;
     }
+
+    .li1 .imgwrapperblock8, .li2 .imgwrapperblock8, .li3 .imgwrapperblock8, .li4 .imgwrapperblock8 {
+        right: inherit;
+        position: inherit;
+        top: inherit;
+        transform: inherit;
+        width: auto;
+        height: auto;
+    }
+    .nmsfunneldoctor_block8 ol li:before {
+        left: 20px;
+        top: 20px;
+    }
+    .nmsfunneldoctor_block8 ol li {
+        padding: 0 0;
+        min-height: 105px;
+    }
+    .li5 .imgwrapperblock8, .li6 .imgwrapperblock8, .li7 .imgwrapperblock8, .li8 .imgwrapperblock8 {
+        left: inherit;
+        top: inherit;
+        transform: inherit;
+        height: auto;
+        width: auto;
+        position: inherit;
+    }
+    .nmsfunneldoctor_block8 ol li:first-child:last-child:before, .nmsfunneldoctor_block8 ol li:nth-child(n+2):nth-last-child(-n+2):before, .nmsfunneldoctor_block8 ol li:nth-child(n+3):nth-last-child(-n+3):before, .nmsfunneldoctor_block8 ol li:nth-child(n+4):nth-last-child(-n+4):before, .nmsfunneldoctor_block8 ol li:nth-child(n+5):nth-last-child(-n+5):before, .nmsfunneldoctor_block8 ol li:nth-child(n+6):nth-last-child(-n+6):before, .nmsfunneldoctor_block8 ol li:nth-child(n+7):nth-last-child(-n+7):before, .nmsfunneldoctor_block8 ol li:nth-child(n+8):nth-last-child(-n+8):before, .nmsfunneldoctor_block8 ol li:nth-child(n+9):nth-last-child(-n+9):before, .nmsfunneldoctor_block8 ol li:nth-child(n+10):nth-last-child(-n+10):before {
+        right: inherit!important;
+        top: 10px;
+        left: 20px !important;
+    }
+
+
+
+
+
 }
 @media screen and (max-width: 860px){
 }
