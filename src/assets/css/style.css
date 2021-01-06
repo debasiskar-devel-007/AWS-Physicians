@@ -352,7 +352,7 @@
      .col-7{width: 69%;}
      .col-4{width: 39%;}
      .col-6{width: 59%;}
-     .col-5{width: 49%;}
+     .col-5{width: 49.5%;}
     
     .mat-card{
         box-shadow: none !important;
@@ -397,20 +397,8 @@
     
     button{cursor: pointer;}
     button:focus, input:focus, textarea:focus{outline:none;}
-    .pece{position: relative;padding-right: 31px;}
-    .pece::after{
-        content: 'TM';
-        font-size: 10px;
-        color: #fff;
-        border: 1px solid #fff;
-        padding: 3px 5px;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        line-height: 18px;
+    .pece{position: relative;padding-right: 20px;     font-style: normal;}
     
-    }
     
     .vpheaderwrapper .mat-list-item .mat-list-item-content{padding: 0 !important;}
     
@@ -434,7 +422,7 @@
      .image_modal img{width: 100%;}
     
     
-     .titlewrapper h2, .titlewrapper h2 span {
+     .titlewrapper h2, .titlewrapper h2 span, .titlewrapper h2 i {
         font-family: 'Montserrat-Bold';
         font-size: 50px;
         text-transform: uppercase;
@@ -448,11 +436,12 @@
         border-radius: 0;
         padding: 0;
         margin: 0;
-        display: block;
         margin: 0 auto;
         text-align: center;
         line-height: 50px;
+        font-style: normal;
     }
+    .titlewrapper h2 span{display: block;}
 
     .titlewrapper h3 {
         font-family: 'Montserrat-SemiBold';
@@ -544,7 +533,7 @@
         color: #1b1d1e;
         margin: 10px 0;
     }
-    .textwrapper h2, .textwrapper h2 span {
+    .textwrapper h2, .textwrapper h2 span, .textwrapper h2 i  {
         font-family: 'Montserrat-Bold';
         font-size: 50px;
         text-transform: uppercase;
@@ -552,10 +541,11 @@
         background: -webkit-gradient(linear, left bottom, left top, from(rgba(23,59,78,1)), color-stop(50%, rgba(23,59,78,1)), color-stop(50%, rgba(11,77,112,1)), to(rgba(11,77,112,1)));
         background: linear-gradient(0deg, rgba(23,59,78,1) 0%, rgba(23,59,78,1) 50%, rgba(11,77,112,1) 50%, rgba(11,77,112,1) 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: block;
+        -webkit-text-fill-color: transparent;       
         line-height: 48px;
+        font-style: normal;
     }
+    .textwrapper h2 span{ display: block;}
     .textwrapper p a{color: #1288f6;}
     .sublistwrapper2 .listtitle{border-radius: 0;}
     .titlewrapper p {
@@ -563,6 +553,7 @@
         font-size: 24px;
         line-height: 24px;
         margin: 10px 0;
+        text-align: center;
     }
 
     .listtext2 {
@@ -593,9 +584,6 @@
     }
     .col-6 {
         width: 59%;
-    }
-    .col-5 {
-        width: 49%;
     }
     
     
@@ -631,33 +619,37 @@
     
     .bannertitlewrapper .pece::after {
         content: 'TM';
-        font-size: 9px;
+        font-size: 12px;
         background: #093146;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        border: 1px solid #093146;
-        padding: 3px 5px;
-        top: -14px;
-        right: -20px;
+        top: 9px;
+        right: 0px;
     }
     
     .pece::after {
         content: 'TM';
         font-size: 10px;
-        color: #fff;
-        border: 1px solid #fff;
-        padding: 3px 5px;
         border-radius: 50%;
         position: absolute;
-        top: 0;
+        top: -4px;
         right: 0;
         line-height: 18px;
     }
     
-    .bannertitlewrapper .pece {
-        padding: 0;
+    .titlewrapper h2 .pece::after{
+        background: rgb(0,0,0);
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(50%, rgba(77,77,77,1)), to(rgba(77,77,77,1)));
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(77,77,77,1) 50%, rgba(77,77,77,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    
+    .textwrapper h2 .pece::after{
+        background: #000000;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        top: 8px;
+    }
 
     .bannertext h3, .bannertext h3 span {
         font-size: 90px;
@@ -737,17 +729,72 @@
 
 
 
+.liststyle1 p{
+    position: relative;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 50px;
+}
 
+.liststyle1 p::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 13px;
+    top: 20px;
+    background: #0b4d70;
+}
 
+.liststyle1 p::after {
+    content: '';
+    background-image: url(../../assets/images/listicon4.png);
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background-repeat: no-repeat;
+}
+.liststyle1 p:nth-last-child(1)::before{display: none;}
+.liststyle2 p{
+    font-size: 18px;
+    position: relative;
+    padding: 5px;
+    background: rgb(191,224,229);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(191,224,229,1)), color-stop(60%, rgba(191,224,229,1)), to(rgba(191,224,229,0)));
+    background: linear-gradient(90deg, rgba(191,224,229,1) 0%, rgba(191,224,229,1) 60%, rgba(191,224,229,0) 100%);
+    border-left: 4px solid #0b4d70;
+    padding-left: 10px;
+    color: #000000;
+    text-shadow: -1px 1px 0px rgb(0 0 0 / 10%);
+}
 
-
-
-
-
-
-
-
-
+.liststyle2 p::before{
+    content: '';
+    height: 4px;
+    width: 6px;
+    background: #0b4d70;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.liststyle2 p::after{
+    content: '';
+    height: 4px;
+    width: 6px;
+    background: #0b4d70;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.textwrapper.liststyle3 {
+    border-left: 2px solid #20bce7;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+}
 
 
 .nmsfunneldoctor_block8{position:relative;margin-bottom:0}
@@ -933,54 +980,22 @@
     left: -80px;
     transform: translateY(-50%);
 }
-
-
-<<<<<<< HEAD
-=======
-button{cursor: pointer;}
-button:focus, input:focus, textarea:focus{outline:none;}
-.pece{position: relative;padding-right: 31px;}
-.pece::after{
-    content: 'TM';
-    font-size: 10px;
-    color: #fff;
+.textwrapperbg{
+    background: rgb(228,235,239);
+    background: linear-gradient(0deg, rgba(228,235,239,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 20px;
+    border-radius: 5px;
     border: 1px solid #fff;
-    padding: 3px 5px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: 18px;
-
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
-
-.vpheaderwrapper .mat-list-item .mat-list-item-content{padding: 0 !important;}
-
-.image_modal .mat-raised-button.mat-accent {
-    background-color: #dda804;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    height: 40px;
-    width: 40px;
-    padding: 0 !important;
-    border-radius: 50%;
-    min-width: inherit;
- }
- .image_modal{
-    position: relative !important;
-     height: 500px !important;
-     border: 5px solid #dda804;
-     border-radius: 5px;
- }
- .image_modal img{width: 100%;}
-
-
-
-
-
-
->>>>>>> 090dd9f1a1cd9ec59afaabf3b38327eb75e32e84
-
+.textwrapper h3 {
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+}
+.textwrapper h5{
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    font-weight: normal;
+} 
 
 

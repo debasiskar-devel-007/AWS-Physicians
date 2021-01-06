@@ -9,15 +9,444 @@
     background-position:center top!important;
     background-repeat:no-repeat!important;
     background-size:cover;
-    padding-top: 80px;
     padding-top: 80px !important;
-    min-height: 660px;
+    min-height: 700px;
+    overflow: hidden;
 }
 
-.imgwrapper img{
+.bannerblock .abimage{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+
+
+.bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{text-transform: uppercase;}
+
+.bannertext{
     display: block;
-    width: 100%;
+    width: 1050px;
 }
-@media screen and (max-width: 1600px) {
-    .bannerblock{background-position: left -149px top!important;}
+
+.bannerlistwrapper p::after{top: 0;}
+.bannertext h2{
+    font-size: 24px;
+    padding-right: 170px;
 }
+.bannertext h3, .bannertext h3 span{
+    line-height: 30px;
+    font-size: 48px;
+}
+
+.bannertextwrapper p{
+    font-size: 20px;
+}
+.bannerlistwrapper {
+    padding-bottom: 0px;
+}
+
+
+
+.pvpblock2{
+  background-image: url(../../../assets/images/pvpnewbg2.png), url(../../../assets/images/homeblock2newbg.png);
+  background-position: left bottom, center top;
+  background-repeat: no-repeat, no-repeat;
+  overflow: hidden;
+  position: relative;
+  padding-top: 30px !important;
+}
+
+.pvpblock2 .abimage{
+    position: absolute;
+    left: 310PX;
+    bottom: 0;
+}
+.pvpblock2 .listwrapper {
+    padding-left: 748px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.pvpblock2 .listtext {
+    column-count: inherit;
+    column-gap: inherit;
+    column-rule: 0px solid #b9c7cc;
+}
+
+.listtext p{
+    width: 94%;
+    padding-left: 6%;
+}
+
+.pvpblock2 .titlewrapper {
+    padding-bottom: 110px;
+}
+
+.textwrapper h3{margin-top: 20px; font-family: 'Montserrat-SemiBold'; font-size: 24px;}
+.textwrapper h3 span{color: #0eadf1;}
+
+.pvpblock2 .titlewrapper h2 .pece::after{
+    right: 6px;
+    top: 7px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.textwrapper p{font-size: 18px;}
+
+
+.pvpblock3 .liststyle1{
+    background: rgb(228,236,239);
+    background: linear-gradient(0deg, rgba(228,236,239,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    margin-top: 20px;
+}
+
+.pvpblock3 .pvpblock2subwrapper1, .pvpblock3 .pvpblock2subwrapper2 {
+    position: relative;
+    padding: 15px 0;
+}
+.pvpblock3 .pvpblock2subwrapper1{padding-top: 30px;}
+.pvpblock3 .pvpblock2subwrapper2{padding-bottom: 30px;}
+.pvpblock3 .pvpblock2subwrapper1 .textwrapper{
+    margin-right: 470px;
+    position: relative;
+    z-index: 1;
+}
+
+.pvpblock3 .pvpblock2subwrapper2 .textwrapper{
+    margin-left: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.pvpblock3{
+    background-image: url(../../../assets/images/pvpnewbg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.pvpblock3 .pvpblock2subwrapper1 .abimage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.pvpblock2subwrapper2 .abimage{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.pvpblock2subwrapper1 .textwrapper h3{width: 930px;margin-top: 10px;}
+.pvpblock2subwrapper2 .textwrapper h3{margin-top: 10px;}
+
+.pvpblock4subwrapper1 .textwrapper{
+    border-left: 2px solid #20bce7;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+.pvpblock4subwrapper1 {
+    position: relative;
+    padding-right: 720px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pvpblock4subwrapper1 .abimage{
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.pvpblock4subwrapper2 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(28,186,231);
+    background: linear-gradient(90deg, rgba(28,186,231,1) 0%, rgba(21,195,94,1) 100%);
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.imgwrapper {
+    width: 1120px;
+    margin-right: 20px;
+}
+.imgwrapper img{max-width: 100%;display: block;}
+
+.pvpblock4subwrapper2 .textwrapper p{color: #ffffff;}
+.pvpblock4subwrapper2 .textwrapper p span{color: #000000;}
+
+.pvpblock4subwrapper2 .textwrapper h2{
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.pvpblock4subwrapper2 .textwrapper h3{color: #fff;}
+.pvpblock4subwrapper2 .textwrapper h3 span{color: #000000; display: block;}
+
+
+
+.demoimgwrapper img{width: 100%;}
+
+.pvpblock4 {
+    background-image: url(../../../assets/images/pvpnewbg4.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    overflow: hidden;
+    padding: 50px 0 !important;
+    padding-top: 0 !important;
+}
+
+
+.pvpblock5{
+    background-image:  url(../../../assets/images/pvpnewimage7.png), url(../../../assets/images/pvpnewbg5.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right bottom;
+    padding: 30px 0 !important;
+    padding-bottom: 80px !important;
+}
+
+.pvpblock5 .listwrapper {
+    display: block;
+    padding-right: 380px;
+}
+
+.pvpblock5 .listtext {
+    column-gap: inherit;
+    column-rule: 0px solid #b9c7cc;
+}
+.pvpblock5 .titlewrapper p{
+    width: 970px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+
+.pvpblock6subwrapper1 {
+    display: block;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.pvpblock6subwrapper1 .textwrapper{margin-left: 33%;}
+.pvpblock6subwrapper1 .textwrapper.liststyle3{margin-left: 29%;}
+.pvpblock6subwrapper1 .textwrapper h3{text-transform: uppercase;margin-bottom: 20px;}
+.pvpblock6subwrapper1 .textwrapper.liststyle3 h3{
+    text-transform: none;
+    font-size: 24px;
+}
+.pvpblock6subwrapper1 .abimage{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pvpblock6subwrapper2 .listtitle{
+    padding: 40px;
+    text-align: center;
+}
+
+.pvpblock6subwrapper2 .listtitle h2{
+    font-size: 32px;
+}
+.pvpblock6{
+    background-image:  url(../../../assets/images/pvpnewimage9.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding: 30px 0 !important;
+}
+
+
+
+
+
+@media only screen and (max-width: 1820px) {
+    .bannerblock .abimage {right: 0;}
+    }
+    
+    @media only screen and (max-width: 1780px) {
+        .pvpblock3 .pvpblock2subwrapper1 .abimage {
+            right: -130px;
+        }
+        .pvpblock2subwrapper2 .abimage {
+            left: -70px;
+        }
+    }
+    @media only screen and (max-width: 1650px) {
+        .pvpblock5{
+            background-position: right -100px top, right bottom;
+        }
+    .bannertext {
+        width: 920px;
+    }
+    }
+    
+    @media only screen and (max-width: 1620px) {
+        .pvpblock2 .listwrapper {
+            padding-left: 648px;
+        }
+        .pvpblock2 .abimage {
+            left: 170px;
+        }
+    }
+    @media only screen and (max-width: 1540px) {
+        .listtext p {
+            width: 92%;
+            padding-left: 8%;
+        }
+        .pvpblock2 .abimage {
+            left: 100px;
+        }
+        .pvpblock2 .listwrapper {
+            padding-left: 588px;
+        }
+        .pvpblock2subwrapper1 .textwrapper h3 {
+            width: auto;
+        }
+        .pvpblock2subwrapper1 .textwrapper h3 br{display: none;}
+    }
+    @media only screen and (max-width: 1500px) {
+    .bannertext {
+        width: 770px;
+    }
+    }
+    
+    @media only screen and (max-width: 1450px) {
+        .pvpblock5 {
+            background-position: right -100px bottom, right bottom;
+        }
+    }
+    @media only screen and (max-width: 1440px) {
+        .imgwrapper {
+            width: 1510px;
+            margin-right: 20px;
+        }
+        .pvpblock2 .listwrapper {
+            padding-left: 528px;
+        }
+        .pvpblock2 .abimage {
+            left: 60px;
+        }
+        .pvpblock2 {
+            background-position: left -310px bottom, center top;
+        }
+        .pvpblock2subwrapper1 .textwrapper h3 span{white-space: nowrap;}
+    }
+    @media only screen and (max-width: 1366px) {
+    .bannertext h2 {
+        padding-right: 80px;
+    }
+    .bannerblock .abimage {
+        position: absolute;
+        right: -120px;
+        bottom: 0;
+    }
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .bannerblock{
+            display: block !important;
+            min-height: inherit;
+            padding-bottom: 30px !important;
+        }
+        .bannertext {
+            width: auto;
+            text-align: center;
+        }
+        .bannerblock .abimage {
+            position: inherit;
+            right: inherit;
+            bottom: inherit;
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .abimage{
+            left: inherit !important;
+            top: inherit !important;
+            bottom:  inherit !important;
+            right:  inherit !important;
+            position:  inherit !important;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .pvpblock2 .listwrapper{    padding-left: 0;}
+        .pvpblock2subwrapper1 .textwrapper h3 { width: auto;}
+        .pvpblock3 .pvpblock2subwrapper1 .textwrapper{
+            margin-right: 0;
+            text-align: center;
+        }
+        .pvpblock3 .pvpblock2subwrapper2 .textwrapper {
+            margin-left: 0;
+            text-align: center;
+        }
+        .pvpblock4subwrapper1 {
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+        .pvpblock4subwrapper2{
+            flex-flow: column;
+        justify-content: center;
+        }
+        .imgwrapper {
+            width: auto;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .textwrapper h2, .textwrapper h2 span, .textwrapper h2 i{text-align: center;}
+        .pvpblock5 .listwrapper {
+            display: block;
+            padding-right: 0;
+        }
+        .listtext p {
+            width: auto;
+            padding-left: 0;
+        }
+        .pvpblock5 {
+            background-position: right top, right bottom;
+            background-size: 100%, 100%;
+            padding-top: 69% !important;
+            background-color: #ece9df;
+        }
+        .pvpblock6subwrapper1 .textwrapper {
+            margin-left: 0;
+            text-align: center;
+        }
+        .pvpblock6subwrapper1 .textwrapper.liststyle3 {
+            margin-left: 0;
+        }
+        .pvpblock2subwrapper2 .abimage {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .pvpblock4subwrapper1 .textwrapper {
+            border-left: 0px solid #20bce7;
+            padding-left: 0;
+        }
+        .pvpblock6{
+            background-position: left top -63px;
+        }
+        .pvpblock6subwrapper1 .abimage {
+            margin-bottom: 20px;
+        }
+        .pvpblock5 .titlewrapper p {width: auto;}
+        .pvpblock2{background-image: none, url(../../../assets/images/homeblock2newbg.png);}
+        .pvpblock2 .titlewrapper {
+            padding-bottom: 30px;
+        }
+        .titlewrapper h2 span{display: inline;}
+        .bannertext h2{padding: 20px;}
+    }

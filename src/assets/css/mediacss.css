@@ -13,6 +13,10 @@
     .newcontainer {width: 96%;}
 }
 @media screen and (max-width: 1620px) {
+    .textwrapper h2, .textwrapper h2 span, .textwrapper h2 i{
+        font-size: 46px;
+        line-height: 44px;
+    }
     .titlewrapper h2, .titlewrapper h2 span {
         font-size: 46px;
         line-height: 44px;
@@ -24,6 +28,10 @@
   
 }
 @media screen and (max-width: 1560px) {
+    .textwrapper h2, .textwrapper h2 span, .textwrapper h2 i{
+        font-size: 42px;
+        line-height: 47px;
+    }
     .titlewrapper h2, .titlewrapper h2 span {
         font-size: 42px;
         line-height: 47px;
@@ -93,6 +101,26 @@
   
 }
 @media screen and (max-width: 1199px){
+    .liststyle1 p{
+        padding: 10px 0;
+        padding-left: 0;
+        padding-top: 30px;
+        width: auto;
+    }
+    .liststyle1 p::after{
+        left: 50%;
+        top: 0;
+        background-repeat: no-repeat;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .liststyle2 p{
+        padding: 5px;
+        background-color: #badfe5;
+        border: 0;
+    }
+    .liststyle2 p::after, .liststyle2 p::before, .liststyle1 p::before{display: none;}
+    .textwrapper.liststyle3 {border-left: 0px solid #20bce7;padding-left: 0;}
     .li1 .imgwrapperblock8, .li2 .imgwrapperblock8, .li3 .imgwrapperblock8, .li4 .imgwrapperblock8{    right: -50px;}
         .li5 .imgwrapperblock8, .li6 .imgwrapperblock8, .li7 .imgwrapperblock8, .li8 .imgwrapperblock8{    left: -50px;}
     .listtext {
@@ -261,6 +289,10 @@
     .bannertext h4 {
         width: auto;
         font-size: 20px;
+    }
+    .textwrapper h2, .textwrapper h2 span, .textwrapper h2 i{
+        font-size: 32px;
+        line-height: 34px;
     }
     .titlewrapper h2, .titlewrapper h2 span {
         font-size: 32px;
