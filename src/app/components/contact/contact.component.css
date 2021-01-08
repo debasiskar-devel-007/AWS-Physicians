@@ -198,6 +198,7 @@
     background-image: url(../../../assets/images/contactbg2.png);
     background-repeat: no-repeat;
     background-position: center top;
+    padding-top: 30px !important;
 }
 @media only screen and (max-width: 1660px) {
 .bannerblock{background-position:right -132px top!important}

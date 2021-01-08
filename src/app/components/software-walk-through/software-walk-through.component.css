@@ -334,6 +334,7 @@ color: #05bb01;
 
 .swtblock2 {
     background: #0d1719 !important;
+    padding-bottom: 20px !important;
 }
 
 .swtblock3, .swtblock4, .swtblock5, .swtblock6, .swtblock7, .swtblock8 {position: relative;}
@@ -406,6 +407,25 @@ color: #05bb01;
     width: 61%;
     
 }
+.swtblock2 .textwrapper h3{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 34px;
+    color: #f3ca11;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img{width: 100%;display: block;}
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1880px) {
     .swtblock4 .abimage{

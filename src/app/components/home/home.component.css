@@ -458,6 +458,24 @@ display: none;
 }
 .homeblock5 .homeblock3subwrapper1{background: none;}
 
+.homeblock2 .btnblue{
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.homeblock2 .titlewrapper .pece{
+    padding-right: 20px !important;
+}
+
+.homeblock2 .titlewrapper h2 .pece::after{
+    top: 7px;
+}
+
+.homeblock3 .textwrapper p{font-size: 20px; margin-bottom: 20px;}
+.homeblock5 .textwrapper h3{ margin-bottom: 20px;}
+
+
 @media only screen and (max-width: 1820px) {
     /* .newcontainer{width: 98%;} */
 }
@@ -584,6 +602,9 @@ display: none;
 }
 
 @media only screen and (max-width: 1440px) {
+    .homeblock2 .btnblue {
+        font-size: 34px
+    }
     .bannertext h4{    width: 680px;font-size: 24px;}
     .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
         font-size: 36px;
