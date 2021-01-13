@@ -22,7 +22,7 @@ public contactusdata: any = {
   doSubmit(){
     console.log(this.contactusdata,'+++++++');
     let data = {data:this.contactusdata}
-    this.apiService.postdata(data ,'https://219s17oisi.execute-api.us-east-1.amazonaws.com/dev/api/addcontactusforhps').subscribe((res: any) => {
+    this.apiService.postdata(data ,'https://3l17ji3kka.execute-api.us-east-1.amazonaws.com/dev/api/addcontactusforhps').subscribe((res: any) => {
       console.log(res);
       if (res.status === 'success') {
         console.log(res);

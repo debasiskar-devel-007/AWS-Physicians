@@ -13,6 +13,8 @@ import { Rm3aAwsProgramComponent } from './components/rm3a-aws-program/rm3a-aws-
 import { TheTmFlowDeviceComponent } from './components/the-tm-flow-device/the-tm-flow-device.component';
 import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-systen-marker/pece-tm-flow-systen-marker.component';
 import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
+import { RecruitingfunnelComponent } from './components/recruitingfunnel/recruitingfunnel.component';
+import { LandingpageComponent } from './components/landingpage/landingpage.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'the-tm-flow-devicem', component: TheTmFlowDeviceComponent },
   { path: 'pece-tm-flow-systen-marker', component: PeceTmFlowSystenMarkerComponent },
   { path: 'tm-flow-hardware', component: TmFlowHardwareComponent },
+  { path: 'recruitingfunnel', component: RecruitingfunnelComponent },
+  { path: 'landingpage', component: LandingpageComponent },
 ];
 
 @NgModule({

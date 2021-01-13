@@ -187,6 +187,11 @@
     background-image: url(../../../assets/images/listicon5.png);
     color: #fff;
 }
+.homeblock5 .homeblock5bgwrapper .homeblock3subwrapper2{
+    background: none;
+    padding: 20px 0;
+    padding-bottom: 30px;
+}
 .homeblock5bgwrapper{
     background-image: url(../../../assets/images/homenewbg2.jpg);
     background-repeat: no-repeat;
@@ -199,7 +204,7 @@
     text-transform: none;
     margin-bottom: 20px;
 }
-.homeblock5bgwrapper .homeblock3subwrapper2{background: none;}
+
 .homeblock4 .textwrapper h3 span{color: #0bc324;}
 .homeblock4 .textwrapper p{
     position: relative;
@@ -474,7 +479,7 @@ display: none;
 
 .homeblock3 .textwrapper p{font-size: 20px; margin-bottom: 20px;}
 .homeblock5 .textwrapper h3{ margin-bottom: 20px;}
-
+.homeblock3subwrapper2 .btnblue{margin-top: 20px;}
 
 @media only screen and (max-width: 1820px) {
     /* .newcontainer{width: 98%;} */
@@ -647,6 +652,11 @@ display: none;
     }
 }
 @media only screen and (max-width: 1199px) {
+    .homeblock3subwrapper2 .btnblue {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
     .homeblock3subwrapper2 {
         background-image: url(../../../assets/images/homenewimage07.png);
         background-repeat: no-repeat;

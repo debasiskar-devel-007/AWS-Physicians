@@ -606,7 +606,7 @@
     
     
     .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-        font-family: 'Montserrat-SemiBold';
+        font-family: 'Montserrat-Bold';
         font-size: 50px;
         background: rgb(9,49,70);
         background: linear-gradient(0deg, rgba(9,49,70,1) 0%, rgba(9,49,70,1) 50%, rgba(11,82,120,1) 50%, rgba(11,82,120,1) 100%);
