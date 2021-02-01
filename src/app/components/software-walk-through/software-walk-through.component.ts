@@ -1,5 +1,8 @@
 import { Component, OnInit, Inject, ViewEncapsulation, HostListener  } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, } from '@angular/material';
+import { ActivatedRoute } from '@angular/router';
+import { MetaserviceService } from 'src/app/metaservice/metaservice.service';
+import { environment } from 'src/environments/environment';
 export interface DialogData {
   data: any;
 }
@@ -10,7 +13,21 @@ export interface DialogData {
 })
 export class SoftwareWalkThroughComponent implements OnInit {
 
-  constructor(public dialog:MatDialog) { }
+  constructor(public dialog:MatDialog, private route: ActivatedRoute,private metaservice: MetaserviceService) {
+    const data: object = {
+      title: 'HPS PECETM Software Walk-through',
+      keywords:'HPS PECETM Software Walk-through, How Does HPS PECETM Work, HPS PECETM Software Functioning',
+      og_title:'PECETM - Patient Encounter Compilation & Execution Software',
+      description:'Explore the features and functions of the PECETM ANS Testing Software program through visual representations and demonstrative videos to understand some of the features and functioning of the platform.',
+      og_description:'Explore the features and functions of the PECETM ANS Testing Software program through visual representations and demonstrative videos to understand some of the features and functioning of the platform.',
+      og_url: 'https://healthprofitsolutions.com/software-walk-through',
+      og_type: 'website',
+      og_image: environment.share_image,
+      twitter_card:environment.share_image,
+    };
+    this.metaservice.setmeta(data);
+
+   }
 
   ngOnInit() {
   }

@@ -92,6 +92,10 @@
   .footeritem1 h2 {color: #222121;text-align: center;font-family: 'Montserrat-Regular';font-size: 21px;font-weight: normal;padding-top: 10px;width: 100%;}
   .footeritem1 h2 a {width: auto;background: none;padding: 0;color: #edbe17;}
   
+
+
+
+
   @media only screen and (max-width: 1820px) {
     .newcontainer{width: 98%;}
 }

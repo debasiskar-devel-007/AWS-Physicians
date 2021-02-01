@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { MetaserviceService } from 'src/app/metaservice/metaservice.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +13,20 @@ export class HomeComponent implements OnInit {
   windowScrolled: boolean;
   topPosToStartShowing = 1000;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,private metaservice: MetaserviceService) { 
+    const data: object = {
+      title: 'PECETM ANS Testing Medical Device Platform',
+      keywords:'PECETM ANS Testing Device, ANS Testing Platform, ANS Testing Software',
+      og_title:'PECETM - Patient Encounter Compilation & Execution Software',
+      description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
+      og_description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
+      og_url: 'https://healthprofitsolutions.com/',
+      og_type: 'website',
+      og_image: environment.share_image,
+      twitter_card:environment.share_image,
+    };
+    this.metaservice.setmeta(data);
+  }
 
   ngOnInit() {
   }
