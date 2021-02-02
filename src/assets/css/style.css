@@ -630,7 +630,6 @@
     .pece::after {
         content: 'TM';
         font-size: 10px;
-        border-radius: 50%;
         position: absolute;
         top: -4px;
         right: 0;
