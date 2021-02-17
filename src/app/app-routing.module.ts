@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'pece-tm-flow-systen-marker', component: PeceTmFlowSystenMarkerComponent },
   { path: 'tm-flow-hardware', component: TmFlowHardwareComponent },
   { path: 'rep', component: RecruitingfunnelComponent },
-  { path: 'landingpage', component: LandingpageComponent },
+  { path: 'landingpage/:userid/:productid', component: LandingpageComponent },
 ];
 
 @NgModule({

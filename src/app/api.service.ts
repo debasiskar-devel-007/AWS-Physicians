@@ -1,6 +1,6 @@
 import { Injectable, Inject, Component } from '@angular/core';
-import { Observable, interval, pipe } from 'rxjs';
-import { switchMap, map, takeWhile } from 'rxjs/operators';
+import { Observable, interval, pipe, throwError } from 'rxjs';
+import { switchMap, map, takeWhile, catchError } from 'rxjs/operators';
 /*import { environment } from '../../environments/environment';*/
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 /*import { JwtHelperService } from '@auth0/angular-jwt';
@@ -12,6 +12,7 @@ import {environment} from '../environments/environment';
 @Injectable()
 export class ApiService {
   public nodesslurl =  environment["api_url"];
+  public apiurl: any = environment["landing_api_url"];
   constructor(private _http: HttpClient,public cookie:CookieService) {}
 
   getData(endpoint:string){
@@ -76,7 +77,45 @@ export class ApiService {
     return result;
    
   }
+  getState() {
+    // const httpOptions = {
+    //   headers: new HttpHeaders({
+    //     'Content-Type': 'application/json',
+    //   })
+    // };
+    const result = this._http.get('assets/data/states.json').pipe(catchError((error) => {
+      //this.openSnackBar();
+      return throwError(error);
+    }), map(response => response));
+    return result;
   
+  }
+
+  getCity() {
+    const result = this._http.get('assets/data/city.json').pipe(catchError((error) => {
+      //this.openSnackBar();
+      return throwError(error);
+    }), map(response => response));
+    return result;
+  
+  }
+
+  getDatalistForSubmit(endpoint:any ,requestdata: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.cookie.get('jwtToken')
+      })
+    };
+     //console.log(requestdata.api_url)
+    
+      var result = this._http.post(this.apiurl + endpoint, requestdata, httpOptions).pipe(map(res => res));
+      return result;
+    
+
+  
+  
+  }
 
 
 }
