@@ -28,7 +28,7 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
 import { TheTmFlowDeviceComponent } from './components/the-tm-flow-device/the-tm-flow-device.component';
 import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-systen-marker/pece-tm-flow-systen-marker.component';
 import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
-import { RecruitingfunnelComponent } from './components/recruitingfunnel/recruitingfunnel.component';
+import { RecruitingfunnelComponent, FormConfirmMsgComponent } from './components/recruitingfunnel/recruitingfunnel.component';
 import { LandingpageComponent, FormConfirmComponent } from './components/landingpage/landingpage.component';
 import { ListingModule } from 'listing-angular7';
 
@@ -70,7 +70,8 @@ export function metaFactory(): MetaLoader {
     TmFlowHardwareComponent,
     RecruitingfunnelComponent,
     LandingpageComponent,
-    FormConfirmComponent
+    FormConfirmComponent,
+    FormConfirmMsgComponent
   ],
   imports: [
     ScrollToModule.forRoot(),
@@ -100,7 +101,7 @@ export function metaFactory(): MetaLoader {
   bootstrap: [AppComponent],
 
   entryComponents:[
-    ImageModalComponent,FormConfirmComponent
+    ImageModalComponent,FormConfirmComponent,FormConfirmMsgComponent
   ]
 })
 export class AppModule {

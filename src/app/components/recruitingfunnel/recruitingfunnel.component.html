@@ -22,7 +22,72 @@
                     <h2>Fill In Your <br>
                         Details</h2>
                 </div>
-                <form action="">
+
+                <form [formGroup]="options" (ngSubmit)="contactUs()">
+                    <mat-form-field appearance="fill">
+                      <mat-label>First Name</mat-label>
+                      <input matInput  formControlName="firstname" (blur)="inputUntouched('firstname')">
+                      <mat-error *ngIf="!options.controls['firstname'].valid && options.controls['firstname'].errors.required && options.controls['firstname'].touched">
+                          First Name field can not be blank
+                      </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Last Name</mat-label>
+                      <input matInput formControlName="lastname" (blur)="inputUntouched('lastname')">
+                      <mat-error *ngIf="!options.controls['lastname'].valid && options.controls['lastname'].errors.required && options.controls['lastname'].touched">
+                          Last Name field can not be blank
+                      </mat-error>
+                    </mat-form-field>
+                   
+                    <mat-form-field appearance="fill">
+                      <mat-label>Email Address</mat-label>
+                      <input matInput formControlName="email" (blur)="inputUntouched('email')">
+                      <mat-error *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
+                        Email field can not be blank
+                      </mat-error>
+                      <mat-error *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">Email is not valid</mat-error>
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="fill">
+                      <mat-label>Phone </mat-label>
+                      <input matInput type="number" formControlName="phone" (blur)="inputUntouched('phone')">
+                      <mat-error *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
+                        Phone Number field can not be blank
+                      </mat-error>
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="fill">
+                      <mat-label>City</mat-label>
+                      <mat-select  formControlName="city"  (blur)="inputUntouched('city')" >
+                        <mat-option *ngFor="let item of cityVal" value="{{item.val}}">{{item.name}}</mat-option>
+                      </mat-select>
+                     
+                      <mat-error *ngIf="!options.controls['city'].valid && options.controls['city'].errors.required && options.controls['city'].touched">City is required</mat-error>
+                  </mat-form-field>
+    
+                    <mat-form-field appearance="fill">
+                     
+                      <mat-label> State</mat-label>                               
+                      <mat-select   formControlName="state" (blur)="inputUntouched('state')" >
+                        <mat-option *ngFor="let item of stateVal" value="{{item.val}}">{{item.name}}</mat-option>
+                      </mat-select>
+                      
+                      <mat-error *ngIf="!options.controls['state'].valid && options.controls['state'].errors.required && options.controls['state'].touched">State is required</mat-error>
+                  </mat-form-field>
+                     
+                  <mat-form-field appearance="fill">
+                      <mat-label>Zip</mat-label>
+                      <input matInput type="number" formControlName="zipcode" (blur)="inputUntouched('zipcode')">
+                      <mat-error *ngIf="!options.controls['zipcode'].valid && options.controls['zipcode'].errors.required && options.controls['zipcode'].touched">
+                        Zip is required</mat-error>
+                    </mat-form-field>
+                    <div class="submitbtnwrapper">
+                        <img src="../../../assets/images/buttonicon1.png" alt="#">
+                        <button class="submitbtn"><span>Submit</span></button>
+                    </div>
+            </form>
+
+                <!-- <form action="">
                     <mat-form-field appearance="fill">
                         <mat-label>First Name</mat-label>
                         <input matInput>
@@ -61,7 +126,7 @@
                         <img src="../../../assets/images/buttonicon1.png" alt="#">
                         <button class="submitbtn"><span>Submit</span></button>
                     </div>
-                </form>
+                </form> -->
             </div>
             <div class="lpblock1subtextwrapper">
                 <div class="textsubwrapper textwrapper">
