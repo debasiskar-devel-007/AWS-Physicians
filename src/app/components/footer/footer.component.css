@@ -21,6 +21,7 @@
     background-repeat: no-repeat;background-position: left center;
     padding: 8px 0px 8px 0;display: inline-block;cursor: pointer; 
   }
+  .footermainwrapper a .pece::after{top: -2px;}
   .footermainwrapper a:hover {color: #fcc800; }
   .footermainwrapper a.activemenu {color: #fcc800 !important}
   .footermenu {
@@ -85,7 +86,7 @@
 
 
   .footerlogowrapper img {max-width: 100%}
-  .mat-card-subtitle {color: #bcbcbc;font-family: 'Montserrat-Regular';font-size: 14px;display: flex;align-items: center;}
+  .mat-card-subtitle {color: #bcbcbc;font-family: 'Montserrat-Regular';font-size: 14px;display: flex;align-items: center;margin: 0;}
   .mat-card-subtitle span:nth-child(1) {margin-right: 20px}
   .footerblock2 {background-color: #e1e1e1; padding: 22px 0 !important; border-radius: 0}
   .footerblock2 p {color: #6d7779;font-family: 'Montserrat-Regular';font-size: 16px;}

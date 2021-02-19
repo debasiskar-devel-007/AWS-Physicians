@@ -465,7 +465,12 @@
     font-size: 21px;
     font-size: 24px;
 }
-
+.lpmainwrapper {
+    background-image: url(../../../assets/images/lpagemainbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+}
 
 
 

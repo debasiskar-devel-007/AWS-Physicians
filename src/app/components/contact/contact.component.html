@@ -4,19 +4,20 @@
 <mat-card class="bannerblock">
     <img src="../../../assets/images/contactimage1.png" class="abimage">
     <span class="newcontainer">
-    <div class="bannertextwrapper">
-        <div class="bannertext">
-        <div class="bannertitlewrapper">
-            <h5>Contact Us</h5>
+        <div class="bannertextwrapper">
+            <div class="bannertext">
+                <div class="bannertitlewrapper">
+                    <h5>Contact Us</h5>
+                </div>
+                <h3>
+                    <span>Still got </span>
+                    <span>questions?</span>
+                </h3>
+                <h4>Our team of experts is here to help!</h4>
+                <h2>Send in your queries with as much details as you can provide and we will get back to you as soon as
+                    possible.</h2>
+            </div>
         </div>
-        <h3>
-            <span>Still got </span>
-            <span>questions?</span>
-        </h3>
-        <h4>Our team of experts is here to help!</h4>
-        <h2>Send in your queries with as much details as you can provide and we will get back to you as soon as possible.</h2>
-    </div>
-</div>
     </span>
 </mat-card>
 
@@ -33,7 +34,10 @@
                     <span class="leftblockwrapper">
                         <mat-card-content class="formtitlewrapper">
                             <p>
-                                1175 American <br> Pacific Dr Henderson, NV 89074
+                                <a  href="https://goo.gl/maps/KBCNiQmn8YEKA1M57" target="_blank">
+                                    1175 American  Pacific <br> Dr STE F, Henderson, NV 89074
+                                </a>
+                                
                             </p>
                         </mat-card-content>
                         <span class="leftbottomblock">
@@ -49,68 +53,74 @@
                 </mat-list-item>
                 <mat-list-item class="contactitem1">
                     <span class="formwrapper">
-                        
+
                         <mat-card-content class="lefttopbar">
                             <mat-card-subtitle>
                                 <h2>
-                                    Email: support@healthprofitsolutions.com <br>Fax: (855) 480-9539
+                                    Email: support@hpspros.com <br>Phone: 877-979-8479
                                 </h2>
                             </mat-card-subtitle>
                         </mat-card-content>
                         <form>
                             <span class="formgroup">
-                                <span class="formcol-5">
+                                <mat-form-field class="formcol-5">
 
-                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.firstname" [ngModelOptions]="{standalone: true}">
+                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.firstname"
+                                        [ngModelOptions]="{standalone: true}">
 
-                                </span>
-    <span class="formcol-5">
+                                </mat-form-field>
+                                <mat-form-field class="formcol-5">
 
-                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.lastname" [ngModelOptions]="{standalone: true}">
+                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.lastname"
+                                        [ngModelOptions]="{standalone: true}">
 
-                                </span>
-    </span>
-    <span class="formgroup">
-                                <span class="formcol-5">
+                                </mat-form-field>
+                            </span>
+                            <span class="formgroup">
+                                <mat-form-field class="formcol-5">
 
-                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email" [ngModelOptions]="{standalone: true}">
+                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email"
+                                        [ngModelOptions]="{standalone: true}">
 
-                                </span>
-    <span class="formcol-5">
+                                </mat-form-field>
+                                <mat-form-field class="formcol-5">
 
-                                    <input type="text" placeholder="Phone Number"  [(ngModel)]="contactusdata.phone" [ngModelOptions]="{standalone: true}">
+                                    <input type="text" placeholder="Phone Number" [(ngModel)]="contactusdata.phone"
+                                        [ngModelOptions]="{standalone: true}">
 
-                                </span>
-    </span>
-    <span class="formgroup">
-                                <span class="formcol-10">
+                                </mat-form-field>
+                            </span>
+                            <span class="formgroup">
+                                <mat-form-field class="formcol-10">
 
-                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.description" [ngModelOptions]="{standalone: true}"></textarea>
+                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.description"
+                                        [ngModelOptions]="{standalone: true}"></textarea>
 
-                                </span>
-    </span>
+                                </mat-form-field>
+                            </span>
 
-    <span class="formgroup capchawrapper">
+                            <span class="formgroup capchawrapper">
                                 <span class="formcol-3">
                                     <div class="cap_wrapper">
                                         <span class="capchatext">
                                             <img src="../../../assets/images/capchatext.png">
                                         </span>
-    <button><img src="../../../assets/images/recapcha.png"></button>
-    </div>
-    </span>
-    <span class="formcol-3">
-                                    <input type="text" placeholder="Enter Captcha" [(ngModel)]="contactusdata.capture" [ngModelOptions]="{standalone: true}">
+                                        <button><img src="../../../assets/images/recapcha.png"></button>
+                                    </div>
                                 </span>
-    <span class="formcol-4">
+                                <span class="formcol-3">
+                                    <input type="text" placeholder="Enter Captcha" [(ngModel)]="contactusdata.capture"
+                                        [ngModelOptions]="{standalone: true}">
+                                </span>
+                                <span class="formcol-4">
                                     <button matbutton class="greenbtn" (click)="doSubmit()">Submit</button>
                                 </span>
-    </span>
-    </form>
-    </span>
-    </mat-list-item>
-    </mat-list>
-    </span>
+                            </span>
+                        </form>
+                    </span>
+                </mat-list-item>
+            </mat-list>
+        </span>
     </span>
 </mat-card>
 <app-footer></app-footer>

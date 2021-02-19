@@ -12,7 +12,7 @@ export class TheScienceComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,private metaservice: MetaserviceService) {
     const data: object = {
-      title: 'PECETM ANS Science',
+      title: 'HPS-ANS Science',
       keywords:'ANS Science, Science of ANS Testing, ANS Testing Science',
       og_title:'PECETM - Patient Encounter Compilation & Execution Software',
       description:'The science that governs the PECETM ANS testing Medical Device Platform to assess the health risk areas in the Autonomous Nervous System for potential complications and diseases.',

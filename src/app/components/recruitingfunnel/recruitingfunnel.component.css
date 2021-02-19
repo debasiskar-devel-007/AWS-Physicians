@@ -430,6 +430,7 @@ margin-top: 97px;
     background-position: center center;
     background-size: cover;
 }
+.pece::after{top: 0;}
 @media screen and (max-width: 1880px){
     .lpblock8{background-position: left 94px bottom, left 790px bottom 10px, left 379px bottom 40px;}
 }

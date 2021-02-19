@@ -30,6 +30,7 @@ import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-syste
 import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
 import { RecruitingfunnelComponent } from './components/recruitingfunnel/recruitingfunnel.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
+import { HpsStudyComponent } from './components/hps-study/hps-study.component';
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -68,7 +69,8 @@ export function metaFactory(): MetaLoader {
     PeceTmFlowSystenMarkerComponent,
     TmFlowHardwareComponent,
     RecruitingfunnelComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    HpsStudyComponent
   ],
   imports: [
     ScrollToModule.forRoot(),

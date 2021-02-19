@@ -15,6 +15,7 @@ import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-syste
 import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
 import { RecruitingfunnelComponent } from './components/recruitingfunnel/recruitingfunnel.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
+import { HpsStudyComponent } from './components/hps-study/hps-study.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'tm-flow-hardware', component: TmFlowHardwareComponent },
   { path: 'rep', component: RecruitingfunnelComponent },
   { path: 'landingpage', component: LandingpageComponent },
+  { path: 'hps-Study', component: HpsStudyComponent },
 ];
 
 @NgModule({

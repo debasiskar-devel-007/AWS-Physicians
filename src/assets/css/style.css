@@ -598,6 +598,7 @@
         border: 1px solid #fff;
         margin-bottom: 20px;
         width: fit-content;
+        position: relative;
     }
     
     .bannertextwrapper h5 strong {
@@ -1104,7 +1105,9 @@
     text-transform: uppercase;
 }
 
-
+.formwrapper .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
 
 
 
