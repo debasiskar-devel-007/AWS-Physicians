@@ -61,7 +61,7 @@
                   </mat-error>
                 </mat-form-field>
 
-                <mat-form-field appearance="fill">
+                <!-- <mat-form-field appearance="fill">
                   <mat-label>Password</mat-label>
                   <input matInput type="password" formControlName="password" (blur)="inputUntouched('password')">
                   <mat-error *ngIf="!options.controls['password'].valid && options.controls['password'].errors.required && options.controls['password'].touched">
@@ -79,7 +79,7 @@
                     Password do not match
                   </mat-error> 
                   
-                </mat-form-field>
+                </mat-form-field> -->
 
                 <mat-form-field appearance="fill">
                   <mat-label>Company Name</mat-label>
@@ -87,6 +87,16 @@
                   <mat-error *ngIf="!options.controls['companyname'].valid && options.controls['companyname'].errors.required && options.controls['companyname'].touched">
                     Company Name field can not be blank
                   </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                 
+                    <mat-label> State</mat-label>                               
+                    <mat-select   formControlName="state" (blur)="inputUntouched('state')" >
+                      <mat-option *ngFor="let item of stateVal" value="{{item.val}}">{{item.name}}</mat-option>
+                    </mat-select>
+                    
+                    <mat-error *ngIf="!options.controls['state'].valid && options.controls['state'].errors.required && options.controls['state'].touched">State is required</mat-error>
                 </mat-form-field>
 
                 <mat-form-field appearance="fill">
@@ -98,15 +108,7 @@
                   <mat-error *ngIf="!options.controls['city'].valid && options.controls['city'].errors.required && options.controls['city'].touched">City is required</mat-error>
               </mat-form-field>
 
-                <mat-form-field appearance="fill">
-                 
-                  <mat-label> State</mat-label>                               
-                  <mat-select   formControlName="state" (blur)="inputUntouched('state')" >
-                    <mat-option *ngFor="let item of stateVal" value="{{item.val}}">{{item.name}}</mat-option>
-                  </mat-select>
-                  
-                  <mat-error *ngIf="!options.controls['state'].valid && options.controls['state'].errors.required && options.controls['state'].touched">State is required</mat-error>
-              </mat-form-field>
+              
                  
               <mat-form-field appearance="fill">
                   <mat-label>Zip</mat-label>

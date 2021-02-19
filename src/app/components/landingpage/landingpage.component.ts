@@ -4,14 +4,14 @@ import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher } from '@angular/material';
 import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const invalidCtrl = !!(control && control.invalid && control.parent.dirty);
-    const invalidParent = !!(control && control.parent && control.parent.invalid && control.parent.dirty);
+// export class MyErrorStateMatcher implements ErrorStateMatcher {
+//   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+//     const invalidCtrl = !!(control && control.invalid && control.parent.dirty);
+//     const invalidParent = !!(control && control.parent && control.parent.invalid && control.parent.dirty);
 
-    return (invalidCtrl || invalidParent);
-  }
-}
+//     return (invalidCtrl || invalidParent);
+//   }
+// }
 
 export interface DialogData {
   msg: string;
@@ -27,7 +27,7 @@ export class LandingpageComponent implements OnInit {
   public cityVal:any = [];
   public stateVal:any = [];
   options: FormGroup;
-  matcher = new MyErrorStateMatcher();
+  //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
   constructor(public apiservice: ApiService,private activatedroute: ActivatedRoute,public dialog: MatDialog,public fb:FormBuilder) { 
@@ -36,13 +36,11 @@ export class LandingpageComponent implements OnInit {
       lastname:['', Validators.required],
       email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
       phone:['',Validators.required],
-      password:['',Validators.required],
-      confirmpassword:['',Validators.required],
       companyname:['',Validators.required],
       city: ['', Validators.required],
       state: ['', Validators.required],
       zipcode: ['', Validators.required],
-    },{ validator: this.checkPasswords })
+    })
     
     this.apiservice.getCity().subscribe((response: any) => {
       for (const i in response) {
@@ -209,13 +207,13 @@ export class LandingpageComponent implements OnInit {
 
   ngOnInit() {
   }
-  checkPasswords(group: FormGroup) { // here we have the 'passwords' group
-  console.log('dsfdsf',group);
-  let pass = group.controls.password.value;
-  let confirmPass = group.controls.confirmpassword.value;
+//   checkPasswords(group: FormGroup) { // here we have the 'passwords' group
+//   console.log('dsfdsf',group);
+//   let pass = group.controls.password.value;
+//   let confirmPass = group.controls.confirmpassword.value;
 
-  return pass === confirmPass ? null : { notSame: true }
-}
+//   return pass === confirmPass ? null : { notSame: true }
+// }
 
 inputUntouched(val: any) {
   this.options.controls[val].markAsUntouched();
@@ -235,7 +233,7 @@ contactUs(){
        lastname: this.options.value.lastname,
        email:this.options.value.email,
        phone:this.options.value.phone.toString(),
-       password:this.options.value.password,
+       //password:this.options.value.password,
        company:this.options.value.companyname,
        state:this.options.value.state,
        city:this.options.value.city,
