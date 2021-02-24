@@ -1,5 +1,22 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, Inject, HostListener, ElementRef } from '@angular/core';
+import { ApiService } from 'src/app/api.service';
+import { ActivatedRoute } from '@angular/router';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher } from '@angular/material';
+import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 
+// export class MyErrorStateMatcher implements ErrorStateMatcher {
+//   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+//     const invalidCtrl = !!(control && control.invalid && control.parent.dirty);
+//     const invalidParent = !!(control && control.parent && control.parent.invalid && control.parent.dirty);
+
+//     return (invalidCtrl || invalidParent);
+//   }
+// }
+
+export interface DialogData {
+  msg: string;
+  flag: string;
+}
 @Component({
   selector: 'app-landingpage',
   templateUrl: './landingpage.component.html',
@@ -9,11 +26,152 @@ export class LandingpageComponent implements OnInit {
   isShow: boolean;
   windowScrolled: boolean;
   topPosToStartShowing = 1000;
+  public formdata: any ;
+  public cityVal:any = [];
+  public stateVal:any = [];
+  options: FormGroup;
+  //matcher = new MyErrorStateMatcher();
+  // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
+  constructor(public apiservice: ApiService,private activatedroute: ActivatedRoute,public dialog: MatDialog,public fb:FormBuilder) { 
+    this.options = this.fb.group({
+      firstname:['', Validators.required],
+      lastname:['', Validators.required],
+      email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
+      phone:['',Validators.required],
+      companyname:['',Validators.required],
+      city: ['', Validators.required],
+      state: ['', Validators.required],
+      zipcode: ['', Validators.required],
+    })
+    
+    this.apiservice.getCity().subscribe((response: any) => {
+      for (const i in response) {
+        this.cityVal.push(
+          { 'val': response[i].city, 'name': response[i].city },
+        );
+      }
+  
+  });
 
-  constructor() { }
+  this.apiservice.getState().subscribe((response: any) => {
+    for (const i in response) {
+      this.stateVal.push(
+        { 'val': response[i].abbreviation, 'name': response[i].name },
+      );
+    }
+  
+  });
+
+   
+  
+  }
 
   ngOnInit() {
   }
+//   checkPasswords(group: FormGroup) { // here we have the 'passwords' group
+//   console.log('dsfdsf',group);
+//   let pass = group.controls.password.value;
+//   let confirmPass = group.controls.confirmpassword.value;
+
+//   return pass === confirmPass ? null : { notSame: true }
+// }
+
+inputUntouched(val: any) {
+  this.options.controls[val].markAsUntouched();
+}
+
+contactUs(){     
+  // console.log('++++ not valid',this.options.value)
+   let formCalData: any;
+  for (formCalData in this.options.controls) {
+     this.options.controls[formCalData].markAsTouched();
+   }
+  if (this.options.valid) {
+    
+   let fromData ={
+     data:{
+       firstname :this.options.value.firstname,
+       lastname: this.options.value.lastname,
+       email:this.options.value.email,
+       phone:this.options.value.phone.toString(),
+       //password:this.options.value.password,
+       company:this.options.value.companyname,
+       state:this.options.value.state,
+       city:this.options.value.city,
+       zip:this.options.value.zipcode,
+       source:'Hps-landing-page-1',
+       parentid:this.activatedroute.snapshot.params.userid,
+       type:'lead',
+       status:1,
+       product_id:this.activatedroute.snapshot.params.productid
+     }
+    
+   }
+
+   this.apiservice.getDatalistForSubmit('api3/usersignup', fromData).subscribe((response: any) => {
+     if(response.status == "success"){
+
+          const dialogRef = this.dialog.open(FormConfirmComponent,{
+            panelClass:'successModal',
+            data:{ flag:'success'}
+          });
+          dialogRef.afterClosed().subscribe(result => {
+          });
+        this.options.reset();
+          
+       
+     }
+
+     if(response.status == "error"){
+
+      const dialogRef = this.dialog.open(FormConfirmComponent,{
+        panelClass:'successModal',
+        data:{msg:response.errormessage , flag:'error'}
+      });
+      dialogRef.afterClosed().subscribe(result => {
+      });
+   // this.options.reset();
+     }
+     
+    }, error => {
+    });
+    
+  }
+ }
+
+
+//   listenFormFieldChange(val:any){
+//   //console.log('ddd',val);
+//   if(val.field == "fromsubmit" && val.fieldval == "success"){
+   
+//    let submitData ={
+//      data:val.fromval
+     
+//    }
+//   // console.log('lllllllll',submitData);
+//    this.apiservice.getDatalistForSubmit('api/addusers', submitData).subscribe((response: any) => {
+//     if(response.status == "success"){
+ 
+//       const dialogRef = this.dialog.open(FormConfirmComponent,{
+//         panelClass:'successModal',
+//         data:{ flag:'success'}
+//       });
+//       dialogRef.afterClosed().subscribe(result => {
+//       });
+//  }
+
+//  if(response.status == "error"){
+
+//   const dialogRef = this.dialog.open(FormConfirmComponent,{
+//     panelClass:'successModal',
+//     data:{msg:response.errormessage , flag:'error'}
+//   });
+//   dialogRef.afterClosed().subscribe(result => {
+//   });
+//  }
+//    });
+//   }
 
 
   checkScroll() {
@@ -66,4 +224,18 @@ scrollToTop() {
 
 
 
+//   }
 }
+
+@Component({
+  selector: 'app-confirm',
+  templateUrl: './success.html',
+  styleUrls: ['./landingpage.component.css']
+})
+
+export class FormConfirmComponent {
+  constructor(public dialogRef: MatDialogRef<FormConfirmComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData){
+   // console.log('ddd',data)
+  }
+ }

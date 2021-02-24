@@ -32,8 +32,8 @@ const routes: Routes = [
   { path: 'the-tm-flow-devicem', component: TheTmFlowDeviceComponent },
   { path: 'pece-tm-flow-systen-marker', component: PeceTmFlowSystenMarkerComponent },
   { path: 'tm-flow-hardware', component: TmFlowHardwareComponent },
-  { path: 'rep', component: RecruitingfunnelComponent },
-  { path: 'landingpage', component: LandingpageComponent },
+  { path: 'rep/:userid/:productid', component: RecruitingfunnelComponent },
+  { path: 'landingpage/:userid/:productid', component: LandingpageComponent },
   { path: 'hps-Study', component: HpsStudyComponent },
 ];
 

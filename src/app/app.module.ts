@@ -28,8 +28,9 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
 import { TheTmFlowDeviceComponent } from './components/the-tm-flow-device/the-tm-flow-device.component';
 import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-systen-marker/pece-tm-flow-systen-marker.component';
 import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
-import { RecruitingfunnelComponent } from './components/recruitingfunnel/recruitingfunnel.component';
-import { LandingpageComponent } from './components/landingpage/landingpage.component';
+import { RecruitingfunnelComponent, FormConfirmMsgComponent } from './components/recruitingfunnel/recruitingfunnel.component';
+import { LandingpageComponent, FormConfirmComponent } from './components/landingpage/landingpage.component';
+
 import { HpsStudyComponent } from './components/hps-study/hps-study.component';
 
 export function metaFactory(): MetaLoader {
@@ -70,6 +71,8 @@ export function metaFactory(): MetaLoader {
     TmFlowHardwareComponent,
     RecruitingfunnelComponent,
     LandingpageComponent,
+    FormConfirmComponent,
+    FormConfirmMsgComponent,
     HpsStudyComponent
   ],
   imports: [
@@ -91,6 +94,7 @@ export function metaFactory(): MetaLoader {
     CommonModule,
     TransferHttpCacheModule,
     NgtUniversalModule,
+
   ],
   providers: [
     CookieService,TestresolveService,ApiService
@@ -99,7 +103,7 @@ export function metaFactory(): MetaLoader {
   bootstrap: [AppComponent],
 
   entryComponents:[
-    ImageModalComponent
+    ImageModalComponent,FormConfirmComponent,FormConfirmMsgComponent
   ]
 })
 export class AppModule {

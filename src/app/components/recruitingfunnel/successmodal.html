@@ -1,0 +1,9 @@
+<button mat-button mat-dialog-close class="close">X</button>
+<mat-card class="modal_wrapper">
+    <!-- <mat-card-content class="modallogo">
+      <img src="https://all-frontend-assets.s3.amazonaws.com/uta/assets/images/universal-tech-logo.png">
+    </mat-card-content> -->
+    <mat-card-title *ngIf="data.flag == 'success'">Successfully Submitted.</mat-card-title>
+    <mat-card-title *ngIf="data.flag == 'error'">{{data.msg}}</mat-card-title>
+   
+  </mat-card>  
