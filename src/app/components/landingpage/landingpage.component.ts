@@ -3,6 +3,7 @@ import { ApiService } from 'src/app/api.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher } from '@angular/material';
 import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
 
 // export class MyErrorStateMatcher implements ErrorStateMatcher {
 //   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -26,11 +27,12 @@ export class LandingpageComponent implements OnInit {
   public formdata: any ;
   public cityVal:any = [];
   public stateVal:any = [];
+  public ip:any;
   options: FormGroup;
   //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-  constructor(public apiservice: ApiService,private activatedroute: ActivatedRoute,public dialog: MatDialog,public fb:FormBuilder) { 
+  constructor(public apiservice: ApiService,private activatedroute: ActivatedRoute,public dialog: MatDialog,public fb:FormBuilder,public cookieservice: CookieService) { 
     this.options = this.fb.group({
       firstname:['', Validators.required],
       lastname:['', Validators.required],
@@ -41,6 +43,17 @@ export class LandingpageComponent implements OnInit {
       state: ['', Validators.required],
       zipcode: ['', Validators.required],
     })
+    var currentTimeInSeconds=Math.floor(Date.now()/1000); 
+    let cookieval = currentTimeInSeconds.toString();
+    console.log(currentTimeInSeconds,'lll',cookieval);
+   
+    this.cookieservice.set('time', cookieval);
+
+    this.apiservice.getclientip().subscribe((res: any) => {
+      
+        this.ip=res.ip;
+       // console.log(res,'ffffffff',this.ip);
+    });
     
     this.apiservice.getCity().subscribe((response: any) => {
       for (const i in response) {
