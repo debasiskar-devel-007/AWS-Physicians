@@ -1,9 +1,25 @@
 <button mat-button mat-dialog-close class="close">X</button>
 <mat-card class="modal_wrapper">
-    <!-- <mat-card-content class="modallogo">
-      <img src="https://all-frontend-assets.s3.amazonaws.com/uta/assets/images/universal-tech-logo.png">
-    </mat-card-content> -->
-    <mat-card-title *ngIf="data.flag == 'success'">Successfully Submitted.</mat-card-title>
-    <mat-card-title *ngIf="data.flag == 'error'">{{data.msg}}</mat-card-title>
-   
-  </mat-card>  
+
+  <mat-card-title *ngIf="data.flag == 'success'">
+    <h4>Thank you,</h4>
+    <p>we have successfully received your enquiry and will get back to you shortly.</p>
+    <!-- <span>Meanwhile Please provide us with some Additional Information.</span> -->
+  </mat-card-title>
+  <mat-card-title *ngIf="data.flag == 'error'">{{data.msg}}</mat-card-title>
+  <!-- <span>
+       If You want complete your worksheet <button *ngIf="data.flag == 'success'" mat-button (click)="worksheet()">Click Here</button>
+   </span> -->
+
+
+</mat-card>
+
+<mat-card class="modal_wrapper" *ngIf="data.flag == 'success'">
+  <!-- <mat-progress-bar mode="indeterminate" *ngIf="progressSpinner.loading "></mat-progress-bar> -->
+  <!-- <lib-showform [formdata]="formdata" [formfieldrefresh]="formfieldrefresh"
+    [formfieldrefreshdata]="formfieldrefreshdata" (onFormFieldChange)="listenFormFieldChange($event)">
+  </lib-showform> -->
+  <!-- <p>Comeing soon .............</p> -->
+  <!-- <button *ngIf="data.flag == 'success'" mat-button mat-dialog-close>Not Now</button>
+  <span>** The information you provide is Valuable and Secure with us. </span> -->
+</mat-card>
