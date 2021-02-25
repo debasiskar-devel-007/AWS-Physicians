@@ -90,7 +90,7 @@ export class LandingpageComponent implements OnInit {
     let clickdata:any = {
       data:{
         products: this.activatedroute.snapshot.params.productid,
-        time: parseInt(this.cookieservice.get('time')),
+        time: parseInt(this.cookieservice.get('hpstime')),
         userid: this.activatedroute.snapshot.params.userid,
         source: "Hps-landing-page-1",
         ip: this.ip
@@ -99,7 +99,7 @@ export class LandingpageComponent implements OnInit {
     //console.log(clickdata);
      this.apiservice.getDatalistForSubmit('api/sharelinkclickcount', clickdata).subscribe((response: any) => {});
 
-     this.cookieservice.set('time', this.cookieval);
+     this.cookieservice.set('hpstime', this.cookieval);
   }, 3000);
     
   
