@@ -20,6 +20,9 @@ export interface DialogData {
   userid: any;
   product: any
 }
+export interface DialogDataForContent {
+  flag:string
+}
 @Component({
   selector: 'app-landingpage',
   templateUrl: './landingpage.component.html',
@@ -265,6 +268,19 @@ scrollToTop() {
   //   }
 
   //   }
+
+  modalcall(value){
+   // console.log('hhhhhhhh')
+    const dialogRef = this.dialog.open(ContentModalComponent,{
+      panelClass:'successModal',
+      data:{ flag:value}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    });
+
+
+}
+  
 }
 
 @Component({
@@ -378,3 +394,16 @@ export class FormConfirmComponent {
     });
   }
 }
+
+@Component({
+  selector: 'app-confirm',
+  templateUrl: './contentmodal.html',
+  styleUrls: ['./landingpage.component.css']
+})
+
+export class ContentModalComponent {
+  constructor(public dialogRef: MatDialogRef<ContentModalComponent>,
+    @Inject(MAT_DIALOG_DATA)public data: DialogDataForContent){
+  
+  }
+ }

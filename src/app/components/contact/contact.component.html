@@ -4,20 +4,19 @@
 <mat-card class="bannerblock">
     <img src="../../../assets/images/contactimage1.png" class="abimage">
     <span class="newcontainer">
-        <div class="bannertextwrapper">
-            <div class="bannertext">
-                <div class="bannertitlewrapper">
-                    <h5>Contact Us</h5>
-                </div>
-                <h3>
-                    <span>Still got </span>
-                    <span>questions?</span>
-                </h3>
-                <h4>Our team of experts is here to help!</h4>
-                <h2>Send in your queries with as much details as you can provide and we will get back to you as soon as
-                    possible.</h2>
-            </div>
+    <div class="bannertextwrapper">
+        <div class="bannertext">
+        <div class="bannertitlewrapper">
+            <h5>Contact Us</h5>
         </div>
+        <h3>
+            <span>Still got </span>
+            <span>questions?</span>
+        </h3>
+        <h4>Our team of experts is here to help!</h4>
+        <h2>Send in your queries with as much details as you can provide and we will get back to you as soon as possible.</h2>
+    </div>
+</div>
     </span>
 </mat-card>
 
@@ -34,10 +33,7 @@
                     <span class="leftblockwrapper">
                         <mat-card-content class="formtitlewrapper">
                             <p>
-                                <a  href="https://goo.gl/maps/KBCNiQmn8YEKA1M57" target="_blank">
-                                    1175 American  Pacific <br> Dr STE F, Henderson, NV 89074
-                                </a>
-                                
+                                1175 American <br> Pacific Dr Henderson, NV 89074
                             </p>
                         </mat-card-content>
                         <span class="leftbottomblock">
@@ -53,52 +49,18 @@
                 </mat-list-item>
                 <mat-list-item class="contactitem1">
                     <span class="formwrapper">
-
+                        
                         <mat-card-content class="lefttopbar">
                             <mat-card-subtitle>
                                 <h2>
-                                    Email: support@hpspros.com <br>Phone: 877-979-8479
+                                    Email: support@healthprofitsolutions.com <br>Fax: (855) 480-9539
                                 </h2>
                             </mat-card-subtitle>
                         </mat-card-content>
                         <form [formGroup]="options" (ngSubmit)="doSubmit()">
                             <span class="formgroup">
-                                <mat-form-field class="formcol-5">
+                                <span class="formcol-5">
 
-<<<<<<< HEAD
-                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.firstname"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                                <mat-form-field class="formcol-5">
-
-                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.lastname"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                            </span>
-                            <span class="formgroup">
-                                <mat-form-field class="formcol-5">
-
-                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                                <mat-form-field class="formcol-5">
-
-                                    <input type="text" placeholder="Phone Number" [(ngModel)]="contactusdata.phone"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                            </span>
-                            <span class="formgroup">
-                                <mat-form-field class="formcol-10">
-
-                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.description"
-                                        [ngModelOptions]="{standalone: true}"></textarea>
-
-                                </mat-form-field>
-=======
                                     <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.first_name" 
                                     formControlName="first_name"
                                     [ngModelOptions]="{standalone: true}"
@@ -167,7 +129,6 @@
                                 <span *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
                                     Please enter a message
                                 </span>
->>>>>>> 5e9e58143c2c924c2d155459b0221b26186346ce
                             </span>
 
                             <span class="formgroup capchawrapper">
@@ -177,17 +138,6 @@
                                             {{code}}
                                             <!--<img src="../../../assets/images/capchatext.png">-->
                                         </span>
-<<<<<<< HEAD
-                                        <button><img src="../../../assets/images/recapcha.png"></button>
-                                    </div>
-                                </span>
-                                <span class="formcol-3">
-                                    <input type="text" placeholder="Enter Captcha" [(ngModel)]="contactusdata.capture"
-                                        [ngModelOptions]="{standalone: true}">
-                                </span>
-                                <span class="formcol-4">
-                                    <button matbutton class="greenbtn" (click)="doSubmit()">Submit</button>
-=======
                                         <button (click)="createCaptcha()"><img src="../../../assets/images/recapcha.png"></button>
                             </div>
                         </span>
@@ -206,14 +156,13 @@
     <span class="formcol-4">
                         
                                     <button matbutton class="greenbtn">Submit</button>
->>>>>>> 5e9e58143c2c924c2d155459b0221b26186346ce
                                 </span>
-                            </span>
-                        </form>
-                    </span>
-                </mat-list-item>
-            </mat-list>
-        </span>
+    </span>
+    </form>
+    </span>
+    </mat-list-item>
+    </mat-list>
+    </span>
     </span>
 </mat-card>
 <app-footer></app-footer>
