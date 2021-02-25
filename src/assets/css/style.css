@@ -1111,6 +1111,9 @@
 
 
 
+.contactitemwraooer .capchatext{color: #ff0000; font-size: 30px; transform: rotate(-6deg);
+    letter-spacing: -3px; text-decoration: line-through;  text-decoration-thickness: 1px;}  
+
 
 
 .cdk-overlay-pane.successModal {border: 5px solid #14c11c;}

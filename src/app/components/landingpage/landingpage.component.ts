@@ -60,7 +60,7 @@ export class LandingpageComponent implements OnInit {
     this.apiservice.getclientip().subscribe((res: any) => {
       
         this.ip=res.ip.toString();
-        // console.log(res,'ffffffff', this.ip);
+        //console.log(res,'ffffffff', this.ip);
     });
     
 
@@ -101,7 +101,7 @@ export class LandingpageComponent implements OnInit {
         ip: this.ip
       }
     }
-    console.log(clickdata);
+    //console.log(clickdata);
      this.apiservice.getDatalistForSubmit('api/sharelinkclickcount', clickdata).subscribe((response: any) => {});
 
      this.cookieservice.set('time', this.cookieval);
