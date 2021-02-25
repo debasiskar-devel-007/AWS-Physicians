@@ -3,6 +3,7 @@ import { ApiService } from 'src/app/api.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher, MatSnackBar } from '@angular/material';
 import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
 
 // export class MyErrorStateMatcher implements ErrorStateMatcher {
 //   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -31,12 +32,14 @@ export class LandingpageComponent implements OnInit {
   public formdata: any ;
   public cityVal:any = [];
   public stateVal:any = [];
-
+  public ip:any;
+  public cookieval:any;
   options: FormGroup;
   //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-  constructor(public apiservice: ApiService, private activatedroute: ActivatedRoute, public dialog: MatDialog, public fb: FormBuilder, public route: ActivatedRoute) {
+  constructor(public apiservice: ApiService,private activatedroute: ActivatedRoute,public dialog: MatDialog,public fb:FormBuilder,public cookieservice: CookieService) { 
+
     this.options = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
@@ -47,6 +50,20 @@ export class LandingpageComponent implements OnInit {
       state: ['', Validators.required],
       zipcode: ['', Validators.required],
     })
+
+    var currentTimeInSeconds=Math.floor(Date.now()); 
+    this.cookieval = currentTimeInSeconds.toString();
+    //console.log(currentTimeInSeconds,'lll',cookieval);
+   
+    
+
+    this.apiservice.getclientip().subscribe((res: any) => {
+      
+        this.ip=res.ip.toString();
+        // console.log(res,'ffffffff', this.ip);
+    });
+    
+
 
     this.apiservice.getCity().subscribe((response: any) => {
       for (const i in response) {
@@ -68,10 +85,29 @@ export class LandingpageComponent implements OnInit {
 
     });
 
+    
+
 
   }
 
   ngOnInit() {
+    setTimeout(()=>{       
+    let clickdata:any = {
+      data:{
+        products: this.activatedroute.snapshot.params.productid,
+        time: parseInt(this.cookieservice.get('time')),
+        userid: this.activatedroute.snapshot.params.userid,
+        source: "Hps-landing-page-1",
+        ip: this.ip
+      }
+    }
+    console.log(clickdata);
+     this.apiservice.getDatalistForSubmit('api/sharelinkclickcount', clickdata).subscribe((response: any) => {});
+
+     this.cookieservice.set('time', this.cookieval);
+  }, 3000);
+    
+  
   }
   //   checkPasswords(group: FormGroup) { // here we have the 'passwords' group
   //   console.log('dsfdsf',group);
@@ -108,7 +144,7 @@ export class LandingpageComponent implements OnInit {
           parentid: this.activatedroute.snapshot.params.userid,
           type: 'lead',
           status: 1,
-          product_id: this.activatedroute.snapshot.params.productid
+          products: this.activatedroute.snapshot.params.productid
         }
 
       }
@@ -118,7 +154,7 @@ export class LandingpageComponent implements OnInit {
 
           const dialogRef = this.dialog.open(FormConfirmComponent, {
             panelClass: 'successModal',
-            data: { flag: 'success', userid: this.route.snapshot.params.userid, product: this.route.snapshot.params.productid }
+            data: { flag: 'success', userid: this.activatedroute.snapshot.params.userid, product: this.activatedroute.snapshot.params.productid }
           });
           dialogRef.afterClosed().subscribe(result => {
           });

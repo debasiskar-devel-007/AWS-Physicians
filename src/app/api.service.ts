@@ -134,5 +134,13 @@ export class ApiService {
 
   }
 
+    //ip track api function
+    getclientip() {
+      // console.log('endpoint');
+      // this.isTokenExpired()
+      var result = this._http.get("https://ipinfo.io/?format=json&token=9797c42b93078a").pipe(map(res => res));
+      return result;
+    }
+
 
 }
