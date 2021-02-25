@@ -30,7 +30,8 @@ import { PeceTmFlowSystenMarkerComponent } from './components/pece-tm-flow-syste
 import { TmFlowHardwareComponent } from './components/tm-flow-hardware/tm-flow-hardware.component';
 import { RecruitingfunnelComponent, FormConfirmMsgComponent } from './components/recruitingfunnel/recruitingfunnel.component';
 import { LandingpageComponent, FormConfirmComponent } from './components/landingpage/landingpage.component';
-import { ListingModule } from 'listing-angular7';
+
+import { HpsStudyComponent } from './components/hps-study/hps-study.component';
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -71,7 +72,8 @@ export function metaFactory(): MetaLoader {
     RecruitingfunnelComponent,
     LandingpageComponent,
     FormConfirmComponent,
-    FormConfirmMsgComponent
+    FormConfirmMsgComponent,
+    HpsStudyComponent
   ],
   imports: [
     ScrollToModule.forRoot(),
@@ -92,7 +94,7 @@ export function metaFactory(): MetaLoader {
     CommonModule,
     TransferHttpCacheModule,
     NgtUniversalModule,
-    ListingModule
+
   ],
   providers: [
     CookieService,TestresolveService,ApiService

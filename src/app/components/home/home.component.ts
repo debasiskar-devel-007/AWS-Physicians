@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,private metaservice: MetaserviceService) { 
     const data: object = {
-      title: 'PECETM ANS Testing Medical Device Platform',
+      title: 'HPS ANS Testing Medical Device Platform',
       keywords:'PECETM ANS Testing Device, ANS Testing Platform, ANS Testing Software',
       og_title:'PECETM - Patient Encounter Compilation & Execution Software',
       description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',

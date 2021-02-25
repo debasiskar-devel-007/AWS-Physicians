@@ -49,7 +49,7 @@
 .lefttopbar .mat-card-subtitle{display:flex;width:100%;justify-content:space-between;align-items:center;position:relative}
 /* .lefttopbar .mat-card-subtitle:after{content:'';height:90%;width:2px;left:45%;top:50%;transform:translate(-50%,-50%);position:absolute;background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,1),rgba(255,255,255,0.3))} */
 .lefttopbar .mat-card-subtitle h2{font-family:'Montserrat-Regular';font-size:20px;color:#fff;font-weight:400}
-.contactitemwraooer .mat-list{display:flex;width:100%;align-items:center;justify-content:space-between}
+.contactitemwraooer .mat-list{display:flex;width:100%;align-items:flex-end;justify-content:space-between}
 .contactitemwraooer .mat-list .mat-list-item.contactitem1{width:62%}
 .contactitemwraooer .mat-list .mat-list-item.contactitem2{width:38%}
 .imgwrapper{
@@ -76,7 +76,7 @@
     font-family: 'Montserrat-Regular';
 }
 .formwrapper textarea{
-    min-height: 165px;
+    min-height: 113px;
     resize: none;
     padding: 1%;
     width: 98%;
@@ -86,16 +86,18 @@
 
 .formtitlewrapper h1{font-family:'Raleway-Bold';font-size:36px;color:#fff;text-transform:uppercase;text-shadow:0 3px 6px rgba(0,0,0,0.6);text-align:center;margin:0;padding-bottom:0}
 
-.formtitlewrapper p{
+.formtitlewrapper p a{
     font-family:'Raleway-Bold';
     font-size: 30px;
     color: #0d0f0d;
+    text-decoration: none;
 }
 .formwrapper{
     background-size:cover;
     background-repeat:no-repeat;
     background-position:left top;
     padding:10px;border-radius:5px;
+    padding-bottom: 0;
 }
 .formwrapper form{
     background: rgb(228,236,239);

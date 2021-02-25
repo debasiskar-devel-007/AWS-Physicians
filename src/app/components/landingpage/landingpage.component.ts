@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, HostListener, ElementRef } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher, MatSnackBar } from '@angular/material';
@@ -26,6 +26,9 @@ export interface DialogData {
   styleUrls: ['./landingpage.component.css']
 })
 export class LandingpageComponent implements OnInit {
+  isShow: boolean;
+  windowScrolled: boolean;
+  topPosToStartShowing = 1000;
   public formdata: any ;
   public cityVal:any = [];
   public stateVal:any = [];
@@ -69,6 +72,8 @@ export class LandingpageComponent implements OnInit {
         );
       }
 
+   
+  
     });
 
     this.apiservice.getState().subscribe((response: any) => {
@@ -176,6 +181,57 @@ export class LandingpageComponent implements OnInit {
   }
 
 
+  checkScroll() {
+      
+    // window의 scroll top
+    // Both window.pageYOffset and document.documentElement.scrollTop returns the same result in all the cases. window.pageYOffset is not supported below IE 9.
+
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    console.log('[scroll]', scrollPosition);
+    
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+  gotoTop() {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+    console.warn('test');
+  }
+  
+  @HostListener("window:scroll", []) 
+  onWindowScroll() {
+    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+        this.windowScrolled = true;
+    }
+    else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+        this.windowScrolled = false;
+    }
+}
+
+scrollToTop() {
+  (function smoothscroll() {
+
+      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (currentScroll > 0) {
+          window.requestAnimationFrame(smoothscroll);
+          window.scrollTo(0, currentScroll - (currentScroll / 8));
+      }
+
+  })();
+}
+
+
+
+
+//   }
   //   listenFormFieldChange(val:any){
   //   //console.log('ddd',val);
   //   if(val.field == "fromsubmit" && val.fieldval == "success"){

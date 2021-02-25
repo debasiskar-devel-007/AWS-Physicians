@@ -67,6 +67,7 @@
     background-image: url(../../../assets/images/formmainbg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -3% !important;
 }
 .submitbtn{
     background: rgb(3,3,3);
@@ -465,7 +466,12 @@
     font-size: 21px;
     font-size: 24px;
 }
-
+.lpmainwrapper {
+    background-image: url(../../../assets/images/lpagemainbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+}
 
 
 
@@ -847,6 +853,11 @@
 
 
 
+@media screen and (max-width: 991px){
+    .lpblock1subtextwrapper .textsubwrapper.textwrapper h2 span{
+        display: block;
+    }
+}
 @media screen and (max-width: 767px){
     .textsubwrapper.textwrapper h2, .textsubwrapper.textwrapper h2 span, .textsubwrapper.textwrapper h2 i {
         font-size: 50px;

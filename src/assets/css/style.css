@@ -598,6 +598,7 @@
         border: 1px solid #fff;
         margin-bottom: 20px;
         width: fit-content;
+        position: relative;
     }
     
     .bannertextwrapper h5 strong {
@@ -1104,9 +1105,19 @@
     text-transform: uppercase;
 }
 
+.formwrapper .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
 
 
 
+.contactitemwraooer .capchatext{color: #ff0000; font-size: 30px; transform: rotate(-6deg);
+    letter-spacing: -3px; text-decoration: line-through;  text-decoration-thickness: 1px;}  
 
 
 
+.cdk-overlay-pane.successModal {border: 5px solid #14c11c;}
+.modal_wrapper h4, .modal_wrapper p, .modal_wrapper .mat-card-title{text-align: center;}
+.cdk-overlay-pane.successModal .mat-dialog-container{position: relative;border-radius: 0;}
+.cdk-overlay-pane.successModal .mat-dialog-container .mat-button{background: #14c11c;position: absolute;right: 0;top: 0;border-radius: 0 3px 0 58px;color: #fff;}
+.modal_wrapper {padding-top: 30px !important;}
