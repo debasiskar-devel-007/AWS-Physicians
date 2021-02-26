@@ -50,7 +50,7 @@ export class LandingpageComponent implements OnInit {
       og_title:'PECETM - Patient Encounter Compilation & Execution Software',
       description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
       og_description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
-      og_url: 'https://healthprofitsolutions.com/landingpage' + this.route.snapshot.params.userid + '/' + this.route.snapshot.params.productid,
+      og_url: 'https://healthprofitsolutions.com/landingpage/' + this.route.snapshot.params.userid + '/' + this.route.snapshot.params.productid,
       og_type: 'website',
       og_image: environment.share_image,
       twitter_card:environment.share_image,
