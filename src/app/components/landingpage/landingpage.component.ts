@@ -1,11 +1,12 @@
 import { Component, OnInit, Inject, HostListener, ElementRef } from '@angular/core';
-import { ApiService } from 'src/app/api.service';
+
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher, MatSnackBar } from '@angular/material';
 import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 import { MetaserviceService } from 'src/app/metaservice/metaservice.service';
 import { environment } from 'src/environments/environment';
 import { CookieService } from 'ngx-cookie-service';
+import { ApiService } from 'src/app/api.service';
 
 // export class MyErrorStateMatcher implements ErrorStateMatcher {
 //   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -76,13 +77,13 @@ export class LandingpageComponent implements OnInit {
     //console.log(currentTimeInSeconds,'lll',cookieval);
    
     
-
     this.apiservice.getclientip().subscribe((res: any) => {
       
-        this.ip=res.ip.toString();
-        //console.log(res,'ffffffff', this.ip);
-    });
-    
+      this.ip=res.ip.toString();
+      //console.log(res,'ffffffff', this.ip);
+  });
+  
+
 
 
     this.apiservice.getCity().subscribe((response: any) => {
