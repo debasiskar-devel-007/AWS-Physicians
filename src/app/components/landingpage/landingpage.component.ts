@@ -3,6 +3,8 @@ import { ApiService } from 'src/app/api.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher, MatSnackBar } from '@angular/material';
 import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
+import { MetaserviceService } from 'src/app/metaservice/metaservice.service';
+import { environment } from 'src/environments/environment';
 
 // export class MyErrorStateMatcher implements ErrorStateMatcher {
 //   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -32,7 +34,23 @@ export class LandingpageComponent implements OnInit {
   //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-  constructor(public apiservice: ApiService, private activatedroute: ActivatedRoute, public dialog: MatDialog, public fb: FormBuilder, public route: ActivatedRoute) {
+  constructor(public apiservice: ApiService, private activatedroute: ActivatedRoute, public dialog: MatDialog, public fb: FormBuilder, public route: ActivatedRoute ,public metaservice:MetaserviceService ) {
+    const data: object = {
+      title: 'PECETM ANS Testing Medical Device Platform',
+      keywords:'PECETM ANS Testing Device, ANS Testing Platform, ANS Testing Software',
+      og_title:'PECETM - Patient Encounter Compilation & Execution Software',
+      description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
+      og_description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
+      og_url: 'https://healthprofitsolutions.com/landingpage' + this.route.snapshot.params.userid + '/' + this.route.snapshot.params.productid,
+      og_type: 'website',
+      og_image: environment.share_image,
+      twitter_card:environment.share_image,
+      
+    };
+    this.metaservice.setmeta(data);
+
+
+
     this.options = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
