@@ -49,7 +49,7 @@ public contactusdata: any = {
    }
 
   ngOnInit() {
-    this.createCaptcha(event)
+    this.createCaptcha()
   }
   doSubmit(){
     let formCalData: any;
@@ -86,7 +86,7 @@ public contactusdata: any = {
     }
   }
  
-  createCaptcha($event) {
+  createCaptcha() {
     //clear the contents of captcha div first 
     var charsArray =
     "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
