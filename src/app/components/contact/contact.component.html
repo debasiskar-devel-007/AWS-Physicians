@@ -57,53 +57,105 @@
                                 </h2>
                             </mat-card-subtitle>
                         </mat-card-content>
-                        <form>
+                        <form [formGroup]="options" (ngSubmit)="doSubmit()">
                             <span class="formgroup">
                                 <span class="formcol-5">
 
-                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.firstname" [ngModelOptions]="{standalone: true}">
+                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.first_name" 
+                                    formControlName="first_name"
+                                    [ngModelOptions]="{standalone: true}"
+                                    (blur)="inputUntouched('first_name')"
+                                    >
 
                                 </span>
-    <span class="formcol-5">
-
-                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.lastname" [ngModelOptions]="{standalone: true}">
-
+                                <span *ngIf="!options.controls['first_name'].valid && options.controls['first_name'].errors.required && options.controls['first_name'].touched">
+                                    Please enter the first name
                                 </span>
-    </span>
-    <span class="formgroup">
+                                <span
+										*ngIf="!options.controls['first_name'].errors || !options.controls['first_name'].errors.minlength">
+                                        Please enter atleast 3 letters!
+                                    </span>
+                                <span class="formcol-5">
+                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.last_name" [ngModelOptions]="{standalone: true}"
+                                    formControlName="last_name"
+                                    (blur)="inputUntouched('last_name')"
+                                    >
+                                </span>
+                                <span *ngIf="!options.controls['last_name'].valid && options.controls['last_name'].errors.required && options.controls['last_name'].touched">
+                                    Please enter the last name
+                                </span>
+                                <span
+										*ngIf="!options.controls['last_name'].errors || !options.controls['last_name'].errors.minlength">
+                                        Please enter atleast 3 letters!
+                                    </span>
+                            </span>
+                            <span class="formgroup">
+                                <span class="formcol-5">
+                                         
+                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email" [ngModelOptions]="{standalone: true}"
+                                    formControlName="email"
+                                    (blur)="inputUntouched('email')"
+                                    >
+                                </span>
+                                <span *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
+                                    Please enter the email
+                                </span>
+                                <span *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">
+                                    Please enter a valid email
+                                </span>
                                 <span class="formcol-5">
 
-                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email" [ngModelOptions]="{standalone: true}">
-
+                                    <input type="text" placeholder="Phone Number"  [(ngModel)]="contactusdata.phone" [ngModelOptions]="{standalone: true}"
+                                    formControlName="phone"
+                                    (blur)="inputUntouched('phone')"
+                                    >
+                                    
                                 </span>
-    <span class="formcol-5">
-
-                                    <input type="text" placeholder="Phone Number"  [(ngModel)]="contactusdata.phone" [ngModelOptions]="{standalone: true}">
-
+                                <span *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
+                                    Please enter a phone number
                                 </span>
-    </span>
-    <span class="formgroup">
+                                
+                            </span>
+                            <span class="formgroup">
                                 <span class="formcol-10">
 
-                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.description" [ngModelOptions]="{standalone: true}"></textarea>
+                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.message" 
+                                    [ngModelOptions]="{standalone: true}"
+                                    formControlName="message"
+                                    (blur)="inputUntouched('message')"
+                                    ></textarea>
 
                                 </span>
-    </span>
+                                <span *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
+                                    Please enter a message
+                                </span>
+                            </span>
 
-    <span class="formgroup capchawrapper">
+                            <span class="formgroup capchawrapper">
                                 <span class="formcol-3">
                                     <div class="cap_wrapper">
                                         <span class="capchatext">
-                                            <img src="../../../assets/images/capchatext.png">
+                                            {{code}}
+                                            <!--<img src="../../../assets/images/capchatext.png">-->
                                         </span>
-    <button><img src="../../../assets/images/recapcha.png"></button>
-    </div>
-    </span>
+                                        <button (click)="createCaptcha()"><img src="../../../assets/images/recapcha.png"></button>
+                            </div>
+                        </span>
     <span class="formcol-3">
-                                    <input type="text" placeholder="Enter Captcha" [(ngModel)]="contactusdata.capture" [ngModelOptions]="{standalone: true}">
+                                    <input type="text" placeholder="Enter Captcha" 
+                                    formControlName="captcha"
+                                    (blur)="inputUntouched('message')"
+                                    >
+                                </span>
+                                <span *ngIf="!options.controls['captcha'].valid && options.controls['captcha'].errors.required && options.controls['captcha'].touched">
+                                    Please enter  captcha
+                                </span>
+                                <span *ngIf="!this.errorCaptchaMessage">
+                                    Please enter the valid captcha
                                 </span>
     <span class="formcol-4">
-                                    <button matbutton class="greenbtn" (click)="doSubmit()">Submit</button>
+                        
+                                    <button matbutton class="greenbtn">Submit</button>
                                 </span>
     </span>
     </form>

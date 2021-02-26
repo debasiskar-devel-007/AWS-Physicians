@@ -1,10 +1,11 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, HostListener, ElementRef } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, ErrorStateMatcher, MatSnackBar } from '@angular/material';
 import { FormBuilder, FormGroup, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 import { MetaserviceService } from 'src/app/metaservice/metaservice.service';
 import { environment } from 'src/environments/environment';
+import { CookieService } from 'ngx-cookie-service';
 
 // export class MyErrorStateMatcher implements ErrorStateMatcher {
 //   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -21,20 +22,28 @@ export interface DialogData {
   userid: any;
   product: any
 }
+export interface DialogDataForContent {
+  flag:string
+}
 @Component({
   selector: 'app-landingpage',
   templateUrl: './landingpage.component.html',
   styleUrls: ['./landingpage.component.css']
 })
 export class LandingpageComponent implements OnInit {
-  public formdata: any;
-  public cityVal: any = [];
-  public stateVal: any = [];
+  isShow: boolean;
+  windowScrolled: boolean;
+  topPosToStartShowing = 1000;
+  public formdata: any ;
+  public cityVal:any = [];
+  public stateVal:any = [];
+  public ip:any;
+  public cookieval:any;
   options: FormGroup;
   //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-  constructor(public apiservice: ApiService, private activatedroute: ActivatedRoute, public dialog: MatDialog, public fb: FormBuilder, public route: ActivatedRoute ,public metaservice:MetaserviceService ) {
+  constructor(public apiservice: ApiService, private activatedroute: ActivatedRoute, public dialog: MatDialog, public fb: FormBuilder, public route: ActivatedRoute ,public metaservice:MetaserviceService ,public cookieservice: CookieService) {
     const data: object = {
       title: 'PECETM ANS Testing Medical Device Platform',
       keywords:'PECETM ANS Testing Device, ANS Testing Platform, ANS Testing Software',
@@ -62,6 +71,20 @@ export class LandingpageComponent implements OnInit {
       zipcode: ['', Validators.required],
     })
 
+    var currentTimeInSeconds=Math.floor(Date.now()); 
+    this.cookieval = currentTimeInSeconds.toString();
+    //console.log(currentTimeInSeconds,'lll',cookieval);
+   
+    
+
+    this.apiservice.getclientip().subscribe((res: any) => {
+      
+        this.ip=res.ip.toString();
+        //console.log(res,'ffffffff', this.ip);
+    });
+    
+
+
     this.apiservice.getCity().subscribe((response: any) => {
       for (const i in response) {
         this.cityVal.push(
@@ -69,6 +92,8 @@ export class LandingpageComponent implements OnInit {
         );
       }
 
+   
+  
     });
 
     this.apiservice.getState().subscribe((response: any) => {
@@ -80,10 +105,29 @@ export class LandingpageComponent implements OnInit {
 
     });
 
+    
+
 
   }
 
   ngOnInit() {
+    setTimeout(()=>{       
+    let clickdata:any = {
+      data:{
+        products: this.activatedroute.snapshot.params.productid,
+        time: parseInt(this.cookieservice.get('hpstime')),
+        userid: this.activatedroute.snapshot.params.userid,
+        source: "Hps-landing-page-1",
+        ip: this.ip
+      }
+    }
+    //console.log(clickdata);
+     this.apiservice.getDatalistForSubmit('api/sharelinkclickcount', clickdata).subscribe((response: any) => {});
+
+     this.cookieservice.set('hpstime', this.cookieval);
+  }, 3000);
+    
+  
   }
   //   checkPasswords(group: FormGroup) { // here we have the 'passwords' group
   //   console.log('dsfdsf',group);
@@ -120,7 +164,7 @@ export class LandingpageComponent implements OnInit {
           parentid: this.activatedroute.snapshot.params.userid,
           type: 'lead',
           status: 1,
-          product_id: this.activatedroute.snapshot.params.productid
+          products: this.activatedroute.snapshot.params.productid
         }
 
       }
@@ -130,7 +174,7 @@ export class LandingpageComponent implements OnInit {
 
           const dialogRef = this.dialog.open(FormConfirmComponent, {
             panelClass: 'successModal',
-            data: { flag: 'success', userid: this.route.snapshot.params.userid, product: this.route.snapshot.params.productid }
+            data: { flag: 'success', userid: this.activatedroute.snapshot.params.userid, product: this.activatedroute.snapshot.params.productid }
           });
           dialogRef.afterClosed().subscribe(result => {
           });
@@ -157,6 +201,57 @@ export class LandingpageComponent implements OnInit {
   }
 
 
+  checkScroll() {
+      
+    // window의 scroll top
+    // Both window.pageYOffset and document.documentElement.scrollTop returns the same result in all the cases. window.pageYOffset is not supported below IE 9.
+
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    console.log('[scroll]', scrollPosition);
+    
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+  gotoTop() {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+    console.warn('test');
+  }
+  
+  @HostListener("window:scroll", []) 
+  onWindowScroll() {
+    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+        this.windowScrolled = true;
+    }
+    else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+        this.windowScrolled = false;
+    }
+}
+
+scrollToTop() {
+  (function smoothscroll() {
+
+      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (currentScroll > 0) {
+          window.requestAnimationFrame(smoothscroll);
+          window.scrollTo(0, currentScroll - (currentScroll / 8));
+      }
+
+  })();
+}
+
+
+
+
+//   }
   //   listenFormFieldChange(val:any){
   //   //console.log('ddd',val);
   //   if(val.field == "fromsubmit" && val.fieldval == "success"){
@@ -190,6 +285,19 @@ export class LandingpageComponent implements OnInit {
   //   }
 
   //   }
+
+  modalcall(value){
+   // console.log('hhhhhhhh')
+    const dialogRef = this.dialog.open(ContentModalComponent,{
+      panelClass:'successModal',
+      data:{ flag:value}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    });
+
+
+}
+  
 }
 
 @Component({
@@ -303,3 +411,16 @@ export class FormConfirmComponent {
     });
   }
 }
+
+@Component({
+  selector: 'app-confirm',
+  templateUrl: './contentmodal.html',
+  styleUrls: ['./landingpage.component.css']
+})
+
+export class ContentModalComponent {
+  constructor(public dialogRef: MatDialogRef<ContentModalComponent>,
+    @Inject(MAT_DIALOG_DATA)public data: DialogDataForContent){
+  
+  }
+ }

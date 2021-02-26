@@ -159,9 +159,9 @@
                 </h3>
             </div>
             <div class="imgwrapper">
-                <img src="../../../assets/images/homenewimage4.jpg" alt="#">
+                <img src="../../../assets/images/lpageimage7.png" alt="#">
             </div>
-            <button class="blackbtn">Learn Incredible Science About Our Platform Today!</button>
+            <button class="blackbtn" (click)="scrollToTop()">Learn Incredible Science About Our Platform Today!</button>
         </mat-card-content>
     </mat-card>
 
@@ -201,7 +201,7 @@
                         <p>Bone Scan</p>
                     </span>
                 </div>
-                <button class="blackbtn">Learn Incredible Science About Our Platform Today!</button>
+                <button class="blackbtn" (click)="scrollToTop()">Learn Incredible Science About Our Platform Today!</button>
             </div>
         </mat-card-content>
     </mat-card>
@@ -247,7 +247,7 @@
                     <h3>With our all-encompassing <span>ANS</span> testing program, we build a relationship with your
                         practice where you will have constant and consistent assistance, every step of the way!</h3>
                 </div>
-                <button class="blackbtn">Learn More About Our <span class="pece">PECE</span> Virtual Platform.</button>
+                <button class="blackbtn" (click)="scrollToTop()">Learn More About Our <span class="pece">PECE</span> Virtual Platform.</button>
 
             </div>
 
@@ -275,7 +275,7 @@
                             <span>Patient Report and Encounter Form</span> viewing feature that will help
                             you to significantly improve patient outcomes!
                         </p>
-                        <button class="blackbtn">Learn More About Our Software Model.</button>
+                        <button class="blackbtn" (click)="scrollToTop()">Learn More About Our Software Model.</button>
                     </div>
                     <div class="imagewrapper"><img src="../../../assets/images/lpageimage6.jpg" alt="#"></div>
 
@@ -299,7 +299,7 @@
                             <p>Information about the important <b>SCIENCE</b> that governs our <b>ANS</b> Testing technology.</p>
                         </div>
                     </div>
-                    <button class="blackbtn">Learn More</button>
+                    <button class="blackbtn" (click)="scrollToTop()">Learn More</button>
                 </mat-card-content>
                 <mat-card-content class="col">
                     <div class="imagewrapper"><img src="../../../assets/images/lpageicon2.png" alt="#"></div>
@@ -312,7 +312,7 @@
                                 services portal.</p>
                         </div>
                     </div>
-                    <button class="blackbtn">Learn More</button>
+                    <button class="blackbtn" (click)="scrollToTop()">Learn More</button>
                 </mat-card-content>
                 <mat-card-content class="col">
                     <div class="imagewrapper"><img src="../../../assets/images/lpageicon3.png" alt="#"></div>
@@ -325,7 +325,7 @@
                                 medical device platform.</p>
                         </div>
                     </div>
-                    <button class="blackbtn">Learn More</button>
+                    <button class="blackbtn" (click)="scrollToTop()">Learn More</button>
                 </mat-card-content>
             </div>
         </mat-card-content>
@@ -335,8 +335,8 @@
     <mat-card class="lpblock8">
         <mat-card-content class="newcontainer">
             <div class="textwrapper">
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy </p>
+                <p (click)="modalcall('term')">Terms & Conditions</p>
+                <p (click)="modalcall('policy')">Privacy Policy </p>
                 <p>Copyright © 2019 WAS. All Rights Reserved.</p>
             </div>
         </mat-card-content>

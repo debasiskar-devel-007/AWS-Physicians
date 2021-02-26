@@ -92,6 +92,8 @@
     justify-content: center;
     align-items: center;
 }
+.vpheaderwrapper .mat-nav-list .mat-list-item a .pece{margin-right: 5px;}
+.vpheaderwrapper .mat-nav-list .mat-list-item a .pece::after{top: -2px;}
 .vpheaderwrapper .mat-nav-list .mat-list-item a:hover{color:#000!important}
 .vpheaderwrapper .mat-nav-list .mat-list-item:hover a{color:#000}
 .vpheaderwrapper .mat-nav-list .mat-list-item:not(.mat-list-item-disabled):hover{
@@ -161,8 +163,8 @@
 .topbar p{color: #fff; font-family: 'Montserrat-Regular';}
 .topbar p strong{color: #fee300;    font-weight: normal;}
 .topbar p i{color: #07aad8; font-style: normal;}
-.topbar p span{position: relative; padding-left: 35px;margin: 0 10px;}
-.topbar p span::before{
+.topbar p a{position: relative; padding-left: 35px;margin: 0 10px; text-decoration: none; cursor: pointer;color: #fff;}
+.topbar p a::before{
     content: '';
     height: 100%;
     width: 1px;
@@ -173,8 +175,8 @@
     background-color: #3e5263;    
 
 }
-.topbar p span:nth-last-child(1)::before{display: none;}
-.topbar p span:nth-child(1)::after{
+.topbar p a:nth-last-child(1)::before{display: none;}
+.topbar .topheaderblock1 a::after{
     content: '';
     background-image: url(../../../assets/images/topbaricon1.png);
     height: 30px;
@@ -188,7 +190,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.topbar p span:nth-child(2)::after{
+.topbar .topheaderblock2 a:nth-child(1)::after{
     content: '';
     background-image: url(../../../assets/images/topbaricon2.png);
     height: 30px;
@@ -202,7 +204,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.topbar p span:nth-child(3)::after{
+.topbar .topheaderblock2 a:nth-child(2)::after{
     content: '';
     background-image: url(../../../assets/images/topbaricon3.png);
     height: 30px;

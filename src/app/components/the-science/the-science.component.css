@@ -25,6 +25,13 @@
 .bannertextwrapper h5 span{font-size: 36px;}
 .bannertextwrapper h3{padding-bottom: 10px;}
 .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{line-height: 38px;}
+.bannertextwrapper h5 strong{
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.bannertextwrapper h5 span{
+    font-size: 34px;
+}
 .tsblock2 .titlewrapper{
     background-image: url(../../../assets/images/homeblock2newbg.png);
     background-repeat: no-repeat;
@@ -368,9 +375,43 @@
     display: block;
     margin-top: 50px;
 }
+.tablewrapper{background-color: #fecb00;    padding: 15px;}
+.tableimagewrapper {
+    display: block;
+    float: right;
+    border-radius: 5px;
+    border: 1px solid #939393;
+    overflow: hidden;
+    margin-left: 5px;
+}
+.tableimagewrapper img{max-width: 100%;display: block;}
+.tablewrapper .col{
+    width: 47%;
+    margin: 2px;
+    padding: 20px;
+    background: #fff;    
+    padding-bottom: 0;
+
+}
+.tablewrapper .col-12{width: 100%; background: #fff;padding: 20px;margin: 2px;}
+.tablewrapper .textwrapper p{display: flex;font-size: 21px;margin: 0;padding: 12px 0; text-align: left;}
+.tablewrapper .textwrapper p b{
+    min-width: 259px;
+    font-family: 'Montserrat-Bold';
+    font-size: 22px;
+    position: relative;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.tablewrapper .textwrapper p b::after{
+    content: ':';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tablewrapper .colcontainer{flex-wrap: wrap;}
 
 
-.tablewrapper img{width: 100%;}
 
 .tsblock5 .titlewrapper h2{
     margin-bottom: 30px;
@@ -378,63 +419,22 @@
 
 .tsblock5 .textwrapper h3{font-family: 'Montserrat-SemiBold'; text-align: center;}
 
-table {
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
-  }
-  
-  table caption {
-    font-size: 1.5em;
-    margin: .5em 0 .75em;
-  }
-  
-  table tr {
-    background-color: #f8f8f8;
-    padding: .35em;
-  }
-  
-  table th,
-  table td {
-    padding: .625em;
-  }
-  
- 
-table .tablehr{
-    background: rgb(28,187,234);
-    background: linear-gradient(90deg, rgba(28,187,234,1) 0%, rgba(21,195,94,1) 100%);
+.bluebtn{
+    background: rgb(0,148,240);
+    background: linear-gradient(0deg, rgba(0,148,240,1) 0%, rgba(0,195,255,1) 100%);
+    font-size: 40px;
+    font-family: 'Montserrat-Bold';
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
-.tablehr th{
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Montserrat-SemiBold';
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
-    text-align: center;
-    padding: 20px 10px;
-}
-.tablehr th:nth-child(1), .tablehr th:nth-child(2), .tablehr th:nth-child(3){text-align: left;}
-tbody tr{
-background-color: #fffbb9;
-}
-tbody tr:nth-child(odd){
-background-color: #fff096;
-}
-tbody tr td{
-    font-family: 'Montserrat-Regular';
-    font-size: 16px;
-}
-
-
-
-.tablehr th:nth-child(4){width: 540px;}
-
-
-
-
-
 
 
 
@@ -476,6 +476,9 @@ tbody tr td{
     .bannerblock{background-position: left -149px top!important;}
 }
 
+@media screen and (max-width: 1560px) {
+    .tablewrapper .col {width: 46.8%;}
+}
 @media screen and (max-width: 1540px) {
     .tsblock2 .listwrapper .abimage {
         right: 30px;
@@ -489,6 +492,11 @@ tbody tr td{
 }
 
 
+@media screen and (max-width: 1480px) {
+    .tablewrapper .col {
+        width: 46.5%;
+    }
+}
 @media screen and (max-width: 1440px) {
     .tsblock5subwrapper1 .abimage {
         right: -90px;
@@ -527,6 +535,9 @@ tbody tr td{
 }
 
 @media screen and (max-width: 1366px) {
+    .tablewrapper .col {
+        width: 100%;
+    }
     .tsblock4subwrapper1 .abimage {
         right: -210px;
         width: 69%;
@@ -683,7 +694,6 @@ tbody tr td{
         }
         .tsblock6 .abimage{    margin-bottom: -20px;}
         .tablewrapper {
-            background-color: transparent;
             box-shadow: 0 0 5px rgba(0,0,0,0.3);
             padding: 0;
             border-radius: 5px;
@@ -707,6 +717,28 @@ tbody tr td{
 
 
 @media screen and (max-width: 991px) {
+    .tableimagewrapper {
+        float: none;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .tablewrapper .col, .tablewrapper .col-12 {
+        padding-bottom: 10px;
+    }
+    .tablewrapper .textwrapper p b {
+        min-width: inherit;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .tablewrapper .textwrapper p {
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .tablewrapper .textwrapper p b::after {
+        right: -11px;
+        top: -4px;
+    }
     table {
       border: 0;
     }
