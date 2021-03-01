@@ -68,22 +68,35 @@ public contactusdata: any = {
       this.errorCaptchaMessage = (userGivenCaptcha!='' && (this.code === userGivenCaptcha)) ? true : false;
       console.log(this.errorCaptchaMessage);
       if(this.errorCaptchaMessage){
-        let data = {data:this.contactusdata}
+        let data = this.contactusdata
         this.apiService.postdata(data ,'https://hblr907g1d.execute-api.us-east-1.amazonaws.com/dev/insert').subscribe((res: any) => {
           console.log(res);
+          
           this.openSnackBar('Contact Submitted Successfully');
+          this.options.reset();
+          Object.assign(this.contactusdata, {
+            first_name:'',
+            last_name:'',
+            email:'',
+            phone:'',
+            message:'',
+            capture:''
+          });
+          console.log("sssss=====>",this.contactusdata)
 
           if (res.status === 'success') {
             console.log(res);
             this.openSnackBar('Contact Submitted Successfully');
-            this.contactusdata = {
+            //this.options.reset();
+            
+            /*this.contactusdata = {
               first_name:'',
               last_name:'',
               email:'',
               phone:'',
               message:'',
               capture:''
-            }
+            }*/
           }
         });
       }
