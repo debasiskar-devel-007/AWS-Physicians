@@ -68,26 +68,26 @@
                                     >
 
                                 </span>
-                                <span *ngIf="!options.controls['first_name'].valid && options.controls['first_name'].errors.required && options.controls['first_name'].touched">
+                                <span *ngIf="!options.controls['first_name'].valid && options.controls['first_name'].errors.required && options.controls['first_name'].touched && !clickCaptcha">
                                     Please enter the first name
                                 </span>
-                                <span
+                                <!-- <span
 										*ngIf="!options.controls['first_name'].errors || !options.controls['first_name'].errors.minlength">
                                         Please enter atleast 3 letters!
-                                    </span>
+                                    </span> -->
                                 <span class="formcol-5">
                                     <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.last_name" [ngModelOptions]="{standalone: true}"
                                     formControlName="last_name"
                                     (blur)="inputUntouched('last_name')"
                                     >
                                 </span>
-                                <span *ngIf="!options.controls['last_name'].valid && options.controls['last_name'].errors.required && options.controls['last_name'].touched">
+                                <span *ngIf="!options.controls['last_name'].valid && options.controls['last_name'].errors.required && options.controls['last_name'].touched && !clickCaptcha">
                                     Please enter the last name
                                 </span>
-                                <span
+                                <!-- <span
 										*ngIf="!options.controls['last_name'].errors || !options.controls['last_name'].errors.minlength">
                                         Please enter atleast 3 letters!
-                                    </span>
+                                    </span> -->
                             </span>
                             <span class="formgroup">
                                 <span class="formcol-5">
@@ -97,10 +97,10 @@
                                     (blur)="inputUntouched('email')"
                                     >
                                 </span>
-                                <span *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
+                                <span *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched && !clickCaptcha">
                                     Please enter the email
                                 </span>
-                                <span *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">
+                                <span *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required && !clickCaptcha">
                                     Please enter a valid email
                                 </span>
                                 <span class="formcol-5">
@@ -111,7 +111,7 @@
                                     >
                                     
                                 </span>
-                                <span *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
+                                <span *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched && !clickCaptcha">
                                     Please enter a phone number
                                 </span>
                                 
@@ -126,7 +126,7 @@
                                     ></textarea>
 
                                 </span>
-                                <span *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
+                                <span *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched && !clickCaptcha">
                                     Please enter a message
                                 </span>
                             </span>
@@ -138,7 +138,7 @@
                                             {{code}}
                                             <!--<img src="../../../assets/images/capchatext.png">-->
                                         </span>
-                                        <button (click)="createCaptcha()"><img src="../../../assets/images/recapcha.png"></button>
+                                        <button (click)="createCaptcha($event)"><img src="../../../assets/images/recapcha.png"></button>
                             </div>
                         </span>
     <span class="formcol-3">
@@ -147,10 +147,10 @@
                                     (blur)="inputUntouched('message')"
                                     >
                                 </span>
-                                <span *ngIf="!options.controls['captcha'].valid && options.controls['captcha'].errors.required && options.controls['captcha'].touched">
+                                <span *ngIf="!options.controls['captcha'].valid && options.controls['captcha'].errors.required && options.controls['captcha'].touched && !clickCaptcha">
                                     Please enter  captcha
                                 </span>
-                                <span *ngIf="!this.errorCaptchaMessage">
+                                <span *ngIf="!this.errorCaptchaMessage && !clickCaptcha">
                                     Please enter the valid captcha
                                 </span>
     <span class="formcol-4">
