@@ -20,7 +20,7 @@ public contactusdata: any = {
   last_name:'',
   email:'',
   phone:'',
-  description:'',
+  message:'',
   capture:''
 };
   constructor(public fb:FormBuilder,public apiService: ApiService, private route: ActivatedRoute,private metaservice: MetaserviceService,private _snackBar: MatSnackBar) {
