@@ -65,40 +65,6 @@
                             <span class="formgroup">
                                 <mat-form-field class="formcol-5">
 
-<<<<<<< HEAD
-                                    <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.firstname"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                                <mat-form-field class="formcol-5">
-
-                                    <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.lastname"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                            </span>
-                            <span class="formgroup">
-                                <mat-form-field class="formcol-5">
-
-                                    <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                                <mat-form-field class="formcol-5">
-
-                                    <input type="text" placeholder="Phone Number" [(ngModel)]="contactusdata.phone"
-                                        [ngModelOptions]="{standalone: true}">
-
-                                </mat-form-field>
-                            </span>
-                            <span class="formgroup">
-                                <mat-form-field class="formcol-10">
-
-                                    <textarea placeholder="Message" [(ngModel)]="contactusdata.description"
-                                        [ngModelOptions]="{standalone: true}"></textarea>
-
-                                </mat-form-field>
-=======
                                     <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.first_name" 
                                     formControlName="first_name"
                                     [ngModelOptions]="{standalone: true}"
@@ -167,7 +133,6 @@
                                 <span *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
                                     Please enter a message
                                 </span>
->>>>>>> 5e9e58143c2c924c2d155459b0221b26186346ce
                             </span>
 
                             <span class="formgroup capchawrapper">
@@ -177,17 +142,6 @@
                                             {{code}}
                                             <!--<img src="../../../assets/images/capchatext.png">-->
                                         </span>
-<<<<<<< HEAD
-                                        <button><img src="../../../assets/images/recapcha.png"></button>
-                                    </div>
-                                </span>
-                                <span class="formcol-3">
-                                    <input type="text" placeholder="Enter Captcha" [(ngModel)]="contactusdata.capture"
-                                        [ngModelOptions]="{standalone: true}">
-                                </span>
-                                <span class="formcol-4">
-                                    <button matbutton class="greenbtn" (click)="doSubmit()">Submit</button>
-=======
                                         <button (click)="createCaptcha()"><img src="../../../assets/images/recapcha.png"></button>
                             </div>
                         </span>
@@ -206,7 +160,6 @@
     <span class="formcol-4">
                         
                                     <button matbutton class="greenbtn">Submit</button>
->>>>>>> 5e9e58143c2c924c2d155459b0221b26186346ce
                                 </span>
                             </span>
                         </form>
