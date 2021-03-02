@@ -2,22 +2,21 @@
 </app-header>
 
 <mat-card class="bannerblock">
-    <img src="../../../assets/images/contactimage1.png" class="abimage">
     <span class="newcontainer">
-        <div class="bannertextwrapper">
-            <div class="bannertext">
-                <div class="bannertitlewrapper">
-                    <h5>Contact Us</h5>
-                </div>
-                <h3>
-                    <span>Still got </span>
-                    <span>questions?</span>
-                </h3>
-                <h4>Our team of experts is here to help!</h4>
-                <h2>Send in your queries with as much details as you can provide and we will get back to you as soon as
-                    possible.</h2>
-            </div>
+        <img src="../../../assets/images/contactimage1.png" class="abimage">
+    <div class="bannertextwrapper">
+        <div class="bannertext">
+        <div class="bannertitlewrapper">
+            <h5>Contact Us</h5>
         </div>
+        <h3>
+            <span>Still got </span>
+            <span>questions?</span>
+        </h3>
+        <h4>Our team of experts is here to help!</h4>
+        <h2>Send in your queries with as much details as you can provide and we will get back to you as soon as possible.</h2>
+    </div>
+</div>
     </span>
 </mat-card>
 
@@ -33,12 +32,9 @@
                 <mat-list-item class="contactitem2">
                     <span class="leftblockwrapper">
                         <mat-card-content class="formtitlewrapper">
-                            <p>
-                                <a  href="https://goo.gl/maps/KBCNiQmn8YEKA1M57" target="_blank">
-                                    1175 American  Pacific <br> Dr STE F, Henderson, NV 89074
-                                </a>
-                                
-                            </p>
+                            <h2>
+                                1175 American <br> Pacific Dr Henderson, NV 89074
+                            </h2>
                         </mat-card-content>
                         <span class="leftbottomblock">
                             <span class="imgwrapper">
@@ -53,7 +49,7 @@
                 </mat-list-item>
                 <mat-list-item class="contactitem1">
                     <span class="formwrapper">
-
+                        
                         <mat-card-content class="lefttopbar">
                             <mat-card-subtitle>
                                 <h2>
@@ -63,61 +59,64 @@
                         </mat-card-content>
                         <form [formGroup]="options" (ngSubmit)="doSubmit()">
                             <span class="formgroup">
-                                <mat-form-field class="formcol-5">
+                                <span class="formcol-5">
 
                                     <input type="text" placeholder="First Name" [(ngModel)]="contactusdata.first_name" 
                                     formControlName="first_name"
                                     [ngModelOptions]="{standalone: true}"
                                     (blur)="inputUntouched('first_name')"
                                     >
+                                    <span class="red" *ngIf="!options.controls['first_name'].valid && options.controls['first_name'].errors.required && options.controls['first_name'].touched && !clickCaptcha">
+                                        Please enter the first name
+                                    </span>
 
                                 </span>
-                                <span *ngIf="!options.controls['first_name'].valid && options.controls['first_name'].errors.required && options.controls['first_name'].touched">
-                                    Please enter the first name
-                                </span>
-                                <span
+                               
+                                <!-- <span
 										*ngIf="!options.controls['first_name'].errors || !options.controls['first_name'].errors.minlength">
                                         Please enter atleast 3 letters!
-                                    </span>
+                                    </span> -->
                                 <span class="formcol-5">
                                     <input type="text" placeholder="Last Name" [(ngModel)]="contactusdata.last_name" [ngModelOptions]="{standalone: true}"
                                     formControlName="last_name"
                                     (blur)="inputUntouched('last_name')"
                                     >
+                                    <span  class="red" *ngIf="!options.controls['last_name'].valid && options.controls['last_name'].errors.required && options.controls['last_name'].touched && !clickCaptcha">
+                                        Please enter the last name
+                                    </span>
                                 </span>
-                                <span *ngIf="!options.controls['last_name'].valid && options.controls['last_name'].errors.required && options.controls['last_name'].touched">
-                                    Please enter the last name
-                                </span>
-                                <span
+                                
+                                <!-- <span
 										*ngIf="!options.controls['last_name'].errors || !options.controls['last_name'].errors.minlength">
                                         Please enter atleast 3 letters!
-                                    </span>
+                                    </span> -->
                             </span>
                             <span class="formgroup">
                                 <span class="formcol-5">
                                          
                                     <input type="email" placeholder="Email Address" [(ngModel)]="contactusdata.email" [ngModelOptions]="{standalone: true}"
                                     formControlName="email"
-                                    (blur)="inputUntouched('email')"
-                                    >
+                                    (blur)="inputUntouched('email')">
+                                    <span  class="red" *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched && !clickCaptcha">
+                                        Please enter the email
+                                    </span>
+                                    <span  class="red" *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required && !clickCaptcha">
+                                        Please enter a valid email
+                                    </span>
                                 </span>
-                                <span *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
-                                    Please enter the email
-                                </span>
-                                <span *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">
-                                    Please enter a valid email
-                                </span>
+                                
                                 <span class="formcol-5">
 
                                     <input type="text" placeholder="Phone Number"  [(ngModel)]="contactusdata.phone" [ngModelOptions]="{standalone: true}"
                                     formControlName="phone"
                                     (blur)="inputUntouched('phone')"
                                     >
+                                    <span  class="red" *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched && !clickCaptcha">
+                                        Please enter a phone number
+                                    </span>
                                     
                                 </span>
-                                <span *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
-                                    Please enter a phone number
-                                </span>
+                               
                                 
                             </span>
                             <span class="formgroup">
@@ -128,11 +127,12 @@
                                     formControlName="message"
                                     (blur)="inputUntouched('message')"
                                     ></textarea>
+                                    <span  class="red" *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched && !clickCaptcha">
+                                        Please enter a message
+                                    </span>
 
                                 </span>
-                                <span *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
-                                    Please enter a message
-                                </span>
+                                
                             </span>
 
                             <span class="formgroup capchawrapper">
@@ -142,7 +142,7 @@
                                             {{code}}
                                             <!--<img src="../../../assets/images/capchatext.png">-->
                                         </span>
-                                        <button (click)="createCaptcha()"><img src="../../../assets/images/recapcha.png"></button>
+                                        <button (click)="createCaptcha($event)"><img src="../../../assets/images/recapcha.png"></button>
                             </div>
                         </span>
     <span class="formcol-3">
@@ -150,23 +150,24 @@
                                     formControlName="captcha"
                                     (blur)="inputUntouched('message')"
                                     >
+                                    <span  class="red" *ngIf="!options.controls['captcha'].valid && options.controls['captcha'].errors.required && options.controls['captcha'].touched && !clickCaptcha">
+                                        Please enter  captcha
+                                    </span>
+                                    <span *ngIf="!this.errorCaptchaMessage && !clickCaptcha" class="red">
+                                        Please enter the valid captcha
+                                    </span>
                                 </span>
-                                <span *ngIf="!options.controls['captcha'].valid && options.controls['captcha'].errors.required && options.controls['captcha'].touched">
-                                    Please enter  captcha
-                                </span>
-                                <span *ngIf="!this.errorCaptchaMessage">
-                                    Please enter the valid captcha
-                                </span>
+                                
     <span class="formcol-4">
                         
                                     <button matbutton class="greenbtn">Submit</button>
                                 </span>
-                            </span>
-                        </form>
-                    </span>
-                </mat-list-item>
-            </mat-list>
-        </span>
+    </span>
+    </form>
+    </span>
+    </mat-list-item>
+    </mat-list>
+    </span>
     </span>
 </mat-card>
 <app-footer></app-footer>

@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
       og_description:'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
       og_url: 'https://healthprofitsolutions.com/',
       og_type: 'website',
-      og_image: environment.share_image,
-      twitter_card:environment.share_image,
+      // og_image: environment.share_image,
+      // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);
   }

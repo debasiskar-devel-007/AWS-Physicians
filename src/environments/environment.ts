@@ -4,7 +4,9 @@
 
 
 export const environment = {
-  production: false, twitter_image: '../../../assets/Logo+144-144.jpg', share_image: '../../../assets/Logo+540-282.jpg',
+  production: false, 
+  // twitter_image: '../../../assets/Logo+144-144.jpg', 
+  // share_image: '../../../assets/Logo+540-282.jpg',
   api_url: 'https://api.influxhostserver.com/',
   download_url: 'https://api.influxhostserver.com/download',
   download_url_old: 'https://api.influxhostserver.com/',

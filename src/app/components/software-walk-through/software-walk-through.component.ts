@@ -22,8 +22,8 @@ export class SoftwareWalkThroughComponent implements OnInit {
       og_description:'Explore the features and functions of the PECETM ANS Testing Software program through visual representations and demonstrative videos to understand some of the features and functioning of the platform.',
       og_url: 'https://healthprofitsolutions.com/software-walk-through',
       og_type: 'website',
-      og_image: environment.share_image,
-      twitter_card:environment.share_image,
+      // og_image: environment.share_image,
+      // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);
 

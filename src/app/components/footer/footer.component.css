@@ -130,9 +130,13 @@
   .footermenu:after {left: 49%}
    }
     @media only screen and (max-width: 1199px) {
+      .mat-card-subtitle{text-align: center;}
       .footermainwrapper mat-list mat-list-item.footeritem3 {
         border-left: 0px solid #474747;
     }
+    .mat-card-subtitle span:nth-child(1) {
+      margin-right: 0;
+  }
       .footerblock2 p{text-align: center;}
       .footermainwrapper mat-list mat-list-item.footeritem1 {width: 100% !important;}
   .footeritem1 h2 {font-size: 21px;}

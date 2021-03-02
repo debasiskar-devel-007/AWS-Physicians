@@ -202,6 +202,11 @@
     background-position: center top;
     padding-top: 30px !important;
 }
+.red{color: red;}
+.formtitlewrapper  h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+}
 @media only screen and (max-width: 1660px) {
 .bannerblock{background-position:right -132px top!important}
 }
@@ -230,12 +235,43 @@
 .lefttopbar .mat-card-subtitle h2{font-size:18px}
 .lefttopbar{padding:20px 15px}
 }
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1366px) {
     .bannertextwrapper {
-        width: 620px;
+        width: 850px;
+        display: block;
+    }
+    .bannerblock .abimage {
+        right: 60px;
+    }
+    .contactitemwraooer .mat-list .mat-list-item.contactitem2 {
+        width: 44%;
+    }
+    .contactitemwraooer .mat-list .mat-list-item.contactitem1 {
+        width: 56%;
+    }
+    .bannertext h2{padding-right: 100px;}
+}
+@media only screen and (max-width: 1320px) {
+    .bannertext h2 {
+        padding-right: 200px;
     }
 }
 @media only screen and (max-width: 1199px) {
+    .lefttopbar {
+        padding: 20px 15px;
+        width: auto;
+        margin: 20px 0;
+    }
+    .formwrapper{padding: 0;}
+    .formtitlewrapper h2{text-align: center;}
+    .bannerblock .abimage {
+        right: inherit;
+        bottom: inherit;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
 .lefttopbar .mat-card-subtitle{flex-wrap:wrap}
 .lefttopbar .mat-card-subtitle h2{width:100%;text-align:center}
 /* .lefttopbar .mat-card-subtitle h2:nth-child(1) br{display:none} */
@@ -245,15 +281,23 @@
 .bannertextwrapper {
     width: 100%;
     display: block;
+   
 }
 .bannerblock{
     background-position: right top!important;
-    padding-top: 46%!important;
+    padding-top: 4%!important;
     min-height: inherit;
-    background-size: 206%;
+    background-size: cover;
     background-color: #9ecce4;
     padding-bottom: 2% !important;
+    display: block !important;
+    
 }
+.bannertitlewrapper{width: auto;}
+.bannertext {
+    text-align: center;
+}
+.bannertext h2{padding: 20px;}
 .bannertextwrapper h1 span {
     width: 100%;
     padding: 0;
@@ -271,6 +315,11 @@
 .contactitemwraooer .mat-list .mat-list-item.contactitem2{width:100%}
 }
 @media only screen and (max-width: 991px) {
+    
+    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
+        font-size: 62px;
+        line-height: 56px;
+    }
 /* .bannerblock{padding-top:0!important} */
 .lefttopbar .mat-card-subtitle{flex-wrap:wrap}
 .lefttopbar .mat-card-subtitle h2{text-align:center;width:100%;padding:10px 0}
@@ -308,6 +357,11 @@
     }
 }
 @media only screen and (max-width: 560px) {
+    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
+        font-size: 42px;
+        line-height: 36px;
+    }
+    .bannertitlewrapper{padding: 15px;}
     .bannertextwrapper h1 span strong {
         font-size: 65px;
         line-height: 70px;
@@ -319,9 +373,7 @@
 .cap_wrapper .img1{width:258px}
 }
 @media only screen and (max-width: 480px) {
-    .newcontainer {
-        width: 100%;
-    }
+   
     .formcol-3 {
         width: 100%;
     }

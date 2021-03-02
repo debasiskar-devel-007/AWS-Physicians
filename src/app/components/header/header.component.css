@@ -115,7 +115,7 @@
     background: rgb(26,190,115);
     background: linear-gradient(0deg, rgba(26,190,115,1) 0%, rgba(29,188,232,1) 100%);
 }
-.vpheaderwrapper .mat-nav-list .mat-list-item.activemenu::after{
+.vpheaderwrapper .mat-nav-list .mat-list-item.activemenu::before{
     content: '';
     width: 0;
     height: 0;
@@ -311,6 +311,23 @@
 .homemain .smlmenudiv{width:98%}
 }
 @media screen and (max-width:991px) {
+    .topbar p a{
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding-top: 40px;
+        margin: 0;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    .topbar .topheaderblock1 a::after, .topbar .topheaderblock2 a:nth-child(1)::after, .topbar .topheaderblock2 a:nth-child(2)::after{
+        left: 50%;
+        top: 0;
+        -webkit-transform: inherit;
+        transform: inherit;
+        transform: translateX(-50%);
+    }
+    .topbar p a::before{display: none;}
     .colcontainer {
         flex-wrap: wrap;
         justify-content: center;
