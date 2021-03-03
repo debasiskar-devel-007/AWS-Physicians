@@ -1,219 +1,62 @@
-.bannerblock{
-    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/contactusbanner.jpg)!important;
-    width:100%;box-shadow:none!important;
-    padding:0!important;
-    border-radius:0!important;
-    position:relative;
-    background-position:right top!important;
-    background-repeat:no-repeat!important;
-    background-size:cover; 
-    position: relative;
-    min-height: 640px;
-    padding-top: 80px !important;
-}
-.bannertitlewrapper {
-    width: fit-content;
-}
-.bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-    font-size: 90px;
-    line-height: 76px;
-    text-transform: uppercase;
-}
+.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/contactusbanner.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover;position:relative;min-height:640px;padding-top:80px!important}
+.bannertitlewrapper{width:fit-content}
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{font-size:90px;line-height:76px;text-transform:uppercase}
 .bannertextwrapper{width:940px;display:block}
-.bannertextwrapper::after{display: none;}
-.bannertextwrapper::before{display: none;}
-.bannertextwrapper h1{
-    font-size: 100px;
-    line-height: 121px;
-}
-.bannerblock .abimage{
-    position: absolute;
-    bottom: 0;
-    right: 220px;
-}
-
+.bannertextwrapper::after{display:none}
+.bannertextwrapper::before{display:none}
+.bannertextwrapper h1{font-size:100px;line-height:121px}
+.bannerblock .abimage{position:absolute;bottom:0;right:220px}
 .block .yellowbtn{position:absolute;bottom:30px;left:50%;transform:translateX(-50%)}
 .mat-list-item{height:auto!important}
-.lefttopbar{
-    margin: 0;
-    padding: 10px;
-    background: rgb(28,187,233);
-    background: linear-gradient(90deg, rgba(28,187,233,1) 0%, rgba(21,195,96,1) 100%);
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width: fit-content;
-    margin: 0 0 0 auto;
-    margin-bottom: 40px;
-}
+.lefttopbar{margin:0;padding:10px;background:#1cbbe9;background:linear-gradient(90deg,rgba(28,187,233,1) 0%,rgba(21,195,96,1) 100%);border-radius:5px;margin-bottom:10px;width:fit-content;margin:0 0 0 auto;margin-bottom:40px}
 .lefttopbar .mat-card-title{font-family:'Raleway-Bold';font-size:46px;color:#fff;text-transform:uppercase;text-shadow:0 3px 6px rgba(0,0,0,0.6);text-align:center;margin:0;padding-bottom:25px}
 .lefttopbar .mat-card-subtitle{display:flex;width:100%;justify-content:space-between;align-items:center;position:relative}
-/* .lefttopbar .mat-card-subtitle:after{content:'';height:90%;width:2px;left:45%;top:50%;transform:translate(-50%,-50%);position:absolute;background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,1),rgba(255,255,255,0.3))} */
 .lefttopbar .mat-card-subtitle h2{font-family:'Montserrat-Regular';font-size:20px;color:#fff;font-weight:400}
 .contactitemwraooer .mat-list{display:flex;width:100%;align-items:flex-end;justify-content:space-between}
 .contactitemwraooer .mat-list .mat-list-item.contactitem1{width:62%}
 .contactitemwraooer .mat-list .mat-list-item.contactitem2{width:38%}
-.imgwrapper{
-    display: inline-block;
-    box-shadow: inset 0 0 8px #000;
-    padding: 0;
-    border: 10px solid #fff !important;
-    position: relative;
-    width: 100%;
-    height: 466px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
+.imgwrapper{display:inline-block;box-shadow:inset 0 0 8px #000;padding:0;border:10px solid #fff!important;position:relative;width:100%;height:466px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,0.3)}
 .imgwrapper:nth-last-child(1){border:0}
 .imgwrapper img{max-width:100%;display:block;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;object-fit:cover;z-index:-2}
 .leftbottomblock{display:flex;justify-content:center;align-items:center;width:100%}
 .contactitemwraooer .mat-list .mat-list-item.contactitem1 .leftblockwrapper{border:10px solid #fff;position:relative;z-index:9;width:100%}
-.formwrapper input,.formwrapper textarea{
-    height: 40px;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #383838;
-    width: 100%;
-    font-family: 'Montserrat-Regular';
-}
-.formwrapper textarea{
-    min-height: 113px;
-    resize: none;
-    padding: 1%;
-    width: 98%;
-}
+.formwrapper input,.formwrapper textarea{height:40px;background-color:transparent;border:0;border-bottom:1px solid #383838;width:100%;font-family:'Montserrat-Regular'}
+.formwrapper textarea{min-height:113px;resize:none;padding:1%;width:98%}
 .formwrapper{display:inline-block;width:100%}
 .mat-form-field{width:100%}
-
 .formtitlewrapper h1{font-family:'Raleway-Bold';font-size:36px;color:#fff;text-transform:uppercase;text-shadow:0 3px 6px rgba(0,0,0,0.6);text-align:center;margin:0;padding-bottom:0}
-
-.formtitlewrapper p a{
-    font-family:'Raleway-Bold';
-    font-size: 30px;
-    color: #0d0f0d;
-    text-decoration: none;
-}
-.formwrapper{
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:left top;
-    padding:10px;border-radius:5px;
-    padding-bottom: 0;
-}
-.formwrapper form{
-    background: rgb(228,236,239);
-    background: linear-gradient(0deg, rgba(228,236,239,1) 0%, rgba(255,255,255,1) 100%);
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    border-radius: 5px;
-}
+.formtitlewrapper p a{font-family:'Raleway-Bold';font-size:30px;color:#0d0f0d;text-decoration:none}
+.formwrapper{background-size:cover;background-repeat:no-repeat;background-position:left top;padding:10px;border-radius:5px;padding-bottom:0}
+.formwrapper form{background:#e4ecef;background:linear-gradient(0deg,rgba(228,236,239,1) 0%,rgba(255,255,255,1) 100%);padding:20px;box-shadow:0 0 5px rgba(0,0,0,0.3);border-radius:5px}
 .submitbtn{font-family:'Lato-Bold';color:#fff;font-size:26px;background:rgba(35,61,77,1);background:-moz-linear-gradient(top,rgba(35,61,77,1) 0%,rgba(15,28,39,1) 100%)!important;background:-webkit-gradient(left top,left bottom,color-stop(0%,rgba(35,61,77,1)),color-stop(100%,rgba(15,28,39,1)))!important;background:-webkit-linear-gradient(top,rgba(35,61,77,1) 0%,rgba(15,28,39,1) 100%)!important;background:-o-linear-gradient(top,rgba(35,61,77,1) 0%,rgba(15,28,39,1) 100%)!important;background:-ms-linear-gradient(top,rgba(35,61,77,1) 0%,rgba(15,28,39,1) 100%)!important;background:linear-gradient(to bottom,rgba(35,61,77,1) 0%,rgba(15,28,39,1) 100%)!important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#233d4d',endColorstr='#0f1c27',GradientType=0)!important;width:100%;border:0;border-radius:5px;padding:10px;text-transform:uppercase;margin-top:20px}
-/* .mat-list-item.contactitem1{position:relative;padding-top:109px;padding-bottom:109px} */
-/* .mat-list-item.contactitem1:before{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeicon1.png);background-position:left top;position:absolute;left:0;top:0;width:100%;height:100%;background-repeat:no-repeat} */
-/* .mat-list-item.contactitem1:after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeicon2.png);background-position:right bottom;position:absolute;left:0;top:34px;width:100%;height:100%;background-repeat:no-repeat} */
-.contactitemwraooer{display:block;padding:0 0 30px; padding-top: 80px;}
-.cap_wrapper{
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    background-color: #e1e9eb;
-    border: 1px solid #c3cdd0;    
-    height: 60px;
-}
+.contactitemwraooer{display:block;padding:0 0 30px;padding-top:80px}
+.cap_wrapper{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:justify;justify-content:space-between;background-color:#e1e9eb;border:1px solid #c3cdd0;height:60px}
 .mat-form-field label{font-family:'lato-Regular';font-size:18px;color:#494b4b;padding-bottom:7px;display:block}
-.capchatext{
-    text-align: center;
-    padding: 3px 4px;
-}
-.capchatext img{
-    max-width: 100%;
-    display: block;
-}
+.capchatext{text-align:center;padding:3px 4px}
+.capchatext img{max-width:100%;display:block}
 .cap_wrapper button{text-align:center;background:none;border:none;cursor:pointer;font-size:18px;font-family:'Lato-Regular'}
 .cap_wrapper button img{text-align:center;display:block;margin:0 auto}
 .cap_wrapper button:focus{outline:none}
-
-.formgroup {
-    display: -webkit-box;
-    display: flex;
-    margin: 0 -1%;
-    align-items: flex-end;
-}
-.formcol-5 {
-    width: 48%;
-    margin: 1%;
-    display: block;
-}
-
-.formcol-10 {
-    width: 98%;
-    margin: 1%;
-    display: block;
-}
-.formcol-7 {
-    width: 68%;
-    margin: 1%;
-    display: block;
-}
-.formcol-3 {
-    width: 28%;
-    margin: 1%;
-    display: block;
-}
-.formcol-4 {
-    width: 39%;
-}
-.mat-form-field-infix {
-    padding: 0;
-    border-top: 0;
-}
-
-.formwrapper .yellowbtn{margin-top: 20px;}
-.leftblockwrapper {
-    display: block;
-    width: 100%;
-}
-.greenbtn{
-    background: rgb(0,149,241);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,149,241,1)), to(rgba(0,195,254,1)));
-    background: linear-gradient(0deg, rgba(0,149,241,1) 0%, rgba(0,195,254,1) 100%);
-    color: #fff;
-    font-size: 36px;
-    font-family: 'Montserrat-SemiBold';
-    border: 0;
-    border-radius: 5px;
-    display: block;
-    margin: 0 0 0 auto;
-    padding: 1px 20px;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-}
-
-
-.formwrapper .capchawrapper input{height: 60px;}
-.contactblock2.mat-card {
-    padding: 0;
-    padding-top: 40px;
-}
-.contactblock2 {
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/contactbg2.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding-top: 30px !important;
-}
-.red{color: red;}
-.formtitlewrapper  h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-}
+.formgroup{display:-webkit-box;display:flex;margin:0 -1%;align-items:flex-end}
+.formcol-5{width:48%;margin:1%;display:block}
+.formcol-10{width:98%;margin:1%;display:block}
+.formcol-7{width:68%;margin:1%;display:block}
+.formcol-3{width:28%;margin:1%;display:block}
+.formcol-4{width:39%}
+.mat-form-field-infix{padding:0;border-top:0}
+.formwrapper .yellowbtn{margin-top:20px}
+.leftblockwrapper{display:block;width:100%}
+.greenbtn{background:#0095f1;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,149,241,1)),to(rgba(0,195,254,1)));background:linear-gradient(0deg,rgba(0,149,241,1) 0%,rgba(0,195,254,1) 100%);color:#fff;font-size:36px;font-family:'Montserrat-SemiBold';border:0;border-radius:5px;display:block;margin:0 0 0 auto;padding:1px 20px;text-shadow:0 0 5px rgba(0,0,0,0.3)}
+.formwrapper .capchawrapper input{height:60px}
+.contactblock2.mat-card{padding:0;padding-top:40px}
+.contactblock2{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/contactbg2.png);background-repeat:no-repeat;background-position:center top;padding-top:30px!important}
+.red{color:red}
+.formtitlewrapper h2{font-family:'Montserrat-Bold';font-size:30px}
 @media only screen and (max-width: 1660px) {
 .bannerblock{background-position:right -132px top!important}
 }
 @media only screen and (max-width: 1620px) {
 .block .yellowbtn{bottom:17px}
-}
-@media only screen and (max-width: 1560px) {
 }
 @media only screen and (max-width: 1500px) {
 .cap_wrapper .img1{width:330px}
@@ -225,102 +68,47 @@
 .capchatext{width:73%}
 }
 @media only screen and (max-width: 1440px) {
-    .imgwrapper{
-        height: 427px;
-    }
-
-    .bannertextwrapper h1{font-size:58px;line-height:56px}
+.imgwrapper{height:427px}
+.bannertextwrapper h1{font-size:58px;line-height:56px}
 }
 @media only screen and (max-width: 1420px) {
 .lefttopbar .mat-card-subtitle h2{font-size:18px}
 .lefttopbar{padding:20px 15px}
 }
 @media only screen and (max-width: 1366px) {
-    .bannertextwrapper {
-        width: 850px;
-        display: block;
-    }
-    .bannerblock .abimage {
-        right: 60px;
-    }
-    .contactitemwraooer .mat-list .mat-list-item.contactitem2 {
-        width: 44%;
-    }
-    .contactitemwraooer .mat-list .mat-list-item.contactitem1 {
-        width: 56%;
-    }
-    .bannertext h2{padding-right: 100px;}
+.bannertextwrapper{width:850px;display:block}
+.bannerblock .abimage{right:60px}
+.contactitemwraooer .mat-list .mat-list-item.contactitem2{width:44%}
+.contactitemwraooer .mat-list .mat-list-item.contactitem1{width:56%}
+.bannertext h2{padding-right:100px}
 }
 @media only screen and (max-width: 1320px) {
-    .bannertext h2 {
-        padding-right: 200px;
-    }
+.bannertext h2{padding-right:200px}
 }
 @media only screen and (max-width: 1199px) {
-    .lefttopbar {
-        padding: 20px 15px;
-        width: auto;
-        margin: 20px 0;
-    }
-    .formwrapper{padding: 0;}
-    .formtitlewrapper h2{text-align: center;}
-    .bannerblock .abimage {
-        right: inherit;
-        bottom: inherit;
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-    }
+.lefttopbar{padding:20px 15px;width:auto;margin:20px 0}
+.formwrapper{padding:0}
+.formtitlewrapper h2{text-align:center}
+.bannerblock .abimage{right:inherit;bottom:inherit;position:relative;display:block;margin:0 auto;max-width:100%}
 .lefttopbar .mat-card-subtitle{flex-wrap:wrap}
 .lefttopbar .mat-card-subtitle h2{width:100%;text-align:center}
-/* .lefttopbar .mat-card-subtitle h2:nth-child(1) br{display:none} */
 .lefttopbar .mat-card-title{padding-bottom:15px}
 .lefttopbar .mat-card-subtitle:after{display:none}
 .contactitemwraooer .mat-list{width:98%;margin:0 auto}
-.bannertextwrapper {
-    width: 100%;
-    display: block;
-   
-}
-.bannerblock{
-    background-position: right top!important;
-    padding-top: 4%!important;
-    min-height: inherit;
-    background-size: cover;
-    background-color: #9ecce4;
-    padding-bottom: 2% !important;
-    display: block !important;
-    
-}
-.bannertitlewrapper{width: auto;}
-.bannertext {
-    text-align: center;
-}
-.bannertext h2{padding: 20px;}
-.bannertextwrapper h1 span {
-    width: 100%;
-    padding: 0;
-}
-.formtitlewrapper p {
-    text-align: center;
-}
-.formwrapper .yellowbtn {
-    margin: 0 auto;
-    margin-top: 20px;
-    display: block;
-}
+.bannertextwrapper{width:100%;display:block}
+.bannerblock{background-position:right top!important;padding-top:4%!important;min-height:inherit;background-size:cover;background-color:#9ecce4;padding-bottom:2%!important;display:block!important}
+.bannertitlewrapper{width:auto}
+.bannertext{text-align:center}
+.bannertext h2{padding:20px}
+.bannertextwrapper h1 span{width:100%;padding:0}
+.formtitlewrapper p{text-align:center}
+.formwrapper .yellowbtn{margin:0 auto;margin-top:20px;display:block}
 .contactitemwraooer .mat-list{flex-wrap:wrap}
 .contactitemwraooer .mat-list .mat-list-item.contactitem1{width:100%;padding:0;padding-bottom:30px}
 .contactitemwraooer .mat-list .mat-list-item.contactitem2{width:100%}
 }
 @media only screen and (max-width: 991px) {
-    
-    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-        font-size: 62px;
-        line-height: 56px;
-    }
-/* .bannerblock{padding-top:0!important} */
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{font-size:62px;line-height:56px}
 .lefttopbar .mat-card-subtitle{flex-wrap:wrap}
 .lefttopbar .mat-card-subtitle h2{text-align:center;width:100%;padding:10px 0}
 .lefttopbar .mat-card-title{padding-bottom:10px}
@@ -329,54 +117,29 @@
 .leftbottomblock{flex-wrap:wrap}
 .imgwrapper{width:100%;border-right:0 solid #fff;height:478px;border-bottom:10px solid #fff}
 .imgwrapper:nth-last-child(1){border-bottom:0 solid #fff}
-.bannertextwrapper h1 span strong {
-    font-size: 85px;
-    line-height: 81px;
-}
+.bannertextwrapper h1 span strong{font-size:85px;line-height:81px}
 }
 @media only screen and (max-width: 768px) {
-    .formtitlewrapper p {
-        font-size: 24px;
-    }
+.formtitlewrapper p{font-size:24px}
 .imgwrapper{height:328px}
 }
 @media only screen and (max-width: 680px) {
-    .formgroup{flex-wrap: wrap;}
-    .formcol-5{width: 100%;}
-    .greenbtn{
-        padding: 0px 20px;
-        font-size: 30px;
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-    .formcol-3 {
-        width: 48%;
-    }
-    .formcol-4 {
-        width: 100%;
-    }
+.formgroup{flex-wrap:wrap}
+.formcol-5{width:100%}
+.greenbtn{padding:0 20px;font-size:30px;margin:0 auto;margin-top:20px}
+.formcol-3{width:48%}
+.formcol-4{width:100%}
 }
 @media only screen and (max-width: 560px) {
-    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-        font-size: 42px;
-        line-height: 36px;
-    }
-    .bannertitlewrapper{padding: 15px;}
-    .bannertextwrapper h1 span strong {
-        font-size: 65px;
-        line-height: 70px;
-    }
-    .bannertextwrapper h1 span {
-        padding-bottom: 0 !important;
-    }
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{font-size:42px;line-height:36px}
+.bannertitlewrapper{padding:15px}
+.bannertextwrapper h1 span strong{font-size:65px;line-height:70px}
+.bannertextwrapper h1 span{padding-bottom:0!important}
 .lefttopbar .mat-card-title{font-size:53px}
 .cap_wrapper .img1{width:258px}
 }
 @media only screen and (max-width: 480px) {
-   
-    .formcol-3 {
-        width: 100%;
-    }
+.formcol-3{width:100%}
 .contactitemwraooer .mat-list{padding-top:13px}
 .imgwrapper{height:218px}
 }

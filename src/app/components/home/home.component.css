@@ -1,898 +1,243 @@
-
 .peceShadow{box-shadow:0 2px 3px 2px #329464}
-.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewbg1.jpg)!important;
-    min-height:580px;display:flex;align-items:center;background-size: cover;
-    background-position: right top;    background-repeat: no-repeat;
-    position: relative;
-    min-height: 666px;
-    padding-top: 90px !important;
-    padding-bottom: 30px !important;
-    overflow: hidden;
-}
-.bannerblock .abimage{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-
-}
-
-.bannertextwrapper h1 span strong {
-    font-size: 150px;
-    line-height: 137px;
-}
-.bannertext{
-    border-radius: 50%;
-    display: block;
-    position: relative;
-    width: 980px;
-}
-.greenbutton, .blackbutton, .redbutton{
-    font-size: 20px;
-}
-.bannertext img{display: block; margin: 20px auto;}
-
-.newcontainer {
-    position: relative;
-}
-
-.bannertext h3, .bannertext h3 span{
-    font-size: 90px;
-    color: #fff;
-    font-family: 'Montserrat-Bold';
-    line-height: 90px;
-    background: rgb(219,235,238);
-    background: linear-gradient(0deg, rgba(219,235,238,1) 0%, rgba(219,235,238,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0px 1px rgba(0,0,0,0.3));
-}
-.bannertext h4{
-    color: #082839;
-    font-size: 30px;
-    font-family: 'Montserrat-Regular';
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    width: 810px;
-}
-.bannertext h2{
-    color: #fff;
-    font-size: 30px;
-    font-family: 'Montserrat-SemiBold';
-    background: rgb(28,187,234);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(28,187,234,1)), color-stop(50%, rgba(12,172,246,1)), color-stop(68%, rgba(11,171,247,1)), to(rgba(11,171,247,0)));
-    background: linear-gradient(90deg, rgba(28,187,234,1) 0%, rgba(12,172,246,1) 50%, rgba(11,171,247,1) 68%, rgba(11,171,247,0) 100%);
-    padding: 20px;
-    box-shadow: -5px 2px 7px rgba(0,0,0,0.1);
-    padding-right: 220px;
-    border: 1px solid #31c8f9;
-    border-right: 0;
-    border-radius: 5px;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
-}
-.bannertext h2 span{color: #fef500;}
-.bannertext p{
-    font-size: 24px;
-    color: #fff;
-    font-family: 'Montserrat-Regular';
-    text-align: center;
-    width: auto;
-}
-.bannertext p span{color: #fecb00;}
-.colcontainer {display: flex; justify-content: space-between;}
-.col-3{width: 29%;}
-.col-7{width: 69%;}
-.col-4{width: 39%;}
-.col-6{width: 59%;}
-
-
-.block {
-    padding: 30px 0;
-    border: 0;
-    box-shadow: none;
-}
-
-.block.homeblock3{padding-top: 0;}
-
-.videowrapper{
-    height: 100%;
-    border: 2px solid #1c1c1c;
-
-}
-
-.homeblock4 .abimage{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 44%;
-}
-.homeblock4 {
-    background: #f0f0e6;
-}
-.homeblock4 .titlewrapper p{color: #1da9ee;}
-.homeblock4 .textwrapper p span{color: #fa6a00;}
-.homeblock4 .textwrapper h3{
-    width: 900px;
-    border: 1px solid #cfd1d2;
-    border-radius: 10px;
-    color: #1f1f1f;
-    padding: 20px;
-    line-height: 32px;
-    background-color: #fffffff0;
-
-}
-.textwrapper h2, .textwrapper h2 span{
-    font-family: 'Montserrat-Bold';
-    font-size: 50px;
-    text-transform: uppercase;
-    background: rgb(23,59,78);
-    background: linear-gradient(0deg, rgba(23,59,78,1) 0%, rgba(23,59,78,1) 50%, rgba(11,77,112,1) 50%, rgba(11,77,112,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: block;
-    line-height: 48px;
-}
-.textwrapper h2{
-    margin-bottom: 30px;
-}
-
-.homeblock5 .listtext{
-    column-count: 3;
-}
-.homeblock5 .listwrapper .abimage {
-    position: absolute;
-    left: inherit;
-    bottom: 0;
-    right: -120px;
-}
-.homeblock5 .listwrapper {
-    padding-left: 0;
-    padding-right: 460px;
-    position: relative;
-    padding-bottom: 40px;
-}
-.homeblock5 .listwrapper2 {
-    padding-right: 0;
-}
-.homeblock5 .listtext2{
-    background: rgb(28,187,234);
-    background: linear-gradient(90deg, rgba(28,187,234,1) 0%, rgba(21,195,94,1) 100%);
-    padding: 20px;
-    column-count: inherit;
-    border-radius: 5px;
-    border: 1px solid #fff;
-}
-.listtext3 {
-    display: flex;
-    justify-content: space-between;
-}
-.listtext3 .col{
-    position: relative;
-}
-.listtext3 .col::after{
-    content: '';
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    left: -29px;
-    top: 50%;
-    background: #ffffff;
-    transform: translateY(-50%);
-    box-shadow: -1px 0px 0 rgba(0,0,0,0.3);
-}
-.listtext3 .col:nth-child(1):after{
-    display: none;
-}
-.homeblock5 .listtext2 p{
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon5.png);
-    color: #fff;
-}
-.homeblock5 .homeblock5bgwrapper .homeblock3subwrapper2{
-    background: none;
-    padding: 20px 0;
-    padding-bottom: 30px;
-}
-.homeblock5bgwrapper{
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewbg2.jpg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    padding-top: 60px;
-    margin-top: -58px;
-}
-.homeblock5bgwrapper .textwrapper h2{
-    font-size: 40px;
-    text-transform: none;
-    margin-bottom: 20px;
-}
-
-.homeblock4 .textwrapper h3 span{color: #0bc324;}
-.homeblock4 .textwrapper p{
-    position: relative;
-    font-size: 18px;
-    margin: 0;
-    padding: 10px 0;
-    padding-left: 50px;
-}
-.homeblock4 .textwrapper p::after{
-    content: '';
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon4.png);
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    left: 0;
-    top: 3px;
-    background-repeat: no-repeat;
-}
-.homeblock4 .textwrapper p::before{
-    content: '';
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    left: 13px;
-    top: 20px;
-    background: #0b4d70;
-}
-.homeblock4subwrapper .abimage{
-    position: absolute;
-    left: -90px;
-    bottom: 0;
-}
-.homeblock4 .textwrapper {
-    position: relative;
-}
-.homeblock4subwrapper {
-    position: relative;
-    padding: 40px 0;
-    padding-left: 520px;
-}
-.homeblock4 .textwrapper p:nth-last-child(1):before{
-display: none;
-}
-.homeblock5 .abimage{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.block.homeblock5{padding-top: 0;}
-.imgwrapper img{max-width: 100%;}
-
-.homeblock5 .col-6 {
-    width: 53%;
-}
-.homeblock5 .col-4 {
-    width: 46%;
-}
-.homeblock5 .bluegradient, .homeblock5 .yellowgradient{
-    border-radius: 8px;
-    margin-bottom: 0;
-    position: relative;
-}
-
-
-.homeblock5 .bluegradient::before{
-    content: '';
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/leftarrow.png);
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 200px;
-    left: -43px;
-    top: 20px;
-    position: absolute;
-}
-.homeblock5 .yellowgradient::after{
-    content: '';
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rightarrow.png);
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 48px;
-    right: -47px;
-    top: 20px;
-    position: absolute;
-}
-.homeblock2 .colcontainer {
-    margin: 0;
-}
-.mat-card{border-radius: 0;}
-
-.homeblock2 {
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);
-    background-repeat: no-repeat;
-    background-position: center top -64px;
-    display: block;
-    padding: 30px 0;
-}
-.homeblock2 .imgwrapper {
-    margin-top: 90px;
-}
-.homeblock2 .buttonwrapper{
-    padding: 30px 0;
-    padding-bottom: 0;
-}
-.col-10{width: 100%;}
-.homeblock2 .colcontainer{flex-wrap: wrap;}
-/* .imgwrapper {
-    position: relative;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    border-radius: 5px;
-    height: 100%;
-} */
-.searchicon {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.imgwrapper img{display: block; width: 100%;}
-
-.colcontainer.subcolcontainer .col-10{margin-bottom: 10px;}
-.titlewrapper h2, .titlewrapper h2 span{
-    font-family: 'Montserrat-Bold';
-    font-size: 50px;
-    text-transform: uppercase;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(77,77,77,1) 50%, rgba(77,77,77,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 0;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    display: block;
-    margin: 0 auto;
-}
-.titlewrapper h2 span{display: block;}
-.titlewrapper p{
-    font-family: 'Montserrat-SemiBold';
-    font-size: 22px;
-    line-height: 24px;
-}
-.homeblock2 .titlewrapper p{
-    width: 1230px;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    margin-bottom: 80px;
-}
-.newimgwrapper img{display: block; width: 100%;}
-.col-container {
-    display: flex;
-    justify-content: space-between;
-}
-.col-3{width: 32%;}
-.lstclogwrapper{
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homelstblocksubbg.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    text-align: center;
-    position: relative;
-    padding-top: 100px;
-    margin-top: 110px;
-    background-size: cover;
-}
-.listwrapper {
-    padding-left: 738px;
-    position: relative;
-    padding-bottom: 40px;
-}
-.listwrapper .abimage{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-.homeblock3subwrapper1{
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewimage6.png);
-    background-repeat: no-repeat;
-    background-position: left 360px center;
-    padding-top: 30px;
-}
-.homeblock3subwrapper2{
-    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewimage7.png);
-    background-repeat: no-repeat;
-    background-position: right -130px bottom;
-    padding-top: 30px;
-    margin-top: -40px;
-    padding-bottom: 20px;
-}
-.homeblock3 {
-    background: #f0fdf9;
-}
-.listwrapper2 {
-    padding-right: 460px;
-}
-.listsubtitle {
-    padding: 0px 20px;
-}
-.listtext2 {
-    padding: 20px;
-    padding-top: 0;
-}
-.lstclogwrapper .logowrapper{
-    width: 165px;
-    height: 165px;
-    background: rgb(217,164,0);
-    background: linear-gradient(0deg, rgba(217,164,0,1) 0%, rgba(249,228,0,1) 100%);
-    border: 10px solid #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lstclogwrapper h2{
-    background: rgb(28,187,234);
-    background: linear-gradient(90deg, rgba(28,187,234,1) 0%, rgba(21,195,94,1) 100%);
-    color: #fff;
-    font-size: 36px;
-    font-family: 'Montserrat-SemiBold';
-    text-transform: uppercase;
-    padding: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    border: 7px solid #edf0f2;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-.lstclogwrapper p{
-    color: #33393d;
-    font-size: 20px;
-    font-family: 'Montserrat-Regular';
-    width: 380px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
-.lstclogwrapper .btnblue{}
-
-.homelstblock{
-    background: #e9eadd;
-    padding-top: 25px;
-    padding-bottom: 50px;
-}
-
-.homeblock5 .titlewrapper h2{
- margin-bottom: 20px;
-}
-.homeblock5 {
-    overflow: hidden;
-}
-.homeblock5 .homeblock3subwrapper1{background: none;}
-
-.homeblock2 .btnblue{
-    font-size: 40px;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.homeblock2 .titlewrapper .pece{
-    padding-right: 20px !important;
-}
-
-.homeblock2 .titlewrapper h2 .pece::after{
-    top: 7px;
-}
-
-.homeblock3 .textwrapper p{font-size: 20px; margin-bottom: 20px;}
-.homeblock5 .textwrapper h3{ margin-bottom: 20px;}
-.homeblock3subwrapper2 .btnblue{margin-top: 20px;}
-
-@media only screen and (max-width: 1820px) {
-    /* .newcontainer{width: 98%;} */
-}
+.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewbg1.jpg)!important;min-height:580px;display:flex;align-items:center;background-size:cover;background-position:right top;background-repeat:no-repeat;position:relative;min-height:666px;padding-top:90px!important;padding-bottom:30px!important;overflow:hidden}
+.bannerblock .abimage{position:absolute;bottom:0;right:0;z-index:1}
+.bannertextwrapper h1 span strong{font-size:150px;line-height:137px}
+.bannertext{border-radius:50%;display:block;position:relative;width:980px}
+.greenbutton,.blackbutton,.redbutton{font-size:20px}
+.bannertext img{display:block;margin:20px auto}
+.newcontainer{position:relative}
+.bannertext h3,.bannertext h3 span{font-size:90px;color:#fff;font-family:'Montserrat-Bold';line-height:90px;background:#dbebee;background:linear-gradient(0deg,rgba(219,235,238,1) 0%,rgba(219,235,238,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0px 1px rgba(0,0,0,0.3))}
+.bannertext h4{color:#082839;font-size:30px;font-family:'Montserrat-Regular';text-transform:uppercase;margin-bottom:20px;width:810px}
+.bannertext h2{color:#fff;font-size:30px;font-family:'Montserrat-SemiBold';background:#1cbbea;background:-webkit-gradient(linear,left top,right top,from(rgba(28,187,234,1)),color-stop(50%,rgba(12,172,246,1)),color-stop(68%,rgba(11,171,247,1)),to(rgba(11,171,247,0)));background:linear-gradient(90deg,rgba(28,187,234,1) 0%,rgba(12,172,246,1) 50%,rgba(11,171,247,1) 68%,rgba(11,171,247,0) 100%);padding:20px;box-shadow:-5px 2px 7px rgba(0,0,0,0.1);padding-right:220px;border:1px solid #31c8f9;border-right:0;border-radius:5px;text-shadow:0 0 5px rgba(0,0,0,0.4)}
+.bannertext h2 span{color:#fef500}
+.bannertext p{font-size:24px;color:#fff;font-family:'Montserrat-Regular';text-align:center;width:auto}
+.bannertext p span{color:#fecb00}
+.colcontainer{display:flex;justify-content:space-between}
+.col-3{width:29%}
+.col-7{width:69%}
+.col-4{width:39%}
+.col-6{width:59%}
+.block{padding:30px 0;border:0;box-shadow:none}
+.block.homeblock3{padding-top:0}
+.videowrapper{height:100%;border:2px solid #1c1c1c}
+.homeblock4 .abimage{position:absolute;right:0;bottom:0;width:44%}
+.homeblock4{background:#f0f0e6}
+.homeblock4 .titlewrapper p{color:#1da9ee}
+.homeblock4 .textwrapper p span{color:#fa6a00}
+.homeblock4 .textwrapper h3{width:900px;border:1px solid #cfd1d2;border-radius:10px;color:#1f1f1f;padding:20px;line-height:32px;background-color:#fffffff0}
+.textwrapper h2,.textwrapper h2 span{font-family:'Montserrat-Bold';font-size:50px;text-transform:uppercase;background:#173b4e;background:linear-gradient(0deg,rgba(23,59,78,1) 0%,rgba(23,59,78,1) 50%,rgba(11,77,112,1) 50%,rgba(11,77,112,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block;line-height:48px}
+.textwrapper h2{margin-bottom:30px}
+.homeblock5 .listtext{column-count:3}
+.homeblock5 .listwrapper .abimage{position:absolute;left:inherit;bottom:0;right:-120px}
+.homeblock5 .listwrapper{padding-left:0;padding-right:460px;position:relative;padding-bottom:40px}
+.homeblock5 .listwrapper2{padding-right:0}
+.homeblock5 .listtext2{background:#1cbbea;background:linear-gradient(90deg,rgba(28,187,234,1) 0%,rgba(21,195,94,1) 100%);padding:20px;column-count:inherit;border-radius:5px;border:1px solid #fff}
+.listtext3{display:flex;justify-content:space-between}
+.listtext3 .col{position:relative}
+.listtext3 .col::after{content:'';width:1px;height:100%;position:absolute;left:-29px;top:50%;background:#fff;transform:translateY(-50%);box-shadow:-1px 0 0 rgba(0,0,0,0.3)}
+.listtext3 .col:nth-child(1):after{display:none}
+.homeblock5 .listtext2 p{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon5.png);color:#fff}
+.homeblock5 .homeblock5bgwrapper .homeblock3subwrapper2{background:none;padding:20px 0;padding-bottom:30px}
+.homeblock5bgwrapper{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewbg2.jpg);background-repeat:no-repeat;background-position:right top;padding-top:60px;margin-top:-58px}
+.homeblock5bgwrapper .textwrapper h2{font-size:40px;text-transform:none;margin-bottom:20px}
+.homeblock4 .textwrapper h3 span{color:#0bc324}
+.homeblock4 .textwrapper p{position:relative;font-size:18px;margin:0;padding:10px 0;padding-left:50px}
+.homeblock4 .textwrapper p::after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon4.png);height:25px;width:25px;position:absolute;left:0;top:3px;background-repeat:no-repeat}
+.homeblock4 .textwrapper p::before{content:'';width:1px;height:100%;position:absolute;left:13px;top:20px;background:#0b4d70}
+.homeblock4subwrapper .abimage{position:absolute;left:-90px;bottom:0}
+.homeblock4 .textwrapper{position:relative}
+.homeblock4subwrapper{position:relative;padding:40px 0;padding-left:520px}
+.homeblock4 .textwrapper p:nth-last-child(1):before{display:none}
+.homeblock5 .abimage{position:absolute;right:0;bottom:0}
+.block.homeblock5{padding-top:0}
+.imgwrapper img{max-width:100%}
+.homeblock5 .col-6{width:53%}
+.homeblock5 .col-4{width:46%}
+.homeblock5 .bluegradient,.homeblock5 .yellowgradient{border-radius:8px;margin-bottom:0;position:relative}
+.homeblock5 .bluegradient::before{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/leftarrow.png);background-repeat:no-repeat;height:100%;width:200px;left:-43px;top:20px;position:absolute}
+.homeblock5 .yellowgradient::after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rightarrow.png);background-repeat:no-repeat;height:100%;width:48px;right:-47px;top:20px;position:absolute}
+.homeblock2 .colcontainer{margin:0}
+.mat-card{border-radius:0}
+.homeblock2{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);background-repeat:no-repeat;background-position:center top -64px;display:block;padding:30px 0}
+.homeblock2 .imgwrapper{margin-top:90px}
+.homeblock2 .buttonwrapper{padding:30px 0;padding-bottom:0}
+.col-10{width:100%}
+.homeblock2 .colcontainer{flex-wrap:wrap}
+.searchicon{position:absolute;bottom:0;right:0}
+.imgwrapper img{display:block;width:100%}
+.colcontainer.subcolcontainer .col-10{margin-bottom:10px}
+.titlewrapper h2,.titlewrapper h2 span{font-family:'Montserrat-Bold';font-size:50px;text-transform:uppercase;background:#000;background:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(77,77,77,1) 50%,rgba(77,77,77,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;border:0;box-shadow:none;border-radius:0;padding:0;margin:0;display:block;margin:0 auto}
+.titlewrapper h2 span{display:block}
+.titlewrapper p{font-family:'Montserrat-SemiBold';font-size:22px;line-height:24px}
+.homeblock2 .titlewrapper p{width:1230px;display:block;margin:10px auto;text-align:center;margin-bottom:80px}
+.newimgwrapper img{display:block;width:100%}
+.col-container{display:flex;justify-content:space-between}
+.col-3{width:32%}
+.lstclogwrapper{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homelstblocksubbg.jpg);background-repeat:no-repeat;background-position:left top;padding:20px;border-radius:8px;box-shadow:0 0 5px rgba(0,0,0,0.3);text-align:center;position:relative;padding-top:100px;margin-top:110px;background-size:cover}
+.listwrapper{padding-left:738px;position:relative;padding-bottom:40px}
+.listwrapper .abimage{position:absolute;left:0;bottom:0}
+.homeblock3subwrapper1{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewimage6.png);background-repeat:no-repeat;background-position:left 360px center;padding-top:30px}
+.homeblock3subwrapper2{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewimage7.png);background-repeat:no-repeat;background-position:right -130px bottom;padding-top:30px;margin-top:-40px;padding-bottom:20px}
+.homeblock3{background:#f0fdf9}
+.listwrapper2{padding-right:460px}
+.listsubtitle{padding:0 20px}
+.listtext2{padding:20px;padding-top:0}
+.lstclogwrapper .logowrapper{width:165px;height:165px;background:#d9a400;background:linear-gradient(0deg,rgba(217,164,0,1) 0%,rgba(249,228,0,1) 100%);border:10px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.3);border-radius:50%;display:flex;justify-content:center;align-items:center;position:absolute;top:-100px;left:50%;transform:translateX(-50%)}
+.lstclogwrapper h2{background:#1cbbea;background:linear-gradient(90deg,rgba(28,187,234,1) 0%,rgba(21,195,94,1) 100%);color:#fff;font-size:36px;font-family:'Montserrat-SemiBold';text-transform:uppercase;padding:20px 0;text-shadow:2px 2px 4px rgba(0,0,0,0.3);border:7px solid #edf0f2;border-radius:8px;margin-bottom:15px}
+.lstclogwrapper p{color:#33393d;font-size:20px;font-family:'Montserrat-Regular';width:380px;margin:0 auto;margin-bottom:15px}
+.homelstblock{background:#e9eadd;padding-top:25px;padding-bottom:50px}
+.homeblock5 .titlewrapper h2{margin-bottom:20px}
+.homeblock5{overflow:hidden}
+.homeblock5 .homeblock3subwrapper1{background:none}
+.homeblock2 .btnblue{font-size:40px;text-transform:uppercase;width:100%}
+.homeblock2 .titlewrapper .pece{padding-right:20px!important}
+.homeblock2 .titlewrapper h2 .pece::after{top:7px}
+.homeblock3 .textwrapper p{font-size:20px;margin-bottom:20px}
+.homeblock5 .textwrapper h3{margin-bottom:20px}
+.homeblock3subwrapper2 .btnblue{margin-top:20px}
 @media only screen and (max-width: 1800px) {
-    .homeblock2 .abimage {
-        left: -70px;
-    }
+.homeblock2 .abimage{left:-70px}
 }
 @media only screen and (max-width: 1780px) {
-    .greenbutton, .blackbutton, .redbutton{min-width: 270px;}
+.greenbutton,.blackbutton,.redbutton{min-width:270px}
 }
 @media only screen and (max-width: 1680px) {
-    .bannerblock .abimage {
-        right: -90px;
-    }
-    .homeblock2 .abimage {
-        width: 62%;
-    }
-    .bannerblock {
-        background-position: right -53px top;
-    }
+.bannerblock .abimage{right:-90px}
+.homeblock2 .abimage{width:62%}
+.bannerblock{background-position:right -53px top}
 }
-
 @media only screen and (max-width: 1640px) {
-    .homeblock5 .col-6 {width: 48%;}
+.homeblock5 .col-6{width:48%}
 }
 @media only screen and (max-width: 1620px) {
-    
-    .textwrapper h2 span{
-        display: inline;
-    }
-    .homeblock4 .abimage {
-        width: 47%;
-    }
-    .bannerblock {
-        background-position: right -22px top !important;
-    }
-}
-@media only screen and (max-width: 1620px) {
-    .homeblock3subwrapper1 {
-        background-position: left 250px center;
-    }
-    .titlewrapper h2, .titlewrapper h2 span {
-        font-size: 46px;
-        line-height: 44px;}
+.textwrapper h2 span{display:inline}
+.homeblock4 .abimage{width:47%}
+.bannerblock{background-position:right -22px top!important}
+.homeblock3subwrapper1{background-position:left 250px center}
+.titlewrapper h2,.titlewrapper h2 span{font-size:46px;line-height:44px}
 }
 @media only screen and (max-width: 1600px) {
-    .bannerblock {
-        background-position: right -133px top;
-    }
+.bannerblock{background-position:right -133px top}
 }
-
-
 @media only screen and (max-width: 1570px) {
-    .greenbutton, .blackbutton, .redbutton {
-        font-size: 20px;
-        padding: 20px;
-        min-width: inherit;
-    }
+.greenbutton,.blackbutton,.redbutton{font-size:20px;padding:20px;min-width:inherit}
 }
 @media only screen and (max-width: 1560px) {
-    .homeblock3subwrapper2{
-        background-position: right -280px bottom;
-    }
-    .listwrapper {
-        padding-left: 678px;
-    }
-    .textwrapper h2, .textwrapper h2 span{
-        font-size: 42px;
-        line-height: 47px;
-    }
-    .titlewrapper h2, .titlewrapper h2 span {
-        font-size: 42px;
-        line-height: 47px;
-    }
-    .titlewrapper h3{
-        font-size: 24px;
-        line-height: 26px;
-    }
-    .titlewrapperbg{
-        padding: 30px 280px;
-    }
-    .bannertext h4 {color: #082839;font-size: 26px;}
-    .bannerblock {
-        background-position: right -81px top !important;
-    }
-    .bannertext h2 {color: #fff;font-size: 26px;}
-   
+.homeblock3subwrapper2{background-position:right -280px bottom}
+.listwrapper{padding-left:678px}
+.textwrapper h2,.textwrapper h2 span{font-size:42px;line-height:47px}
+.titlewrapper h2,.titlewrapper h2 span{font-size:42px;line-height:47px}
+.titlewrapper h3{font-size:24px;line-height:26px}
+.titlewrapperbg{padding:30px 280px}
+.bannertext h4{color:#082839;font-size:26px}
+.bannerblock{background-position:right -81px top!important}
+.bannertext h2{color:#fff;font-size:26px}
 }
 @media only screen and (max-width: 1540px) {
-    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{
-        font-size: 46px;    line-height: 48px;
-    }
-    .bannerblock {
-        background-position: right -192px top;
-    }
-    .bannertext {
-        width: 61%;
-    }
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{font-size:46px;line-height:48px}
+.bannerblock{background-position:right -192px top}
+.bannertext{width:61%}
 }
-
-
 @media only screen and (max-width: 1520px) {
-    .bannertext {
-        width: 51%;
-    }
-    .bannertext h3 br{display: none;}
-    .bannerblock {
-        background-position: right -121px top !important;
-    }
+.bannertext{width:51%}
+.bannertext h3 br{display:none}
+.bannerblock{background-position:right -121px top!important}
 }
 @media only screen and (max-width: 1500px) {
-    .homeblock4 .abimage {
-        width: 52%;
-    }
+.homeblock4 .abimage{width:52%}
 }
 @media only screen and (max-width: 1480px) {
-    .bannertext h3 br{display: none;}
+.bannertext h3 br{display:none}
 }
 @media only screen and (max-width: 1460px) {
-    .bannertext {
-        width: 50%;
-    }
+.bannertext{width:50%}
 }
-
 @media only screen and (max-width: 1440px) {
-    .homeblock2 .btnblue {
-        font-size: 34px
-    }
-    .bannertext h4{    width: 680px;font-size: 24px;}
-    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-        font-size: 36px;
-        line-height: 40px;
-        display: initial;
-    }
-    .bannertext h2{padding-right: 40px;}
-    .homeblock4 .textwrapper p {
-        width: 85%;
-    }
-    .block.homeblock4{padding-top: 0;}
-    .homeblock4 .abimage {
-        width: 51%;
-    }
-    .homeblock4 .textwrapper h3 {
-        width: 90%;
-        line-height: 28px;
-    }
+.homeblock2 .btnblue{font-size:34px}
+.bannertext h4{width:680px;font-size:24px}
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{font-size:36px;line-height:40px;display:initial}
+.bannertext h2{padding-right:40px}
+.homeblock4 .textwrapper p{width:85%}
+.block.homeblock4{padding-top:0}
+.homeblock4 .abimage{width:51%}
+.homeblock4 .textwrapper h3{width:90%;line-height:28px}
 }
-
 @media only screen and (max-width: 1366px) {
-    .lstclogwrapper h2{    font-size: 28px;}
-    .titlewrapper h2 span {
-        display: inline;
-    }
-    .listwrapper {
-        padding-left: 538px;
-    }
-    .listwrapper2 {
-        padding-right: 350px;
-    }
-    .homeblock4 .abimage {
-        width: 57%;
-    }
-    .homeblock5 .listwrapper {
-        padding-right: 370px;
-    }
-    .bannerblock .abimage {
-        right: -240px;
-    }
+.lstclogwrapper h2{font-size:28px}
+.titlewrapper h2 span{display:inline}
+.listwrapper{padding-left:538px}
+.listwrapper2{padding-right:350px}
+.homeblock4 .abimage{width:57%}
+.homeblock5 .listwrapper{padding-right:370px}
+.bannerblock .abimage{right:-240px}
 }
 @media only screen and (max-width: 1199px) {
-    .homeblock3subwrapper2 .btnblue {
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-    .homeblock3subwrapper2 {
-        background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewimage07.png);
-        background-repeat: no-repeat;
-        background-position: right top;
-        padding-top: 62%;
-        margin-top: -40px;
-        padding-bottom: 20px;
-        background-size: 100%;
-    }
-    .homeblock4 .textwrapper p::after{
-        left: 50%;
-    top: 0;
-    background-repeat: no-repeat;
-    transform: translateX(-50%);
-    }
-    .homeblock4 .textwrapper p {
-        padding: 10px 0;
-        padding-left: 0;
-        padding-top: 30px;
-    }
-    .homeblock4 .textwrapper p::before{display: none;}
-    .textwrapper h2, .textwrapper h2 span {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .homeblock5 .listwrapper .abimage {
-        position: inherit;
-        left: inherit;
-        bottom: inherit;
-        right: inherit;
-        display: block;
-        margin: 0 auto;
-    }
-    .homeblock5 .listwrapper {
-        padding-right: 0;
-    }
-    .listtext p{
-        padding-left: 0;
-    }
-    .homeblock5 .listtext {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
-    .listtext3 {
-        flex-flow: column;
-    }
-    .listtext3 .col::after{display: none;}
-    .col-container {
-        flex-wrap: wrap;
-    }
-    .titlewrapperbg {
-        padding: 30px;
-    }
-    .listwrapper .abimage {
-        position: inherit;
-        left: inherit;
-        bottom: inherit;
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-    }
-    .listwrapper {
-        padding-left: 0;
-    }
-    .homeblock3subwrapper1{background: none;}
-    .listwrapper2 {
-        padding-right: 0;
-    }
-    .homeblock4subwrapper {
-        padding-left: 0;
-    }
-    .listtext2 {
-        column-count: 1;
-        column-gap: 0px;
-        column-rule: 0px solid #b9c7cc;
-        text-align: center;
-    }
-    .listtext2 p {
-        padding-bottom: 10px;
-        padding-top: 20px;
-        background-position: center top;
-        padding-left: 0;
-    }
-    .listtitle h2 {
-        text-align: center;
-    }
-    .listsubtitle h3 {
-        text-align: center;
-    }
-    .listtext {
-        column-count: 1;
-        column-gap: 0px;
-        column-rule: 0px solid #b9c7cc;
-        text-align: center;
-    }
-    .listtext p {
-        padding-top: 34px;
-        background-position: center top;
-    }
-    .bannerblock .abimage {
-        right: inherit;
-        bottom: inherit;
-        position: inherit;
-        display: block;
-        margin: 0 auto;
-    }
-    .bannerblock {
-        background-position: right top !important;
-        min-height: inherit;
-        padding-top: 45px !important;
-        background-color: #0e657b;
-        padding-bottom: 4% !important;
-        display: block !important;
-        text-align: center;
-    }
-    .bannertext h4 {
-        width: auto;
-        font-size: 24px;
-    }
-    .bannertext p {
-        width: auto;
-        padding-bottom: 0;
-    }
-    .bannertext {
-        width: 100%;
-    }
-    .colcontainer{flex-wrap: wrap;}
-    .col-4{width: 100%;}
-    .col-6{width: 100%;}
-    .col-7{width: 100%;}
-    .col-3{width: 100%;}
-    .homeblock2 .abimage {
-        width: 100%;
-        display: block;
-        position: inherit;
-        left: inherit;
-        right: inherit;
-        margin-bottom: 20px;
-    }
-    .block.homeblock2{padding-top: 0;}
-    
-
-    .homeblock3 mat-card-action{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-bottom: 20px;
-    }
-    .homeblock4 .abimage {
-        width: 100%;
-        position: inherit;
-        left: inherit;
-        right: inherit;
-        top: inherit;
-        bottom: inherit;
-        display: block;
-    }
-    .homeblock4 .textwrapper p {
-        width: auto;
-    }
-    .homeblock4 .textwrapper h3 {
-        width: 96%;
-        padding: 2%;
-    }
-    .homeblock5 .col-4{width: 100%;}
-    .homeblock5 .col-6{width: 100%;}
-
-    .homeblock5 .bluegradient::before, .homeblock5 .yellowgradient::after{display: none;}
-    .homeblock5 .colcontainer:nth-last-child(1){flex-flow: column-reverse;}
-    .imgwrapper img {
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-    .videowrapper {
-        height: 100%;
-        border: 2px solid #1c1c1c;
-        min-height: 600px;
-      }
-      img{max-width: 100%;}
-
+.homeblock3subwrapper2 .btnblue{display:block;margin:0 auto;margin-top:20px}
+.homeblock3subwrapper2{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homenewimage07.png);background-repeat:no-repeat;background-position:right top;padding-top:62%;margin-top:-40px;padding-bottom:20px;background-size:100%}
+.homeblock4 .textwrapper p::after{left:50%;top:0;background-repeat:no-repeat;transform:translateX(-50%)}
+.homeblock4 .textwrapper p{padding:10px 0;padding-left:0;padding-top:30px}
+.homeblock4 .textwrapper p::before{display:none}
+.textwrapper h2,.textwrapper h2 span{text-align:center;margin-top:20px}
+.homeblock5 .listwrapper .abimage{position:inherit;left:inherit;bottom:inherit;right:inherit;display:block;margin:0 auto}
+.homeblock5 .listwrapper{padding-right:0}
+.listtext p{padding-left:0}
+.homeblock5 .listtext{-webkit-column-count:1;-moz-column-count:1;column-count:1}
+.listtext3{flex-flow:column}
+.listtext3 .col::after{display:none}
+.col-container{flex-wrap:wrap}
+.titlewrapperbg{padding:30px}
+.listwrapper .abimage{position:inherit;left:inherit;bottom:inherit;display:block;margin:0 auto;max-width:100%}
+.listwrapper{padding-left:0}
+.homeblock3subwrapper1{background:none}
+.listwrapper2{padding-right:0}
+.homeblock4subwrapper{padding-left:0}
+.listtext2{column-count:1;column-gap:0;column-rule:0 solid #b9c7cc;text-align:center}
+.listtext2 p{padding-bottom:10px;padding-top:20px;background-position:center top;padding-left:0}
+.listtitle h2{text-align:center}
+.listsubtitle h3{text-align:center}
+.listtext{column-count:1;column-gap:0;column-rule:0 solid #b9c7cc;text-align:center}
+.listtext p{padding-top:34px;background-position:center top}
+.bannerblock .abimage{right:inherit;bottom:inherit;position:inherit;display:block;margin:0 auto}
+.bannerblock{background-position:right top!important;min-height:inherit;padding-top:45px!important;background-color:#0e657b;padding-bottom:4%!important;display:block!important;text-align:center}
+.bannertext h4{width:auto;font-size:24px}
+.bannertext p{width:auto;padding-bottom:0}
+.bannertext{width:100%}
+.colcontainer{flex-wrap:wrap}
+.col-4{width:100%}
+.col-6{width:100%}
+.col-7{width:100%}
+.col-3{width:100%}
+.homeblock2 .abimage{width:100%;display:block;position:inherit;left:inherit;right:inherit;margin-bottom:20px}
+.block.homeblock2{padding-top:0}
+.homeblock3 mat-card-action{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;padding-bottom:20px}
+.homeblock4 .abimage{width:100%;position:inherit;left:inherit;right:inherit;top:inherit;bottom:inherit;display:block}
+.homeblock4 .textwrapper p{width:auto}
+.homeblock4 .textwrapper h3{width:96%;padding:2%}
+.homeblock5 .col-4{width:100%}
+.homeblock5 .col-6{width:100%}
+.homeblock5 .bluegradient::before,.homeblock5 .yellowgradient::after{display:none}
+.homeblock5 .colcontainer:nth-last-child(1){flex-flow:column-reverse}
+.imgwrapper img{max-width:100%;display:block;margin:0 auto}
+.videowrapper{height:100%;border:2px solid #1c1c1c;min-height:600px}
+img{max-width:100%}
 }
-
-
-
 @media only screen and (max-width: 991px) {
-    .titlewrapper h3 br{display: none;}
-    .videowrapper {
-        min-height: 477px;
-    }
-    .bannertext h3 {
-        font-size: 36px;
-    }
+.titlewrapper h3 br{display:none}
+.videowrapper{min-height:477px}
+.bannertext h3{font-size:36px}
 }
-
 @media only screen and (max-width: 768px) {
-    .videowrapper {
-        min-height: 347px;
-    }
+.videowrapper{min-height:347px}
 }
-
-@media screen and (max-width: 776px){
-    .bannertext h3, .bannertext h3 span{
-        font-size: 60px;
-        line-height: 50px;
-    }
-    
+@media screen and (max-width: 776px) {
+.bannertext h3,.bannertext h3 span{font-size:60px;line-height:50px}
 }
-
-
-
-
 @media only screen and (max-width: 480px) {
-    .videowrapper {
-        min-height: 217px;
-    }
-    .bannertext h3, .bannertext h3 span {
-        font-size: 42px;
-        line-height: 40px;
-    }
-    .bannertext h4 {
-        width: auto;
-        font-size: 20px;
-    }
-    .titlewrapper h2, .titlewrapper h2 span {
-        font-size: 32px;
-        line-height: 34px;
-    }
-    .titlewrapperbg {
-        padding: 20px;
-    }
-    .lstclogwrapper p{width: auto;}
-    .textwrapper h2, .textwrapper h2 span {
-        font-size: 32px;
-        line-height: 34px;
-    }
+.videowrapper{min-height:217px}
+.bannertext h3,.bannertext h3 span{font-size:42px;line-height:40px}
+.bannertext h4{width:auto;font-size:20px}
+.titlewrapper h2,.titlewrapper h2 span{font-size:32px;line-height:34px}
+.titlewrapperbg{padding:20px}
+.lstclogwrapper p{width:auto}
+.textwrapper h2,.textwrapper h2 span{font-size:32px;line-height:34px}
 }

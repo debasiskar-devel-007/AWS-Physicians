@@ -1,136 +1,29 @@
-.bannerblock{
-    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/hps_studybg1.jpg)!important;
-    min-height: 350px; 
-    width:100%;
-    box-shadow:none!important;
-    padding:0!important;
-    border-radius:0!important;
-    position:relative;
-    background-position:center top!important;
-    background-repeat:no-repeat!important;
-    background-size:cover; 
-    padding-top: 80px !important; 
-    overflow: hidden;
-    margin-bottom: 35px;
-}
-.imagewrapper img{width: 100%; display: block;}
-.bannerblock .abimage{
-    position: absolute;
-    right: 0px;
-    bottom: 0;
-}
-.bannertext {
-    display: block;
-    width: 900px;
-}
-.bannertextwrapper h5 span{font-size: 36px;}
-.bannertextwrapper h3{padding-bottom: 10px;}
-.bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{line-height: 38px;font-size: 40px;text-transform: uppercase;}
-.subtitlewrapper{
-    background: rgb(231,182,31);
-    background: linear-gradient(0deg, rgba(231,182,31,1) 0%, rgba(255,222,0,1) 100%);
-    padding: 15px;
-    border-radius: 5px;
-}
-.subtitlewrapper h2{
-    text-transform: uppercase;
-    font-size: 32px;
-    font-family: 'Montserrat-SemiBold';
-    color: #060606;
-}
-.listtextwrapper h3{
-    font-size: 27px;
-    font-family: 'Montserrat-Bold';
-    color: #00a1f4;
-    margin-bottom: 5px;
-}
-.listtextwrapper p{
-    font-size: 22px;
-    font-family: 'Montserrat-Regular';
-    color: #000000;
-}
-.listtextwrapper{
-    margin-bottom: 20px;
-    position: relative;
-    padding-left: 15px;
-}
-.listtextwrapper::before{
-    content: '';
-    background: rgb(37,212,110);
-    background: linear-gradient(0deg, rgba(37,212,110,1) 0%, rgba(28,187,234,1) 100%);
-    width: 8px;
-    height: 91%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.subtextwrapper {
-    padding: 20px;
-    background: #f0f3f6;
-    margin-bottom: 20px;
-}
-
-.bluebtn{
-    background: rgb(0,148,240);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,148,240,1)), to(rgba(0,195,255,1)));
-    background: linear-gradient(0deg, rgba(0,148,240,1) 0%, rgba(0,195,255,1) 100%);
-    font-size: 40px;
-    font-family: 'Montserrat-Bold';
-    color: #ffffff;
-    text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
-    display: block;
-    padding: 10px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
+.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/hps_studybg1.jpg)!important;min-height:350px;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:center top!important;background-repeat:no-repeat!important;background-size:cover;padding-top:80px!important;overflow:hidden;margin-bottom:35px}
+.imagewrapper img{width:100%;display:block}
+.bannerblock .abimage{position:absolute;right:0;bottom:0}
+.bannertext{display:block;width:900px}
+.bannertextwrapper h5 span{font-size:36px}
+.bannertextwrapper h3{padding-bottom:10px}
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{line-height:38px;font-size:40px;text-transform:uppercase}
+.subtitlewrapper{background:#e7b61f;background:linear-gradient(0deg,rgba(231,182,31,1) 0%,rgba(255,222,0,1) 100%);padding:15px;border-radius:5px}
+.subtitlewrapper h2{text-transform:uppercase;font-size:32px;font-family:'Montserrat-SemiBold';color:#060606}
+.listtextwrapper h3{font-size:27px;font-family:'Montserrat-Bold';color:#00a1f4;margin-bottom:5px}
+.listtextwrapper p{font-size:22px;font-family:'Montserrat-Regular';color:#000}
+.listtextwrapper{margin-bottom:20px;position:relative;padding-left:15px}
+.listtextwrapper::before{content:'';background:#25d46e;background:linear-gradient(0deg,rgba(37,212,110,1) 0%,rgba(28,187,234,1) 100%);width:8px;height:91%;position:absolute;left:0;top:50%;transform:translateY(-50%)}
+.subtextwrapper{padding:20px;background:#f0f3f6;margin-bottom:20px}
+.bluebtn{background:#0094f0;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,148,240,1)),to(rgba(0,195,255,1)));background:linear-gradient(0deg,rgba(0,148,240,1) 0%,rgba(0,195,255,1) 100%);font-size:40px;font-family:'Montserrat-Bold';color:#fff;text-shadow:0 1px 2px #000;display:block;padding:10px 30px;border-radius:5px;text-decoration:none;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;text-transform:uppercase}
 @media screen and (max-width: 1366px) {
-    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-        line-height: 33px;
-        font-size: 34px;
-    }
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{line-height:33px;font-size:34px}
 }
-
-
 @media screen and (max-width: 1199px) {
-    .bannerblock .abimage {
-        position: inherit;
-        right: inherit;
-        bottom: inherit;
-        width: 100%;
-        display: block;
-    }
-    .bannerblock{
-        display: block !important;
-    }
-    .bannertext {
-        display: block;
-        width: initial;
-        text-align: center;
-    }
-    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
-        display: inline;
-    }
-    .subtitlewrapper h2{text-align: center;}
-    .subtextwrapper{text-align: center;}
-    .listtextwrapper{padding-left: 0;}
-    .listtextwrapper::before{display: none;}
-    .bluebtn{margin: 0 auto;}
+.bannerblock .abimage{position:inherit;right:inherit;bottom:inherit;width:100%;display:block}
+.bannerblock{display:block!important}
+.bannertext{display:block;width:initial;text-align:center}
+.bannertextwrapper h5,.bannertextwrapper h5 span,.bannertextwrapper h5 strong{display:inline}
+.subtitlewrapper h2{text-align:center}
+.subtextwrapper{text-align:center}
+.listtextwrapper{padding-left:0}
+.listtextwrapper::before{display:none}
+.bluebtn{margin:0 auto}
 }
-
-
-
-
-
