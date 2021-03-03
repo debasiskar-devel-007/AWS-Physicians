@@ -61,7 +61,7 @@
   }
   .footerlogowrapper::after{
     content: '';
-    background-image: url(../../../assets/images/shadow2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/shadow2.png);
     position: absolute;
     right: -30px;
     bottom: 0px;
@@ -73,7 +73,7 @@
   }
   .footerlogowrapper::before{
     content: '';
-    background-image: url(../../../assets/images/shadow1.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/shadow1.png);
     position: absolute;
     left: -30px;
     bottom: 0px;

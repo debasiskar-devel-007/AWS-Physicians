@@ -1,5 +1,5 @@
 .bannerblock{
-    background-image:url(../../../assets/images/ts_nweimage1.jpg)!important;
+    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ts_nweimage1.jpg)!important;
     min-height: 700px; 
     width:100%;
     box-shadow:none!important;
@@ -33,7 +33,7 @@
     font-size: 34px;
 }
 .tsblock2 .titlewrapper{
-    background-image: url(../../../assets/images/homeblock2newbg.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);
     background-repeat: no-repeat;
     background-position: center top -24px;
     display: block;
@@ -43,7 +43,7 @@
 .titlewrapper p{text-align: center;}
 
 .tsblock2{
-    background-image: url(../../../assets/images/tsbg2.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tsbg2.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
     overflow: hidden;
@@ -129,7 +129,7 @@
 
 .tsblock3 .textwrapper h2{margin-bottom: 25px;}
 .tsblock3 {
-    background-image: url(../../../assets/images/tsbg3.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tsbg3.jpg);
     background-repeat: no-repeat;
     background-position: left top;
     overflow: hidden;
@@ -139,7 +139,7 @@
     overflow: hidden;
 }
 .tsblock4 {
-    background-image: url(../../../assets/images/tsbg4.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tsbg4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
@@ -193,7 +193,7 @@
 .tsblock4subwrapper3 .textwrapper.textwrapperbg p {
     font-size: 18px;
     color: #ffffff;
-    background-image: url(../../../assets/images/listicon5.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon5.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     padding-bottom: 10px;
@@ -318,7 +318,7 @@
 .tsblock5{background: #e7e8da;padding-top: 30px !important; overflow: hidden;}
 
 .tsblock6{
-    background-image: url(../../../assets/images/tsbg5.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tsbg5.jpg);
     background-repeat: no-repeat;
     background-position: right top;
     overflow: hidden;
@@ -350,7 +350,7 @@
 .textwrapper p strong{font-family: 'Montserrat-Bold';}
 
 .tsblock7{
-    background-image: url(../../../assets/images/tsbg6.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tsbg6.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     overflow: hidden;

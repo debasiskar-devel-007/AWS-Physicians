@@ -25,7 +25,7 @@
 }
 .formtitle::before{
     content: '';
-    background-image: url(../../../assets/images/formtitlebg.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/formtitlebg.png);
     background-repeat: no-repeat;
     height: 200px;
     width: 100%;
@@ -38,7 +38,7 @@
 
 .formtitle::after{
     content: '';
-    background-image: url(../../../assets/images/formshadow.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/formshadow.png);
     background-repeat: no-repeat;
     height: 40px;
     width: 100%;
@@ -65,7 +65,7 @@
     border: 6px solid #fff;
     border-radius: 15px;
     box-shadow: 0px 0px 5px rgb(0 0 0 / 30%);
-    background-image: url(../../../assets/images/formmainbg.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/formmainbg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -116,7 +116,7 @@
     margin-bottom: 20px;
 }
 .texttitlesubwrapper{
-    background-image: url(../../../assets/images/formsubbg.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/formsubbg.png);
     background-repeat: no-repeat;
     background-position: center center;
     display: block;
@@ -165,7 +165,7 @@
     display: block;
 }
 .arrowwrapper{
-    background-image: url(../../../assets/images/lparrowimage.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lparrowimage.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
@@ -201,7 +201,7 @@
 
 
 .lpblock2{
-    background-image: url(../../../assets/images/lp_image2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image2.png);
     background-repeat: no-repeat;
     background-position: left top;
     padding-bottom: 8% !important;
@@ -279,7 +279,7 @@
 }
 
 .lpblock3{
-    background-image: url(../../../assets/images/lp_image3.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image3.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     padding-bottom: 0 !important;
@@ -304,7 +304,7 @@
     font-family: 'Montserrat-SemiBold';
     font-size: 22px;
     color: #1b1d1e;
-    background-image: url(../../../assets/images/lpicon1.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpicon1.png);
     background-repeat: no-repeat;
     padding-left: 32px;
     padding-bottom: 10px;
@@ -322,7 +322,7 @@
 }
 
 .lpblock4{
-    background-image: url(../../../assets/images/lp_image4.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image4.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     padding-top: 45px !important;
@@ -338,7 +338,7 @@
 
 
 .lpblock5{
-    background-image: url(../../../assets/images/lp_image5.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image5.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     padding-bottom: 0 !important;
@@ -367,7 +367,7 @@
 }
 
 .lpblock6{
-    background-image: url(../../../assets/images/lp_image6.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image6.png);
     background-repeat: no-repeat;
     background-position: left -50px bottom;
     padding-top: 25px !important;
@@ -385,7 +385,7 @@
 }
 
 .lpblock7{
-    background-image: url(../../../assets/images/lp_image7new.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image7new.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     padding-top: 25px !important;
@@ -398,7 +398,7 @@
 }
 
 .lpblock8{
-    background-image: url(../../../assets/images/lp_image08.png), url(../../../assets/images/lp_image81.png),  url(../../../assets/images/lp_image82.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image08.png), url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image81.png),  url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lp_image82.png);
     background-repeat: no-repeat;
     background-position: left 118px bottom, left 860px bottom 10px, left 434px bottom 40px;
     padding-top: 25px !important;
@@ -425,7 +425,7 @@ margin-top: 97px;
 }
 .lpfooterblock .textwrapper p{text-align: center; font-size: 18px; margin: 0;padding: 20px 0;}
 .lpmainwrapper{
-    background-image: url(../../../assets/images/lpmainbg.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpmainbg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

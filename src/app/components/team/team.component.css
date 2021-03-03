@@ -1,4 +1,4 @@
-/* .bannerblock{background-image:url(../../../assets/images/tt_banner1.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover}
+/* .bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tt_banner1.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover}
 .bannertextwrapper::before{right:145px;top:130px}
 .bannertextwrapper{width:940px;display:block}
 .block .yellowbtn{position:absolute;bottom:30px;left:50%;transform:translateX(-50%)}
@@ -18,7 +18,7 @@
 .gradientitle{background:rgba(29,187,231,1);background:-webkit-gradient(left top,right top,color-stop(0%,rgba(29,187,231,1)),color-stop(100%,rgba(13,195,4,1)))!important;background:-webkit-gradient(linear,left top,right top,from(rgba(29,187,231,1)),to(rgba(13,195,4,1)))!important;background:linear-gradient(to right,rgba(29,187,231,1) 0%,#10c170 100%)!important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1dbbe7',endColorstr='#0dc304',GradientType=1)!important;color:#fff;padding:15px 110px;font-family:'Lato-Bold';font-size:48px;width:490px;clip-path:polygon(0% 0%,85% 0,92% 68%,95% 100%,0% 100%);margin:0!important;margin-bottom:1px!important}
 .block2{background-color:#eaf0f3;padding-top:30px!important}
 .subimagewrapper{width:100%;border-bottom:4px solid #41e9ff;display:block;margin-bottom:25px;padding-bottom:20px}
-.teamnewblock3{background-image:url(../../../assets/images/tt_banner2.png)!important;background-repeat:no-repeat!important;background-position:right 60px top 90px!important;padding:30px 0!important;position:relative;overflow:hidden;box-shadow:none;background-color:transparent!important;padding-top:0!important}
+.teamnewblock3{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tt_banner2.png)!important;background-repeat:no-repeat!important;background-position:right 60px top 90px!important;padding:30px 0!important;position:relative;overflow:hidden;box-shadow:none;background-color:transparent!important;padding-top:0!important}
 .ab_image{position:absolute;right:-100px;bottom:0}
 .teamnewblock3 .titlewrapper h2{text-align:left;color:#fff;margin:0;margin-bottom:30px;width:auto}
 .teamnewblock3 .titlewrapper p{text-align:left;color:#000;width:1220px;padding:10px;padding-top:0;font-size:24px;line-height:28px;text-transform:uppercase}
@@ -27,11 +27,11 @@
 .temimgwrapper{display:block;width:1030px;border:1px solid #ddd}
 .listwrapper .mat-card-content{margin:0 10px}
 .listwrapper .mat-card-content .textwrapper{display:block;padding:20px;background-color:#fff;box-shadow:0 0 5px rgba(0,0,0,0.3);border-radius:8px;margin-top:30px}
-.listwrapper .mat-card-content .textwrapper p{background-image:url(../../../assets/images/ttbold.png);background-repeat:no-repeat;background-position:left top 9px;padding-left:35px;padding-bottom:11px}
+.listwrapper .mat-card-content .textwrapper p{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ttbold.png);background-repeat:no-repeat;background-position:left top 9px;padding-left:35px;padding-bottom:11px}
 .pwrapper{display:block;column-count:2}
 .listwrapper .mat-card-content .textwrapper h3{padding:16px;margin-bottom:10px;font-size:22px;padding-left:0}
 .contentblock .textwrapper p{color:#020107;padding:0;text-transform:none;border-left:5px solid #f0a600;padding-left:10px}
-.ot_newblock3{background-image:url(../../../assets/images/tt_banner3.png)!important;background-repeat:no-repeat!important;background-position:left -39px bottom!important;padding:30px 0!important;position:relative;overflow:hidden;background-size:47%;box-shadow:none;background-color:transparent!important}
+.ot_newblock3{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tt_banner3.png)!important;background-repeat:no-repeat!important;background-position:left -39px bottom!important;padding:30px 0!important;position:relative;overflow:hidden;background-size:47%;box-shadow:none;background-color:transparent!important}
 .ot_newblock3 .titlewrapper p{width:727px;display:block;margin:0 auto;margin-right:0;text-align:left;font-size:24px;line-height:29px;color:#000}
 .ot_newblock3 .titlewrapper h2{text-align:left;margin-right:0;width:701px}
 .temimgwrapper img{max-width:100%;width:100%}
@@ -40,11 +40,11 @@
 .teammainwrapper{display:block;margin-bottom:0;width:100%}
 .teamlistingwrapper .teamlisting img{max-width:100%;display:block;margin:0 auto;height:140px;margin-top:-90px}
 .teamlistingwrapper .teamlisting .textwrapper{display:block;width:100%;position:relative;padding:8px 0;color:#fff;padding:10px 8px;background-color:#08b704;position:relative;margin:0 -8px;margin-top:10px}
-.teamlistingwrapper .teamlisting .textwrapper::after{content:'';height:20px;width:7px;background-image:url(../../../assets/images/ttshadow2.png);background-repeat:no-repeat;position:absolute;right:0;bottom:-20px}
-.teamlistingwrapper .teamlisting .textwrapper::before{content:'';height:20px;width:20px;background-image:url(../../../assets/images/ttshadow1.png);background-repeat:no-repeat;position:absolute;left:0;bottom:-20px}
+.teamlistingwrapper .teamlisting .textwrapper::after{content:'';height:20px;width:7px;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ttshadow2.png);background-repeat:no-repeat;position:absolute;right:0;bottom:-20px}
+.teamlistingwrapper .teamlisting .textwrapper::before{content:'';height:20px;width:20px;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ttshadow1.png);background-repeat:no-repeat;position:absolute;left:0;bottom:-20px}
 .teamlistingwrapper .teammainwrapper{display:flex;justify-content:center;align-items:center}
 .teamlistingwrapper .teamlisting .textwrapper p{color:#fff;padding:0;text-align:center;font-size:18px;line-height:22px}
-.main-bg{background-image:url(../../../assets/images/home_banner2.png);background-size:cover;background-position:center;display:block}
+.main-bg{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/home_banner2.png);background-size:cover;background-position:center;display:block}
 .ot_block1{position:relative}
 .ot_block1 .abimage2{display:none}
 .ot_block1 .abimage{position:absolute;left:0;bottom:0;width:57%}

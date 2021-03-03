@@ -1,5 +1,5 @@
 .bannerblock{
-    background-image:url(../../../assets/images/hps_studybg1.jpg)!important;
+    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/hps_studybg1.jpg)!important;
     min-height: 350px; 
     width:100%;
     box-shadow:none!important;

@@ -2,7 +2,7 @@
     width:1063px;
     margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
 .bannerblock{
-    background-image:url(../../../assets/images/ptfsmbg1.jpg)!important;
+    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg1.jpg)!important;
     width:100%;box-shadow:none!important;
     padding:0!important;border-radius:0!important;
     position:relative;
@@ -86,7 +86,7 @@
 }
 
 .ptmfsmblock2 {
-    background-image: url(../../../assets/images/homeblock2newbg.png), url(../../../assets/images/ptfsmbg2.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png), url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg2.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: center top -100px, center center;
     display: block;
@@ -227,7 +227,7 @@
 
 .textwrapper.listtextwrapper h3{
     font-size: 32px;
-    background-image: url(../../../assets/images/ptfsmicon1.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon1.png);
     background-repeat: no-repeat;
     padding-left: 40px;
     background-position: left top 9px;
@@ -249,7 +249,7 @@
 
 .shadow::after {
     content: '';
-    background-image: url(../../../assets/images/ptfsmshadow1.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmshadow1.png);
     height: 50px;
     width: 100%;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@
 }
 .shadow2::after {
     content: '';
-    background-image: url(../../../assets/images/ptfsmshadow2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmshadow2.png);
     height: 50px;
     width: 100%;
     background-repeat: no-repeat;
@@ -347,7 +347,7 @@
     bottom: 37%;
 }
 .textsubwrapper{
-    background-image: url(../../../assets/images/ptfsmbg3.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -397,7 +397,7 @@ font-size: 26px;
 }
 .textwrapper h1::before{
     content: '';
-    background-image: url(../../../assets/images/ptfsmicon2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon2.png);
     height: 30px;
     width: 30px;
     position: absolute;
@@ -426,7 +426,7 @@ font-size: 26px;
 
 .list::after {
     content: '';
-    background-image: url(../../../assets/images/listicon4.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon4.png);
     height: 25px;
     width: 25px;
     position: absolute;
@@ -470,7 +470,7 @@ font-size: 26px;
 
 .ptmfsmblock3 {
     padding: 30px 0 !important;
-    background-image: url(../../../assets/images/ptfsmbg4.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -485,7 +485,7 @@ font-size: 26px;
 .textwrapper .subtextwrappernew p{
     font-family: 'Montserrat-SemiBold';
     font-size: 18px;
-    background-image: url(../../../assets/images/listicon3.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon3.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     padding-bottom: 0px;
@@ -504,7 +504,7 @@ font-size: 26px;
 .ptmfsmblock4subwrapper1 .textwrapper h2{padding-left: 40px;}
 .ptmfsmblock4subwrapper1 .textwrapper h2::before{
     content: '';
-    background-image: url(../../../assets/images/ptfsmicon2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon2.png);
     height: 25px;
     width: 25px;
     position: absolute;
@@ -597,7 +597,7 @@ font-size: 26px;
 .ptmfsmblock4subwrapper4 .titlewrapper h2, .ptmfsmblock4subwrapper5 .titlewrapper h2{text-align: left; padding: 30px 0;}
 .ptmfsmblock4subwrapper5 .col-container, .ptmfsmblock4subwrapper4 .col-container{justify-content: space-between;}
 .ptmfsmblock4 {
-    background-image: url(../../../assets/images/ptfsmbg5.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center top 120px;
@@ -612,7 +612,7 @@ font-size: 26px;
 .textwrapper .textitletwrapper h2{font-size: 39px;    position: relative; padding-left: 40px;}
 .textwrapper .textitletwrapper h2::before{
     content: '';
-    background-image: url(../../../assets/images/ptfsmicon3.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon3.png);
     height: 30px;
     width: 30px;
     position: absolute;
@@ -637,7 +637,7 @@ font-size: 26px;
 
 
 .ptmfsmblock5 {
-    background-image: url(../../../assets/images/ptfsmbg6.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center top;

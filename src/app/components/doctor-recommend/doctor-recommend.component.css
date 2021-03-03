@@ -1,5 +1,5 @@
 .bannerblock{
-    background-image:url(../../../assets/images/dr_newimage1.jpg)!important;
+    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/dr_newimage1.jpg)!important;
     width:100%;box-shadow:none!important;
     padding:0!important;
     border-radius:0!important;
@@ -48,7 +48,7 @@
 
  .drblock2 {
      position: relative;
-     background-image: url(../../../assets/images/homeblock2newbg.png);
+     background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);
     background-repeat: no-repeat;
     background-position: center top -70px;
     display: block;
@@ -72,7 +72,7 @@
 
 .drblock3{
     position: relative;
-    background-image: url(../../../assets/images/drnewbg3.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/drnewbg3.jpg);
    background-repeat: no-repeat;
    background-position: right top; 
    background-size: cover;
@@ -101,7 +101,7 @@
 
 .drblock4{
     position: relative;
-    background-image: url(../../../assets/images/drnewbg4.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/drnewbg4.png);
    background-repeat: no-repeat;
    background-position: left top 120px;
    overflow: hidden;

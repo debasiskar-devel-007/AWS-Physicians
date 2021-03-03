@@ -2,7 +2,7 @@
     width:1063px;
     margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
 .bannerblock{
-    background-image:url(../../../assets/images/pvp_newimage1.jpg)!important;
+    background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvp_newimage1.jpg)!important;
     width:100%;box-shadow:none!important;
     padding:0!important;border-radius:0!important;
     position:relative;
@@ -48,7 +48,7 @@
 
 
 .pvpblock2{
-  background-image: url(../../../assets/images/pvpnewbg2.png), url(../../../assets/images/homeblock2newbg.png);
+  background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewbg2.png), url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);
   background-position: left bottom, center top;
   background-repeat: no-repeat, no-repeat;
   overflow: hidden;
@@ -122,7 +122,7 @@
 }
 
 .pvpblock3{
-    background-image: url(../../../assets/images/pvpnewbg3.jpg);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewbg3.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% 100%;
@@ -198,7 +198,7 @@
 .demoimgwrapper img{width: 100%;}
 
 .pvpblock4 {
-    background-image: url(../../../assets/images/pvpnewbg4.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewbg4.png);
     background-repeat: no-repeat;
     background-position: right top;
     overflow: hidden;
@@ -208,7 +208,7 @@
 
 
 .pvpblock5{
-    background-image:  url(../../../assets/images/pvpnewimage7.png), url(../../../assets/images/pvpnewbg5.png);
+    background-image:  url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewimage7.png), url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewbg5.png);
     background-repeat: no-repeat, no-repeat;
     background-position: right top, right bottom;
     padding: 30px 0 !important;
@@ -262,7 +262,7 @@
     font-size: 32px;
 }
 .pvpblock6{
-    background-image:  url(../../../assets/images/pvpnewimage9.png);
+    background-image:  url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewimage9.png);
     background-repeat: no-repeat;
     background-position: left top;
     padding: 30px 0 !important;
@@ -443,7 +443,7 @@
             margin-bottom: 20px;
         }
         .pvpblock5 .titlewrapper p {width: auto;}
-        .pvpblock2{background-image: none, url(../../../assets/images/homeblock2newbg.png);}
+        .pvpblock2{background-image: none, url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);}
         .pvpblock2 .titlewrapper {
             padding-bottom: 30px;
         }
