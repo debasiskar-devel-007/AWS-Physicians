@@ -139,6 +139,7 @@
 .cap_wrapper .img1{width:258px}
 }
 @media only screen and (max-width: 480px) {
+    .gmap_canvas iframe{    height: 240px;}
 .formcol-3{width:100%}
 .contactitemwraooer .mat-list{padding-top:13px}
 .imgwrapper{height:218px}
