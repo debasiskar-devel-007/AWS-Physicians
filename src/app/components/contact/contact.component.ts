@@ -62,7 +62,9 @@ public contactusdata: any = {
      }
     let userGivenCaptcha = this.options.controls[formCalData].value
     if (this.options.valid) {    
-      console.log(this.contactusdata,'+++++++');
+      //console.log(this.contactusdata,'+++++++');
+
+      
       let captchadata = this.contactusdata.captcha;
       
       this.errorCaptchaMessage = (userGivenCaptcha!='' && (this.code === userGivenCaptcha)) ? true : false;
