@@ -206,6 +206,7 @@
 .vpheaderwrapper .mat-toolbar.mat-primary{padding-top:0}
 .logowrappersml a{display:block;width:150px;margin:0;background:#fff;padding:10px}
 .vpheaderwrapper .mat-nav-list .mat-list-item a{font-size:15px}
+.topbar{display: none;}
 }
 @media only screen and (max-width: 768px) {
 .logowrappersml a{padding-bottom:10px}
