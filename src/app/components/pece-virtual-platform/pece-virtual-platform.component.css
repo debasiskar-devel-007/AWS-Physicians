@@ -16,7 +16,7 @@
 .pvpblock2 .titlewrapper{padding-bottom:110px}
 .textwrapper h3{margin-top:20px;font-family:'Montserrat-SemiBold';font-size:24px}
 .textwrapper h3 span{color:#0eadf1}
-.pvpblock2 .titlewrapper h2 .pece::after{right:6px;top:7px;font-size:16px;line-height:25px}
+.pvpblock2 .titlewrapper h2 .pece::after{right:14px;top:7px;font-size:16px;line-height:25px}
 .textwrapper p{font-size:18px}
 .pvpblock3 .liststyle1{background:#e4ecef;background:linear-gradient(0deg,rgba(228,236,239,1) 0%,rgba(255,255,255,1) 100%);padding:20px;border-radius:5px;box-shadow:0 0 5px rgba(0,0,0,0.3);margin-top:20px}
 .pvpblock3 .pvpblock2subwrapper1,.pvpblock3 .pvpblock2subwrapper2{position:relative;padding:15px 0}
@@ -55,6 +55,11 @@
 .pvpblock6subwrapper2 .listtitle{padding:40px;text-align:center}
 .pvpblock6subwrapper2 .listtitle h2{font-size:32px}
 .pvpblock6{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpnewimage9.png);background-repeat:no-repeat;background-position:left top;padding:30px 0!important}
+.pvpblock4 .titlewrapper h2 .pece::after{
+    top: 8px;
+}
+.pvpblock4 .titlewrapper h2 .pece{padding-right: 20px;}
+
 @media only screen and (max-width: 1820px) {
 .bannerblock .abimage{right:0}
 }
@@ -94,6 +99,7 @@
 .bannertext h2{padding-right:80px}
 .bannerblock .abimage{position:absolute;right:-120px;bottom:0}
 }
+
 @media only screen and (max-width: 1199px) {
 .bannerblock{display:block!important;min-height:inherit;padding-bottom:30px!important}
 .bannertext{width:auto;text-align:center}
@@ -121,4 +127,10 @@
 .pvpblock2 .titlewrapper{padding-bottom:30px}
 .titlewrapper h2 span{display:inline}
 .bannertext h2{padding:20px}
+}
+@media only screen and (max-width: 480px) {
+    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{font-size: 38px;line-height: 38px;display: inline;}
+}
+@media only screen and (max-width: 380px) {
+    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{font-size: 34px;line-height: 34px;}
 }
