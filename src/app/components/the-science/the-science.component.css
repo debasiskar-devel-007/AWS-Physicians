@@ -19,7 +19,7 @@
 .tsblock2 .listwrapper{padding-right:800px;position:relative;padding-bottom:50px}
 .tsblock2 .listtitle h2{font-size:30px}
 .tsblock2 .listwrapper .abimage{position:absolute;right:170px;bottom:0}
-.tsblock3 .textwrapper p{font-size:18px;position:relative;padding:5px;background:#bfe0e5;background:linear-gradient(90deg,rgba(191,224,229,1) 0%,rgba(191,224,229,1) 60%,rgba(191,224,229,0) 100%);border-left:4px solid #0b4d70;padding-left:10px;color:#000;text-shadow:-1px 1px 0 #000}
+.tsblock3 .textwrapper p{font-size:18px;position:relative;padding:5px;background:#bfe0e5;background:linear-gradient(90deg,rgba(191,224,229,1) 0%,rgba(191,224,229,1) 60%,rgba(191,224,229,0) 100%);border-left:4px solid #0b4d70;padding-left:10px;color:#000;}
 .tsblock3 .textwrapper p span{color:#228df6}
 .tsblock3 .textwrapper p::after{content:'';height:4px;width:6px;background:#0b4d70;position:absolute;left:0;top:0}
 .tsblock3 .textwrapper p::before{content:'';height:4px;width:6px;background:#0b4d70;position:absolute;left:0;bottom:0}
