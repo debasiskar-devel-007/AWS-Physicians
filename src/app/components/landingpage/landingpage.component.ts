@@ -40,6 +40,7 @@ export class LandingpageComponent implements OnInit {
   public stateVal: any = [];
   public ip: any;
   public cookieval: any;
+  public sys_datatime: number;
   options: FormGroup;
   //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -73,6 +74,7 @@ export class LandingpageComponent implements OnInit {
     })
 
     var currentTimeInSeconds = Math.floor(Date.now());
+    this.sys_datatime = currentTimeInSeconds;
     this.cookieval = currentTimeInSeconds.toString();
     //console.log(currentTimeInSeconds,'lll',cookieval);
 
@@ -164,6 +166,8 @@ export class LandingpageComponent implements OnInit {
           source: 'Hps-landing-page-1',
           parentid: this.activatedroute.snapshot.params.userid,
           type: 'lead',
+          tags:[{updated_datetime:this.sys_datatime, satatus:'New Lead'}] ,
+          tags_status: 1,
           status: 1,
           products: this.activatedroute.snapshot.params.productid
         }
