@@ -1,6 +1,6 @@
 .bannerwrapper{width:1063px;margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
 .bannerblock{
-    background-image:url(../../../assets/images/tmflowimage1.jpg)!important;
+    /* background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/tmflowimage1.jpg)!important; */
     width:100%;box-shadow:none!important;
     padding:0!important;border-radius:0!important;
     position:relative;

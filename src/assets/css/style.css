@@ -1072,7 +1072,7 @@
 
 .titlewrapperwitharrpw{
     display: block;
-    background-image: url(../../../assets/images/lparrowimage2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lparrowimage2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15px 60px 15px 30px;
@@ -1081,7 +1081,7 @@
 }
 .titlewrapperwitharrpw::after{    
     content: '';
-    background-image: url(../../../assets/images/lpshadow2.png);
+    background-image: url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpshadow2.png);
     background-repeat: no-repeat;
     height: 120px;
     width: 20px;

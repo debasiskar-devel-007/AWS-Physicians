@@ -1,970 +1,191 @@
-.bannerwrapper{
-    width:1063px;
-    margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
-.bannerblock{
-    background-image:url(../../../assets/images/ptfsmbg1.jpg)!important;
-    width:100%;box-shadow:none!important;
-    padding:0!important;border-radius:0!important;
-    position:relative;
-    background-position:center top!important;
-    background-repeat:no-repeat!important;
-    background-size:cover;
-    padding-top: 80px !important;
-    min-height: 630px;
-    overflow: hidden;
-}
-.titlewrapper h4 {
-    font-family: 'Montserrat-Bold';
-    line-height: 40px;
-    font-size: 40px;
-    text-transform: uppercase;
-    background: rgb(0,0,0);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(50%, rgba(77,77,77,1)), to(rgba(77,77,77,1)));
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(77,77,77,1) 50%, rgba(77,77,77,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 0;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    margin: 0 auto;
-    font-style: normal;
-}
-.imgwrapper img{
-    display: block;
-    width: 100%;
-}
-
-.bannerblock .abimage{
-    position: absolute;
-    right: 20px;
-    bottom: 0;
-}
-.bannertext h3{
-    margin: 0;
-    font-size: 70px;
-    line-height: 84px;
-    text-transform: none;
-    padding: 0;
-}
-
-.bannertext .listtitle{
-    padding: 10px 30px;
-    display: block;
-    width: fit-content;
-}
-
-.bannertext .btnblue{
-    margin-right: 20px;
-    font-size: 32px;
-    text-shadow: -1px 1px 5px rgba(0,0,0,0.8);
-    background: rgb(2,129,182);
-    background: linear-gradient(0deg, rgba(2,129,182,1) 0%, rgba(0,184,252,1) 100%);
-    padding: 8px 30px;
-}
-
-.bannerlistwrapper p{
-    font-family: 'Montserrat-Bold';
-    text-transform: uppercase;
-}
-
-.bannertext{
-    display: block;
-    width: 1240px;
-    position: relative;
-}
-
-
-.bannertext .buttonwrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.bannerlistwrapper {
-    width: 970px;
-}
-
-.ptmfsmblock2 {
-    background-image: url(../../../assets/images/homeblock2newbg.png), url(../../../assets/images/ptfsmbg2.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: center top -100px, center center;
-    display: block;
-    padding: 30px 0 !important;
-    padding-bottom: 0 !important;
-    background-size: contain, cover;
-    overflow: hidden;
-}
-
-
-.ptmfsmblock2 .titlewrapper {
-    padding-bottom: 110px;
-}
-
-.gradienttext.listtitle {
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-}
-.gradienttext.listtitle h2, .gradienttext.listtitle h2 span{
-    font-family: 'Montserrat-Bold';
-    background: rgb(222,238,241);
-    background: linear-gradient(0deg, rgba(222,238,241,1) 0%, rgba(210,220,223,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 56px;
-    line-height: 58px;
-    display: block;
-    filter: drop-shadow(0px 1px rgba(0,0,0,0.3));
-}
-
-.col-container{display: flex;position: relative;}
-
-.greengradient{
-    background: rgb(28,187,234);
-    background: linear-gradient(90deg, rgba(28,187,234,1) 0%, rgba(21,195,94,1) 100%);
-    padding: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.greengradient h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 60px;
-    color:#fff;
-    text-shadow: -1px 2px 4px rgb(0 0 0 / 60%);
-}
-
-
-.graygradient{    
-    padding: 10px 20px;
-    background: rgb(228,236,239);
-    background: linear-gradient(0deg, rgba(228,236,239,1) 0%, rgba(255,255,255,1) 100%);
-    display: flex;
-    align-items: center;
-}
-
-.graygradient .textwrapper p {
-    font-size: 22px;
-    margin: 0;
-    padding: 10px 0;
-}
-
-.col-container1{box-shadow: 0 0 5px rgba(0,0,0,0.3);}
-
-.textwrapper.listtextwrapper h3{
-
-}
-
-.textwrapper.listtextwrapper p{
-    font-size: 24px;
-    position: relative;
-    padding: 15px 10px 15px 15px;
-    background: rgb(227,227,227);
-    background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(242,242,242,1) 100%);
-    border-left: 4px solid #16bf6b;
-    color: #000;
-    text-shadow: -1px 1px 0 rgb(0 0 0 / 10%);
-    margin: 20px 0;
-    position: relative;
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);
-}
-
-.textwrapper.listtextwrapper p.listgreen{
-    border-left: 4px solid #16bf6b;
-}
-
-
-.textwrapper.listtextwrapper .listgreen::before {
-    content: '';
-    height: 4px;
-    width: 6px;
-    background: #16bf6b;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.textwrapper.listtextwrapper .listgreen::after {
-    content: '';
-    height: 4px;
-    width: 6px;
-    background: #16bf6b;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.subtextwrapper {
-    display: block;
-    padding: 15px 0;
-}
-
-
-.textwrapper.listtextwrapper p.listblue{
-    border-left: 4px solid #1dbbea;
-}
-
-
-.textwrapper.listtextwrapper .listblue::before {
-    content: '';
-    height: 4px;
-    width: 6px;
-    background: #1dbbea;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.textwrapper.listtextwrapper .listblue::after {
-    content: '';
-    height: 4px;
-    width: 6px;
-    background: #1dbbea;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.textwrapper.listtextwrapper h3{
-    font-size: 32px;
-    background-image: url(../../../assets/images/ptfsmicon1.png);
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    background-position: left top 9px;
-    position: relative;
-}
-
-.ptmfsmblock2subwrapper .listtextwrapper{
-    position: relative;
-    display: block;
-    padding-left: 620px;
-    padding-top: 10px;
-}
-
-.col-container.col-container2{
-    flex-flow: column;
-}
-
-.col-container.col-container2{box-shadow: 0 0 5px rgba(0,0,0,0.3); position: relative;}
-
-.shadow::after {
-    content: '';
-    background-image: url(../../../assets/images/ptfsmshadow1.png);
-    height: 50px;
-    width: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translatex(-50%);
-    background-size: 100%;
-}
-.shadow2::after {
-    content: '';
-    background-image: url(../../../assets/images/ptfsmshadow2.png);
-    height: 50px;
-    width: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translatex(-50%);
-    background-size: 100%;
-}
-.shadow2{position: relative;}
-.col-container.col-container2 .greengradient h2{font-size: 60px; text-align: center;}
-
-.graygradient .textwrapper h2, .graygradient .textwrapper h2 span{
-    font-size: 42px;line-height: 45px;
-    text-transform: none;
-}
-.graygradient .textwrapper h2 span{display: inline;}
-
-.ptmfsmblock2subwrapper .abimage{
-    position: absolute;
-    left: 100px;
-    bottom: 0;
-}
-
-.ptmfsmblock2subwrapper2 .abimage {
-    position: absolute;
-    right: 0px;
-    bottom: 230px;
-}
-
-.ptmfsmblock2subwrapper2 .listtextwrapper {
-    padding-right: 600px;
-    padding-top: 30px;
-}
-
-.ptmfsmblock2subwrapper2 {
-    position: relative;
-}
-
-.ptmfsmblock2subwrapper3 .listtextwrapper{
-    position: relative;
-    padding-left: 500px;
-    padding-top: 30px;
-}
-
-.ptmfsmblock2subwrapper3 .abimage{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.ptmfsmblock3 .textwrapper p{
-    font-size: 22px;
-}
-.ptmfsmblock3subwrapper1 .col-container{
-    -webkit-box-align: end;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.imgwrapper{
-    background: rgb(227,227,227);
-    background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
-    padding: 25px;
-}
-
-.imgwrapper img{max-width: 100%; display: block;}
-
-.ptmfsmblock3subwrapper1 {
-    padding: 10px 0;
-    position: relative;
-}
-
-.ptmfsmblock3subwrapper1 .textwrapper p{
-    border-left: 2px solid #0b4d70;
-    padding-left: 20px;
-}
-.ptmfsmblock3 .textwrapper p span{color: #d30028;}
-
-.ptmfsmblock3subwrapper1 .abimage{
-    position: absolute;
-    right: 0px;
-    bottom: 37%;
-}
-.textsubwrapper{
-    background-image: url(../../../assets/images/ptfsmbg3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 40px 20px;
-    position: relative;
-    padding-left: 770px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.6);
-}
-
-.textsubwrapper .textwrapper{
-    border-left: 2px solid #0b4d70;
-    padding-left: 20px;
-}
-
-.textsubwrapper .abimage{
-    position: absolute;
-    left: 60px;
-    bottom: 0;
-}
-
-.ptmfsmblock3 .textsubwrapper .textwrapper p{
-font-size: 26px;
-}
-.ptmfsmblock3subwrapper2 {
-    padding-bottom: 10px;
-}
-
-.textwrapper h1{
-    font-family: 'Montserrat-Bold';
-    line-height: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    background: rgb(0,0,0);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(50%, rgba(77,77,77,1)), to(rgba(77,77,77,1)));
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(77,77,77,1) 50%, rgba(77,77,77,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 0;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    margin: 0 auto;
-    font-style: normal;
-    position: relative;
-    padding-left: 35px;
-}
-.textwrapper h1::before{
-    content: '';
-    background-image: url(../../../assets/images/ptfsmicon2.png);
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-repeat: no-repeat;
-}
-
-
-
-.list {
-    position: relative;
-    padding-left: 50px;
-}
-
-
-.list::before {
-    content: '';
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    left: 13px;
-    top: 20px;
-    background: #0b4d70;
-}
-
-.list::after {
-    content: '';
-    background-image: url(../../../assets/images/listicon4.png);
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    left: 0;
-    top: 3px;
-    background-repeat: no-repeat;
-}
-.list:nth-last-child(1)::before {display: none;}
-.list.textwrapper h2, .list.textwrapper h2 span{font-size: 30px;line-height: 35px;}
-.ptmfsmblock3subwrapper3 .abimage{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.ptmfsmblock3subwrapper3 {
-    padding-bottom: 10px;
-    position: relative;
-    padding-right: 460px;
-    overflow: hidden;
-}
-.ptmfsmblock3subwrapper3 .textwrapperbg{
-    margin-bottom: 10px;
-}
-
-.ptmfsmblock3subwrapper4{position: relative;}
-.ptmfsmblock3subwrapper4 .col-container{
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-.ptmfsmblock3subwrapper4 .textwrapper p{
-    border-left: 2px solid #0b4d70;
-    padding-left: 20px;
-}
-
-.ptmfsmblock3subwrapper4 .abimage{
-    position: absolute;
-    right: -140px;
-    bottom: 36%;
-}
-
-.ptmfsmblock3 {
-    padding: 30px 0 !important;
-    background-image: url(../../../assets/images/ptfsmbg4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
-}
-
-.ptmfsmblock4subwrapper1 .greengradient h2 {
-    font-size: 35px;
-
-}
-
-.textwrapper .subtextwrappernew p{
-    font-family: 'Montserrat-SemiBold';
-    font-size: 18px;
-    background-image: url(../../../assets/images/listicon3.png);
-    background-repeat: no-repeat;
-    padding-left: 25px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    background-position: left top 4px;
-}
-
-.ptmfsmblock4subwrapper1 .subtextwrappernew{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-}
-
-.ptmfsmblock4subwrapper1 .textwrapper h2, .ptmfsmblock4subwrapper1 .textwrapper h2 span{font-size: 26px;line-height: 30px; position: relative;}
-.ptmfsmblock4subwrapper1 .textwrapper h2{padding-left: 40px;}
-.ptmfsmblock4subwrapper1 .textwrapper h2::before{
-    content: '';
-    background-image: url(../../../assets/images/ptfsmicon2.png);
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    left: 0;
-    top: 4px;
-    background-repeat: no-repeat;
-}
-.ptmfsmblock4subwrapper1 .col-container1{margin-bottom: 20px;}
-.ptmfsmblock4subwrapper1 .textwrapperbg{
-border-radius: 8px;
-margin-bottom: 10px;
-}
-
-.ptmfsmblock4subwrapper1 {
-    position: relative;
-    padding-top: 530px;
-}
-
-.ptmfsmblock4subwrapper1 .abimage{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.ptmfsmblock4subwrapper1 .textwrapper.textwrapperbg p{padding-left: 40px;}
-
-.liststyle1 p::after{
-    height: 20px;
-    width: 20px;
-    background: #fff;
-    border: 6px solid #04b231;
-    border-radius: 50%;
-}
-
-.liststyle1 p::before{left: 15px;}
-.ptmfsmblock4subwrapper2 .titlewrapper h2, .ptmfsmblock4subwrapper2 .titlewrapper h2 span{text-align: left; padding: 20px 0;}
-
-.ptmfsmblock4subwrapper2{position: relative;padding-bottom: 20px;}
-.ptmfsmblock4subwrapper2 .abimage{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.ptmfsmblock4subwrapper2 .liststyle1 p{
-font-size: 26px;
-}
-
-.ptmfsmblock4subwrapper2 .liststyle1{
-    padding-right: 670px;
-}
-
-.ptmfsmblock4subwrapper3 .textwrapper p{font-size: 16px; padding-left: 35px;}
-.ptmfsmblock4subwrapper3 .textwrapper h1{font-size: 20px;}
-.ptmfsmblock4subwrapper3 .textwrapper h2{font-size: 32px;padding-left: 35px;}
-
-.ptmfsmblock4subwrapper3 .col-container{
-    -webkit-box-align: end;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-.ptmfsmblock4subwrapper3 .textwrapperbg{
-    margin-bottom: 20px;
-}
-.ptmfsmblock4subwrapper3 .textwrapperbg:nth-last-child(1){
-    margin-bottom: 0px;
-}
-.ptmfsmblock4subwrapper3 .abimage{
-    position: absolute;
-    left: 70px;
-    top: 50px;
-}
-.ptmfsmblock4subwrapper3 {
-    position: relative;
-}
-
-
-.ptmfsmblock4subwrapper4 .liststyle1 {margin-top: 20px;}
-.ptmfsmblock4subwrapper4 .liststyle1 p {
-    font-size: 24px;
-}
-.ptmfsmblock4subwrapper5 .liststyle1 p {
-    font-size: 22px;
-}
-.ptmfsmblock4subwrapper5 .liststyle1 {
-    padding-top: 20px;
-}
-.ptmfsmblock4subwrapper4 .titlewrapper h2, .ptmfsmblock4subwrapper5 .titlewrapper h2{text-align: left; padding: 30px 0;}
-.ptmfsmblock4subwrapper5 .col-container, .ptmfsmblock4subwrapper4 .col-container{justify-content: space-between;}
-.ptmfsmblock4 {
-    background-image: url(../../../assets/images/ptfsmbg5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center top 120px;
-    padding-bottom: 30px !important;
-    overflow: hidden;
-}
-
-
-.ptmfsmblock4subwrapper5 .imgwrapper, .ptmfsmblock4subwrapper4 .imgwrapper{    box-shadow: 0 0 5px rgba(0,0,0,0.3); padding: 15px;}
-
-
-.textwrapper .textitletwrapper h2{font-size: 39px;    position: relative; padding-left: 40px;}
-.textwrapper .textitletwrapper h2::before{
-    content: '';
-    background-image: url(../../../assets/images/ptfsmicon3.png);
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 0;
-    top: 11px;
-    background-repeat: no-repeat;
-}
-.textwrapper .list h2{font-size: 30px;}
-
-.textitletwrapper {
-    background: rgb(228,235,239);
-    background: linear-gradient(0deg, rgba(228,235,239,1) 0%, rgba(255,255,255,1) 100%);
-    border: 1px solid #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    padding: 15px;
-    border-radius: 5px;
-    width: fit-content;
-    margin: 20px 0;
-}
-
-
-
-
-.ptmfsmblock5 {
-    background-image: url(../../../assets/images/ptfsmbg6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center top;
-    padding: 30px 0 !important;
-    position: relative;
-    overflow: hidden;
-}
-
-.ptmfsmblock5 .abimage{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.listtextwrapper1{
-    padding-right: 200px;
-}
-.listtextwrapper2{
-    padding-right: 490px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bannerwrapper{width:1063px;margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
+.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg1.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:center top!important;background-repeat:no-repeat!important;background-size:cover;padding-top:80px!important;min-height:630px;overflow:hidden}
+.titlewrapper h4{font-family:'Montserrat-Bold';line-height:40px;font-size:40px;text-transform:uppercase;background:#000;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,1)),color-stop(50%,rgba(0,0,0,1)),color-stop(50%,rgba(77,77,77,1)),to(rgba(77,77,77,1)));background:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(77,77,77,1) 50%,rgba(77,77,77,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;border:0;box-shadow:none;border-radius:0;padding:0;margin:0;margin:0 auto;font-style:normal}
+.imgwrapper img{display:block;width:100%}
+.bannerblock .abimage{position:absolute;right:20px;bottom:0}
+.bannertext h3{margin:0;font-size:70px;line-height:84px;text-transform:none;padding:0}
+.bannertext .listtitle{padding:10px 30px;display:block;width:fit-content}
+.bannertext .btnblue{margin-right:20px;font-size:32px;text-shadow:-1px 1px 5px rgba(0,0,0,0.8);background:#0281b6;background:linear-gradient(0deg,rgba(2,129,182,1) 0%,rgba(0,184,252,1) 100%);padding:8px 30px}
+.bannerlistwrapper p{font-family:'Montserrat-Bold';text-transform:uppercase}
+.bannertext{display:block;width:1240px;position:relative}
+.bannertext .buttonwrapper{display:flex;justify-content:space-between}
+.bannerlistwrapper{width:970px}
+.ptmfsmblock2{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png),url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg2.jpg);background-repeat:no-repeat,no-repeat;background-position:center top -100px,center center;display:block;padding:30px 0!important;padding-bottom:0!important;background-size:contain,cover;overflow:hidden}
+.ptmfsmblock2 .titlewrapper{padding-bottom:110px}
+.gradienttext.listtitle{text-align:center;padding:20px;box-shadow:0 0 5px rgba(0,0,0,0.3)}
+.gradienttext.listtitle h2,.gradienttext.listtitle h2 span{font-family:'Montserrat-Bold';background:#deeef1;background:linear-gradient(0deg,rgba(222,238,241,1) 0%,rgba(210,220,223,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:56px;line-height:58px;display:block;filter:drop-shadow(0px 1px rgba(0,0,0,0.3))}
+.col-container{display:flex;position:relative}
+.greengradient{background:#1cbbea;background:linear-gradient(90deg,rgba(28,187,234,1) 0%,rgba(21,195,94,1) 100%);padding:25px;display:flex;align-items:center}
+.greengradient h2{font-family:'Montserrat-Bold';font-size:60px;color:#fff;text-shadow:-1px 2px 4px #000}
+.graygradient{padding:10px 20px;background:#e4ecef;background:linear-gradient(0deg,rgba(228,236,239,1) 0%,rgba(255,255,255,1) 100%);display:flex;align-items:center}
+.graygradient .textwrapper p{font-size:22px;margin:0;padding:10px 0}
+.col-container1{box-shadow:0 0 5px rgba(0,0,0,0.3)}
+.textwrapper.listtextwrapper p{font-size:24px;position:relative;padding:15px 10px 15px 15px;background:#e3e3e3;background:linear-gradient(0deg,rgba(227,227,227,1) 0%,rgba(242,242,242,1) 100%);border-left:4px solid #16bf6b;color:#000;text-shadow:-1px 1px 0 #000;margin:20px 0;position:relative;box-shadow:0 0 3px rgba(0,0,0,0.3)}
+.textwrapper.listtextwrapper p.listgreen{border-left:4px solid #16bf6b}
+.textwrapper.listtextwrapper .listgreen::before{content:'';height:4px;width:6px;background:#16bf6b;position:absolute;left:0;bottom:0}
+.textwrapper.listtextwrapper .listgreen::after{content:'';height:4px;width:6px;background:#16bf6b;position:absolute;left:0;top:0}
+.subtextwrapper{display:block;padding:15px 0}
+.textwrapper.listtextwrapper p.listblue{border-left:4px solid #1dbbea}
+.textwrapper.listtextwrapper .listblue::before{content:'';height:4px;width:6px;background:#1dbbea;position:absolute;left:0;bottom:0}
+.textwrapper.listtextwrapper .listblue::after{content:'';height:4px;width:6px;background:#1dbbea;position:absolute;left:0;top:0}
+.textwrapper.listtextwrapper h3{font-size:32px;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon1.png);background-repeat:no-repeat;padding-left:40px;background-position:left top 9px;position:relative}
+.ptmfsmblock2subwrapper .listtextwrapper{position:relative;display:block;padding-left:620px;padding-top:10px}
+.col-container.col-container2{flex-flow:column;box-shadow:0 0 5px rgba(0,0,0,0.3);position:relative}
+.shadow::after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmshadow1.png);height:50px;width:100%;background-repeat:no-repeat;position:absolute;bottom:-50px;left:50%;transform:translatex(-50%);background-size:100%}
+.shadow2::after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmshadow2.png);height:50px;width:100%;background-repeat:no-repeat;position:absolute;bottom:-50px;left:50%;transform:translatex(-50%);background-size:100%}
+.shadow2{position:relative}
+.col-container.col-container2 .greengradient h2{font-size:60px;text-align:center}
+.graygradient .textwrapper h2,.graygradient .textwrapper h2 span{font-size:42px;line-height:45px;text-transform:none}
+.graygradient .textwrapper h2 span{display:inline}
+.ptmfsmblock2subwrapper .abimage{position:absolute;left:100px;bottom:0}
+.ptmfsmblock2subwrapper2 .abimage{position:absolute;right:0;bottom:230px}
+.ptmfsmblock2subwrapper2 .listtextwrapper{padding-right:600px;padding-top:30px}
+.ptmfsmblock2subwrapper2{position:relative}
+.ptmfsmblock2subwrapper3 .listtextwrapper{position:relative;padding-left:500px;padding-top:30px}
+.ptmfsmblock2subwrapper3 .abimage{position:absolute;left:0;bottom:0}
+.ptmfsmblock3 .textwrapper p{font-size:22px}
+.ptmfsmblock3subwrapper1 .col-container{-webkit-box-align:end;align-items:flex-end;justify-content:space-between}
+.imgwrapper{background:#e3e3e3;background:linear-gradient(0deg,rgba(227,227,227,1) 0%,rgba(255,255,255,1) 100%);padding:25px}
+.imgwrapper img{max-width:100%;display:block}
+.ptmfsmblock3subwrapper1{padding:10px 0;position:relative}
+.ptmfsmblock3subwrapper1 .textwrapper p{border-left:2px solid #0b4d70;padding-left:20px}
+.ptmfsmblock3 .textwrapper p span{color:#d30028}
+.ptmfsmblock3subwrapper1 .abimage{position:absolute;right:0;bottom:37%}
+.textsubwrapper{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg3.png);background-repeat:no-repeat;background-size:cover;background-position:center center;padding:40px 20px;position:relative;padding-left:770px;box-shadow:0 0 2px rgba(0,0,0,0.6)}
+.textsubwrapper .textwrapper{border-left:2px solid #0b4d70;padding-left:20px}
+.textsubwrapper .abimage{position:absolute;left:60px;bottom:0}
+.ptmfsmblock3 .textsubwrapper .textwrapper p{font-size:26px}
+.ptmfsmblock3subwrapper2{padding-bottom:10px}
+.textwrapper h1{font-family:'Montserrat-Bold';line-height:30px;font-size:30px;text-transform:uppercase;background:#000;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,1)),color-stop(50%,rgba(0,0,0,1)),color-stop(50%,rgba(77,77,77,1)),to(rgba(77,77,77,1)));background:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(77,77,77,1) 50%,rgba(77,77,77,1) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;border:0;box-shadow:none;border-radius:0;padding:0;margin:0;margin:0 auto;font-style:normal;position:relative;padding-left:35px}
+.textwrapper h1::before{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon2.png);height:30px;width:30px;position:absolute;left:0;top:0;background-repeat:no-repeat}
+.list{position:relative;padding-left:50px}
+.list::before{content:'';width:1px;height:100%;position:absolute;left:13px;top:20px;background:#0b4d70}
+.list::after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon4.png);height:25px;width:25px;position:absolute;left:0;top:3px;background-repeat:no-repeat}
+.list:nth-last-child(1)::before{display:none}
+.list.textwrapper h2,.list.textwrapper h2 span{font-size:30px;line-height:35px}
+.ptmfsmblock3subwrapper3 .abimage{position:absolute;right:0;top:0}
+.ptmfsmblock3subwrapper3{padding-bottom:10px;position:relative;padding-right:460px;overflow:hidden}
+.ptmfsmblock3subwrapper3 .textwrapperbg{margin-bottom:10px}
+.ptmfsmblock3subwrapper4{position:relative}
+.ptmfsmblock3subwrapper4 .col-container{align-items:flex-end;justify-content:space-around}
+.ptmfsmblock3subwrapper4 .textwrapper p{border-left:2px solid #0b4d70;padding-left:20px}
+.ptmfsmblock3subwrapper4 .abimage{position:absolute;right:-140px;bottom:36%}
+.ptmfsmblock3{padding:30px 0!important;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg4.jpg);background-repeat:no-repeat;background-size:cover;background-position:center center;overflow:hidden}
+.ptmfsmblock4subwrapper1 .greengradient h2{font-size:35px}
+.textwrapper .subtextwrappernew p{font-family:'Montserrat-SemiBold';font-size:18px;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/listicon3.png);background-repeat:no-repeat;padding-left:25px;padding-bottom:0;padding-top:0;background-position:left top 4px}
+.ptmfsmblock4subwrapper1 .subtextwrappernew{display:flex;justify-content:space-between;align-items:center;padding:0}
+.ptmfsmblock4subwrapper1 .textwrapper h2,.ptmfsmblock4subwrapper1 .textwrapper h2 span{font-size:26px;line-height:30px;position:relative}
+.ptmfsmblock4subwrapper1 .textwrapper h2{padding-left:40px}
+.ptmfsmblock4subwrapper1 .textwrapper h2::before{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon2.png);height:25px;width:25px;position:absolute;left:0;top:4px;background-repeat:no-repeat}
+.ptmfsmblock4subwrapper1 .col-container1{margin-bottom:20px}
+.ptmfsmblock4subwrapper1 .textwrapperbg{border-radius:8px;margin-bottom:10px}
+.ptmfsmblock4subwrapper1{position:relative;padding-top:530px}
+.ptmfsmblock4subwrapper1 .abimage{position:absolute;top:0;left:50%;transform:translateX(-50%)}
+.ptmfsmblock4subwrapper1 .textwrapper.textwrapperbg p{padding-left:40px}
+.liststyle1 p::after{height:20px;width:20px;background:#fff;border:6px solid #04b231;border-radius:50%}
+.liststyle1 p::before{left:15px}
+.ptmfsmblock4subwrapper2 .titlewrapper h2,.ptmfsmblock4subwrapper2 .titlewrapper h2 span{text-align:left;padding:20px 0}
+.ptmfsmblock4subwrapper2{position:relative;padding-bottom:20px}
+.ptmfsmblock4subwrapper2 .abimage{position:absolute;right:0;top:0}
+.ptmfsmblock4subwrapper2 .liststyle1 p{font-size:26px}
+.ptmfsmblock4subwrapper2 .liststyle1{padding-right:670px}
+.ptmfsmblock4subwrapper3 .textwrapper p{font-size:16px;padding-left:35px}
+.ptmfsmblock4subwrapper3 .textwrapper h1{font-size:20px}
+.ptmfsmblock4subwrapper3 .textwrapper h2{font-size:32px;padding-left:35px}
+.ptmfsmblock4subwrapper3 .col-container{-webkit-box-align:end;align-items:flex-end;justify-content:space-around}
+.ptmfsmblock4subwrapper3 .textwrapperbg{margin-bottom:20px}
+.ptmfsmblock4subwrapper3 .textwrapperbg:nth-last-child(1){margin-bottom:0}
+.ptmfsmblock4subwrapper3 .abimage{position:absolute;left:70px;top:50px}
+.ptmfsmblock4subwrapper3{position:relative}
+.ptmfsmblock4subwrapper4 .liststyle1{margin-top:20px}
+.ptmfsmblock4subwrapper4 .liststyle1 p{font-size:24px}
+.ptmfsmblock4subwrapper5 .liststyle1 p{font-size:22px}
+.ptmfsmblock4subwrapper5 .liststyle1{padding-top:20px}
+.ptmfsmblock4subwrapper4 .titlewrapper h2,.ptmfsmblock4subwrapper5 .titlewrapper h2{text-align:left;padding:30px 0}
+.ptmfsmblock4subwrapper5 .col-container,.ptmfsmblock4subwrapper4 .col-container{justify-content:space-between}
+.ptmfsmblock4{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg5.jpg);background-repeat:no-repeat;background-size:cover;background-position:center top 120px;padding-bottom:30px!important;overflow:hidden}
+.ptmfsmblock4subwrapper5 .imgwrapper,.ptmfsmblock4subwrapper4 .imgwrapper{box-shadow:0 0 5px rgba(0,0,0,0.3);padding:15px}
+.textwrapper .textitletwrapper h2{font-size:39px;position:relative;padding-left:40px}
+.textwrapper .textitletwrapper h2::before{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmicon3.png);height:30px;width:30px;position:absolute;left:0;top:11px;background-repeat:no-repeat}
+.textwrapper .list h2{font-size:30px}
+.textitletwrapper{background:#e4ebef;background:linear-gradient(0deg,rgba(228,235,239,1) 0%,rgba(255,255,255,1) 100%);border:1px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.3);padding:15px;border-radius:5px;width:fit-content;margin:20px 0}
+.ptmfsmblock5{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg6.jpg);background-repeat:no-repeat;background-size:cover;background-position:center top;padding:30px 0!important;position:relative;overflow:hidden}
+.ptmfsmblock5 .abimage{position:absolute;right:0;bottom:0}
+.listtextwrapper1{padding-right:200px}
+.listtextwrapper2{padding-right:490px}
 @media screen and (max-width: 1840px) {
-    .bannertext {width: 1130px;}
-    .bannertext .btnblue {margin-right: 10px; font-size: 29px;}
+.bannertext{width:1130px}
+.bannertext .btnblue{margin-right:10px;font-size:29px}
 }
-
 @media screen and (max-width: 1620px) {
-    .bannerblock .abimage {
-        right: -70px;
-    }
+.bannerblock .abimage{right:-70px}
 }
 @media screen and (max-width: 1560px) {
-    .ptmfsmblock3subwrapper4 .abimage {
-        right: -30px;
-        bottom: 39%;
-        width: 55%;
-    }
+.ptmfsmblock3subwrapper4 .abimage{right:-30px;bottom:39%;width:55%}
 }
 @media screen and (max-width: 1520px) {
-    .bannertext h3 {
-        font-size: 62px;
-        line-height: 71px;
-    }
-    .titlewrapper h4 {
-        line-height: 34px;
-        font-size: 32px;
-    }    
-    .bannertext {
-        width: 1000px;
-    }
-    .bannertext .btnblue {
-        margin-right: 10px;
-        font-size: 22px;
-        width: 49%;
-    }
+.bannertext h3{font-size:62px;line-height:71px}
+.titlewrapper h4{line-height:34px;font-size:32px}
+.bannertext{width:1000px}
+.bannertext .btnblue{margin-right:10px;font-size:22px;width:49%}
 }
-
-
 @media screen and (max-width: 1480px) {
-    .textwrapper h2, .textwrapper h2 span, .textwrapper h2 i{display: inline;}
-    .ptmfsmblock2{background-position: center top -60px, center center;}
-    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{display: inline;}
+.textwrapper h2,.textwrapper h2 span,.textwrapper h2 i{display:inline}
+.ptmfsmblock2{background-position:center top -60px,center center}
+.gradienttext.listtitle h2,.gradienttext.listtitle h2 span{display:inline}
 }
 @media screen and (max-width: 1440px) {
-    .ptmfsmblock2subwrapper2 .listtextwrapper {
-        padding-right: 510px;
-    }
-    .ptmfsmblock2subwrapper2 .abimage {right: -230px;}
-    .ptmfsmblock2subwrapper .listtextwrapper {padding-left: 470px;}
-    .ptmfsmblock2subwrapper .abimage {
-        left: 20px;
-    }
-    .ptmfsmblock3subwrapper4 .abimage {
-        bottom: 47%;
-    }
-    .bannerblock .abimage {
-        right: 2px;
-        width: 30%;
-    }
-    .bannerblock{
-        min-height: 430px;
-    }
+.ptmfsmblock2subwrapper2 .listtextwrapper{padding-right:510px}
+.ptmfsmblock2subwrapper2 .abimage{right:-230px}
+.ptmfsmblock2subwrapper .listtextwrapper{padding-left:470px}
+.ptmfsmblock2subwrapper .abimage{left:20px}
+.ptmfsmblock3subwrapper4 .abimage{bottom:47%}
+.bannerblock .abimage{right:2px;width:30%}
+.bannerblock{min-height:430px}
 }
-
 @media screen and (max-width: 1340px) {
-    .bannertext h3 {
-        font-size: 54px;
-        line-height: 64px;
-    }
-    .bannertext {
-        width: 950px;
-    }
-    .bannerlistwrapper {
-        width: auto;
-    }
-    .bannerblock .abimage {
-        width: 32%;
-    }
+.bannertext h3{font-size:54px;line-height:64px}
+.bannertext{width:950px}
+.bannerlistwrapper{width:auto}
+.bannerblock .abimage{width:32%}
 }
-
-
 @media screen and (max-width: 1199px) {
-    .ptmfsmblock2subwrapper .listtextwrapper {
-        padding-left: 0;
-    }
-    .textwrapper.listtextwrapper h3 {
-        padding-left: 0;
-        padding-top: 40px;
-        background-position: center top 9px;
-    }
-    .textwrapper {
-        text-align: center;
-    }
-    .ptmfsmblock2subwrapper2 .listtextwrapper {
-        padding-right: 0;
-    }
-    .col-container1 {
-        flex-flow: column;
-        justify-content: center;
-    }
-    .greengradient h2 br{display: none; text-align: center;}
-    .greengradient h2 {
-        text-align: center;
-        width: 100%;
-    }
-    .ptmfsmblock2subwrapper3 .listtextwrapper {
-        padding-left: 0;}
-    .abimage{
-        position: inherit !important;
-        left: inherit !important;
-        top: inherit !important;
-        bottom: inherit !important;
-        right: inherit !important;
-        transform: inherit !important;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-    .col-container{flex-wrap: wrap;}
-    .textsubwrapper{padding-left: 20px;}
-    .textsubwrapper .textwrapper {
-        border-left: 0px solid #0b4d70;
-        padding-left: 0;
-    }
-    .ptmfsmblock3subwrapper1 .textwrapper p {
-        border-left: 0px solid #0b4d70;
-        padding-left: 0;
-    }
-    .ptmfsmblock3subwrapper3{    padding-right: 0;}
-    .textwrapper h1{
-        padding-left: 0;
-        padding-top: 30px;
-    }
-    .textwrapper h1::before {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .list {
-        position: relative;
-        padding-left: 0;
-        padding-top: 30px;
-    }
-    .list::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .list::before{display: none;}
-    .ptmfsmblock3subwrapper4 .textwrapper p {
-        border-left: 0px solid #0b4d70;
-        padding-left: 0;
-    }
-    .ptmfsmblock4subwrapper1 {
-        position: relative;
-        padding-top: 0;
-    }
-    .ptmfsmblock4subwrapper1 .subtextwrappernew {
-        flex-flow: column;
-    }
-    .textwrapper .subtextwrappernew p{
-        padding-left: 0;
-        background-position: center top 4px;
-        padding-top: 30px;
-    }
-    .ptmfsmblock4subwrapper1 .textwrapper h2 {
-        padding-left: 0;
-        padding-top: 40px;
-        display: block;
-    }
-    .ptmfsmblock4subwrapper1 .textwrapper h2::before {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .ptmfsmblock4subwrapper2 .liststyle1 {
-        padding-right: 0;
-    }
-    .ptmfsmblock4subwrapper2 .titlewrapper h2, .ptmfsmblock4subwrapper2 .titlewrapper h2 span {
-        text-align: center;
-    }
-    .shadow2 {
-        margin-bottom: 40px;
-    }
-    .ptmfsmblock4subwrapper4 .titlewrapper h2, .ptmfsmblock4subwrapper5 .titlewrapper h2 {
-        text-align: center;
-    }
-    .listtextwrapper2 {
-        padding-right: 0;
-    }
-    .listtextwrapper1 {
-        padding-right: 0;
-    }
-    .textitletwrapper{
-        margin: 20px auto;
-    }
-    .bannerblock .abimage {
-        width: auto;
-    }
-    .bannerblock {
-        min-height: inherit;
-        display: block !important;
-        background-position: left top !important;
-    }
-    .bannertext {
-        width: auto;
-        text-align: center;
-    }
-    .bannertext .btnblue {
-        margin-right: 0;
-        width: fit-content;
-        margin: 5px auto;
-    }
-    .bannertext .buttonwrapper {
-        flex-flow: column;
-    }
-    .bannertext .listtitle {
-        width: auto;
-    }
+.ptmfsmblock2subwrapper .listtextwrapper{padding-left:0}
+.textwrapper.listtextwrapper h3{padding-left:0;padding-top:40px;background-position:center top 9px}
+.textwrapper{text-align:center}
+.ptmfsmblock2subwrapper2 .listtextwrapper{padding-right:0}
+.col-container1{flex-flow:column;justify-content:center}
+.greengradient h2 br{display:none;text-align:center}
+.greengradient h2{text-align:center;width:100%}
+.ptmfsmblock2subwrapper3 .listtextwrapper{padding-left:0}
+.abimage{position:inherit!important;left:inherit!important;top:inherit!important;bottom:inherit!important;right:inherit!important;transform:inherit!important;max-width:100%;display:block;margin:0 auto}
+.col-container{flex-wrap:wrap}
+.textsubwrapper{padding-left:20px}
+.textsubwrapper .textwrapper{border-left:0 solid #0b4d70;padding-left:0}
+.ptmfsmblock3subwrapper1 .textwrapper p{border-left:0 solid #0b4d70;padding-left:0}
+.ptmfsmblock3subwrapper3{padding-right:0}
+.textwrapper h1{padding-left:0;padding-top:30px}
+.textwrapper h1::before{left:50%;transform:translateX(-50%)}
+.list{position:relative;padding-left:0;padding-top:30px}
+.list::after{left:50%;transform:translateX(-50%)}
+.list::before{display:none}
+.ptmfsmblock3subwrapper4 .textwrapper p{border-left:0 solid #0b4d70;padding-left:0}
+.ptmfsmblock4subwrapper1{position:relative;padding-top:0}
+.ptmfsmblock4subwrapper1 .subtextwrappernew{flex-flow:column}
+.textwrapper .subtextwrappernew p{padding-left:0;background-position:center top 4px;padding-top:30px}
+.ptmfsmblock4subwrapper1 .textwrapper h2{padding-left:0;padding-top:40px;display:block}
+.ptmfsmblock4subwrapper1 .textwrapper h2::before{left:50%;transform:translateX(-50%)}
+.ptmfsmblock4subwrapper2 .liststyle1{padding-right:0}
+.ptmfsmblock4subwrapper2 .titlewrapper h2,.ptmfsmblock4subwrapper2 .titlewrapper h2 span{text-align:center}
+.shadow2{margin-bottom:40px}
+.ptmfsmblock4subwrapper4 .titlewrapper h2,.ptmfsmblock4subwrapper5 .titlewrapper h2{text-align:center}
+.listtextwrapper2{padding-right:0}
+.listtextwrapper1{padding-right:0}
+.textitletwrapper{margin:20px auto}
+.bannerblock .abimage{width:auto}
+.bannerblock{min-height:inherit;display:block!important;background-position:left top!important}
+.bannertext{width:auto;text-align:center}
+.bannertext .btnblue{width:fit-content;margin:5px auto}
+.bannertext .buttonwrapper{flex-flow:column}
+.bannertext .listtitle{width:auto}
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 /* .pagehomewraooer{display:block!important;padding:14px 0!important;box-shadow:0 5px 10px rgba(0,0,0,0.2)!important;position:relative!important;z-index:9;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS+Frontend+assets/images/menubarbackground.png)!important;background-size:cover!important;background-position:left top!important}
 .p-0{padding:0}
 .p-0 img{display:block;margin:0;padding:0;width:100%}
-.bannerblock{background-image:url(../../../assets/images/rm3abanner.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover}
+.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3abanner.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover}
 .bannerwrapper{width:834px;margin-left:0;display:flex!important;align-items:center!important;flex-wrap:wrap!important;justify-content:center!important;flex-direction:column}
 .banner-title{margin-bottom:0}
 .bannertextwrapper p{width:788px}
@@ -20,16 +20,16 @@
 .newcontainer .content_right{margin:0}
 .colcontainer{display:flex}
 .blockone{width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;padding-bottom:0!important;background:transparent!important}
-.blockone .blockonecontent.ptp{background:url(../../../assets/images/rm3aimage1.png) left -2% bottom 0 no-repeat;background-size:43%;padding-bottom:30px;margin-bottom:0}
-.blockone .blockonecontent.wpo{background:url(../../../assets/images/rm3aimage2.png) right 0 top -20px no-repeat;background-size:62%;padding-bottom:30px;margin-bottom:0}
-.blockone .blockonecontent.pop{background:url(../../../assets/images/rm3aimage3.png) left 120px top 302% no-repeat;min-height:412px;background-size:33%;margin-bottom:0}
-.blockone .blockonecontent.mnm{background:url(../../../assets/images/rm3aimage4.png) right top 24px no-repeat;min-height:655px;margin-top:0}
-.blockone .blockonecontent.pt{background:url(../../../assets/images/rm3aimage5.png) left top -20px no-repeat;position:relative;z-index:999;margin-bottom:0}
-.blockone .blockonecontent.sc{background:url(../../../assets/images/rm3aimage6.png) right -94px top no-repeat;min-height:1280px;margin-top:0;margin-bottom:30px}
-.blockone .blockonecontent.billc{background:url(../../../assets/images/rm3aimage7.png) left 14% bottom 0 no-repeat;min-height:435px;margin-top:-2%;background-size:49%}
-.blockone .blockonecontent.addtest{background:url(../../../assets/images/rm3aimage9.png) left top 116% no-repeat}
-.blockone .blockonecontent.wwp{background:url(../../../assets/images/rm3aimage10.png) right top -160px no-repeat;margin-top:-2%;padding-top:30px}
-.blockone .blockonecontent.dob{background:url(../../../assets/images/rm3aimage11.png) left -110px top no-repeat;min-height:720px;margin-top:-2%}
+.blockone .blockonecontent.ptp{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage1.png) left -2% bottom 0 no-repeat;background-size:43%;padding-bottom:30px;margin-bottom:0}
+.blockone .blockonecontent.wpo{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage2.png) right 0 top -20px no-repeat;background-size:62%;padding-bottom:30px;margin-bottom:0}
+.blockone .blockonecontent.pop{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage3.png) left 120px top 302% no-repeat;min-height:412px;background-size:33%;margin-bottom:0}
+.blockone .blockonecontent.mnm{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage4.png) right top 24px no-repeat;min-height:655px;margin-top:0}
+.blockone .blockonecontent.pt{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage5.png) left top -20px no-repeat;position:relative;z-index:999;margin-bottom:0}
+.blockone .blockonecontent.sc{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage6.png) right -94px top no-repeat;min-height:1280px;margin-top:0;margin-bottom:30px}
+.blockone .blockonecontent.billc{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage7.png) left 14% bottom 0 no-repeat;min-height:435px;margin-top:-2%;background-size:49%}
+.blockone .blockonecontent.addtest{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage9.png) left top 116% no-repeat}
+.blockone .blockonecontent.wwp{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage10.png) right top -160px no-repeat;margin-top:-2%;padding-top:30px}
+.blockone .blockonecontent.dob{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3aimage11.png) left -110px top no-repeat;min-height:720px;margin-top:-2%}
 .blockonecontent:nth-child(odd){display:flex;flex-direction:row;justify-content:flex-end}
 .blockonecontent:nth-child(even){display:flex;flex-direction:row;justify-content:flex-start}
 .blockone .content_right .title{font-family:'Montserrat-Regular';font-size:24px;color:#0cc303;position:relative;line-height:32px;margin-bottom:30px}
@@ -69,12 +69,12 @@
 .wwp .content_right{width:49%;float:right}
 .blockone .wwp .content_right .title{font-size:20px;line-height:24px}
 .dob .content_right{width:55%;float:right;margin-top:6%}
-.dob .items .item,.doublecolumn .items .item{background:url(../../../assets/images/pvpblod2.png) left 12px no-repeat}
+.dob .items .item,.doublecolumn .items .item{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpblod2.png) left 12px no-repeat}
 .dob .titleorange{font-family:'Montserrat-Regular';font-size:22px;color:#ff6c00;position:relative;line-height:28px;margin-bottom:40px}
 .wpo .content_right .items{width:46%;margin-top:30px}
 .items{display:-webkit-box;display:flex;flex-wrap:wrap;padding-top:0!important;margin-bottom:20px}
-.items .item{box-sizing:border-box;padding:10px 0;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;margin-bottom:0;height:auto;margin-right:1%;-webkit-box-align:start;align-items:flex-start;height:auto;position:relative;padding:8px 21px;color:#3a3a3a;font-family:MontserratBold;font-size:18px;background:url(../../../assets/images/pvpblod1.png) left 12px no-repeat;box-sizing:border-box}
-.wpo .items .item,.mnm .items .item{background:url(../../../assets/images/pvpblod2.png) left 12px no-repeat}
+.items .item{box-sizing:border-box;padding:10px 0;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;margin-bottom:0;height:auto;margin-right:1%;-webkit-box-align:start;align-items:flex-start;height:auto;position:relative;padding:8px 21px;color:#3a3a3a;font-family:MontserratBold;font-size:18px;background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpblod1.png) left 12px no-repeat;box-sizing:border-box}
+.wpo .items .item,.mnm .items .item{background:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/pvpblod2.png) left 12px no-repeat}
 .pt .items .item{-webkit-box-flex:1;flex:0 1 49%}
 .doublecolumn .abimage{position:absolute;right:0;top:-53px;width:53%}
 .doublecolumn{position:relative}

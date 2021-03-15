@@ -1,270 +1,84 @@
-.bannerblock{
-    background-image:url(../../../assets/images/dr_newimage1.jpg)!important;
-    width:100%;box-shadow:none!important;
-    padding:0!important;
-    border-radius:0!important;
-    position:relative;
-    background-repeat: no-repeat!important;
-    background-size: cover;
-    padding-top: 80px !important;
-    min-height: 660px;
-    background-position: center top !important;
-    overflow: hidden;
+.bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/dr_newimage1.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-repeat:no-repeat!important;background-size:cover;padding-top:80px!important;min-height:660px;background-position:center top!important;overflow:hidden}
+.bannerblock .abimage{position:absolute;right:240px;bottom:0;z-index:1}
+.imgwrapper img{display:block;width:100%}
+.videoblock{position:relative;overflow:hidden;margin:0 auto;box-shadow:0 5px 5px rgba(0,0,0,0.3);padding:0;background-color:#e1e9eb;border-radius:8px;height:600px;border:20px solid #e1e9eb;margin-left:490px}
+.videoblock img{width:100%;display:block;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-height:100%;object-fit:cover}
+.videoblock .playicon{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:202px;min-height:inherit}
+.drblock2{position:relative;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/homeblock2newbg.png);background-repeat:no-repeat;background-position:center top -70px;display:block;padding:40px 0!important;position:relative}
+.drblock2 .titlewrapper{padding-bottom:80px}
+.drblock2 .abimage{position:absolute;left:60px;bottom:0}
+.bannertext{border-radius:50%;display:block;position:relative;width:980px}
+.drblock3{position:relative;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/drnewbg3.jpg);background-repeat:no-repeat;background-position:right top;background-size:cover;overflow:hidden;padding:30px 0!important}
+.textwrapper p{font-size:18px;margin:0;padding:15px 0}
+.textwrapper h5{text-align:right}
+.textwrapper h5 span{display:block;font-size:24px}
+.drblock3 .textwrapper h2{margin-bottom:20px}
+.drblock3 .abimage{position:absolute;right:130px;top:50px}
+.drblock3 .textwrapper.textwrapperbg{margin-right:510px;position:relative}
+.drblock4{position:relative;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/drnewbg4.png);background-repeat:no-repeat;background-position:left top 120px;overflow:hidden;padding:40px 0!important;padding-top:0!important}
+.drblock4 .textwrapper.textwrapperbg{margin-left:640px;position:relative}
+.drblock4 .abimage{position:absolute;left:90px;bottom:0}
+.titlewrapperbg{margin-bottom:90px}
+.abimage2{display:none}
+@media screen and (max-width: 1720px) {
+.drblock4 .abimage{left:10px}
+.drblock3 .abimage{right:40px}
+.drblock2 .abimage{left:-80px}
+.bannerblock .abimage{right:80px}
 }
-.bannerblock .abimage{position: absolute; right: 240px; bottom: 0; z-index: 1;}
-.imgwrapper img{display: block; width: 100%;}
-
-.videoblock{
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
-    padding: 0;
-    background-color: #e1e9eb;
-    border-radius: 8px;
-    height: 600px;
-    border: 20px solid #e1e9eb;
-    margin-left: 490px;
+@media screen and (max-width: 1620px) {
+.drblock3 .abimage{top:110px}
+.videoblock{height:530px;margin-left:30%;margin-top:70px}
 }
-.videoblock img{
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 100%;
-    object-fit: cover;
+@media screen and (max-width: 1600px) {
+.drblock4 .abimage{left:-100px}
 }
-.videoblock .playicon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    width: 202px;
-    min-height: inherit;
-}
-
- .drblock2 {
-     position: relative;
-     background-image: url(../../../assets/images/homeblock2newbg.png);
-    background-repeat: no-repeat;
-    background-position: center top -70px;
-    display: block;
-    padding: 40px 0 !important;
-    position: relative;
-    }
-    .drblock2 .titlewrapper {
-        padding-bottom: 80px;
-    }
-    .drblock2 .abimage{
-        position: absolute;
-        left: 60px;
-        bottom: 0;
-    }
- .bannertext {
-    border-radius: 50%;
-    display: block;
-    position: relative;
-    width: 980px;
-}
-
-.drblock3{
-    position: relative;
-    background-image: url(../../../assets/images/drnewbg3.jpg);
-   background-repeat: no-repeat;
-   background-position: right top; 
-   background-size: cover;
-   overflow: hidden;
-   padding: 30px 0 !important;
-}
-
-.textwrapper p{font-size: 18px; margin: 0; padding: 15px 0;}
-
-.textwrapper h5 {text-align: right;}
-.textwrapper h5 span{display: block; font-size: 24px;}
-.drblock3 .textwrapper h2{
-    margin-bottom: 20px;
-}
-
-.drblock3 .abimage{
-    position: absolute;
-    right: 130px;
-    top: 50px;
-}
-.drblock3 .textwrapper.textwrapperbg{
-    margin-right: 510px;
-    position: relative;
-}
-
-
-.drblock4{
-    position: relative;
-    background-image: url(../../../assets/images/drnewbg4.png);
-   background-repeat: no-repeat;
-   background-position: left top 120px;
-   overflow: hidden;
-   padding: 40px 0 !important;
-   padding-top: 0 !important;
-}
-
-.drblock4 .textwrapper.textwrapperbg{
-    margin-left: 640px;
-    position: relative;
-}
-.drblock4 .abimage{
-    position: absolute;
-    left: 90px;
-    bottom: 0px;
-}
-
-.titlewrapperbg{margin-bottom: 90px;}
-.abimage2{display: none;}
-
-
-
-
-
- @media screen and (max-width: 1720px) {
-    .drblock4 .abimage {
-        left: 10px;
-    }
-    .drblock3 .abimage {
-        right: 40px;
-    }
-    .drblock2 .abimage {
-        left: -80px;
-    }
-    .bannerblock .abimage {
-        right: 80px;
-    }
- }
- @media screen and (max-width: 1620px) {
-    .drblock3 .abimage {
-        top: 110px;
-    }
-    .videoblock{
-        height: 530px;
-        margin-left: 30%;
-        margin-top: 70px;
-    }
- }
- @media screen and (max-width: 1600px) {
-    .drblock4 .abimage {
-        left: -100px;
-    }
-}
-
 @media screen and (max-width: 1540px) {
-    .bannerblock .abimage {
-        right: 20px;
-    }
+.bannerblock .abimage{right:20px}
 }
-
-
 @media screen and (max-width: 1440px) {
-    .drblock4 .textwrapper.textwrapperbg {
-        margin-left: 570px;
-    }
-   
-    .bannertext {
-        width: 790px;
-    }
-    .bannertext h2{    padding-right: 50px;}
+.drblock4 .textwrapper.textwrapperbg{margin-left:570px}
+.bannertext{width:790px}
+.bannertext h2{padding-right:50px}
 }
 @media screen and (max-width: 1400px) {
-    .drblock3 .abimage {
-        top: 145px;
-    }
-    .drblock3 .textwrapper h2 span{display: inline;}
-    .videoblock {
-        height: 470px;}
+.drblock3 .abimage{top:145px}
+.drblock3 .textwrapper h2 span{display:inline}
+.videoblock{height:470px}
 }
 @media screen and (max-width: 1280px) {
-    .videoblock {
-        height: 410px;
-        margin-top: 160px;
-        margin-bottom: 30px;
-    }
-    .bannerblock .abimage {
-        right: -30px;
-    }
+.videoblock{height:410px;margin-top:160px;margin-bottom:30px}
+.bannerblock .abimage{right:-30px}
 }
-
-
 @media screen and (max-width: 1199px) {
-.abimage{
-    position: inherit !important;
-    left: inherit !important;
-    top: inherit !important;
-    bottom: inherit !important;
-    right: inherit !important;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto; 
+.abimage{position:inherit!important;left:inherit!important;top:inherit!important;bottom:inherit!important;right:inherit!important;max-width:100%;display:block;margin:0 auto}
+.bannerblock{display:block!important;padding-bottom:30px!important}
+.bannertext{width:auto;text-align:center}
+.videoblock{height:600px;margin-top:0;margin-bottom:0;margin-left:0;width:auto}
+.drblock3 .textwrapper.textwrapperbg{margin-right:0;position:relative}
+.textwrapper{text-align:center}
+.textwrapper h5{text-align:center}
+.drblock4 .textwrapper.textwrapperbg{margin-left:0}
+.drblock2 .abimage{display:none}
+.abimage2{display:block;margin:0 auto;max-width:100%}
+.drblock2{background-color:#eff7f8}
 }
-.bannerblock {
-    display: block !important;
-    padding-bottom: 30px !important;
-}
-.bannertext {
-    width: auto;
-    text-align: center;
-}
-.videoblock {
-    height: 600px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    width: auto;
-}
-.drblock3 .textwrapper.textwrapperbg {
-    margin-right: 0;
-    position: relative;
-}
-.textwrapper{text-align: center;}
-
-.textwrapper h5 {
-    text-align: center;
-}
-.drblock4 .textwrapper.textwrapperbg {
-    margin-left: 0;
-}
-.drblock2 .abimage{display: none;}
-.abimage2{display: block;margin: 0 auto; max-width: 100%;}
-.drblock2{
-    background-color: #eff7f8;
-}
-}
-
 @media screen and (max-width: 1100px) {
-    .videoblock {height: 540px;}
+.videoblock{height:540px}
 }
-
 @media screen and (max-width: 991px) {
-    .videoblock {height: 460px;}
+.videoblock{height:460px}
 }
 @media screen and (max-width: 840px) {
-    .videoblock {height: 380px;}
+.videoblock{height:380px}
 }
 @media screen and (max-width: 680px) {
-    .videoblock {height: 310px;}
+.videoblock{height:310px}
 }
 @media screen and (max-width: 580px) {
-    .videoblock {height: 260px;    border: 10px solid #e1e9eb;}
+.videoblock{height:260px;border:10px solid #e1e9eb}
 }
-
 @media screen and (max-width: 480px) {
-    .videoblock .playicon{    width: 102px;}
-    .videoblock {height: 220px;}
+.videoblock .playicon{width:102px}
+.videoblock{height:220px;height:180px}
 }
-
-@media screen and (max-width: 480px) {
-    .videoblock {height: 180px;}
-}
-
-
-
-
-
