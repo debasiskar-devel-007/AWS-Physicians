@@ -260,7 +260,8 @@
         top: 10px;
         left: 20px !important;
     }
-
+    .mat-menu-item{text-align: center;}
+    .mat-menu-panel, .cdk-overlay-pane{width: 100%; max-width: 100% !important;}
 
 
 

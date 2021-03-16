@@ -43,12 +43,14 @@
                   <span class="menuwrapper">                    
                     <mat-list-item fxFlex routerLinkActive="activemenu"> <a [routerLink]="['/home']">Home</a></mat-list-item>
                     <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/the-science']"> The Science </a></mat-list-item>
-                    <mat-list-item fxFlex routerLinkActive="activemenu" [matMenuTriggerFor]="menu"> <a>THE TM-FLOW DEVICE <span class="material-icons">keyboard_arrow_down</span></a>  </mat-list-item>
-                    <mat-menu #menu="matMenu">
-                      <a mat-menu-item [routerLink]="['/tm-flow-hardware']">tm-flow hardware </a>
-                      <a mat-menu-item [routerLink]="['/pece-tm-flow-systen-marker']">  pece tm-flow system marker </a>
-                      
-                    </mat-menu> 
+                    <mat-list-item fxFlex routerLinkActive="activemenu" [matMenuTriggerFor]="menu"> <a>THE TM-FLOW DEVICE <span class="material-icons">keyboard_arrow_down</span></a> 
+                      <mat-menu #menu="matMenu">
+                        <a mat-menu-item [routerLink]="['/tm-flow-hardware']">tm-flow hardware </a>
+                        <a mat-menu-item [routerLink]="['/pece-tm-flow-systen-marker']">  pece tm-flow system marker </a>
+                        
+                      </mat-menu> 
+                    </mat-list-item>
+                     
                     <!-- <mat-list-item fxFlex routerLinkActive="activemenu"><a [routerLink]="['/rm3a-aws-program']"> ANS HPS PROGRAM  </a></mat-list-item> -->
                     <mat-list-item fxFlex routerLinkActive="activemenu"> 
                       <a [routerLink]="['/pece-virtual-platform']"><span class="pece">PECE</span>  Virtual Platform</a>
