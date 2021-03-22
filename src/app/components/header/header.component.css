@@ -208,8 +208,7 @@
 .vpheaderwrapper .mat-nav-list .mat-list-item a{font-size:15px}
 .topbar{display: none;}
 .vpheaderwrapper .mat-nav-list .mat-list-item.activemenu::before{display: none;}
-.mat-menu-item{text-align: center;}
-.mat-menu-panel, .cdk-overlay-pane{width: 100%; max-width: 100%;}
+
 }
 @media only screen and (max-width: 768px) {
 .logowrappersml a{padding-bottom:10px}
