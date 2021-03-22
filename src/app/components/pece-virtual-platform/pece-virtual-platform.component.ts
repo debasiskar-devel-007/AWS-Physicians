@@ -19,7 +19,7 @@ export class PeceVirtualPlatformComponent implements OnInit {
       og_description:'A complete 360-degree solution for the ANS testing industry offering Fully Managed Services to Physician practices across multiple locations through its Enterprise Management System and systematic algorithms.',
       og_url: 'https://healthprofitsolutions.com/pece-virtual-platform',
       og_type: 'website',
-      // og_image: environment.share_image,
+     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);

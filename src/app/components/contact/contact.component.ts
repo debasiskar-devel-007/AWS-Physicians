@@ -32,7 +32,7 @@ public contactusdata: any = {
       og_description:'Get in touch with us at Health Profit Solutions with your queries, and we will be happy to answer any questions you have. You can also leave your feedback and someone will get in touch with you soon.',
       og_url: 'https://healthprofitsolutions.com/contact',
       og_type: 'website',
-      // og_image: environment.share_image,
+     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);

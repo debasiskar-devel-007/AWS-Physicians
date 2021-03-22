@@ -21,7 +21,7 @@ export class DoctorRecommendComponent implements OnInit {
       og_description:'Dr. Samah Mohiuddin, a Board-certified Neurologist from New York, talks about the efficiency and usefulness of the PECETM ANS Testing Medical Device Platform, and how it can improve patient care significantly.',
       og_url: 'https://healthprofitsolutions.com/doctor-recommend',
       og_type: 'website',
-      // og_image: environment.share_image,
+     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data); 

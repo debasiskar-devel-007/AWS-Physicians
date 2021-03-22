@@ -19,7 +19,7 @@ export class TheScienceComponent implements OnInit {
       og_description:'The science that governs the PECETM ANS testing Medical Device Platform to assess the health risk areas in the Autonomous Nervous System for potential complications and diseases.',
       og_url: 'https://healthprofitsolutions.com/the-science',
       og_type: 'website',
-      // og_image: environment.share_image,
+     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);

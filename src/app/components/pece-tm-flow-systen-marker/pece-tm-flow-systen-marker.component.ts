@@ -19,7 +19,7 @@ export class PeceTmFlowSystenMarkerComponent implements OnInit {
       og_description:'The system markers are presented on the PECETM TM-Flow ANS testing device medical reports and enable the early detection of potential health risks and diseases in the Autonomous and Vascular Nervous Systems.',
       og_url: 'https://healthprofitsolutions.com/pece-tm-flow-systen-marker',
       og_type: 'website',
-      // og_image: environment.share_image,
+     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);

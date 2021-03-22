@@ -19,7 +19,7 @@ export class TmFlowHardwareComponent implements OnInit {
       og_description:'The TM-Flow device is a comprehensive, user-friendly, non-invasive tool that focuses on the early detection of complications in the Autonomous Nervous System by measuring 8 health risk areas within the body.',
       og_url: 'https://healthprofitsolutions.com/tm-flow-hardware',
       og_type: 'website',
-      // og_image: environment.share_image,
+     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card:environment.share_image,
     };
     this.metaservice.setmeta(data);
