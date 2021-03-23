@@ -1,4 +1,4 @@
-/* .pagehomewraooer{display:block!important;padding:14px 0!important;box-shadow:0 5px 10px rgba(0,0,0,0.2)!important;position:relative!important;z-index:9;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS+Frontend+assets/images/menubarbackground.png)!important;background-size:cover!important;background-position:left top!important}
+.pagehomewraooer{display:block!important;padding:14px 0!important;box-shadow:0 5px 10px rgba(0,0,0,0.2)!important;position:relative!important;z-index:9;background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS+Frontend+assets/images/menubarbackground.png)!important;background-size:cover!important;background-position:left top!important}
 .p-0{padding:0}
 .p-0 img{display:block;margin:0;padding:0;width:100%}
 .bannerblock{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/rm3abanner.jpg)!important;width:100%;box-shadow:none!important;padding:0!important;border-radius:0!important;position:relative;background-position:right top!important;background-repeat:no-repeat!important;background-size:cover}
@@ -365,4 +365,4 @@
 @media only screen and (max-width: 540px) {
 .nurvous_wrapper .inner_item{width:100%} .nurvous_wrapper .inner_item .titles{min-height:24px}.addtestimg2{width:100%}.headerBGmain{font-size:22px;line-height:normal}.billccode span{margin-bottom:10px}.wrp_r mat-list mat-list-item{height:auto;width:100%;text-align:center}.topbutton button{flex:1 0 100%}.blockone .blockonecontent.dob{background-position:center top -1%!important}.wrp_r .video_desc_title{font-size:20px;line-height:normal}.banner-title span strong{font-size:28px;line-height:normal}}
 @media only screen and (max-width: 480px) {
-.blockone .blockonecontent.ptp{background-position:left top 0!important}.bannerwrapper h2{width:91%}} */
+.blockone .blockonecontent.ptp{background-position:left top 0!important}.bannerwrapper h2{width:91%}}
