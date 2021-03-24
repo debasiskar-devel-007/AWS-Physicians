@@ -1,9 +1,13 @@
 <div class="lpmainwrapper">
     <div class="topbannerblock">
         <mat-card class="lpblock1">
+            <mat-progress-bar mode="indeterminate" *ngIf="progressSpinner.loading "></mat-progress-bar>
+
             <div class="newcontainer">
                 <mat-card-content class="lptopbar">
-                    <span class="lp_logowrapper"><img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lplogo.png" alt="#"></span>
+                    <span class="lp_logowrapper"><img
+                            src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lplogo.png"
+                            alt="#"></span>
                     <span class="lptopbartext">
                         <div class="textwrapper">
                             <h2>
@@ -28,40 +32,46 @@
                 [formfieldrefreshdata]="formfieldrefreshdata" (onFormFieldChange)="listenFormFieldChange($event)" >
               </lib-showform> -->
 
-              <form [formGroup]="options" (ngSubmit)="contactUs()">
-                <mat-form-field appearance="fill">
-                  <mat-label>First Name</mat-label>
-                  <input matInput  formControlName="firstname" (blur)="inputUntouched('firstname')">
-                  <mat-error *ngIf="!options.controls['firstname'].valid && options.controls['firstname'].errors.required && options.controls['firstname'].touched">
-                      First Name field can not be blank
-                  </mat-error>
-                </mat-form-field>
-                <mat-form-field appearance="fill">
-                  <mat-label>Last Name</mat-label>
-                  <input matInput formControlName="lastname" (blur)="inputUntouched('lastname')">
-                  <mat-error *ngIf="!options.controls['lastname'].valid && options.controls['lastname'].errors.required && options.controls['lastname'].touched">
-                      Last Name field can not be blank
-                  </mat-error>
-                </mat-form-field>
-               
-                <mat-form-field appearance="fill">
-                  <mat-label>Email Address</mat-label>
-                  <input matInput formControlName="email" (blur)="inputUntouched('email')">
-                  <mat-error *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
-                    Email field can not be blank
-                  </mat-error>
-                  <mat-error *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">Email is not valid</mat-error>
-                </mat-form-field>
+                        <form [formGroup]="options" (ngSubmit)="contactUs()">
+                            <mat-form-field appearance="fill">
+                                <mat-label>First Name</mat-label>
+                                <input matInput formControlName="firstname" (blur)="inputUntouched('firstname')">
+                                <mat-error
+                                    *ngIf="!options.controls['firstname'].valid && options.controls['firstname'].errors.required && options.controls['firstname'].touched">
+                                    First Name field can not be blank
+                                </mat-error>
+                            </mat-form-field>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Last Name</mat-label>
+                                <input matInput formControlName="lastname" (blur)="inputUntouched('lastname')">
+                                <mat-error
+                                    *ngIf="!options.controls['lastname'].valid && options.controls['lastname'].errors.required && options.controls['lastname'].touched">
+                                    Last Name field can not be blank
+                                </mat-error>
+                            </mat-form-field>
 
-                <mat-form-field appearance="fill">
-                  <mat-label>Phone </mat-label>
-                  <input matInput type="number" formControlName="phone" (blur)="inputUntouched('phone')">
-                  <mat-error *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
-                    Phone Number field can not be blank
-                  </mat-error>
-                </mat-form-field>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Email Address</mat-label>
+                                <input matInput formControlName="email" (blur)="inputUntouched('email')">
+                                <mat-error
+                                    *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
+                                    Email field can not be blank
+                                </mat-error>
+                                <mat-error
+                                    *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">
+                                    Email is not valid</mat-error>
+                            </mat-form-field>
 
-                <!-- <mat-form-field appearance="fill">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Phone </mat-label>
+                                <input matInput type="number" formControlName="phone" (blur)="inputUntouched('phone')">
+                                <mat-error
+                                    *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
+                                    Phone Number field can not be blank
+                                </mat-error>
+                            </mat-form-field>
+
+                            <!-- <mat-form-field appearance="fill">
                   <mat-label>Password</mat-label>
                   <input matInput type="password" formControlName="password" (blur)="inputUntouched('password')">
                   <mat-error *ngIf="!options.controls['password'].valid && options.controls['password'].errors.required && options.controls['password'].touched">
@@ -81,43 +91,54 @@
                   
                 </mat-form-field> -->
 
-                <mat-form-field appearance="fill">
-                  <mat-label>Company Name</mat-label>
-                  <input matInput type="text"  formControlName="companyname" (blur)="inputUntouched('companyname')">
-                  <mat-error *ngIf="!options.controls['companyname'].valid && options.controls['companyname'].errors.required && options.controls['companyname'].touched">
-                    Company Name field can not be blank
-                  </mat-error>
-                </mat-form-field>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Company Name</mat-label>
+                                <input matInput type="text" formControlName="companyname"
+                                    (blur)="inputUntouched('companyname')">
+                                <mat-error
+                                    *ngIf="!options.controls['companyname'].valid && options.controls['companyname'].errors.required && options.controls['companyname'].touched">
+                                    Company Name field can not be blank
+                                </mat-error>
+                            </mat-form-field>
 
-                <mat-form-field appearance="fill">
-                 
-                    <mat-label> State</mat-label>                               
-                    <mat-select   formControlName="state" (blur)="inputUntouched('state')" >
-                      <mat-option *ngFor="let item of stateVal" value="{{item.val}}">{{item.name}}</mat-option>
-                    </mat-select>
-                    
-                    <mat-error *ngIf="!options.controls['state'].valid && options.controls['state'].errors.required && options.controls['state'].touched">State is required</mat-error>
-                </mat-form-field>
+                            <mat-form-field appearance="fill">
 
-                <mat-form-field appearance="fill">
-                  <mat-label>City</mat-label>
-                  <mat-select  formControlName="city"  (blur)="inputUntouched('city')" >
-                    <mat-option *ngFor="let item of cityVal" value="{{item.val}}">{{item.name}}</mat-option>
-                  </mat-select>
-                 
-                  <mat-error *ngIf="!options.controls['city'].valid && options.controls['city'].errors.required && options.controls['city'].touched">City is required</mat-error>
-              </mat-form-field>
+                                <mat-label> State</mat-label>
+                                <mat-select formControlName="state" (blur)="inputUntouched('state')">
+                                    <mat-option *ngFor="let item of stateVal" value="{{item.val}}">{{item.name}}
+                                    </mat-option>
+                                </mat-select>
 
-              
-                 
-              <mat-form-field appearance="fill">
-                  <mat-label>Zip</mat-label>
-                  <input matInput type="number" formControlName="zipcode" (blur)="inputUntouched('zipcode')">
-                  <mat-error *ngIf="!options.controls['zipcode'].valid && options.controls['zipcode'].errors.required && options.controls['zipcode'].touched">
-                    Zip is required</mat-error>
-                </mat-form-field>
+                                <mat-error
+                                    *ngIf="!options.controls['state'].valid && options.controls['state'].errors.required && options.controls['state'].touched">
+                                    State is required</mat-error>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill">
+                                <mat-label>City</mat-label>
+                                <mat-select formControlName="city" (blur)="inputUntouched('city')">
+                                    <mat-option *ngFor="let item of cityVal" value="{{item.val}}">{{item.name}}
+                                    </mat-option>
+                                </mat-select>
+
+                                <mat-error
+                                    *ngIf="!options.controls['city'].valid && options.controls['city'].errors.required && options.controls['city'].touched">
+                                    City is required</mat-error>
+                            </mat-form-field>
+
+
+
+                            <mat-form-field appearance="fill">
+                                <mat-label>Zip</mat-label>
+                                <input matInput type="number" formControlName="zipcode"
+                                    (blur)="inputUntouched('zipcode')">
+                                <mat-error
+                                    *ngIf="!options.controls['zipcode'].valid && options.controls['zipcode'].errors.required && options.controls['zipcode'].touched">
+                                    Zip is required</mat-error>
+                            </mat-form-field>
                             <div class="submitbtnwrapper">
-                                <img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/buttonicon1.png" alt="#">
+                                <img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/buttonicon1.png"
+                                    alt="#">
                                 <button class="submitbtn"><span>Submit</span></button>
                             </div>
                         </form>
@@ -138,7 +159,8 @@
                         </div>
 
                         <div class="arrowmainwrapper">
-                            <img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageimage3.png" alt="#">
+                            <img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageimage3.png"
+                                alt="#">
                             <div class="arrowwrapper">
                                 <h2>
                                     <span>Learn more about our unparalleled program.</span>
@@ -201,7 +223,8 @@
                         <p>Bone Scan</p>
                     </span>
                 </div>
-                <button class="blackbtn" (click)="scrollToTop()">Learn Incredible Science About Our Platform Today!</button>
+                <button class="blackbtn" (click)="scrollToTop()">Learn Incredible Science About Our Platform
+                    Today!</button>
             </div>
         </mat-card-content>
     </mat-card>
@@ -247,7 +270,8 @@
                     <h3>With our all-encompassing <span>ANS</span> testing program, we build a relationship with your
                         practice where you will have constant and consistent assistance, every step of the way!</h3>
                 </div>
-                <button class="blackbtn" (click)="scrollToTop()">Learn More About Our <span class="pece">PECE</span> Virtual Platform.</button>
+                <button class="blackbtn" (click)="scrollToTop()">Learn More About Our <span class="pece">PECE</span>
+                    Virtual Platform.</button>
 
             </div>
 
@@ -277,7 +301,9 @@
                         </p>
                         <button class="blackbtn" (click)="scrollToTop()">Learn More About Our Software Model.</button>
                     </div>
-                    <div class="imagewrapper"><img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageimage6.jpg" alt="#"></div>
+                    <div class="imagewrapper"><img
+                            src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageimage6.jpg"
+                            alt="#"></div>
 
                 </div>
             </div>
@@ -290,38 +316,45 @@
         <mat-card-content class="newcontainer">
             <div class="colcontainer">
                 <mat-card-content class="col">
-                    <div class="imagewrapper"><img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageicon1.png" alt="#"></div>
+                    <div class="imagewrapper"><img
+                            src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageicon1.png"
+                            alt="#"></div>
                     <div class="blog">
                         <div class="blogtitle">
                             <h3><span class="pece">PECE</span> Science</h3>
                         </div>
                         <div class="blogtext">
-                            <p>Information about the important <b>SCIENCE</b> that governs our <b>ANS</b> Testing technology.</p>
+                            <p>Information about the important <b>SCIENCE</b> that governs our <b>ANS</b> Testing
+                                technology.</p>
                         </div>
                     </div>
                     <button class="blackbtn" (click)="scrollToTop()">Learn More</button>
                 </mat-card-content>
                 <mat-card-content class="col">
-                    <div class="imagewrapper"><img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageicon2.png" alt="#"></div>
+                    <div class="imagewrapper"><img
+                            src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageicon2.png"
+                            alt="#"></div>
                     <div class="blog">
                         <div class="blogtitle">
                             <h3><span class="pece">PECE</span> Platform</h3>
                         </div>
                         <div class="blogtext">
-                            <p>Discover the significant aspects of our  <b>Fully-managed  ANS</b> testing 
+                            <p>Discover the significant aspects of our <b>Fully-managed ANS</b> testing
                                 services portal.</p>
                         </div>
                     </div>
                     <button class="blackbtn" (click)="scrollToTop()">Learn More</button>
                 </mat-card-content>
                 <mat-card-content class="col">
-                    <div class="imagewrapper"><img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageicon3.png" alt="#"></div>
+                    <div class="imagewrapper"><img
+                            src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/lpageicon3.png"
+                            alt="#"></div>
                     <div class="blog">
                         <div class="blogtitle">
                             <h3>Hardware</h3>
                         </div>
                         <div class="blogtext">
-                            <p>View the technical details of our <b>FDA CLEARED ANS</b> testing 
+                            <p>View the technical details of our <b>FDA CLEARED ANS</b> testing
                                 medical device platform.</p>
                         </div>
                     </div>

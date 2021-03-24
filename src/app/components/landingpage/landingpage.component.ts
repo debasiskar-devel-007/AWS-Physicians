@@ -42,6 +42,12 @@ export class LandingpageComponent implements OnInit {
   public cookieval: any;
   public sys_datatime: number;
   options: FormGroup;
+
+  public progressSpinner: any = {
+    mode: 'indeterminate',
+    loading: false,
+    bookingStatus: 'Sending request'
+  };
   //matcher = new MyErrorStateMatcher();
   // public emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //  public passwordregex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
@@ -54,7 +60,7 @@ export class LandingpageComponent implements OnInit {
       og_description: 'PECETM - The Complete ANS Testing Medical Device Platform for Physicians and their practice. This cutting-edge technology offers better patient data to significantly improve patient outcomes.',
       og_url: 'https://healthprofitsolutions.com/landingpage/' + this.route.snapshot.params.userid + '/' + this.route.snapshot.params.productid,
       og_type: 'website',
-     og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
+      og_image: 'https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/HPS_OG+Image_Somnath_02-01-2021.jpg',
       // twitter_card: environment.share_image,
 
     };
@@ -82,7 +88,7 @@ export class LandingpageComponent implements OnInit {
     this.apiservice.getclientip().subscribe((res: any) => {
 
       this.ip = res.ip.toString();
-      console.log(res, 'ffffffff', this.ip);
+      console.log(res, 'ffff+++++++++ffff', this.ip);
     });
 
 
@@ -146,12 +152,13 @@ export class LandingpageComponent implements OnInit {
 
   contactUs() {
     // console.log('++++ not valid',this.options.value)
+    this.progressSpinner.loading = true;
     let formCalData: any;
     for (formCalData in this.options.controls) {
       this.options.controls[formCalData].markAsTouched();
     }
     if (this.options.valid) {
-
+  
       let fromData = {
         data: {
           firstname: this.options.value.firstname,
@@ -166,7 +173,7 @@ export class LandingpageComponent implements OnInit {
           source: 'Hps-landing-page-1',
           parentid: this.activatedroute.snapshot.params.userid,
           type: 'lead',
-          tags:[{updated_datetime:this.sys_datatime, satatus:'New Lead'}] ,
+          tags: [{ updated_datetime: this.sys_datatime, satatus: 'New Lead' }],
           tags_status: 1,
           status: 1,
           products: this.activatedroute.snapshot.params.productid
@@ -184,7 +191,7 @@ export class LandingpageComponent implements OnInit {
           dialogRef.afterClosed().subscribe(result => {
           });
           this.options.reset();
-
+          this.progressSpinner.loading = false;
 
         }
 
