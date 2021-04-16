@@ -157,8 +157,12 @@ export class LandingpageComponent implements OnInit {
     for (formCalData in this.options.controls) {
       this.options.controls[formCalData].markAsTouched();
     }
+    console.log(this.options.valid)
+    if (this.options.valid == false) {
+      this.progressSpinner.loading = false;
+
+    }
     if (this.options.valid) {
-  
       let fromData = {
         data: {
           firstname: this.options.value.firstname,
@@ -196,7 +200,8 @@ export class LandingpageComponent implements OnInit {
         }
 
         if (response.status == "error") {
-
+          this.progressSpinner.loading = false;
+          this.options.reset();
           const dialogRef = this.dialog.open(FormConfirmComponent, {
             panelClass: 'successModal',
             data: { msg: response.errormessage, flag: 'error' }

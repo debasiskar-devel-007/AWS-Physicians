@@ -10,6 +10,6 @@ export const environment = {
   awstrainingid: '5d7f23843bd1bb6d1d19359f',
   mdstocktrainingid: '5dbc2f4e22d98f6286d2b00a',
   mdstockServerUrl: 'https://i1kzfac3pe.execute-api.us-east-1.amazonaws.com/dev/api/',
-  landing_api_url: 'https://e4bmztjfw8.execute-api.us-east-1.amazonaws.com/dev/',
+  landing_api_url: 'https://z2oo2a8oq9.execute-api.us-east-1.amazonaws.com/dev/',
   api_calender_url: 'https://m9mkuic6o9.execute-api.us-east-1.amazonaws.com/dev/beto-paredes-api/',
 };
