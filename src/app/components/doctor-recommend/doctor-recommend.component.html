@@ -41,13 +41,16 @@
 
             <div class="videoblock">
                 <span (click)="fetchvideo()" *ngIf="hideSpan==true">
-                    <img src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/dr_image2.png">
+                    <img src="../../../assets/images/dr_image2.jpg">
                     <img class="playicon" src="https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/youtubevideoicon.png">
                 </span>
                 <ng-container *ngIf="youtubeFlage==true">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqu-UQTAasw" frameborder="0"
+
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FskdJ-i__ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FskdJ-i__ss" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
+                    </iframe> -->
                 </ng-container>
             </div>
         </span>
