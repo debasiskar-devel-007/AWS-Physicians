@@ -278,8 +278,28 @@
     }
     
 }
-@media screen and (max-width: 700px){
-   
+@media screen and (max-width: 768px){
+    .titlewrapper h2, .titlewrapper h2 span, .titlewrapper h2 i, .textwrapper h2, .textwrapper h2 span{
+        background: none !important;
+        webkit-background-clip: inherit !important;
+        -webkit-text-fill-color: inherit !important;
+        background-image: none !important;
+        color: #000;
+    }
+    .bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong{
+        background: none !important;
+        webkit-background-clip: inherit !important;
+        -webkit-text-fill-color: inherit !important;
+        background-image: none !important;
+        color: rgb(9,49,70);
+        text-shadow: 0px 0px 0 #fff;
+    }
+    .bannertitlewrapper .pece::after{
+        background: none !important;
+        webkit-background-clip: inherit !important;
+        -webkit-text-fill-color: inherit !important;
+        color: #093146;
+    }
 
 }
 @media screen and (max-width: 620px){

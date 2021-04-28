@@ -221,7 +221,11 @@
 .col-container1 .liststyle4{flex-flow:column;justify-content:center}
 .tfhblock5 .col-container:nth-child(even){flex-flow:column}
 .numbermainwrapper{width:100%;display:inline-block;text-align:center}
-.numbersubwrapper{margin:0 auto}
+.numbersubwrapper{margin:0 auto !important}
+.col-container3 .liststyle4{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }
 @media screen and (max-width: 767px) {
 .tfhblock5 .gradienttext.listtitle h2,.tfhblock5 .gradienttext.listtitle h2 span{font-size:60px;line-height:55px}

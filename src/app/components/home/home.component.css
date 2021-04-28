@@ -227,6 +227,7 @@ img{max-width:100%}
 .bannertext h3{font-size:36px}
 }
 @media only screen and (max-width: 768px) {
+   
 .videowrapper{min-height:347px}
 }
 @media screen and (max-width: 776px) {
