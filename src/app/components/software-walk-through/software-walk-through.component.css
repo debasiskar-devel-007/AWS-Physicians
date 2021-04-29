@@ -175,7 +175,7 @@
 .imgmainwrapper{width:auto}
 .swtblock6 .imgmainwrapper{margin-right:0}
 .swtblock10subwrapper2 .abimage{display:none}
-.abimage2{display:block;margin:0 auto}
+.abimage2{display:block;margin:0 auto; max-width: 100%;}
 .swtblock10subwrapper2 .textwrapper{padding-top:20px}
 .listtext p{padding-left:0}
 .swtblock10subwrapper1{padding-top:0}

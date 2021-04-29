@@ -222,6 +222,7 @@
 img{max-width:100%}
 }
 @media only screen and (max-width: 991px) {
+    .homeblock5 .textwrapper h3 br{display: none;}
 .titlewrapper h3 br{display:none}
 .videowrapper{min-height:477px}
 .bannertext h3{font-size:36px}

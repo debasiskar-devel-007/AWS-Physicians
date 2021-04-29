@@ -192,10 +192,10 @@
 .col-container{flex-wrap:wrap}
 .tfhblock3subwrapper2 .subtextwrappernew{-webkit-column-count:1;-moz-column-count:1;column-count:1;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;-webkit-column-rule:0 solid #b9c7cc;-moz-column-rule:0 solid #b9c7cc;column-rule:0 solid #b9c7cc;width:100%;display:inline-block}
 .graygradient .textwrapper{display:block;width:100%}
-.textwrapper .subtextwrappernew p{background-position:center top 4px;padding-top:30px}
+.textwrapper .subtextwrappernew p{background-position:center top 4px;padding-top:30px; padding-left: 0;}
 .colcontainerwrapper .col-4{width:100%}
 .colcontainerwrapper .col-2{width:100%}
-.colcontainerwrapper .textwrapper .subtextwrappernew p{text-align:center;display:block;min-height:inherit;padding-top:30px}
+.colcontainerwrapper .textwrapper .subtextwrappernew p{text-align:center;display:block;min-height:inherit;padding: 20px; padding-top:30px;}
 .colcontainerwrapper .textwrapper .subtextwrappernew p::before{left:50%;transform:translateX(-50%);top:10px;-webkit-transform:inherit;transform:inherit}
 .tfhblock6 .liststyle1{padding-right:0}
 .tfhblock6 .liststyle1 p{padding-left:0;padding-top:40px;margin:0}
@@ -226,11 +226,32 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.bannertext h2{padding: 20px;}
+.tfhblock2 {
+    background-position: center top -60px,center center;
+    background-size: auto,cover;
+}
+.titlewrapper h1 span{display: inline !important;}
+}
+@media screen and (max-width: 991px) {
+    .blogtitle h2{font-size: 32px;}
+    .tfhblock4 .listtitle.shadow{padding: 15px;}
+    .blogtitle{top: -74px;}
 }
 @media screen and (max-width: 767px) {
+    .tfhblock2 {
+        background-position: center top -20px,center center;
+    }
 .tfhblock5 .gradienttext.listtitle h2,.tfhblock5 .gradienttext.listtitle h2 span{font-size:60px;line-height:55px}
 .tfhblock4 .titlewrapper h3{font-size:30px;line-height:36px}
 }
 @media screen and (max-width: 480px) {
+    .blogtitle{min-width: inherit;}
 .tfhblock5 .gradienttext.listtitle h2,.tfhblock5 .gradienttext.listtitle h2 span{font-size:42px;line-height:35px}
+.bannertextwrapper h5, .bannertextwrapper h5 span, .bannertextwrapper h5 strong {
+    font-size: 42px;
+    line-height: 40px;
+}
+.tfhblock2subblock1 .textwrapper::before, .tfhblock2subblock1 .textwrapper::after{display: none;}
 }
