@@ -191,19 +191,11 @@
 .ptmfsmblock4subwrapper3 .textwrapper p{padding-left: 0;}
 }
 @media screen and (max-width: 991px) {
-    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{
-        font-size: 42px;
-        line-height: 44px;
-    }
+    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{font-size: 42px; line-height: 44px;}
     .greengradient h2{font-size: 42px;}
-    .ptmfsmblock2 .titlewrapper {
-        padding-bottom: 50px;
-    }
-}
+    .ptmfsmblock2 .titlewrapper {padding-bottom: 50px;}     
+}   
 @media screen and (max-width: 380px) {
-    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{
-        font-size: 32px;
-        line-height: 34px;
-    }
+    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{font-size: 32px;line-height: 34px;}
     .greengradient h2{font-size: 32px;}
 }
