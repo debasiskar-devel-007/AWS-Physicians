@@ -14,6 +14,7 @@ export class ApiService {
   public nodesslurl = environment["api_url"];
   public apiurl: any = environment["landing_api_url"];
   public worksheet_apiurl: any = environment["api_calender_url"];
+  public landing: any = environment['landing_api_url'];
   constructor(private _http: HttpClient, public cookie: CookieService) { }
 
   getData(endpoint: string) {
@@ -126,7 +127,7 @@ export class ApiService {
     };
     //console.log(requestdata.api_url)
 
-    var result = this._http.post(this.worksheet_apiurl + endpoint, requestdata, httpOptions).pipe(map(res => res));
+    var result = this._http.post(this.apiurl + endpoint, requestdata, httpOptions).pipe(map(res => res));
     return result;
 
 

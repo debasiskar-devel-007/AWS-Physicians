@@ -177,10 +177,21 @@ export class LandingpageComponent implements OnInit {
           source: 'Hps-landing-page-1',
           parentid: this.activatedroute.snapshot.params.userid,
           type: 'lead',
-          tags: [{ updated_datetime: this.sys_datatime, satatus: 'New Lead' }],
+          tags: [{
+            satatus: "new lead",
+            updated_datetime: Math.round((new Date()).getTime())
+          },
+          {
+            satatus: "health profit solution",
+            updated_datetime: Math.round((new Date()).getTime())
+          },
+          {
+            satatus: "Hps-landing-page-1",
+            updated_datetime: Math.round((new Date()).getTime())
+          }],
           tags_status: 1,
           status: 1,
-          products: this.activatedroute.snapshot.params.productid
+          products: [this.activatedroute.snapshot.params.productid]
         }
 
       }
@@ -190,7 +201,7 @@ export class LandingpageComponent implements OnInit {
 
           const dialogRef = this.dialog.open(FormConfirmComponent, {
             panelClass: 'successModal',
-            data: { flag: 'success', userid: this.activatedroute.snapshot.params.userid, product: this.activatedroute.snapshot.params.productid }
+            data: { flag: 'success', userid: response.result._id, product: this.activatedroute.snapshot.params.productid }
           });
           dialogRef.afterClosed().subscribe(result => {
           });
@@ -336,92 +347,98 @@ export class FormConfirmComponent {
     @Inject(MAT_DIALOG_DATA) public data: DialogData, public apiservice: ApiService, public snackBar: MatSnackBar) {
     console.log(data.product, 'form+++++++++++++++==')
     this.productid = data.product
-    // this.formdata = {
-    //   successmessage: 'Submitted Successfully !!',
-    //   submitactive: true, // optional, default true
-    //   submittext: 'Submit',
-    //   jwttoken: '',
-    //   // cancelroute: '',
-    //   // custombuttons: [
-    //   //   {
-    //   //     name: 'save',
-    //   //     label: 'Save',
-    //   //     class: 'savecls',
-    //   //     type: 'button'
-    //   //   }
-    //   // ],
-    //   fields: [
-    //     {
-    //       label: 'Projects all cost differently, but we require a minimum of $100k on all potential custom software builds.  Can your potential client afford this?',
-    //       name: 'cost',
-    //       value: '',
-    //       type: 'text',
-    //       validations: [
-    //         { rule: 'required', message: 'field is required' },
-    //       ]
-    //     },
-    //     {
-    //       label: 'Is the person getting on the call able to make a financial decision for the company?',
-    //       name: 'company_financial',
-    //       value: 1,
-    //       type: 'radio',
-    //       validations: [
-    //         { rule: 'required', message: 'field is required' },
-    //       ],
-    //       val: [{ key: 1, val: 'Yes' }]
-    //     },
-    //     {
-    //       label: 'Give a brief description of what they are looking for: ',
-    //       name: 'description',
-    //       value: '',
-    //       type: 'textarea',
-    //       validations: [
-    //         { rule: 'required', message: 'field is required' },
-    //       ]
-    //     }
-    //   ]
-    // }
+    this.formdata = {
+      successmessage: 'Submitted Successfully !!',
+      submitactive: true, // optional, default true
+      submittext: 'Submit',
+      jwttoken: '',
+      // cancelroute: '',
+      // custombuttons: [
+      //   {
+      //     name: 'save',
+      //     label: 'Save',
+      //     class: 'savecls',
+      //     type: 'button'
+      //   }
+      // ],
+      fields: [
+        {
+          label: 'Projects all cost differently, but we require a minimum of $100k on all potential custom software builds.  Can your potential client afford this?',
+          name: 'cost',
+          value: '',
+          type: 'text',
+          validations: [
+            { rule: 'required', message: 'field is required' },
+          ]
+        },
+        {
+          label: 'Is the person getting on the call able to make a financial decision for the company?',
+          name: 'company_financial',
+          value: 1,
+          type: 'radio',
+          validations: [
+            { rule: 'required', message: 'field is required' },
+          ],
+          val: [{ key: 1, val: 'Yes' }]
+        },
+        {
+          label: 'Give a brief description of what they are looking for: ',
+          name: 'description',
+          value: '',
+          type: 'textarea',
+          validations: [
+            { rule: 'required', message: 'field is required' },
+          ]
+        }
+      ]
+    }
     // console.log('ddd',data)
   }
 
-  // listenFormFieldChange(val: any) {
-  //   console.log(val, '++=++')
+  listenFormFieldChange(val: any) {
+    console.log(val, '++=++')
 
 
 
-  //   //for submit
+    //for submit
 
 
 
-  //   if (val.field == 'fromsubmit' && val.fieldval == 'success') {
-  //     this.progressSpinner.loading = true;
+    if (val.field == 'fromsubmit' && val.fieldval == 'success') {
+      this.progressSpinner.loading = true;
 
-  //     // this.data.flag = 'submit';
-  //     // this.data.val = val;
-  //     // this.data.worksheet_val = 1;
+      // this.data.flag = 'submit';
+      // this.data.val = val;
+      // this.data.worksheet_val = 1;
+      let tages = [
+        {
+          satatus: "work_sheet_done",
+          updated_datetime: Math.round((new Date()).getTime())
+        }
+      ]
 
+      let form_data = {
+        worksheet_data: val.fromval,
+        worksheet_val: 1,
+        user_id: this.data.userid,
+        product_id: this.data.product,
+        tags: tages
+      }
 
-  //     let form_data = {
-  //       worksheet_data: val.fromval,
-  //       worksheet_val: 1,
-  //       user_id: this.data.userid,
-  //       product_id: this.data.product
-  //     }
+      this.apiservice.customRequest1('work-sheet', form_data).subscribe((response: any) => {
+        if (response.status == 'success') {
+          this.progressSpinner.loading = false;
 
-  //     this.apiservice.customRequest1('work-sheet', form_data).subscribe((response: any) => {
-  //       if (response.status == 'success') {
-  //         this.progressSpinner.loading = false;
+          this.openSnackBar('Worksheet Submit Successfully.', null);
 
-  //         this.openSnackBar('Worksheet Submit Successfully.', null);
+          this.dialogRef.close(this.data);
 
-  //         this.dialogRef.close(this.data);
-
-  //       } else {
-  //         this.openSnackBar('Something went wrong. Please try again.', null);
-  //       }
-  //     })
-  //   }
-  // }
+        } else {
+          this.openSnackBar('Something went wrong. Please try again.', null);
+        }
+      })
+    }
+  }
   openSnackBar(message: string, action: string = null) {
     this.snackBar.open(message, action, {
       duration: 3000,
