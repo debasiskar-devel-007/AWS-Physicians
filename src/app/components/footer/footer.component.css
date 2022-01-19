@@ -13,7 +13,7 @@
 .footermenu span{min-width:130px;border-left:1px solid #453400;padding-left:20px}
 .footermenu span:nth-child(1){padding-left:0;border:0}
 .footermainwrapper mat-list mat-list-item.footeritem1{width:auto!important}
-.footermainwrapper mat-list mat-list-item.footeritem2{width:1105px!important;padding:0!important;margin:0 35px;padding-right:0!important;margin-top:20px!important;border-left:1px solid #474747}
+.footermainwrapper mat-list mat-list-item.footeritem2{width:1275px!important;padding:0!important;margin:0 25px;padding-right:0!important;margin-top:20px!important;border-left:1px solid #474747}
 .footermainwrapper mat-list mat-list-item.footeritem3{margin-top:20px!important;border-left:1px solid #474747}
 .footerlogowrapper{width:245px;height:130px;position:relative;display:block;background:#fff;border-radius:0;padding:20px;margin:0 auto}
 .footerlogowrapper::after{content:'';background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/shadow2.png);position:absolute;right:-30px;bottom:0;height:100%;width:32px;background-repeat:no-repeat;opacity:.2;background-position:bottom center}
