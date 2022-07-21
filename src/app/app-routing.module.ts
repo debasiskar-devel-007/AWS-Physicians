@@ -34,6 +34,7 @@ const routes: Routes = [
   { path: 'tm-flow-hardware', component: TmFlowHardwareComponent },
   { path: 'rep/:userid/:productid', component: RecruitingfunnelComponent },
   { path: 'landingpage/:userid/:productid', component: LandingpageComponent },
+  { path: 'landingpage', component: LandingpageComponent },
   { path: 'hps-Study', component: HpsStudyComponent },
 ];
 

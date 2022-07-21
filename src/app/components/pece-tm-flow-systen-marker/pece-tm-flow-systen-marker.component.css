@@ -111,7 +111,7 @@
 .textitletwrapper{background:#e4ebef;background:linear-gradient(0deg,rgba(228,235,239,1) 0%,rgba(255,255,255,1) 100%);border:1px solid #fff;box-shadow:0 0 5px rgba(0,0,0,0.3);padding:15px;border-radius:5px;width:fit-content;margin:20px 0}
 .ptmfsmblock5{background-image:url(https://all-frontend-assets.s3.amazonaws.com/AWS-Physicians/images/ptfsmbg6.jpg);background-repeat:no-repeat;background-size:cover;background-position:center top;padding:30px 0!important;position:relative;overflow:hidden}
 .ptmfsmblock5 .abimage{position:absolute;right:0;bottom:0}
-.listtextwrapper1{padding-right:200px}
+.listtextwrapper1{padding-right:310px}
 .listtextwrapper2{padding-right:490px}
 @media screen and (max-width: 1840px) {
 .bannertext{width:1130px}
@@ -188,23 +188,14 @@
 .bannertext .btnblue{width:fit-content;margin:5px auto}
 .bannertext .buttonwrapper{flex-flow:column}
 .bannertext .listtitle{width:auto}
-
 .ptmfsmblock4subwrapper3 .textwrapper p{padding-left: 0;}
 }
 @media screen and (max-width: 991px) {
-    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{
-        font-size: 42px;
-        line-height: 44px;
-    }
+    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{font-size: 42px; line-height: 44px;}
     .greengradient h2{font-size: 42px;}
-    .ptmfsmblock2 .titlewrapper {
-        padding-bottom: 50px;
-    }
-}
+    .ptmfsmblock2 .titlewrapper {padding-bottom: 50px;}     
+}   
 @media screen and (max-width: 380px) {
-    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{
-        font-size: 32px;
-        line-height: 34px;
-    }
+    .gradienttext.listtitle h2, .gradienttext.listtitle h2 span{font-size: 32px;line-height: 34px;}
     .greengradient h2{font-size: 32px;}
 }
