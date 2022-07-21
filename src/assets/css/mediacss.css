@@ -64,10 +64,30 @@
 .listwarppercls{min-height:60px}
 .nmsfunneldoctor_block8 ol li{padding:26px 0;min-height:105px}
 .nmsfunneldoctor_block8 ol li:before{left:-20px;top:-11px}
-.nmsfunneldoctor_block8 ol li:first-child:last-child:before,.nmsfunneldoctor_block8 ol li:nth-child(n+2):nth-last-child(-n+2):before,.nmsfunneldoctor_block8 ol li:nth-child(n+3):nth-last-child(-n+3):before,.nmsfunneldoctor_block8 ol li:nth-child(n+4):nth-last-child(-n+4):before,.nmsfunneldoctor_block8 ol li:nth-child(n+5):nth-last-child(-n+5):before,.nmsfunneldoctor_block8 ol li:nth-child(n+6):nth-last-child(-n+6):before,.nmsfunneldoctor_block8 ol li:nth-child(n+7):nth-last-child(-n+7):before,.nmsfunneldoctor_block8 ol li:nth-child(n+8):nth-last-child(-n+8):before,.nmsfunneldoctor_block8 ol li:nth-child(n+9):nth-last-child(-n+9):before,.nmsfunneldoctor_block8 ol li:nth-child(n+10):nth-last-child(-n+10):before{right:-30px!important;top:0}
+.nmsfunneldoctor_block8 ol li:first-child:last-child:before,.nmsfunneldoctor_block8 ol li:nth-child(n+2):nth-last-child(-n+2):before,
+.nmsfunneldoctor_block8 ol li:nth-child(n+3):nth-last-child(-n+3):before,.nmsfunneldoctor_block8 ol li:nth-child(n+4):nth-last-child(-n+4):before,
+.nmsfunneldoctor_block8 ol li:nth-child(n+5):nth-last-child(-n+5):before,.nmsfunneldoctor_block8 ol li:nth-child(n+6):nth-last-child(-n+6):before,
+.nmsfunneldoctor_block8 ol li:nth-child(n+7):nth-last-child(-n+7):before,.nmsfunneldoctor_block8 ol li:nth-child(n+8):nth-last-child(-n+8):before,
+.nmsfunneldoctor_block8 ol li:nth-child(n+9):nth-last-child(-n+9):before,.nmsfunneldoctor_block8 ol li:nth-child(n+10):nth-last-child(-n+10):before{
+    /* right:-30px!important;top:0; */
+    right:0px!important;top:0;
+}
 .li6:after{top:-2%;transform:rotate(-10deg)}
 .li3:after{top:-24%;transform:rotate(4deg)}
 .li8:after{top:5%;transform:rotate(-8deg)}
+
+
+.nmsfunneldoctor_block8 ol li:before{
+    background-size: 100% 100%;
+    font-size: 30px!important;
+    height: 43px;
+    width: 43px;
+}
+
+.nmsfunneldoctor_block8 ol li:before {
+    left: 0;
+    top: 0;
+}
 }
 @media screen and (max-width: 991px) {
 .listwarppercls{width:auto;flex-wrap:wrap;flex-flow:column-reverse;justify-content:center;border-radius:0!important;margin:0;box-shadow:0 0 10px rgba(0,0,0,0.1);height:85%;padding:3%;padding-bottom:8%}

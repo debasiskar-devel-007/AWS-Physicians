@@ -806,13 +806,14 @@
 .nmsfunneldoctor_block8 .nmsfunneldoctor_block_wrapper h2{padding:0;margin:0;color:#1b69a9;font-family:'Lato-Bold';font-size:48px;line-height:48px;text-align:center;text-transform:uppercase;text-overflow:ellipsis;margin-bottom:30px;margin-top:10px}
 .nmsfunneldoctor_block8 ol li{position:relative}
 .nmsfunneldoctor_block8 ol{-webkit-column-count:2;-moz-column-count:2;column-count:2;-webkit-column-gap:40px;-moz-column-gap:40px;column-gap:40px;list-style:decimal!important;counter-reset:item}
-.nmsfunneldoctor_block8 ol li{display:block;min-height: 130px;padding: 53px 0;}
+.nmsfunneldoctor_block8 ol li{display:block;min-height: 130px;padding: 53px 0;overflow: hidden;}
 .nmsfunneldoctor_block8 ol li:before{
     content: counters(item, '.') " ";
     counter-increment: item;
     font-size: 50px;
     position: absolute;
-    left: -20px;
+    /* left: -20px; */
+    left: 0px;
     top: 20px;
     z-index: 9;
     color: #939393;
@@ -857,10 +858,12 @@
 .nmsfunneldoctor_block8 ol li:first-child:last-child:before,.nmsfunneldoctor_block8 ol li:nth-child(n+2):nth-last-child(-n+2):before,.nmsfunneldoctor_block8 ol li:nth-child(n+3):nth-last-child(-n+3):before,.nmsfunneldoctor_block8 ol li:nth-child(n+4):nth-last-child(-n+4):before,.nmsfunneldoctor_block8 ol li:nth-child(n+5):nth-last-child(-n+5):before,.nmsfunneldoctor_block8 ol li:nth-child(n+6):nth-last-child(-n+6):before,.nmsfunneldoctor_block8 ol li:nth-child(n+7):nth-last-child(-n+7):before,.nmsfunneldoctor_block8 ol li:nth-child(n+8):nth-last-child(-n+8):before,.nmsfunneldoctor_block8 ol li:nth-child(n+9):nth-last-child(-n+9):before,.nmsfunneldoctor_block8 ol li:nth-child(n+10):nth-last-child(-n+10):before{
     font-size:40px;
     position:absolute;
-    right: -20px !important;
+    /* right: -20px !important; */
+    right: 0px !important;
     top: 20px;
     z-index:9;
-    left:inherit
+    left:inherit;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
 }
 .imgwrapperblock8{
 
@@ -1122,3 +1125,16 @@
 .cdk-overlay-pane.successModal .mat-dialog-container{position: relative;border-radius: 0;}
 .cdk-overlay-pane.successModal .mat-dialog-container .mat-button{background: #14c11c;position: absolute;right: 0;top: 0;border-radius: 0 3px 0 58px;color: #fff;}
 .modal_wrapper {padding-top: 30px !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
